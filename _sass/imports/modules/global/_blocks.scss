@@ -163,6 +163,10 @@ $block-paddings-map: (
     background: linear-gradient(to right, c('primary') 50%, darken(c('primary'), 10%) 50%);
   }
 
+  &.block-split-mix {
+    background: linear-gradient(to right, c('primary') 50%, grey(7) 50%);
+  }
+
   &.block-split-grey {
     background: linear-gradient(to right, grey(8) 50%, grey(7) 50%);
   }
