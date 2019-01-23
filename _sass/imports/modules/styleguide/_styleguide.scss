@@ -1,0 +1,261 @@
+
+.style-guide {
+  .block-wrap {
+    border-bottom: 1px solid black(1);
+  }
+
+  .styleguide-icons {
+    display: flex;
+
+    div {
+      height: bl(5);
+      flex-grow: 1;
+      position: relative;
+      font-size: bl(2);
+      line-height: bl(3);
+      text-align: center;
+    }
+  }
+
+  .colors {
+    margin-bottom: $bl;
+
+    &.warm-grey, &.cool-grey, &.neutral-grey {
+      display: flex;
+
+      .swatch {
+        height: bl(5);
+        flex-grow: 1;
+        position: relative;
+
+        &:after {
+          content: '';
+          color: black(0.9);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          font-family: "Inconsolata", monospace;
+          font-size: bl(0.5);
+        }
+
+        @each $name, $color in $default-grey-palette {
+          &:nth-child(#{index($default-grey-palette, ($name $color))}) {
+            background-color: map-get($default-grey-palette, $name);
+
+            @if ($name < 4) {
+              &:after {
+                color: white(0.4);
+              }
+            }
+
+            &:after {
+              content: 'grey(#{$name}) #{$color}';
+            }
+          }
+        }
+      }
+    }
+
+    &.colored {
+      @include clearfix;
+
+      .swatch {
+        height: 0px;
+        display: none;
+        position: relative;
+
+        &:after, &:before {
+          content: '';
+          color: black(0.9);
+          top: 50%;
+          transform: translateY(-50%);
+          position: absolute;
+          font-family: "Inconsolata", monospace;
+          font-size: bl(0.5);
+        }
+
+        &:after {
+          left: bl(0.5);
+        }
+
+        &:before {
+          right: bl(0.5);
+        }
+
+        @each $name, $color in $default-color-palette {
+          &:nth-child(#{index($default-color-palette, ($name $color))}) {
+            height: bl(3);
+            display: block;
+            background-color: map-get($default-color-palette, $name);
+            width: 50%;
+            float: left;
+
+            &:after {
+              content: "c('#{$name}')";
+            }
+
+            &:before {
+              content: '#{$color}';
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .styleguide-typography {
+    transition: margin 0.2s;
+
+    .styleguide-nav-is-active & {
+      margin-left: bl(5);
+
+      .block-wrap {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .show-baseline-grid {
+    &:hover {
+      @include show-baseline-grid();
+    }
+  }
+
+  .theme-dark {
+    .show-baseline-grid {
+      &:hover {
+        @include show-baseline-grid($bl, white(0.2));
+      }
+    }
+  }
+
+  .styleguide-columns {
+    .column {
+      code {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: bl(2);
+        line-height: bl(2);
+      }
+    }
+  }
+
+  .styleguide-header {
+    background: #c91f07;
+
+    #{$all-text-elements} {
+      color: #fff;
+    }
+  }
+
+  .styleguide-sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: bl(5);
+    font-family: $monospace-font-stack;
+    background: $white;
+    border-right: 1px solid $black;
+    z-index: 40;
+    font-size: $font-size * 0.8;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+
+    .styleguide-nav-is-active & {
+      transform: translateX(0%);
+    }
+
+    .styleguide-sidebar-head {
+      height: bl(5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid $black;
+      box-sizing: content-box;
+    }
+
+    .styleguide-sidebar-nav {
+      text-align: right;
+
+      a {
+        font-family: $monospace-font-stack;
+        padding-right: bl(0.5);
+        padding-left: bl(0.5);
+        font-size: $font-size * 0.8;
+        color: $black;
+        display: block;
+        border-bottom: 1px solid grey(8);
+
+        &:hover {
+          background: c('primary');
+          border-bottom-color: c('primary');
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .block-wrap {
+    transition: margin 0.2s;
+
+    .styleguide-nav-is-active & {
+      margin-left: bl(5);
+    }
+  }
+
+  .styleguide-max-width, p {
+    max-width: bl(32);
+  }
+
+  .styleguide-form {
+    padding: bl(1);
+    margin-bottom: bl(1);
+  }
+
+  .container-width { &:after { content: '#{$container-width}'; } }
+  .font-size { &:after { content: '#{$font-size}'; } }
+  .baseline { &:after { content: '#{$baseline}'; } }
+  .base-font-stack { &:after { content: '#{$base-font-stack}'; } }
+  .alt-font-stack { &:after { content: '#{$alt-font-stack}'; } }
+  .monospace-font-stack { &:after { content: '#{$monospace-font-stack}'; } }
+  .show-primary-color { &:after { content: '#{c('primary')}'; } }
+  .show-secondary-color { &:after { content: '#{c('secondary')}'; } }
+  .show-error-color { &:after { content: '#{c('error')}'; } }
+  .show-warning-color { &:after { content: '#{c('warning')}'; } }
+  .show-success-color { &:after { content: '#{c('success')}'; } }
+  .show-highlight-color { &:after { content: '#{c('highlight')}'; } }
+
+  .bg-primary-color { background: c('primary') }
+  .bg-success-color { background: c('success') }
+  .bg-error-color { background: c('error') }
+  .bg-secondary-color { background: c('secondary') }
+  .bg-warning-color { background: c('warning') }
+  .bg-highlight-color { background: c('highlight') }
+
+  @each $viewport-name, $viewport-value in $viewports {
+    .styleguide-viewports {
+      tr:nth-child(#{index(map-keys($viewports), $viewport-name)}) {
+        td:nth-child(1):after {
+          content: '"#{$viewport-name}"';
+        }
+        td:nth-child(2) code:after {
+          content: "v('#{$viewport-name}')";
+        }
+        td:nth-child(3):after {
+          content: '#{$viewport-value}';
+        }
+      }
+    }
+
+    .viewport-current {
+      &:after {
+        @include above(v($viewport-name)) {
+          content: '#{$viewport-name}';
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// Would you rather just define animations inline
+// and not bother with naming them?
+
+$_anim-increment: 0 !global;
+
+@mixin animation {
+  $name: #{'anim-'+$_anim-increment};
+
+  // Define animation
+  @at-root {
+    @keyframes #{$name} {
+      @content;
+    }
+  }
+
+  // Link animation to selector
+  animation-name: $name;
+
+  // Increment animation number
+  $_anim-increment: $_anim-increment + 1 !global;
+};

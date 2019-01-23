@@ -1,0 +1,205 @@
+// Map top/bottom paddings of blocks to viewport size and min/less/more values
+// Small/medium/large keys refer to the values in config/viewports
+
+$block-paddings-map: (
+  'max': (
+    'largest':bl(7),
+    'larger':bl(6),
+    'large':bl(5),
+    'medium':bl(4),
+    'small':bl(3),
+    'smaller':bl(2),
+    'smallest':bl(2),
+  ),
+  'more': (
+    'largest':bl(5),
+    'larger':bl(4),
+    'large':bl(4),
+    'medium':bl(4),
+    'small':bl(3),
+    'smaller':bl(2),
+    'smallest':bl(2),
+  ),
+  // TODO: Think about this
+  // 'default': (
+  //   'largest':bl(2),
+  //   'larger':bl(2),
+  //   'large':bl(2),
+  //   'medium':bl(2),
+  //   'small':bl(2),
+  //   'smaller':bl(1),
+  //   'smallest':bl(1),
+  // ),
+  'less': (
+    'largest':bl(1),
+    'larger':bl(1),
+    'large':bl(1),
+    'medium':bl(1),
+    'small':bl(1),
+    'smaller':bl(1),
+    'smallest':bl(1),
+  ),
+  'min': (
+    'largest':bl(0.5),
+    'larger':bl(0.5),
+    'large':bl(0.5),
+    'medium':bl(0.5),
+    'small':bl(0.5),
+    'smaller':bl(0.5),
+    'smallest':bl(0.5),
+  ),
+  'no': (
+    'largest':bl(0),
+    'larger':bl(0),
+    'large':bl(0),
+    'medium':bl(0),
+    'small':bl(0),
+    'smaller':bl(0),
+    'smallest':bl(0),
+  ),
+);
+
+@each $name, $values in $block-paddings-map {
+  .block-wrap.#{$name}-padding {
+    .block-inner {
+      @each $viewport, $value in $values {
+        @include below(v($viewport)) {
+          padding-top: $value;
+          padding-bottom: $value;
+        }
+
+        @if ($viewport == 'largest') {
+          @include above(v($viewport)) {
+            padding-top: $value;
+            padding-bottom: $value;
+          }
+        }
+      }
+    }
+  }
+
+  .block-wrap.#{$name}-top-padding {
+    .block-inner {
+      @each $viewport, $value in $values {
+        @include below(v($viewport)) {
+          padding-top: $value;
+        }
+
+        @if ($viewport == 'largest') {
+          @include above(v($viewport)) {
+            padding-top: $value;
+          }
+        }
+      }
+    }
+  }
+
+  .block-wrap.#{$name}-bottom-padding {
+    .block-inner {
+      @each $viewport, $value in $values {
+        @include below(v($viewport)) {
+          padding-bottom: $value;
+        }
+
+        @if ($viewport == 'largest') {
+          @include above(v($viewport)) {
+            padding-bottom: $value;
+          }
+        }
+      }
+    }
+  }
+}
+
+.block-wrap {
+  position: relative;
+
+  .block-inner {
+    padding-top: bl(2);
+    padding-bottom: bl(2);
+    @include clearfix;
+
+    @include below(v('small')) {
+      padding-top: bl(1);
+      padding-bottom: bl(1);
+    }
+  }
+
+  &.block-narrow {
+    .block-inner {
+      max-width: bl(32);
+    }
+  }
+
+  &.block-black {
+    background-color: $black;
+  }
+
+  @each $name, $color in $merged-color-map {
+    &.block-#{$name} {
+      background-color: $color;
+    }
+  }
+
+  @each $name, $grey in $default-grey-palette {
+    &.block-grey-#{$name} {
+      background-color: $grey;
+    }
+  }
+
+  &.block-photo-bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &.block-light-primary {
+    background-color: rgba(c('primary'), 0.1);
+    border-bottom: 1px solid c('primary');
+    border-top: 1px solid c('primary');
+  }
+
+  &.block-split-color {
+    background: linear-gradient(to right, c('primary') 50%, darken(c('primary'), 10%) 50%);
+  }
+
+  &.block-split-grey {
+    background: linear-gradient(to right, grey(8) 50%, grey(7) 50%);
+  }
+}
+
+.block-overlay {
+  @include overlay {
+    background-color: black(0.75);
+    z-index: 2;
+  }
+
+  .block-inner {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.block-overlay-light {
+  @include overlay {
+    background-color: white(0.5);
+    z-index: 2;
+  }
+
+  .block-inner {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.block-inner {
+  margin: 0px auto;
+  position: relative;
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
+  max-width: calc(#{$container-width} + (#{$gutter-width} * 2));
+
+  @include below(calc(#{$container-width} + (#{$gutter-width} * 2))) {
+    width: auto;
+  }
+}

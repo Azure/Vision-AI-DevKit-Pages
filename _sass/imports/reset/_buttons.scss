@@ -1,0 +1,221 @@
+@mixin all-button-types {
+  .button, input[type='submit'], input[type='button'], button, %button {
+    @content;
+  }
+}
+
+@include all-button-types {
+  display: inline-block;
+  border: none !important;
+  vertical-align: top;
+  line-height: bl(1.5);
+  padding: 0px bl(1);
+  margin: 0px;
+  height: bl(1.5);
+  appearance: none;
+  font-weight: normal;
+  font-size: $font-size;
+  background: c("primary");
+  color: #fff;
+  text-align: center;
+  box-shadow: bl(0.125) bl(0.125) bl(0.5) black(0.2);
+  border-radius: 2px;
+  transition: all 0.2s;
+
+  &.text-uppercase {
+    letter-spacing: 2px;
+  }
+
+  // Uncomment to give buttons more depth
+  // border-radius: 4px;
+  // border-bottom: 1px solid black(0.2);
+  // border-top: 1px solid white(0.4);
+  // box-shadow: 0px 0px 0px 1px black(0.7);
+
+  &.has-icon {
+    position: relative;
+    padding-right: $font-size * 2.5;
+
+    .icon {
+      &:before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: bl(0.5);
+      }
+    }
+  }
+
+  &.full {
+    width: 100%;
+  }
+
+  &.small {
+    height: bl(1);
+    line-height: bl(1);
+    font-size: $font-size * 0.8;
+    padding-left: bl(0.5);
+    padding-right: bl(0.5);
+
+    &.has-icon {
+      padding-right: $font-size * 2;
+
+      .icon {
+        &:before {
+          right: bl(0.5);
+        }
+      }
+    }
+  }
+
+  &.large {
+    height: bl(2);
+    line-height: bl(2);
+    font-size: $font-size * 1.5;
+
+    &.has-icon {
+      padding-right: $font-size * 3.5;
+
+      .icon {
+        &:before {
+          right: bl(0.75);
+        }
+      }
+    }
+  }
+
+  &.larger {
+    height: bl(3);
+    line-height: bl(3);
+    font-size: $font-size * 2;
+
+    &.has-icon {
+      padding-right: $font-size * 4.5;
+
+      .icon {
+        &:before {
+          right: bl(1);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    background: darken(c("primary"), 5%);
+    box-shadow: bl(0.1) bl(0.1) bl(0.3) black(0.4);
+    color: #fff;
+    transform: scale(0.97);
+  }
+
+  &:active {
+    transform: scale(0.975);
+    outline: none;
+  }
+
+  &:focus {
+    background: darken(c("primary"), 10%);
+    outline: none;
+  }
+
+  &.ghost {
+    background: transparent;
+    color: c("primary");
+    border: none;
+    box-shadow: none;
+
+    &:focus {
+      background: black(0.1);
+
+      .theme-dark & {
+        background: white(0.1);
+      }
+    }
+
+    &:hover {
+      color: darken(c("primary"), 5%);
+    }
+  }
+
+  @each $name, $grey in $default-grey-palette {
+    &.grey-#{$name}-color {
+      background: $grey;
+
+      &:hover {
+        background: darken($grey, 5%);
+      }
+
+      &:focus {
+        background: darken($grey, 10%);
+      }
+
+      @if ($name > 5) {
+        color: grey(1);
+
+        &:hover {
+          color: darken(grey(1), 5%);
+        }
+      }
+
+      &.ghost {
+        color: $grey;
+        background: transparent;
+
+        &:focus {
+          background: black(0.1);
+
+          .theme-dark & {
+            background: white(0.1);
+          }
+        }
+
+        &:hover {
+          color: darken($grey, 5%);
+        }
+      }
+    }
+  }
+
+  @each $name, $color in $merged-color-map {
+    &.#{$name}-color {
+      background: $color;
+
+      &:hover {
+        background: darken($color, 5%);
+      }
+
+      &:focus {
+        background: darken($color, 10%);
+      }
+
+      &.ghost {
+        color: $color;
+        background: transparent;
+
+        &:focus {
+          background: black(0.1);
+
+          .theme-dark & {
+            background: white(0.1);
+          }
+        }
+
+        &:hover {
+          color: darken($color, 5%);
+        }
+      }
+    }
+  }
+
+  &.disabled, &[disabled] {
+    background: grey(7) !important;
+    cursor: not-allowed;
+
+    &:focus {
+      background: darken(grey(5), 5%) !important;
+    }
+
+    &:active {
+      transform: none !important;
+    }
+  }
+}

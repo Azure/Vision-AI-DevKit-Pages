@@ -1,0 +1,34 @@
+// Test to see if CSS is working or element is being selected
+@mixin is-css-working {
+  &:after, &:before {
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    bottom: 0px !important;
+    background-color: #f0f !important;
+    content: "Yes, I think CSS is working." !important;
+    color: #fff !important;
+    z-index: 99999999999 !important;
+    font-size: 54px !important;
+    text-align: center !important;
+    padding-top: 15% !important;
+    font-weight: bold !important;
+  }
+}
+
+// Highlight an element
+@mixin debug-highlight($color: rgba(255, 0, 255, 0.3)) {
+  @include overlay {
+    background-color: $color !important;
+  }
+}
+
+// Show baseline grid on certain element
+@mixin show-baseline-grid($bl: $baseline, $color: black(0.1)) {
+  @include overlay {
+    background: linear-gradient(to bottom, transparent 0px, transparent calc(#{$bl} - 1px), $color calc(#{$bl} - 1px), $color $bl);
+    background-size: $bl $bl;
+    background-repeat: repeat;
+  }
+}

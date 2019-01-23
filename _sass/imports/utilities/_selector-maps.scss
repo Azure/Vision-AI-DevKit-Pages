@@ -1,0 +1,23 @@
+// This file groups selectors together. Most useful for input elements
+
+$all-header-elements: h1, h2, h3, h4, h5, h6;
+$all-body-text-elements: p, menu, blockquote, caption, td, th;
+$all-list-elements: ul, ol, dl;
+
+// This is weird bc syntax errors
+$inputs-quoted-list: "input[type='text']",
+                         "input[type='search']",
+                         "input[type='password']",
+                         "input[type='tel']",
+                         "input[type='url']",
+                         "input[type='number']";
+
+$unquoted-inputs-list: ();
+
+@each $input-type in $inputs-quoted-list {
+  $unquoted-inputs-list: append($unquoted-inputs-list, unquote($input-type), comma) !global;
+}
+
+$all-input-elements: $unquoted-inputs-list;
+
+$all-text-elements: $all-header-elements, $all-body-text-elements, $all-list-elements

@@ -1,0 +1,67 @@
+/*
+ * SEGOE WEB FONT
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot");
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot?#iefix") format("embedded-opentype"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.svg#web") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot?#iefix") format("embedded-opentype"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.woff") format("woff"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.ttf") format("truetype"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.svg#web") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/semibold/latest.eot");
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/semibold/latest.eot?#iefix") format("embedded-opentype"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/semibold/latest.woff") format("woff"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/semibold/latest.ttf") format("truetype"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/semibold/latest.svg#web") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot");
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot?#iefix") format("embedded-opentype"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.woff") format("woff"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.ttf") format("truetype"), url("https://i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.svg#web") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+*/
+
+/*
+ * SEGOE LOCAL FONT
+*/
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("/assets/fonts/segoe-ui/west-european/normal/latest.eot");
+  src: url("/assets/fonts/segoe-ui/west-european/normal/latest.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"), url("/assets/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype"), url("/assets/fonts/segoe-ui/west-european/normal/latest.svg#web") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("/assets/fonts/segoe-ui/west-european/light/latest.eot");
+  src: url("/assets/fonts/segoe-ui/west-european/light/latest.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/segoe-ui/west-european/light/latest.woff") format("woff"), url("/assets/fonts/segoe-ui/west-european/light/latest.ttf") format("truetype"), url("/assets/fonts/segoe-ui/west-european/light/latest.svg#web") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("/assets/fonts/segoe-ui/west-european/semibold/latest.eot");
+  src: url("/assets/fonts/segoe-ui/west-european/semibold/latest.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/segoe-ui/west-european/semibold/latest.woff") format("woff"), url("/assets/fonts/segoe-ui/west-european/semibold/latest.ttf") format("truetype"), url("/assets/fonts/segoe-ui/west-european/semibold/latest.svg#web") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("/assets/fonts/segoe-ui/west-european/bold/latest.eot");
+  src: url("/assets/fonts/segoe-ui/west-european/bold/latest.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/segoe-ui/west-european/bold/latest.woff") format("woff"), url("/assets/fonts/segoe-ui/west-european/bold/latest.ttf") format("truetype"), url("/assets/fonts/segoe-ui/west-european/bold/latest.svg#web") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}

@@ -1,0 +1,143 @@
+$nav-collapse-width: v('large');
+
+.collapsing-navigation {
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding-right: bl(1);
+  }
+
+  @include below($nav-collapse-width) {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: bl(10);
+    background: c('white');
+    border-left: 1px solid grey(7);
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+
+    .collapsing-navigation-is-active & {
+      transform: translateX(0%);
+    }
+
+    ul {
+      height: 100%;
+      flex-direction: column;
+    }
+
+    li {
+      width: 100%;
+      padding: 0px;
+
+      a {
+        display: block;
+        padding: bl(0.25) bl(0.5);
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          background: rgba(c('primary'), 0.05);
+          border-top: 1px solid rgba(c('primary'), 0.4);
+          border-bottom: 1px solid rgba(c('primary'), 0.4);
+        }
+      }
+    }
+  }
+}
+
+.hamburger-button {
+  display: inline-block;
+  background: grey(9);
+  height: bl(2.5);
+  width: bl(2.5);
+  position: relative;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+
+  @include above($nav-collapse-width) {
+    display: none;
+  }
+
+  .bar {
+    position: absolute;
+    left: bl(0.5);
+    right: bl(0.5);
+    height: bl(0.125);
+    top: calc(50% - #{bl(0.0625)});
+    transition: all 0.2s;
+    transition-delay: 0.2s;
+
+    div {
+      height: 100%;
+      background: grey(2);
+      transition: transform 0.2s;
+      transition: all 0.2s;
+    }
+
+    &:nth-child(1) {
+      margin-top: bl(-0.5);
+    }
+
+    &:nth-child(3) {
+      margin-top: bl(0.5);
+    }
+  }
+
+  &:hover {
+    background: rgba(c('primary'), 0.1);
+    border-color: rgba(c('primary'), 0.3);
+
+    .bar div {
+      background-color: c('primary');
+    }
+  }
+
+  .collapsing-navigation-is-active & {
+    .bar {
+      transition-delay: 0s;
+
+      div {
+        transition-delay: 0.2s;
+      }
+
+      &:nth-child(1), &:nth-child(2) {
+        margin-top: 0;
+
+        div {
+          transform: rotate(45deg);
+        }
+      }
+
+      &:nth-child(3) {
+        margin-top: 0;
+
+        div {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+.collapsing-navigation-underlay {
+  @include below($nav-collapse-width) {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(c('white'), 0.8);
+    z-index: 90;
+    transition: transform 0.2s;
+    transform: translateX(100%);
+
+    .collapsing-navigation-is-active & {
+      transform: translateX(0%);
+    }
+  }
+}

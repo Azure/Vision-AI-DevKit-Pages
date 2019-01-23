@@ -1,0 +1,9 @@
+%reset-list, %list-reset {
+  list-style: none;
+  padding: 0px;
+
+  .text-container & {
+    list-style: none;
+    padding: 0px;
+  }
+}

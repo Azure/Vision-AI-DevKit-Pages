@@ -1,0 +1,45 @@
+// This file provides the groudwork for well organized typography. By default,
+// text is "unstyled" without the proper container, meaning that all headers
+// and lists are reset to appear as normal block level elements.
+
+body, html, #{$all-text-elements} {
+  line-height: $baseline;
+  font-size: $font-size;
+  font-family: $base-font-stack;
+  font-weight: 400;
+  color: grey(2);
+}
+
+::selection {
+  background: rgba(c('primary'), 0.4);
+}
+
+.theme-dark {
+  #{$all-text-elements} {
+    color: white(1);
+  }
+}
+
+// No styling on text elements unless within a container with typography
+#{$all-text-elements} {
+  margin: 0px;
+  padding: 0px;
+}
+
+// No styling on lists unless within a container with typography
+#{$all-list-elements} {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+// Setup styles for rich text in config/typography
+.text-container {
+  @include typography;
+}

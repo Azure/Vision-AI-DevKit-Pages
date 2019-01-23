@@ -1,0 +1,166 @@
+// --------------------------------------------------------------------------
+// 16x24 color system
+// --------------------------------------------------------------------------
+
+// This is a fairly complicated system for managing different sets of colors
+// and saving them across multiple projects. Skip to the end of this file and
+// make your own custom colors if you don't want to integrate into this system.
+
+// --------------------------------------------------------------------------
+// Base Setup
+// --------------------------------------------------------------------------
+
+$base-color-map: (
+  'black'     : black,
+  'white'     : white,
+  'blue'      : blue,
+  'pink'      : pink,
+  'red'       : red,
+  'orange'    : orange,
+  'yellow'    : yellow,
+  'purple'    : purple,
+  'green'     : green,
+  'teal'      : teal,
+  'turquoise' : turquoise,
+  'magenta'   : magenta,
+  'cyan'      : cyan,
+  'lavender'  : lavender,
+  'olive'     : olive,
+  'beige'     : beige,
+  'gold'      : gold,
+);
+
+// This function just makes it easy to do dark and light overlays.
+@function black($opacity) { @return rgba(0,0,0,$opacity)       }
+@function white($opacity) { @return rgba(255,255,255,$opacity) }
+
+// --------------------------------------------------------------------------
+// Default color palette setup
+// --------------------------------------------------------------------------
+
+$black: #000;
+$white: #fff;
+$easci-red: #C91F07;
+
+// Microsoft palette
+$palette-msft: (
+  'blue':    rgb(0,120,215),
+  'green':   rgb(16,124,16),
+  'yellow':  rgb(255,185,0),
+  'red':     rgb(216,59,1),
+  'pink':    rgb(180,0,158),
+  'purple':  rgb(92,45,145),
+);
+
+// GoDaddy palette
+$palette-gd: (
+  'green':   #00a63f,
+  'blue':    #1976d2,
+  'pink':    #e20087,
+  'purple':  #9e42b5,
+  'yellow':  #fedc45,
+  'red':     #db1802,
+);
+
+// Example alternate color palette
+$palette-custom: (
+  'green':   #2ecc71,
+  'blue':    #3498db,
+  'pink':    #ff88f3,
+  'purple':  #8e44ad,
+  'yellow':  #f1c40f,
+  'red':     #e74c3c,
+  'teal':    #00c59f,
+);
+
+// Define which palette is default
+$default-color-palette: $palette-msft;
+
+// Merge the palette map with the base colors map, so colors that might not
+// be availbale in the palette still resolve.
+$color-map: map-merge($base-color-map, $default-color-palette);
+
+// Now we can attach colors to semantic meanings. Most likely, these will
+// be the way you usually ask for a color.
+$semantic-color-map: (
+  'primary':   map-get($color-map, 'blue'),
+  'secondary': map-get($color-map, 'pink'),
+  'error':     map-get($color-map, 'red'),
+  'warning':   map-get($color-map, 'orange'),
+  'success':   map-get($color-map, 'green'),
+  'highlight': map-get($color-map, 'yellow'),
+);
+
+// We can now merge the two maps together, and write a quick shorthand
+// function to lookup colors.
+$merged-color-map: map-merge($color-map, $semantic-color-map);
+
+@function c($name) {
+  @return map-get($merged-color-map, $name);
+}
+
+// --------------------------------------------------------------------------
+// Default 16x24 Greys
+// --------------------------------------------------------------------------
+
+$cool-grey-hue: 200;
+$warm-grey-hue: 30;
+$neutral-grey-hue: 255;
+
+$cool-greys: (
+  9:  hsl($cool-grey-hue,  10,   95),
+  8:  hsl($cool-grey-hue,  15,   90),
+  7:  hsl($cool-grey-hue,  10,   70),
+  6:  hsl($cool-grey-hue,  10,   60),
+  5:  hsl($cool-grey-hue,  7.5,  50),
+  4:  hsl($cool-grey-hue,  10,   40),
+  3:  hsl($cool-grey-hue,  10,   35),
+  2:  hsl($cool-grey-hue,  10,   30),
+  1:  hsl($cool-grey-hue,  10,   22.5),
+  0:  hsl($cool-grey-hue,  10,   7.5),
+);
+
+$warm-greys: (
+  9:  hsl($warm-grey-hue,  7.5,  95),
+  8:  hsl($warm-grey-hue,  7.5,  85),
+  7:  hsl($warm-grey-hue,  7.5,  80),
+  6:  hsl($warm-grey-hue,  7.5,  70),
+  5:  hsl($warm-grey-hue,  5,    55),
+  4:  hsl($warm-grey-hue,  5,    45),
+  3:  hsl($warm-grey-hue,  5,    35),
+  2:  hsl($warm-grey-hue,  7.5,  30),
+  1:  hsl($warm-grey-hue,  7.5,  22.5),
+  0:  hsl($warm-grey-hue,  7.5,  7.5),
+);
+
+$neutral-greys: (
+  9:  hsl($neutral-grey-hue,  0,  95),
+  8:  hsl($neutral-grey-hue,  0,  90),
+  7:  hsl($neutral-grey-hue,  0,  80),
+  6:  hsl($neutral-grey-hue,  0,  65),
+  5:  hsl($neutral-grey-hue,  0,  55),
+  4:  hsl($neutral-grey-hue,  0,  45),
+  3:  hsl($neutral-grey-hue,  0,  35),
+  2:  hsl($neutral-grey-hue,  0,  30),
+  1:  hsl($neutral-grey-hue,  0,  22.5),
+  0:  hsl($neutral-grey-hue,  0,  7.5),
+);
+
+// This variable controls the default grey palette used.
+$default-grey-palette: $neutral-greys;
+
+// Shorthand to pick grey colors out of the default map.
+@function grey($value) {
+  @return map-get($default-grey-palette, $value);
+}
+
+@function black($opacity) { @return rgba(#000,$opacity)       }
+@function white($opacity) { @return rgba(#fff,$opacity) }
+
+// --------------------------------------------------------------------------
+// Custom Colors
+// --------------------------------------------------------------------------
+
+// Place your own custom colors here! Or edit the colors above! Whatever!
+
+$johns-favorite-orange: #FFAA00;

@@ -1,0 +1,37 @@
+.block-header {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: transparent;
+    transition: all 0.5s;
+
+    .cc-banner.active + .page-container & {
+      top: 46px;
+    }
+
+    .is-scrolled & {
+        background: #fff;
+        background: white(0.92);
+        backdrop-filter: blur(5px);
+    }
+
+    h1 {
+        font-weight: 600;
+        color: grey(1);
+    }
+
+    .block-inner {
+        display: flex;
+    }
+
+    ul {
+        margin-left: auto;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: bl(0.75);
+    }
+}
