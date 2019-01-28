@@ -1,0 +1,11 @@
+---
+title: "Firmware Update"
+permalink: /docs/firmware-update/
+excerpt: "How to update the firmware for the Vision AI DevKit."
+variable:
+  - platform: windows
+    name: Windows
+  - platform: macos
+    name: macOS
+last_modified_at: 2019-01-28
+---
