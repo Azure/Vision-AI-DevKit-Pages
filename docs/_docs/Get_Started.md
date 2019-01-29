@@ -55,4 +55,4 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 ##Connect the Vision AI Dev Kit to your Azure IoT Hub
 1. Use a browser to visit [http://setupaicamera.ms](http://setupaicamera.ms).
 	* If you do not see the below screen, verify that your computer is connected to the reference hardware's access point.
-![Vision AI Developer Kit starting screen]({{"/assets/images/visual-ai-getting-started-screen.png" | absolute_url }})
+![Vision AI Developer Kit starting screen]({{"/assets/images/visual-ai-getting-started-screen.png" | relative_url }})
