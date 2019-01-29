@@ -11,7 +11,6 @@ last_modified_at: 2019-01-28
 ---
 For first-time users of the Vision AI DevKit, this page will help you get your device ready for use.
 
-{% include toc icon="columns" %}
 
 ## What you will learn
 * Configure an Azure IoT Hub
