@@ -23,12 +23,15 @@ last_modified_at: 2019-01-28
 * An active Azure subscription. [Activate a free Microsoft Azure account with 12 months of free services.](https://azure.microsoft.com/en-us/free/).
 
 ## Useful ADB commands to run when the device is connected to Development system (PC) using the supplied USB cable
-1.	Check the battery level
-adb shell cat /sys/class/power_supply/battery/capacity
-2.	Check to see if device is connected to PC
-adb devices
+1.	Check to see if device is connected to PC
+    * _adb devices_
+2.	Check the battery level
+    * _adb shell cat /sys/class/power_supply/battery/capacity_
 3.	Check firmware version
-adb shell cat /etc/version
-4.	Type adb alone to display all available commands
+    * _adb shell cat /etc/version_
+4.	Type _adb_** alone to display all available commands
+
+
+
 
 
