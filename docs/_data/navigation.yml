@@ -1,0 +1,22 @@
+# main links
+main:
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Get Started"
+  - title: "Assets (GitHub)"
+  - title: "Community"
+    url: https://techcommunity.microsoft.com/t5/IoT-Devices/bd-p/HardwareEngineering
+  - title: "Support"
+  - title: "Chat"
+
+docs:
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/

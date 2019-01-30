@@ -26,7 +26,8 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 plugins:
   - jekyll-autoprefixer
   - jekyll-paginate
@@ -51,6 +52,7 @@ plugins:
 # Reading Files
 include:
   - _pages
+  - _docs
 
 # Collections
 collections:
@@ -68,12 +70,14 @@ defaults:
       layout: single
       author_profile: false
   - scope:
-      path: ""
+      path: "_docs"
       type: docs
     values:
-      layout: document
+      layout: single
       author_profile: false
       share: false
       comments: false
+      toc: true
       sidebar:
         nav: "docs"
+        include_tree: true

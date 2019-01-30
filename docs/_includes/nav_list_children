@@ -1,0 +1,32 @@
+{% assign parent_size = include.parent | split: "/" | size %}
+{% assign children = nil | split: nil %}
+<li>
+<span class="nav__sub-title">{{ include.parent | split: "/" | last | default: "Documents"}}</span>
+<ul>
+{% for doc in site.docs %}
+    {% assign breadcrums = doc.id | split: "/" | shift: 2 %}
+	{% assign depthDiff = breadcrums | size | minus: parent_size %}
+	{% assign depthDiffChild = breadcrums | size | minus: parent_size | minus: 1 %}
+	{% if depthDiff > -1 %}
+		{% assign parent = breadcrums | pop: depthDiff | join: "/" %}
+		{% if parent == include.parent %}
+			{% if depthDiff == 1 %}
+				{% comment %} set "active" class on current page {% endcomment %}
+				{% if doc.url == page.url %}
+				  {% assign active = "active" %}
+				{% else %}
+				  {% assign active = "" %}
+				{% endif %}
+				<li><a href="{{ doc.url | relative_url }}" class="{{ active }}">{{ doc.title }}</a></li>
+			{% else %}
+				{% assign child_path = breadcrums | pop: depthDiffChild | join: "/" %}
+				{% assign children = children | push: child_path | uniq %}
+			{% endif %}
+		{% endif %}
+	{% endif %}
+{% endfor %}
+</ul>
+<li>
+{% for child in children %}
+	{% include nav_list_children parent=child %}
+{% endfor %}
