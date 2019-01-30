@@ -17,7 +17,7 @@ last_modified_at: 2019-01-28
 ## What you will need
 * Vision AI Dev Kit hardware
 * USB-C cable
-* ADB (Andriod Debug Bridge) and Fastboot: Download the command-line tools - [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip), [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip) or [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
+* ADB (Android Debug Bridge) and Fastboot: Download the command-line tools - [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip), [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip) or [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
 * 7-Zip: Download the [7-Zip file archiver](https://www.7-zip.org/)
 
 * An active Azure subscription. [Activate a free Microsoft Azure account with 12 months of free services.](https://azure.microsoft.com/en-us/free/).
@@ -29,7 +29,7 @@ last_modified_at: 2019-01-28
     * _adb shell cat /sys/class/power_supply/battery/capacity_
 3.	Check firmware version
     * _adb shell cat /etc/version_
-4.	Type _adb_** alone to display all available commands
+4.	Type _adb_ alone to display all available commands
 
 ## Updating the Firmware
 
@@ -45,7 +45,7 @@ Downloading and Extracting the latest Device Firmware
 
 5.  From a CMD window run adb devices to check if the camera is attached/recognized
 
-6.  Run FastBootUpgrad.bat
+6.  Run FastBootUpgrade.bat
 
 7.  Follow the instructions given, the camera will update and reboot when done.
 
@@ -53,7 +53,7 @@ Downloading and Extracting the latest Device Firmware
 
 9.  In your CMD prompt type:
 
-adb shell cat /etc/version v0.2600_Perf (ß confirm that you see the latest version)
+    * _adb shell cat /etc/version_ and confirm that you see the firmware version you are updating to.
 
 
 
