@@ -28,6 +28,7 @@ github_username:  jekyll
 markdown: kramdown
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+
 plugins:
   - jekyll-autoprefixer
   - jekyll-paginate
@@ -52,8 +53,6 @@ plugins:
 # Reading Files
 include:
   - _pages
-  - _docs
-
 # Collections
 collections:
   docs:
