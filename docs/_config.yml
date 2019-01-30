@@ -26,9 +26,13 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes@4.15.1
+
 plugins:
   - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -45,6 +49,7 @@ plugins:
 # Reading Files
 include:
   - _pages
+
 # Collections
 collections:
   docs:
@@ -72,3 +77,5 @@ defaults:
       sidebar:
         nav: "docs"
         include_tree: true
+
+github: [metadata]
