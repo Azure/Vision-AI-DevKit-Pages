@@ -1,55 +1,47 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# `jekyll serve`. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Vision AI Developer Kit
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/Vision-AI-DevKit-Pages" # the subpath of your site, e.g. /blog
-url: "https://azure.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Build settings
+# Site Settings
+locale                   : "en-US"
+title                    : "Vision AI Developer Kit"
+title_separator          : "-"
+description              : &description "Integrated with Azure IoT Edge and working with the Microsoft Azure Machine Learning service (public preview), this Azure IoT Starter kit enables developers to build vision AI solution and run their AI models on the device."
+url                      : https://azure.github.io
+baseurl                  : "/Vision-AI-DevKit-Pages"
+repository               : "Azure/Vision-AI-DevKit-Pages"
+words_per_minute         : 200
+# head_scripts             : ["//amp.azure.net/libs/amp/2.2.0/azuremediaplayer.min.js"]
+footer_scripts           : ["/assets/js/scripts.js", "https://c.s-microsoft.com/mscc/statics/mscc-0.4.0.min.js", "/assets/js/cookies.js"]
+
+# Conversion
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes@4.15.1
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-plugins:
-  - jekyll-feed
-  - jekyll-github-metadata
-  - jekyll-remote-theme
-  - jekyll-include-cache
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 # Reading Files
 include:
   - _pages
-
+  
 # Collections
 collections:
   docs:
@@ -65,8 +57,9 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _docs
   - scope:
-      path: "_docs"
+      path: ""
       type: docs
     values:
       layout: single
@@ -74,8 +67,44 @@ defaults:
       share: false
       comments: false
       toc: true
+      toc_sticky: true
       sidebar:
         nav: "docs"
         include_tree: true
+
+# Outputting
+permalink: /:categories/:title/
+timezone: America/Los_Angeles
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-github-metadata
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-github-metadata
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 github: [metadata]
