@@ -27,16 +27,8 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
-
 plugins:
-  - jekyll-autoprefixer
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jekyll-redirect-from
-  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
