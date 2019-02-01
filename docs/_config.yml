@@ -18,7 +18,7 @@ baseurl                  : "/Vision-AI-DevKit-Pages"
 repository               : "Azure/Vision-AI-DevKit-Pages"
 words_per_minute         : 200
 logo                     : "/assets/images/icon.svg"
-footer_scripts           : ["/assets/js/scripts.js", "https://c.s-microsoft.com/mscc/statics/mscc-0.4.0.min.js", "/assets/js/cookies.js"]
+footer_scripts           : ["/assets/js/main.min.js", "/assets/js/scripts.js", "https://c.s-microsoft.com/mscc/statics/mscc-0.4.0.min.js", "/assets/js/cookies.js"]
 
 # Conversion
 markdown: kramdown
