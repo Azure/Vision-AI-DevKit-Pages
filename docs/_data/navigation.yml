@@ -1,22 +1,13 @@
 # main links
-main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+main: &default_main
   - title: "Get Started"
+    url: /docs/get-started/
   - title: "Assets (GitHub)"
+    url: https://github.com/Azure/Vision-AI-DevKit-Pages/
   - title: "Community"
     url: https://techcommunity.microsoft.com/t5/IoT-Devices/bd-p/HardwareEngineering
   - title: "Support"
+    url: https://github.com/Azure/Vision-AI-DevKit-Pages/issues
   - title: "Chat"
 
-docs:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+docs: *default_main
