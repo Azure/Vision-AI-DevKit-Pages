@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 remote_theme             : "mmistakes/minimal-mistakes@4.15.1"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -17,7 +17,7 @@ url                      : https://azure.github.io
 baseurl                  : "/Vision-AI-DevKit-Pages"
 repository               : "Azure/Vision-AI-DevKit-Pages"
 words_per_minute         : 200
-# head_scripts             : ["//amp.azure.net/libs/amp/2.2.0/azuremediaplayer.min.js"]
+logo                     : "/assets/images/icon.svg"
 footer_scripts           : ["/assets/js/scripts.js", "https://c.s-microsoft.com/mscc/statics/mscc-0.4.0.min.js", "/assets/js/cookies.js"]
 
 # Conversion

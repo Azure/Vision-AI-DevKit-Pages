@@ -1,0 +1,26 @@
+.page__footer-nav {
+    font-family: $global-font-family;
+    font-size: $type-size-7;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    a {
+        display: inline-block;
+        margin-left: 18px;
+        border-bottom: 1px solid;
+
+        &:hover {
+            border-bottom: 2px solid;
+            text-decoration: none;
+        }
+    }
+}
