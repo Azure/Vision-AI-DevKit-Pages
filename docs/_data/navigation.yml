@@ -9,6 +9,6 @@ main: &default_main
   - title: "Support"
     url: https://aka.ms/VAIDKSupport
   - title: "Chat"
-    url: https://aka.ms/WAIDKGitter
+    url: https://aka.ms/VAIDKGitter
     
 docs: *default_main
