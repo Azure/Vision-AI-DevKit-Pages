@@ -2,16 +2,15 @@ $primary-color: #006699 !default;
 $footer-background-color: #393939 !default;
 
 .page__footer {
-    color: fuchsia !important; // override
-}
-
-.page__footer p,
-.page__footer strong {
     color: #737373 !important; // override
-}
 
-.page__footer a {
-    color: #a6a6a6 !important; // override
+    p, strong {
+        color: #737373 !important; // override
+    }
+
+    a {
+        color: #a6a6a6 !important; // override
+    }
 }
 
 .page__hero--overlay {
