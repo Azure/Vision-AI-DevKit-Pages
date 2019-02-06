@@ -1,9 +1,18 @@
 $primary-color: #006699 !default;
 $footer-background-color: #393939 !default;
 
+article{
+    .page__inner-wrap {
+        p,
+        li,
+        dl {
+            font-size: 0.75em !important;
+        }
+    }
+}
+
 .page__footer {
     color: #737373 !important; // override
-
     p, strong {
         color: #737373 !important; // override
     }
@@ -36,5 +45,24 @@ $footer-background-color: #393939 !default;
 
     &:hover {
         transition: transform 0.75s;
+    }
+
+    .wrapper {
+        display: flex;
+
+        .page__hero--content {
+            max-width: 66%;
+        }
+
+        .page__hero-image {
+            position: absolute;
+            height: calc(100% + 50px);
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            width: 34%;
+            max-width: 456px;
+            background-size: cover;
+        }
     }
 }

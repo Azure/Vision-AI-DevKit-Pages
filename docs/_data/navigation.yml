@@ -1,7 +1,7 @@
 # main links
 main: &default_main
   - title: "Get Started"
-    url: https://aka.ms/VisionAIGetStarted/
+    url: /docs/get-started/ #https://aka.ms/VisionAIGetStarted/
   - title: "Assets (GitHub)"
     url: https://aka.ms/vaidkgithub
   - title: "Community"
