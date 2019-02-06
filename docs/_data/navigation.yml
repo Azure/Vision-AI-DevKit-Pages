@@ -1,13 +1,14 @@
 # main links
 main: &default_main
   - title: "Get Started"
-    url: /docs/get-started/
+    url: https://aka.ms/VisionAIGetStarted/
   - title: "Assets (GitHub)"
-    url: https://github.com/Azure/Vision-AI-DevKit-Pages/
+    url: https://aka.ms/vaidkgithub
   - title: "Community"
-    url: https://techcommunity.microsoft.com/t5/IoT-Devices/bd-p/HardwareEngineering
+    url: https://aka.ms/visionaiTechComm
   - title: "Support"
-    url: https://github.com/Azure/Vision-AI-DevKit-Pages/issues
+    url: https://aka.ms/VAIDKSupport
   - title: "Chat"
-
+    url: https://aka.ms/VAIDKGitter
+    
 docs: *default_main
