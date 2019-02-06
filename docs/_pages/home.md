@@ -8,7 +8,7 @@ header:
   image: /assets/images/camera-render-transparent.png
   actions:
     - label: "Order <i class='fas fa-chevron-right'></i>"
-      url: "/docs/quick-start-guide/"
+      url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
 excerpt: >
   Integrated with Azure IoT Edge and working with the Microsoft Azure Machine Learning service (public preview), this Azure IoT Starter kit enables developers to build vision AI solution and run their AI models on the device.
 more_info:
@@ -57,8 +57,15 @@ qualcomm:
         advanced AI services. Today we are announcing the public preview of a vision AI developer kit—the newest addition in the Microsoft Azure IoT Starter kit family—for IoT solution makers to easily deploy AI models built using
         Azure Machine Learning and Azure IoT Edge.
 ---
+
+<div class="feature__outer_wrapper">
 {% include feature_row id="more_info" type="dual" %}
+</div>
 
+<div class="feature__outer_wrapper">
 {% include feature_row id="advantages" type="dual" %}
+</div>
 
+<div class="feature__outer_wrapper">
 {% include feature_row id="qualcomm" type="right" %}
+</div>
