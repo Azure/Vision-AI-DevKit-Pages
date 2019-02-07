@@ -63,7 +63,11 @@
             &:first-child {
                 padding-top: 100px;
                 margin-top: -100px;
-                background: linear-gradient(to right, #0078d7 50%, #ccc 50%);
+                background: mix(#0078d7, #ccc);
+
+                @include breakpoint($small) {
+                    background: linear-gradient(to right, #0078d7 50%, #ccc 50%);
+                }
             }
 
             &:nth-child(2) {
