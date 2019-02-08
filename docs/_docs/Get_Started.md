@@ -53,3 +53,7 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 	* If you do not see the below screen, verify that your computer is connected to the reference hardware's access point. 
 
 ![Vision AI Developer Kit starting screen]({{ '/assets/images/visual-ai-getting-started-screen.png' | relative_url }})
+
+2. Tap the'Next' button to arrive at the SSH configuration screen
+![Vision AI Developer Kit SSH config screenn]({{'/assets/images/ssh_seetup.png' | relative_url}})
+
