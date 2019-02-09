@@ -58,5 +58,5 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 
 * Tap the 'Next' button to open the SSH configuration screen
 
-![Vision AI Developer Kit SSH config screen]({{ '/assets/images/ssh_setup.png' | relative_url }})
+![Vision AI Developer Kit SSH config screen]({{ '/assets/images/SSH_setup.png' | relative_url }})
 
