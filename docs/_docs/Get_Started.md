@@ -62,7 +62,7 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 
 * Tap the 'Next' button to open the Wi-Fi configuration screen.
 
-![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Wi-Fi _settings.png' | relative_url }})
+![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Wi-Fi_settings.png' | relative_url }})
 
 Select the Wi-Fi network your camera will connect to from the drop down, then enter the access password.
 
