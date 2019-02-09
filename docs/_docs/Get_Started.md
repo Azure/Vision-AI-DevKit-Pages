@@ -28,7 +28,7 @@ For first-time users of the Vision AI DevKit, this page will help you get your d
 ## Prepare your hardware
 The Vision AI Dev Kit hardware must be charged for at least 10 minutes (using a 2A charger) before starting the configuration process.
 
-## Obtaining an Azure IoT Edge connection string
+## Obtain an Azure IoT Edge connection string
 You will need an Azure IoT Edge connection string to connect your camera to Microsoft Azure. The connection string is created when you create an IoT Hub and register your Vision AI DevKit hardware as the configured IoT Edge device.
 
 1. [Create an IoT hub using the Azure portal](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
