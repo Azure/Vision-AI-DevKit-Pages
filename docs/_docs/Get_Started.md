@@ -71,7 +71,7 @@ Select the Wi-Fi network your camera will connect to from the drop down, then en
 
 *Tap the 'Next' button to open the 'Connect to Microsoft Azure' screen.
 
-![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Connect_to_Azure.png' | relative_url }})
+![Vision AI Developer Kit Connect to Azure screen]({{ '/assets/images/Connect_to_Azure.png' | relative_url }})
 
 * Insert the IoT Edge connection string created for your IoT Edge device previously. You will see the below 'connecting' screen, followed by the 'connected' screen (also below).
 
