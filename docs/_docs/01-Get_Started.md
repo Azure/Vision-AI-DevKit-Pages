@@ -9,11 +9,11 @@ variable:
     name: macOS
 last_modified_at: 2019-02-11
 ---
-For first-time users of the Vision AI DevKit, this page will help you get your device ready for use.
+For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use.
 
 
 ## What you will do
-* Configure an Azure IoT Hub
+* Configure an **Azure IoT Hub**
 * Configure your PC to connect to the Vision AI Development Kit’s Wi-Fi access point
 * Connect your Vision AI Dev Kit camera to your Azure IoT Hub
 
@@ -23,7 +23,7 @@ For first-time users of the Vision AI DevKit, this page will help you get your d
 * An active Azure subscription. [Activate a free Microsoft Azure account.](https://azure.microsoft.com/en-us/free/).
 
 ## Prepare your hardware
-The Vision AI Dev Kit hardware must be charged for at least 10 minutes (using a 2A charger) before starting the configuration process.
+The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (using a 2A charger) before starting the configuration process.
 
 ## Obtain an Azure IoT Edge connection string
 You will need an Azure IoT Edge connection string to connect your camera to Microsoft Azure. The connection string is created when you create an IoT Hub and register your Vision AI DevKit hardware as the configured IoT Edge device.
@@ -53,11 +53,11 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 
 ![Vision AI Developer Kit starting screen]({{ '/assets/images/visual-ai-getting-started-screen.png' | relative_url }})
 
-* Tap the 'Next' button to open the SSH configuration screen.
+* Tap **Next** to open the SSH configuration screen.
 
 ![Vision AI Developer Kit SSH config screen]({{ '/assets/images/SSH_setup.png' | relative_url }})
 
-* Tap the 'Next' button to open the Wi-Fi configuration screen.
+* Tap **Next** to open the Wi-Fi configuration screen.
 
 ![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Wi-Fi_settings.png' | relative_url }})
 
@@ -66,7 +66,7 @@ Select the Wi-Fi network your camera will connect to from the drop down, then en
 ### Notes
 - The Wi-Fi access password cannot have spaces, or the camera will be unable to connect to the Wi-Fi network. You will see a confirmation screen when the camera successfully connects to your selected Wi-Fi network.
 
-*Tap the 'Next' button to open the 'Connect to Microsoft Azure' screen.
+* Tap **Next**  to open the 'Connect to Microsoft Azure' screen.
 
 ![Vision AI Developer Kit Connect to Azure screen]({{ '/assets/images/Connect_to_Azure.png' | relative_url }})
 
