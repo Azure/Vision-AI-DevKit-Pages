@@ -21,60 +21,24 @@ This page will help you deploy a pre-build vision model to your device through t
 * HDMI cable
 * Monitor with an HDMI input connector
 
-## Select your device
+## Select your Vision AI DevKit camera in the Azure portal
 1. Sign in to the [Azure portal](https://portal.azure.com/) and navigate to your IoT hub.
 2. Select IoT Edge from the menu.
-3. Click on the ID of the target device from the list of devices.
+3. Click on the ID of the target camera hardware from the list of devices.
 4. Select Set Modules.
 
+![Azure portal 'Set Modules']({{ '/assets/images/Set_Modules.png' | relative_url }})
 
-## Obtain an Azure IoT Edge connection string
-You will need an Azure IoT Edge connection string to connect your camera to Microsoft Azure. The connection string is created when you create an IoT Hub and register your Vision AI DevKit hardware as the configured IoT Edge device.
+Note:  If the Set Modules option is not available, ensure that you are selecting the IoT Edge item from the list below Automatic Device Management.  The Set Module Option is not available via the IoT devices link under the Explorers heading
 
-1. [Create an IoT hub using the Azure portal](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
-2. [Register a new Azure IoT Edge device from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal)
+##Configure a deployment manifest
+A deployment manifest is a JSON document that describes which modules to deploy, how data flows between the modules, and desired properties of the module twins. For more information about how deployment manifests work and how to create them, see [Understand how IoT Edge modules can be used, configured, and reused](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition).
 
-### Notes
-- When creating your IoT Edge device in the Azure portal, avoid using a device you may have used previously.
-- Do not reuse a connection string for multiple devices.
-- You may use any IoT Hub Region which is available in the Azure portal.
+The Azure portal has a wizard that walks you through creating the deployment manifest, instead of building the JSON document manually. It has three steps: **Add modules**, **Specify routes**, and **Review deployment**.
 
-## Connect your PC to the Visual AI DevKit Wi-Fi access point
-When you first power up the Visual AI DevKit hardware, or connect it to a charger, you will see three Red LED lights. The LED will start flashing within 10 seconds of power up to indicate that the device is ready to accept a Wi-Fi connection.
+##Add modules
+1. In the **Deployment modules** section of the page, select **Add**.
+2. Select the **IoT Edge Module**. ![Azure portal 'Add Modules']({{ '/assets/images/Add_Modules.png' | relative_url }})
 
-1. From your PC, look for a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device's Wi-Fi mac address, e.g. MSIOT_BD097D).
-2. Connect to the MSIOT_xxxxxx Wi-Fi access point.
-	* Check the label at the bottom of the device whether there is a default passphrase. If there is no label, see the Troubleshooting Section.
+3. 
 
-### Notes
-- If your device LEDs are not flashing RED, review the Troubleshooting section below.
-- If you have connected your device to an HDMI port, the display will show a gray pattern. You will not see any text or images on your display until the IoT Edge runtime has been deployed to the device.
-
-## Connect the Vision AI Dev Kit to your Azure IoT Hub
-* Use a browser to visit [http://setupaicamera.ms](http://setupaicamera.ms).
-	* If you do not see the below screen, verify that your computer is connected to the reference hardware's access point. 
-
-![Vision AI Developer Kit starting screen]({{ '/assets/images/visual-ai-getting-started-screen.png' | relative_url }})
-
-* Tap the 'Next' button to open the SSH configuration screen.
-
-![Vision AI Developer Kit SSH config screen]({{ '/assets/images/SSH_setup.png' | relative_url }})
-
-* Tap the 'Next' button to open the Wi-Fi configuration screen.
-
-![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Wi-Fi_settings.png' | relative_url }})
-
-Select the Wi-Fi network your camera will connect to from the drop down, then enter the access password.
-
-### Notes
-- The Wi-Fi access password cannot have spaces, or the camera will be unable to connect to the Wi-Fi network. You will see a confirmation screen when the camera successfully connects to your selected Wi-Fi network.
-
-*Tap the 'Next' button to open the 'Connect to Microsoft Azure' screen.
-
-![Vision AI Developer Kit Connect to Azure screen]({{ '/assets/images/Connect_to_Azure.png' | relative_url }})
-
-* Insert the IoT Edge connection string created for your IoT Edge device previously. You will see the below 'connecting' screen, followed by the 'connected' screen (also below).
-
-![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Connecting.png' | relative_url }})
-
-![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Connected.png' | relative_url }})
