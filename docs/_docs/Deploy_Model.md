@@ -1,7 +1,7 @@
 ---
-title: "Get started"
-permalink: /docs/get-started/
-excerpt: "How to quickly install and set up your development environment to use the Vision AI DevKit."
+title: "Deploy a Model"
+permalink: /docs/Deploy_Model/
+excerpt: "How to deploy a configured vision model to the Vision AI DevKit."
 variable:
   - platform: windows
     name: Windows
@@ -9,17 +9,20 @@ variable:
     name: macOS
 last_modified_at: 2019-02-11
 ---
-For first-time users of the Vision AI DevKit, this page will help you get your device ready for use.
+This page will help you deply a configured vision model to your device.
 
 
 ## What you will do
 * Configure an Azure IoT Hub
+* Create an IoT Edge Device connection string
 * Configure your PC to connect to the Vision AI Development Kit’s Wi-Fi access point
 * Connect your Vision AI Dev Kit camera to your Azure IoT Hub
+* Deploy a pre-built sample module through the Azure portal
 
 ## What you will need
 * Vision AI Dev Kit camera hardware
-* IoT Edge Device connection String
+* HDMI cable
+* Monitor with an HDMI input connector
 * An active Azure subscription. [Activate a free Microsoft Azure account.](https://azure.microsoft.com/en-us/free/).
 
 ## Prepare your hardware
@@ -45,7 +48,7 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 
 ### Notes
 - If your device LEDs are not flashing RED, review the Troubleshooting section below.
-- If you have connected your device to a display via the HDMI port, the display will show a gray pattern. You will not see any text or images on your display until the IoT Edge runtime has been deployed to the device.
+- If you have connected your device to an HDMI port, the display will show a gray pattern. You will not see any text or images on your display until the IoT Edge runtime has been deployed to the device.
 
 ## Connect the Vision AI Dev Kit to your Azure IoT Hub
 * Use a browser to visit [http://setupaicamera.ms](http://setupaicamera.ms).
