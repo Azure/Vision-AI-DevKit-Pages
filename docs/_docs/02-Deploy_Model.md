@@ -1,6 +1,6 @@
 ---
 title: "Deploy a Model"
-permalink: /docs/Deploy_Model/
+permalink: /docs/02-Deploy_Model/
 excerpt: "How to deploy a pre-built vision model to the Vision AI DevKit through the Azure portal."
 variable:
   - platform: windows
