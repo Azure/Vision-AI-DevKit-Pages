@@ -1,7 +1,7 @@
 ---
 title: "Deploy a Model"
 permalink: /docs/Deploy_Model/
-excerpt: "How to deploy a configured vision model to the Vision AI DevKit."
+excerpt: "How to deploy a pre-built vision model to the Vision AI DevKit through the Azure portal."
 variable:
   - platform: windows
     name: Windows
@@ -9,24 +9,24 @@ variable:
     name: macOS
 last_modified_at: 2019-02-11
 ---
-This page will help you deply a configured vision model to your device.
+This page will help you deploy a pre-build vision model to your device through the Azure portal.
 
 
 ## What you will do
-* Configure an Azure IoT Hub
-* Create an IoT Edge Device connection string
-* Configure your PC to connect to the Vision AI Development Kit’s Wi-Fi access point
-* Connect your Vision AI Dev Kit camera to your Azure IoT Hub
 * Deploy a pre-built sample module through the Azure portal
 
 ## What you will need
-* Vision AI Dev Kit camera hardware
+* An [IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal) configured in your Azure Subscription
+* Vision AI Dev Kit camera hardware configured as an [IoT Edge device](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal), with the IoT Edge runtime installed
 * HDMI cable
 * Monitor with an HDMI input connector
-* An active Azure subscription. [Activate a free Microsoft Azure account.](https://azure.microsoft.com/en-us/free/).
 
-## Prepare your hardware
-The Vision AI Dev Kit hardware must be charged for at least 10 minutes (using a 2A charger) before starting the configuration process.
+## Select your device
+1. Sign in to the [Azure portal](https://portal.azure.com/) and navigate to your IoT hub.
+2. Select IoT Edge from the menu.
+3. Click on the ID of the target device from the list of devices.
+4. Select Set Modules.
+
 
 ## Obtain an Azure IoT Edge connection string
 You will need an Azure IoT Edge connection string to connect your camera to Microsoft Azure. The connection string is created when you create an IoT Hub and register your Vision AI DevKit hardware as the configured IoT Edge device.
