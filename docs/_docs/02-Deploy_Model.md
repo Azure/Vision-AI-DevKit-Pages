@@ -23,22 +23,47 @@ This page will help you deploy a pre-build vision model to your device through t
 
 ## Select your Vision AI DevKit camera in the Azure portal
 1. Sign in to the [Azure portal](https://portal.azure.com/) and navigate to your IoT hub.
-2. Select IoT Edge from the menu.
+2. Select **IoT Edge** from the menu.
 3. Click on the ID of the target camera hardware from the list of devices.
-4. Select Set Modules.
+4. Select **Set Modules**.
 
 ![Azure portal 'Set Modules']({{ '/assets/images/Set_Modules.png' | relative_url }})
 
-Note:  If the Set Modules option is not available, ensure that you are selecting the IoT Edge item from the list below Automatic Device Management.  The Set Module Option is not available via the IoT devices link under the Explorers heading
+Note:  If the **Set Modules** option is not available, ensure that you are selecting the IoT Edge item from the list below **Automatic Device Management**.  The **Set Modules** option is not available via the **IoT devices** link under the **Explorers** heading
 
-##Configure a deployment manifest
+## Configure a deployment manifest
 A deployment manifest is a JSON document that describes which modules to deploy, how data flows between the modules, and desired properties of the module twins. For more information about how deployment manifests work and how to create them, see [Understand how IoT Edge modules can be used, configured, and reused](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition).
 
 The Azure portal has a wizard that walks you through creating the deployment manifest, instead of building the JSON document manually. It has three steps: **Add modules**, **Specify routes**, and **Review deployment**.
 
-##Add modules
+## Add modules
 1. In the **Deployment modules** section of the page, select **Add**.
 2. Select the **IoT Edge Module**. ![Azure portal 'Add Modules']({{ '/assets/images/Add_Modules.png' | relative_url }})
+3. Provide a name for the module, then specify the container image. To deploy the pre-configured sample, use the following:
 
-3. 
+	* **Name** - VisionSample
+	* **Image URI** - mcr.microsoft.com/aivision/visionsamplemodule:1.0.4_SSD_linklocal-arm32v7
+	* **Container Create Options** - `{
+  "HostConfig": {
+    "Binds": [
+      "/data/misc/camera:/app/vam_model_folder"
+    ],
+    "NetworkMode": "host"
+  },
+  "NetworkingConfig": {
+    "EndpointsConfig": {
+      "host": {}
+    }
+  }
+}
+` 
+	* **Restart Policy** - Always
+	* **Desired Status** - running
+
+4. Select **Save**
+5. Select **Configure advanced Edge Runtime settings** 
+6. Add the following line to the existing **Create Options** section `"User": "root"` ![Create Options addition]({{ '/assets/images/Create_Options_Addition.png' | relative_url }})
+7.  to continue to the routes section.
+
+For more information about container create options, restart policy, and desired status see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties). For more information about the module twin see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties).
 
