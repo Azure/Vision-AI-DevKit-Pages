@@ -60,10 +60,24 @@ The Azure portal has a wizard that walks you through creating the deployment man
 	* **Restart Policy** - Always
 	* **Desired Status** - running
 
+    For more information about container create options, restart policy, and desired status see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties). For more information about the module twin see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties).
+
 4. Select **Save**
 5. Select **Configure advanced Edge Runtime settings** 
 6. Add the following line to the existing **Create Options** section `"User": "root"` ![Create Options addition]({{ '/assets/images/Create_Options_Addition.png' | relative_url }})
-7.  to continue to the routes section.
+7. Select **Save**, then select **Next**
 
-For more information about container create options, restart policy, and desired status see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties). For more information about the module twin see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties).
+## Specify routes
+By default the wizard gives you a route called route and defined as FROM /* INTO $upstream, which means that any messages output by any modules are sent to your IoT hub.
+
+Add or update the routes with information from Declare routes, then select **Next** to continue to the review section. For the sample module, no changes are required.
+
+## Review deployment
+The review section shows you the JSON deployment manifest that was created based on your selections in the previous two sections. Note that there are two modules declared that you didn't add: **$edgeAgent** and **$edgeHub**. These two modules make up the [IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime) and are required defaults in every deployment.
+
+Review your deployment information, then select **Submit**.
+
+## Verify output on the monitor
+Connect the HDMI cable to the camera hardware and your monitor. A few minutes after submitting your deployment, you should start to see video on the monitor with bounding boxes drawing around objects the camera can see and evaluate.
+
 
