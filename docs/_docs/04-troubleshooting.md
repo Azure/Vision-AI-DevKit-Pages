@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting"
-permalink: /docs/03-troubleshooting/
+permalink: /docs/04-troubleshooting/
 excerpt: "How to troubleshoot issues related to Vision AI Dev Kit"
 variable:
   - platform: windows

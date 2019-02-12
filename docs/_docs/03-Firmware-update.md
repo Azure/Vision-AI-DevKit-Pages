@@ -1,18 +1,18 @@
 ---
 title: "Firmware Update"
-permalink: /docs/firmware-update/
+permalink: /docs/03-Firmware-update/
 excerpt: "How to update the firmware for the Vision AI DevKit."
 variable:
   - platform: windows
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-01-28
+last_modified_at: 2019-02-11
 ---
 
-## What you will learn
+## What you will do
 * Check the firmware version of the device
-* Update the firmware in your device
+* Update the firmware in your device, if necessary
 
 ## What you will need
 * Vision AI Dev Kit hardware
