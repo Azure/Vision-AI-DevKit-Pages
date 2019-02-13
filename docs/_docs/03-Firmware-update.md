@@ -42,11 +42,9 @@ last_modified_at: 2019-02-11
     * `adb` by itself
 
 ## Updating the Firmware
-
 The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (using a 2A charger) before starting the firmware flashing process.
 
-## Downloading and Extracting the latest Device Firmware
-
+### Downloading and Extracting the latest Device Firmware
 1. Confirm that the platform tools directory (created when installing ADB and Fastboot) is included in your computer's path environment variable. For Windows, the command line `set path=%path%;<platform tools path>` will do this.
 
 2. Download the latest firmware/image released by Altek (website link TBA)
