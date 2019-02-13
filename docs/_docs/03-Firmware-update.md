@@ -17,43 +17,54 @@ last_modified_at: 2019-02-11
 ## What you will need
 * Vision AI Dev Kit hardware
 * USB-C cable
-* ADB (Android Debug Bridge) and Fastboot: Download the command-line tools - [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip), [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip) or [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
-* 7-Zip: Download the [7-Zip file archiver](https://www.7-zip.org/)
+* Installed ADB (Android Debug Bridge) and Fastboot tool. Download for [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip), [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip) or [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
+* Zip archive extractor (such as the [7-Zip file archiver](https://www.7-zip.org/))
 
-* An active Azure subscription. [Activate a free Microsoft Azure account with 12 months of free services.](https://azure.microsoft.com/en-us/free/).
+## Verify your computer is connected to the Vision AI Dev Kit hardware
+* Connect your computer and the Vision AI Dev Kit camera using a USB-C cable
+* Open a command line prompt on your computer and use the command `adb devices`. You will see output similar to this, if your computer and camera are connected properly.
+![adb devices command output]({{ '/assets/images/adb_devices_output.png' | relative_url }})
 
-## Useful ADB commands to run when the device is connected to Development system (PC) using the supplied USB cable
+    If you do not see the device, try rebooting the camera hardware. There are several methods available to reboot:
+* Use the pin hole on the right side of the camera to click once.
+* Press the power button on the back once.
+* Use the command `adb reboot`
+* Long press the power button for longer than 12 seconds to force a shut down. Then hold the power button for longer than 12 seconds again to start the device.
+
+## Useful ADB commands when the device is connected to a computer using a USB-C cable
 1.	Check to see if device is connected to PC
-    * _adb devices_
+    * `adb devices`
 2.	Check the battery level
-    * _adb shell cat /sys/class/power_supply/battery/capacity_
+    * `adb shell cat /sys/class/power_supply/battery/capacity`
 3.	Check firmware version
-    * _adb shell cat /etc/version_
-4.	Type _adb_ alone to display all available commands
+    * `adb shell cat /etc/version`
+4.	Display all available commands
+    * `adb` by itself
 
 ## Updating the Firmware
 
-Downloading and Extracting the latest Device Firmware
+The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (using a 2A charger) before starting the firmware flashing process.
 
-1.  Get the latest firmware/image released by Altek
+## Downloading and Extracting the latest Device Firmware
 
-2.  Download and extract the .TGZ file with 7zip. After extraction you will see a tar file. Next extract again. You will see more than 120 files located in a folder, for example in folder such as v0.2600_Perf.
+1. Confirm that the platform tools directory (created when installing ADB and Fastboot) is included in your computer's path environment variable. For Windows, the command line `set path=%path%;<platform tools path>` will do this.
+
+2. Download the latest firmware/image released by Altek (website link TBA)
+
+2.  Extract the contents of the .TGZ file downloaded. If you end up with a .TAR file, extract the contents of this file as well. You should end up with more than 120 files located in the final extraction folder.
 
 3.  Make sure that your platform tools directory is included in your path environment variable. From a CMD window, a simple set path=%path%;F:\AI-CAM\platform-tools_r28.0.1-windows\platform-tools (replace with the right path) would do.
 
 4.  Copy FastBootUpgrad.bat into the directory you extracted the firmware to.
 
-5.  From a CMD window run adb devices to check if the camera is attached/recognized
+5.  From a command prompt run `adb devices` to verify the camera is attached and recognized.
 
 6.  Run FastBootUpgrade.bat
 
-7.  Follow the instructions given, the camera will update and reboot when done.
+7.  Follow the instructions given, the camera will update and reboot when the process is complete.
+    * If you get stuck at the message <waiting for device>, please reboot the camera hardware and run FastBootUpgrad.bat again. If you keep hitting the same message, please charge the device for 10+ minutes to make sure that the battery is charged.
 
-8.  If you are stuck at the message <waiting for device>, please reboot it and run FastBootUpgrad.bat again. If you keep hitting the same message, please charge the device for 10+minutes to make sure that the battery is charged.
-
-9.  In your CMD prompt type:
-
-    * _adb shell cat /etc/version_ and confirm that you see the firmware version you are updating to.
+9.  In your command prompt run the command `adb shell cat /etc/version_` to confirm that you see the updated firmware version.
 
 
 
