@@ -1,6 +1,6 @@
 ---
 title: "Firmware Update"
-permalink: /docs/02-Firmware-update/
+permalink: /docs/Firmware-update/
 excerpt: "How to update the firmware for the Vision AI DevKit."
 variable:
   - platform: windows
