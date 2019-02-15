@@ -1,6 +1,6 @@
 ---
-title: "Deploy a Model"
-permalink: /docs/Deploy_Model/
+title: "Deploy a Model from IoT Hub"
+permalink: /docs/Deploy_Model_IoT_Hub/
 excerpt: "How to deploy a pre-built vision model to the Vision AI DevKit through the Azure portal."
 variable:
   - platform: windows
