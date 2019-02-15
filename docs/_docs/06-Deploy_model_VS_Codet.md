@@ -1,6 +1,6 @@
 ---
-title: "VS Code Deployment"
-permalink: /docs/VS-Code-Deployment/
+title: "Deploy Model using VS Code"
+permalink: /docs/Deploy_Model_VS_Code/
 excerpt: "VS Code deployment using the Vision AI DevKit."
 variable:
   - platform: windows
