@@ -1,6 +1,6 @@
 ---
 title: "Run OOBE"
-permalink: /docs/Run OOBE/
+permalink: /docs/Run_OOBE/
 excerpt: "Run OOBE (Ouf-Of-Box-Experience) - Connect device to WiFi and IoT Hub"
 variable:
   - platform: windows
