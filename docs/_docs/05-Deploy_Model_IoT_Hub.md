@@ -16,13 +16,13 @@ This page will help you deploy a pre-build vision model to your device through t
 * Deploy a pre-built sample module through the Azure portal
 
 ## What you will need
-* An [IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal) configured in your Azure Subscription
-* Vision AI Dev Kit camera hardware configured as an [IoT Edge device](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal), with the IoT Edge runtime installed
+* An [IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal){:target="_blank"} configured in your Azure Subscription
+* Vision AI Dev Kit camera hardware configured as an [IoT Edge device](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal){:target="_blank"}, with the IoT Edge runtime installed
 * HDMI cable
 * Monitor with an HDMI input connector
 
 ## Select your Vision AI DevKit camera in the Azure portal
-1. Sign in to the [Azure portal](https://portal.azure.com/) and navigate to your IoT hub.
+1. Sign in to the [Azure portal](https://portal.azure.com/){:target="_blank"} and navigate to your IoT hub.
 2. Select **IoT Edge** from the menu.
 3. Click on the ID of the target camera hardware from the list of devices.
 4. Select **Set Modules**.
@@ -32,7 +32,7 @@ This page will help you deploy a pre-build vision model to your device through t
 Note:  If the **Set Modules** option is not available, ensure that you are selecting the IoT Edge item from the list below **Automatic Device Management**.  The **Set Modules** option is not available via the **IoT devices** link under the **Explorers** heading
 
 ## Configure a deployment manifest
-A deployment manifest is a JSON document that describes which modules to deploy, how data flows between the modules, and desired properties of the module twins. For more information about how deployment manifests work and how to create them, see [Understand how IoT Edge modules can be used, configured, and reused](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition).
+A deployment manifest is a JSON document that describes which modules to deploy, how data flows between the modules, and desired properties of the module twins. For more information about how deployment manifests work and how to create them, see [Understand how IoT Edge modules can be used, configured, and reused](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition){:target="_blank"}.
 
 The Azure portal has a wizard that walks you through creating the deployment manifest, instead of building the JSON document manually. It has three steps: **Add modules**, **Specify routes**, and **Review deployment**.
 
@@ -73,7 +73,7 @@ By default the wizard gives you a route called route and defined as FROM /* INTO
 Add or update the routes with information from Declare routes, then select **Next** to continue to the review section. For the sample module, no changes are required.
 
 ## Review deployment
-The review section shows you the JSON deployment manifest that was created based on your selections in the previous two sections. Note that there are two modules declared that you didn't add: **$edgeAgent** and **$edgeHub**. These two modules make up the [IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime) and are required defaults in every deployment.
+The review section shows you the JSON deployment manifest that was created based on your selections in the previous two sections. Note that there are two modules declared that you didn't add: **$edgeAgent** and **$edgeHub**. These two modules make up the [IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime){:target="_blank"} and are required defaults in every deployment.
 
 Review your deployment information, then select **Submit**.
 

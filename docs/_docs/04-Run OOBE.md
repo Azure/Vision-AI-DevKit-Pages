@@ -21,7 +21,7 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 - If you have connected your device to a display via the HDMI port, the display will show a gray pattern. You will not see any text or images on your display until the IoT Edge runtime has been deployed to the device.
 
 ## Connect the Vision AI Dev Kit to your Azure IoT Hub
-* Use a browser to visit [http://setupaicamera.ms](http://setupaicamera.ms).
+* Use a browser to visit [http://setupaicamera.ms](http://setupaicamera.ms){:target="_blank"}.
 	* If you do not see the below screen, verify that your computer is connected to the reference hardware's access point. 
 
 ![Vision AI Developer Kit starting screen]({{ '/assets/images/visual-ai-getting-started-screen.png' | relative_url }})

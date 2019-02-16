@@ -17,8 +17,8 @@ last_modified_at: 2019-02-11
 ## What you will need
 * Vision AI Dev Kit hardware
 * USB-C cable
-* Installed ADB (Android Debug Bridge) and Fastboot tool. Download for [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip), [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip) or [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
-* Zip archive extractor (such as the [7-Zip file archiver](https://www.7-zip.org/))
+* Installed ADB (Android Debug Bridge) and Fastboot tool. Download for [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip), [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip){:target="_blank"} or [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip){:target="_blank"}
+* Zip archive extractor (such as the [7-Zip file archiver](https://www.7-zip.org/){:target="_blank"})
 
 ## Verify your computer is connected to the Vision AI Dev Kit hardware
 * Connect your computer and the Vision AI Dev Kit camera using a USB-C cable
@@ -53,7 +53,7 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (usin
 
 4. Make sure that your platform tools directory is included in your path environment variable. From a CMD window, a simple set path=%path%;F:\AI-CAM\platform-tools_r28.0.1-windows\platform-tools (replace with the right path) would do.
 
-5. Download [FastBootUpgrade.bat](../assets/FastbootUpgrad.zip) and extract it into the directory you extracted the firmware files to.
+5. Download [FastBootUpgrade.bat](../assets/FastbootUpgrad.zip){:target="_blank"} and extract it into the directory you extracted the firmware files to.
 
 6. From a command prompt run `adb devices` to verify the camera is attached and recognized.
 

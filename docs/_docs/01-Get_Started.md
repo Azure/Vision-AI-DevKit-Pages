@@ -28,8 +28,8 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (usin
 ## Obtain an Azure IoT Edge connection string
 You will need an Azure IoT Edge connection string to connect your camera to Microsoft Azure. The connection string is created when you create an IoT Hub and register your Vision AI DevKit hardware as the configured IoT Edge device.
 
-1. [Create an IoT hub using the Azure portal](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
-2. [Register a new Azure IoT Edge device from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal)
+1. [Create an IoT hub using the Azure portal](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal){:target="_blank"}
+2. [Register a new Azure IoT Edge device from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal){:target="_blank"}
 
 ### Notes
 - When creating your IoT Edge device in the Azure portal, avoid using a device you may have used previously.
@@ -48,7 +48,7 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 - If you have connected your device to a display via the HDMI port, the display will show a gray pattern. You will not see any text or images on your display until the IoT Edge runtime has been deployed to the device.
 
 ## Connect the Vision AI Dev Kit to your Azure IoT Hub
-* Use a browser to visit [http://setupaicamera.ms](http://setupaicamera.ms).
+* Use a browser to visit [http://setupaicamera.ms](http://setupaicamera.ms){:target="_blank"}.
 	* If you do not see the below screen, verify that your computer is connected to the reference hardware's access point. 
 
 ![Vision AI Developer Kit starting screen]({{ '/assets/images/visual-ai-getting-started-screen.png' | relative_url }})
