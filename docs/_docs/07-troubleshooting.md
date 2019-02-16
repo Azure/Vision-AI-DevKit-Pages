@@ -18,7 +18,7 @@ last_modified_at: 2019-02-11
 * The Vision AI Dev Kit camera hardware should have a unique Wi-Fi access point passphrase found on a sticker on the bottom of the device. If there is no sticker, use `ADB tools: Run adb shell cat /data/misc/wifi/hostapd_virtual.conf` to display the access point configuration details. The output will be similar to this:
 
     
-      >   ctrl_interface=/var/run/hostapd<br/>
+      >   ctrl_interface=/var/run/hostapd
       >   interface=softap0<br/>
       >   #driver=nl80211<br/>
       >   #ieee80211d=1<br/>
