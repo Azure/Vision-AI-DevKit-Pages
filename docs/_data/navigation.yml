@@ -2,18 +2,18 @@
 main: &default_main
   - title: "Get Started"
     url: /docs/01-Get_Started/ #https://aka.ms/VisionAIGetStarted/
-    target:_self
+    target: _self
   - title: "Assets (GitHub)"
     url: https://aka.ms/vaidkgithub
-    target:_blank
+    target: _blank
   - title: "Community"
     url: https://aka.ms/visionaiTechComm
-    target:_blank
+    target: _blank
   - title: "Support"
     url: https://aka.ms/VAIDKSupport
-    target:_blank
+    target: _blank
   - title: "Chat"
     url: https://aka.ms/VAIDKGitter
-    target:_blank
+    target: _blank
     
 docs: *default_main
