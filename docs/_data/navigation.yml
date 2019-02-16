@@ -2,6 +2,7 @@
 main: &default_main
   - title: "Get Started"
     url: /docs/01-Get_Started/ #https://aka.ms/VisionAIGetStarted/
+    target:_self
   - title: "Assets (GitHub)"
     url: https://aka.ms/vaidkgithub
     target:_blank
