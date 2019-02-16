@@ -19,23 +19,23 @@ last_modified_at: 2019-02-11
 
     
       >   ctrl_interface=/var/run/hostapd
-      >   interface=softap0<br/>
-      >   #driver=nl80211<br/>
-      >   #ieee80211d=1<br/>
-      >   ieee80211n=1<br/>
+      >   interface=softap0
+      >   #driver=nl80211
+      >   #ieee80211d=1
+      >   ieee80211n=1
       >   hw_mode=g<br/>
-      >   country_code=US<br/>
-      >   ssid=MSIoT_E72FA8<br/>
-      >   macaddr_acl=0<br/>
-      >   channel=0<br/>
-      >   wpa=2<br/>
-      >   **wpa_passphrase=NhEtVE3D** <br/>
-      >   wpa_key_mgmt=WPA-PSK<br/>
-      >   #wpa_pairwise=CCMP<br/>
-      >   rsn_pairwise=TKIP CCMP<br/>
-      >   ht_capab=HT20 SHORT-GI-20<br/>
-      >   wmm_enabled=1<br/>
-      >   ignore_broadcast_ssid=0<br/>
+      >   country_code=US
+      >   ssid=MSIoT_E72FA8
+      >   macaddr_acl=0
+      >   channel=0
+      >   wpa=2
+      >   **wpa_passphrase=NhEtVE3D**
+      >   wpa_key_mgmt=WPA-PSK
+      >   #wpa_pairwise=CCMP
+      >   rsn_pairwise=TKIP CCMP
+      >   ht_capab=HT20 SHORT-GI-20
+      >   wmm_enabled=1
+      >   ignore_broadcast_ssid=0
 
      The bold line contains the passphrase, which is unique to each device.
 
