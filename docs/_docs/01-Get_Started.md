@@ -20,7 +20,7 @@ For first-time users of the **Vision AI DevKit**, this page will help you get yo
 ## What you will need
 * Vision AI Dev Kit camera hardware
 * IoT Edge Device connection String
-* An active Azure subscription. [Activate a free Microsoft Azure account.](https://azure.microsoft.com/en-us/free/).
+* An active Azure subscription. [Activate a free Microsoft Azure account.](https://azure.microsoft.com/en-us/free/){:target="_blank"}.
 
 ## Prepare your hardware
 The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (using a 2A charger) before starting the configuration process.
