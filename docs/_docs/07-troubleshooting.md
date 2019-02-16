@@ -29,7 +29,7 @@ last_modified_at: 2019-02-11
       >   macaddr_acl=0
       >   channel=0
       >   wpa=2
-      **>   wpa_passphrase=NhEtVE3D**
+      --- >   wpa_passphrase=NhEtVE3D  ---
       >   wpa_key_mgmt=WPA-PSK
       >   #wpa_pairwise=CCMP
       >   rsn_pairwise=TKIP CCMP
@@ -37,7 +37,7 @@ last_modified_at: 2019-02-11
       >   wmm_enabled=1
       >   ignore_broadcast_ssid=0
 
-     The bold line contains the passphrase, which is unique to each device.
+     The line marked with three dashes above contains the passphrase, which is unique to each device.
 
 ## Display the MAC address
 Using adb<br/>
