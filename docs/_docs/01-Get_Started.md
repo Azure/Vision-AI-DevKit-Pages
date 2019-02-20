@@ -1,5 +1,5 @@
 ---
-title: "Get started"
+title: "![Get Started]({{ '/assets/images/GetStarted.PNG' | relative_url }})"
 permalink: /docs/01-Get_Started/
 excerpt: "How to quickly install and set up your development environment to use the Vision AI DevKit."
 variable:
@@ -9,9 +9,8 @@ variable:
     name: macOS
 last_modified_at: 2019-02-11
 ---
-For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use.
 
-![Get Started]({{ '/assets/images/GetStarted.PNG' | relative_url }})
+For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use.
 
 ## What you will do
 * Configure an **Azure IoT Hub**
