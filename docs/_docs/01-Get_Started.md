@@ -10,8 +10,6 @@ variable:
 last_modified_at: 2019-02-11
 ---
 
-![Get Started]({{ '/assets/images/GetStarted.PNG' | relative_url }})
-
 For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use.
 
 ## What you will do
