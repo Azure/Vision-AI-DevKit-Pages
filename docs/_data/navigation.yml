@@ -10,7 +10,7 @@ main: &default_main
     url: https://aka.ms/visionaiTechComm
     target: _blank
   - title: "Support"
-    url: https://aka.ms/VAIDKSupport
+    url: https://aka.ms/VAIDKGetHelp
     target: _blank
   - title: "Chat"
     url: https://aka.ms/VAIDKGitter
