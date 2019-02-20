@@ -13,7 +13,7 @@ main: &default_main
     url: https://aka.ms/VAIDKGetHelp
     target: _blank
   - title: "Gitter"
-    url: https://aka.ms/VAIDKGitter
+    url: https://aka.ms/VAIDKGitter-Landing
     target: _blank
     
 docs: *default_main
