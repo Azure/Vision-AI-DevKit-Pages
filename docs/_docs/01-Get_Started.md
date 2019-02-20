@@ -11,6 +11,7 @@ last_modified_at: 2019-02-11
 ---
 For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use.
 
+![Get Started]({{ '/assets/images/GetStarted.PNG' | relative_url }})
 
 ## What you will do
 * Configure an **Azure IoT Hub**
