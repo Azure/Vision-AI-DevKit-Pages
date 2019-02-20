@@ -9,10 +9,10 @@ main: &default_main
   - title: "Community"
     url: https://aka.ms/visionaiTechComm
     target: _blank
-  - title: "Support"
+  - title: "Get Help"
     url: https://aka.ms/VAIDKGetHelp
     target: _blank
-  - title: "Chat"
+  - title: "Gitter"
     url: https://aka.ms/VAIDKGitter
     target: _blank
     
