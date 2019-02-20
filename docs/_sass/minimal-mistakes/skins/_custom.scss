@@ -9,7 +9,11 @@ article{
             font-size: 0.75em !important;
         }
         header {
-            background-image: url("/Vision-AI-DevKit-Pages/assets/images/GetStarted.PNG")
+            background-image: url("/Vision-AI-DevKit-Pages/assets/images/GetStarted.PNG");
+
+            #page-title{
+                margin-bottom: 0px;
+                padding-bottom: 0.5em;
         }
     }
 }
