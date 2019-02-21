@@ -14,12 +14,13 @@ excerpt: >
 more_info:
   - title: "Have a device?"
     excerpt: |
-      ## Setup your device here. Link coming soon.
+      ## [Setup your device here.](https://aka.ms/VisionAIGetStarted/)
       ## Build your own vision AI solution
-      Start with the Azure Notebook for a reference model. Link coming soon.
+      Go to our [GitHub repository](https://aka.ms/vaidkgithub) to find an Azure Notebook with a reference model to start with. 
   - title: "Additional Resources"
     excerpt: |
       * [Read our blog post](https://azure.microsoft.com/en-us/blog/iot-swc-2018-iot-solutions-for-the-built-world/)
+      * [Join the Internet of Things Microsoft Tech Community](https://aka.ms/VAIDK-IoTTechCommunity)
       * [Get Started now on IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
       * [Register a new IoT Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal)
       * [Use Azure AI Gallery to build your solution](https://gallery.azure.ai/)
@@ -53,9 +54,7 @@ qualcomm:
     alt: "placeholder image 2"
     title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 200px'>"
     excerpt: >
-        In this era of intelligent cloud and intelligent edge, developers will need to write applications for a range of connected devices. The Azure IoT Edge runtime makes it easy to create applications from cloud to edge, leveraging
-        advanced AI services. Today we are announcing the public preview of a vision AI developer kit—the newest addition in the Microsoft Azure IoT Starter kit family—for IoT solution makers to easily deploy AI models built using
-        Azure Machine Learning and Azure IoT Edge.
+        The device uses the Qualcomm Visual Intelligence Platform for hardware acceleration of the AI model to deliver superior inferencing performance. Customers can use the device to create new solutions for a variety of scenarios, from industrial safety, retail, home and enterprise security cameras, smart home devices and more. 
 ---
 
 <div class="feature__outer_wrapper">
