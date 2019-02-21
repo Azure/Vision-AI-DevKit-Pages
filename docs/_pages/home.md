@@ -12,7 +12,6 @@ header:
 excerpt: >
   Integrated with Azure IoT Edge and working with the Microsoft Azure Machine Learning service (public preview), this Azure IoT Starter kit enables developers to build vision AI solution and run their AI models on the device.
 more_info:
-  overlay_color: "#5e616c"
   - title: "Have a device?"
     excerpt: |
       ## [Setup your device here.](https://aka.ms/VisionAIGetStarted/)
