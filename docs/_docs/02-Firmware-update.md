@@ -60,7 +60,7 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (usin
 7. Run FastBootUpgrade.bat
 
 8. Follow the instructions given, the camera will update and reboot when the process is complete.
-    * If you get stuck at the message <waiting for device>, please reboot the camera hardware and run FastBootUpgrade.bat again. If you keep hitting the same message, please charge the device for 10+ minutes to make sure that the battery is charged.
+    * If you get stuck at the message *waiting for device*, please reboot the camera hardware and run FastBootUpgrade.bat again. If you keep hitting the same message, please charge the device for 10+ minutes to make sure that the battery is charged.
 
 9. In your command prompt run the command `adb shell cat /etc/version_` to confirm that you see the updated firmware version.
 
