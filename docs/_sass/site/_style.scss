@@ -63,10 +63,10 @@
             &:first-child {
                 padding-top: 100px;
                 margin-top: -100px;
-                background: mix(#0078d7, #ccc);
+                background: mix(#cccccc, #ccc);
 
                 @include breakpoint($small) {
-                    background: linear-gradient(to right, #5e616c 50%, #ccc 50%);
+                    background: linear-gradient(to right, #CCCCCC 50%, #ccc 50%);
                 }
             }
 
@@ -74,8 +74,8 @@
                 padding-top: 3em;
                 padding-bottom: 2em;
                 background: rgba(0,120,215,0.1);
-                border-bottom: 1px solid #0078d7;
-                border-top: 1px solid #0078d7;
+                border-bottom: 1px solid #cccccc;
+                border-top: 1px solid #cccccc;
             }
 
             .feature__item--dual {
