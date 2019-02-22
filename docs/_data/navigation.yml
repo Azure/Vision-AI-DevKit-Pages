@@ -1,7 +1,7 @@
 # main links
 main: &default_main
   - title: "Get Started"
-    url: https://aka.ms/VisionAIGetStarted-Landing/
+    url: https://aka.ms/VAIDKGetStarted-Landing
     target: _self
   - title: "Assets (GitHub)"
     url: https://aka.ms/VAIDKGitHub-Landing/
