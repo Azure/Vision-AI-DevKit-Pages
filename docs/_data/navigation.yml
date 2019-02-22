@@ -1,19 +1,19 @@
 # main links
 main: &default_main
   - title: "Get Started"
-    url: https://aka.ms/VisionAIGetStarted/
+    url: https://aka.ms/VisionAIGetStarted-Landing/
     target: _self
   - title: "Assets (GitHub)"
-    url: https://aka.ms/vaidkgithub
+    url: https://aka.ms/VAIDKGitHub-Landing/
     target: _blank
   - title: "Community"
-    url: https://aka.ms/visionaiTechComm
+    url: https://aka.ms/VAIDKTechComm-Landing
     target: _blank
   - title: "Get Help"
-    url: https://aka.ms/VAIDKGetHelp
+    url: https://aka.ms/VAIDKGetHelp-Landing/
     target: _blank
   - title: "Gitter"
-    url: https://aka.ms/VAIDKGitter
+    url: https://aka.ms/VAIDKGitter-Landing/
     target: _blank
     
 docs: *default_main

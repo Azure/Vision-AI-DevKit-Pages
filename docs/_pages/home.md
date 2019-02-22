@@ -14,9 +14,9 @@ excerpt: >
 more_info:
   - title: "Have a device?"
     excerpt: |
-      ## [Setup your device here.](https://aka.ms/VisionAIGetStarted/)
+      ## [Setup your device here.](https://aka.ms/VisionAIGetStarted-Landing/)
       ## Build your own vision AI solution
-      Go to our [GitHub repository](https://aka.ms/vaidkgithub) to find an Azure Notebook with a reference model to start with. 
+      Go to our [GitHub repository](https://aka.ms/vaidkgithub-Landing) to find an Azure Notebook with a reference model to start with. 
   - title: "Additional Resources"
     excerpt: |
       * [Read our blog post](https://azure.microsoft.com/en-us/blog/iot-swc-2018-iot-solutions-for-the-built-world/)
