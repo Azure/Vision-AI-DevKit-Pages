@@ -17,11 +17,11 @@ For first-time users of the **Vision AI DevKit**, this page will help you get yo
 * The picture below illustrates the steps and the dependencies between them.
 * Initial setup also includes deploying VisionSample that is an example module with image recognition capabilities built in.
 
-![High level steps to take for the initial Vision AI Dev Kit setup]({{ '/assets/images/GetStarted.png' | relative_url }})
+![High level steps to take for the initial Vision AI Dev Kit setup]({{ '/assets/images/GetStarted.PNG' | relative_url }})
 
 ## Platform Tools
 
-Before you can start OOBE, you should first update the camera device firmware to the latest available. You will need to first install the platform tools, which include the Android Debug Bridge (ADB) needed for checking device connectivity and running various command-line activities, included flashing the firmware. Download the latest Platform Tools here. Windows, Mac or Linux
+You will need to first install the platform tools, which include the Android Debug Bridge (ADB). They needed for checking device connectivity and running various command-line activities, included flashing the firmware.
 
 ## Firmware Update
 
