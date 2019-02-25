@@ -10,68 +10,48 @@ variable:
 last_modified_at: 2019-02-11
 ---
 
-For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use.
+For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use. All the instructions for steps introduced in page can be found from the left side menu.
 
-## What you will do
-* Configure an **Azure IoT Hub**
-* Configure your PC to connect to the Vision AI Development Kit’s Wi-Fi access point
-* Connect your Vision AI Dev Kit camera to your Azure IoT Hub
+## Initial setup
+* There are a few steps to take in order to get the Vision AI Dev Kit set up.
+* The picture below illustrates the steps and the dependencies between them.
+* Initial setup also includes deploying VisionSample that is an example module with image recognition capabilities built in.
 
-## What you will need
-* Vision AI Dev Kit camera hardware
-* IoT Edge Device connection String
-* An active Azure subscription. [Activate a free Microsoft Azure account.](https://azure.microsoft.com/en-us/free/){:target="_blank"}.
+![High level steps to take for the initial Vision AI Dev Kit setup]({{ '/assets/images/GetStarted.png' | relative_url }})
 
-## Prepare your hardware
-The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (using a 2A charger) before starting the configuration process.
+## Platform Tools
 
-## Obtain an Azure IoT Edge connection string
-You will need an Azure IoT Edge connection string to connect your camera to Microsoft Azure. The connection string is created when you create an IoT Hub and register your Vision AI DevKit hardware as the configured IoT Edge device.
+Before you can start OOBE, you should first update the camera device firmware to the latest available. You will need to first install the platform tools, which include the Android Debug Bridge (ADB) needed for checking device connectivity and running various command-line activities, included flashing the firmware. Download the latest Platform Tools here. Windows, Mac or Linux
 
-1. [Create an IoT hub using the Azure portal](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal){:target="_blank"}
-2. [Register a new Azure IoT Edge device from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal){:target="_blank"}
+## Firmware Update
 
-### Notes
-- When creating your IoT Edge device in the Azure portal, avoid using a device you may have used previously.
-- Do not reuse a connection string for multiple devices.
-- You may use any IoT Hub Region which is available in the Azure portal.
+Although not absolutely mandatory we strongly recommend you to check the firmware version of you device and update it to latest version if needed before starting to use Vision AI Dev Kit.
 
-## Connect your PC to the Visual AI DevKit Wi-Fi access point
-When you first power up the Visual AI DevKit hardware, or connect it to a charger, you will see three Red LED lights. The LED will start flashing within 10 seconds of power up to indicate that the device is ready to accept a Wi-Fi connection.
+Complete instructions for checking the firmware version and updating the firmware are [here.](https://azure.github.io/Vision-AI-DevKit-Pages/docs/adb_platform_tools/){:target="_blank"}
 
-1. From your PC, look for a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device's Wi-Fi mac address, e.g. MSIOT_BD097D).
-2. Connect to the MSIOT_xxxxxx Wi-Fi access point.
-	* Check the label at the bottom of the device whether there is a default passphrase. If there is no label, see the Troubleshooting Section.
+Latest Firmware
+(need firmware download link)
 
-### Notes
-- If your device LEDs are not flashing RED, review the Troubleshooting section below.
-- If you have connected your device to a display via the HDMI port, the display will show a gray pattern. You will not see any text or images on your display until the IoT Edge runtime has been deployed to the device.
+## Azure account, Azure IoT Hub and IoT Edge
 
-## Connect the Vision AI Dev Kit to your Azure IoT Hub
-* Use a browser to visit [http://setupaicamera.ms](http://setupaicamera.ms){:target="_blank"}.
-	* If you do not see the below screen, verify that your computer is connected to the reference hardware's access point. 
+The Azure IoT Hub portal and a configured IoT Edge device are used for deployment of ML modules and control of data traffic between your device and the cloud. Use of these tools requires an active Azure account. 
 
-![Vision AI Developer Kit starting screen]({{ '/assets/images/visual-ai-getting-started-screen.png' | relative_url }})
+## OOBE (Out-of-the-Box Experience)
 
-* Tap **Next** to open the SSH configuration screen.
+All the steps described above are pre-requisites for OOBE, even though some of them can be completed independent from each other. During OOBE, you will attach your device to Azure IoT Hub and configure its Wi-Fi access. 
 
-![Vision AI Developer Kit SSH config screen]({{ '/assets/images/SSH_setup.png' | relative_url }})
+## Post-OOBE
 
-* Tap **Next** to open the Wi-Fi configuration screen.
+Once OOBE is complete, your camera device is ready to receive modules, such as the VisionSample ML module (providing example image recognition capabilities.) Modules can be deployed via VS Code or Azure IoT Hub.
 
-![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Wi-Fi_settings.png' | relative_url }})
+## Deploying a model using IoT Hub
 
-Select the Wi-Fi network your camera will connect to from the drop down, then enter the access password.
+This section provides instructions for deploying the VisionSample model to your device using IoT Hub. This step can also be pre-configured during the IoT Hub and IoT Edge device setup prior to running OOBE.
 
-### Notes
-- The Wi-Fi access password cannot have spaces, or the camera will be unable to connect to the Wi-Fi network. You will see a confirmation screen when the camera successfully connects to your selected Wi-Fi network.
+## Setting up your SW development envinronment
 
-* Tap **Next**  to open the 'Connect to Microsoft Azure' screen.
+While there are several ways to train machine learning models and develop additional logic for the Vision AI Dev Kit we recommend using VS Code for that work.
 
-![Vision AI Developer Kit Connect to Azure screen]({{ '/assets/images/Connect_to_Azure.png' | relative_url }})
+## Deploying a model using VS Code
 
-* Insert the IoT Edge connection string created for your IoT Edge device previously. You will see the below 'connecting' screen, followed by the 'connected' screen (also below).
-
-![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Connecting.png' | relative_url }})
-
-![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Connected.png' | relative_url }})
+This section provides instructions for deploying the VisionSample model to your device using VS Code
