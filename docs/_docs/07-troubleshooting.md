@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-02-11
+last_modified_at: 2019-02-15
 ---
 ## Display issues
 * Use a direct HDMI connection to the display. Using converters, e.g. Display Port to HDMI, will usually not work.
