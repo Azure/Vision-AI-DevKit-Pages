@@ -44,15 +44,15 @@ This page will help you deploy the pre-built vision model to your device using *
     Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, you will need to create a *requirements.txt* file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined.
 
     Recommended content:
-    > azure-cli-core==2.0.55
-    > azure-mgmt-containerregistry==2.6.0
-    > azure-mgmt-resource==2.0.0
-    > azureml-core==1.0.8
-    > azureml-contrib-iot==1.0.8
-    > msgpack==0.6.1
-    > PyYAML==4.2b1
-    > pyqt5==5.9.2
-    > wheel==0.30.0
-    > easydict==1.9
-    > tensorflow==1.12.0
 
+      ``` azure-cli-core==2.0.55
+      azure-mgmt-containerregistry==2.6.0
+      azure-mgmt-resource==2.0.0
+      azureml-core==1.0.8
+      azureml-contrib-iot==1.0.8
+      msgpack==0.6.1
+      PyYAML==4.2b1
+      pyqt5==5.9.2
+      wheel==0.30.0
+      easydict==1.9
+      tensorflow==1.12.0```
