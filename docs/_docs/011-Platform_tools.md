@@ -11,7 +11,6 @@ last_modified_at: 2019-02-25
 ---
 <br>
 <br>
-
 In order to be able to communicate with Vision AI Dev Kit from the command line and update the firmware when needed you'll need Platform Tools. Platform tools is a collection of command line tools of which the most essential ones are ADB and Fastboot.
 
 ## What is ADB?
