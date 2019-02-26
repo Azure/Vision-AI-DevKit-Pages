@@ -9,7 +9,8 @@ variable:
     name: macOS
 last_modified_at: 2019-02-25
 ---
-
+<br>
+<br>
 ## What you will do
 * Check the firmware version of the device
 * Update the firmware in your device, if necessary
@@ -22,10 +23,13 @@ last_modified_at: 2019-02-25
 
 ## Verify your computer is connected to the Vision AI Dev Kit hardware
 * Connect your computer and the Vision AI Dev Kit camera using a USB-C cable
-* Open a command line prompt on your computer and use the command `adb devices`. You will see output similar to this, if your computer and camera are connected properly.
+* Open a command line prompt on your computer and use the command <br>
+`adb devices` <br>
+You will see output similar to this, if your computer and camera are connected properly.
 ![adb devices command output]({{ '/assets/images/adb_devices_output.png' | relative_url }})
+<br>
+If you do not see the device, try rebooting the camera hardware. There are several methods available to reboot:
 
-    If you do not see the device, try rebooting the camera hardware. There are several methods available to reboot:
 * Use the pin hole on the right side of the camera to click once.
 * Press the power button on the back once.
 * Use the command `adb reboot`
@@ -38,8 +42,6 @@ last_modified_at: 2019-02-25
     * `adb shell cat /sys/class/power_supply/battery/capacity`
 3.	Check firmware version
     * `adb shell cat /etc/version`
-4.	Display all available commands
-    * `adb` by itself
 
 ## Updating the Firmware
 The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (using a 2A charger) before starting the firmware flashing process.
