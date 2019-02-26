@@ -43,9 +43,9 @@ This page will help you deploy the pre-built vision model to your device using *
 
     Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, you will need to create a *requirements.txt* file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined.
 
-    Recommended content:
-
-      ``` azure-cli-core==2.0.55
+    Recommended contents:
+      ```
+      azure-cli-core==2.0.55
       azure-mgmt-containerregistry==2.6.0
       azure-mgmt-resource==2.0.0
       azureml-core==1.0.8
@@ -55,4 +55,18 @@ This page will help you deploy the pre-built vision model to your device using *
       pyqt5==5.9.2
       wheel==0.30.0
       easydict==1.9
-      tensorflow==1.12.0```
+      tensorflow==1.12.0
+      ```
+5. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, then choose *run as administrator*) then execute the following commands:
+      ```
+      pip install msgpack==0.6.1 
+      pip install --ignore-installed PyYAML==4.2b1 
+      pip install --upgrade -r requirements.txt
+      ```
+
+6. Restart Visual Studio Code in the Python 3.6 runtime environment, by executing the following command in an **Anaconda Prompt (py36)** window:
+    ```
+    code
+    ```
+      This will enable VS code to inherit the environment variables of the **Python 3.6** runtime environment.
+
