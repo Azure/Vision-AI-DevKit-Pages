@@ -9,7 +9,8 @@ variable:
     name: macOS
 last_modified_at: 2019-02-25
 ---
-
+<br>
+<br>
 For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use. All the instructions for steps introduced in page can be found from the left side menu.
 
 ## Initial setup
@@ -21,28 +22,23 @@ For first-time users of the **Vision AI DevKit**, this page will help you get yo
 
 ## Platform Tools
 
-You will need to first install the platform tools, which include the Android Debug Bridge (ADB). They needed for checking device connectivity and running various command-line activities, included flashing the firmware.
+You will need to first install the platform tools, which include the Android Debug Bridge (ADB) and Fastboot for performing a firmware update. It is needed for checking device connectivity and running various command-line tasks included updating the firmware.
 
 ## Firmware Update
 
 Although not absolutely mandatory we strongly recommend you to check the firmware version of you device and update it to latest version if needed before starting to use Vision AI Dev Kit.
 
-Complete instructions for checking the firmware version and updating the firmware are [here.](https://azure.github.io/Vision-AI-DevKit-Pages/docs/adb_platform_tools/){:target="_blank"}
-
-Latest Firmware
-(need firmware download link)
-
 ## Azure account, Azure IoT Hub and IoT Edge
 
-The Azure IoT Hub portal and a configured IoT Edge device are used for deployment of ML modules and control of data traffic between your device and the cloud. Use of these tools requires an active Azure account. 
+The Azure IoT Hub portal and a configured IoT Edge device are used for deployment of machine learning and other modules and control of data traffic between your device and the cloud. Use of these tools requires an active Azure account. 
 
 ## OOBE (Out-of-the-Box Experience)
 
-All the steps described above are pre-requisites for OOBE, even though some of them can be completed independent from each other. During OOBE, you will attach your device to Azure IoT Hub and configure its Wi-Fi access. 
+All the steps described above are pre-requisites for OOBE, even though some of them can be completed independent from each other. During OOBE, you will link your device with correct Azure IoT Hub and configure its Wi-Fi access. 
 
 ## Post-OOBE
 
-Once OOBE is complete, your camera device is ready to receive modules, such as the VisionSample ML module (providing example image recognition capabilities.) Modules can be deployed via VS Code or Azure IoT Hub.
+Once OOBE is complete, your camera device is ready to receive modules, such as the VisionSample ML module (providing example image recognition capabilities.) Modules can be deployed via VS Code, Azure IoT Hub or from Azure Marketplace.
 
 ## Deploying a model using IoT Hub
 
