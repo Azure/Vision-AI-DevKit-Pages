@@ -10,6 +10,7 @@ variable:
 last_modified_at: 2019-02-25
 ---
 
+
 In order to be able to communicate with Vision AI Dev Kit from the command line and update the firmware when needed you'll need Platform Tools. Platform tools is a collection of command line tools of which the most essential ones are ADB and Fastboot.
 
 ## What is ADB?
@@ -22,4 +23,11 @@ Fastboot is a protocal that can be used to perform a firmware update to Vision A
 
 ## Platform Tools
 * Install ADB (Android Debug Bridge) and Fastboot tool. Download for [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip), [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip){:target="_blank"} or [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip){:target="_blank"}
+
+## Most popular ADB commands
+
+> adb
+
+Shows you all the available adb commands
+
 
