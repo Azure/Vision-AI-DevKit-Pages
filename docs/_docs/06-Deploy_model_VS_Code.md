@@ -30,7 +30,7 @@ This page will help you deploy the pre-built vision model to your device using *
 2. If not already avialable, install Python 3.6 by Anaconda (using default options) using the link above.
 
    * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
-   * Create a Python 3.6 runtime environment using the command:  *conda create -n py36 python=3.6 anaconda* (Press y when it asks Proceed ([y]/n)?)
+   * Create a Python 3.6 runtime environment using the command:  *conda create -n py36 python=3.6 anaconda* (Press y when it asks Proceed (y/n)?)
    * Activate the environment using the command:   *conda activate py36* or selecting *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*
 
 3. Open VS Code and install the following extensions:
@@ -82,4 +82,4 @@ This page will help you deploy the pre-built vision model to your device using *
     ```
     to sign in to your Azure account and select your subscription.
 
-9. Create a new IoT Hub with an IoT Edge device using the instructions found in [Setup Azure resources]{% link docs/03-Setup_Azure_resources.md %}
+9. Create a new IoT Hub with an IoT Edge device using the instructions found in [Setup Azure resources]{% link docs/Setup_Azure_resources.md %}
