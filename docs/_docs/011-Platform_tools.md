@@ -1,4 +1,4 @@
--
+---
 title: "ADB Platform Tools"
 permalink: /docs/adb_platform_tools/
 excerpt: "Instructions for ADB platform tools"
@@ -45,7 +45,7 @@ to exit shell
 Check the firmware version of the device <br>
   `adb shell cat /etc/version`
 
-Check the battery level of teh device (notice that the answer is provided as % without a %-sign as an example 80)
+Check the battery level of teh device (notice that the answer is provided as % without a %-sign as an example 80) <br>
   `adb shell cat /sys/class/power_supply/battery/capacity`
 
 You can find other usefull adb commands from the troubleshooting section
