@@ -70,3 +70,16 @@ This page will help you deploy the pre-built vision model to your device using *
     ```
       This will enable VS code to inherit the environment variables of the **Python 3.6** runtime environment.
 
+7. Open the *command palette* in VS Code *(Ctrl-Shift-P)*, then enter 
+    ```
+    Python: Select Interpreter
+    ```
+    to select your Python interpreter (*Python 3.6*)
+
+8. In the VS Code *command pallette*, enter 
+    ```
+    Azure: Sign In
+    ```
+    to sign in to your Azure account and select your subscription.
+
+9. Create a new IoT Hub with an IoT Edge device using the instructions found in [Setup Azure resources]{% link docs/03-Setup_Azure_resources.md %}
