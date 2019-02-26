@@ -64,7 +64,11 @@ The Azure portal has a wizard that walks you through creating the deployment man
 
 4. Select **Save**
 5. Select **Configure advanced Edge Runtime settings** 
-6. Add the following line to the existing **Create Options** section `"User": "root"` ![Create Options addition]({{ '/assets/images/Create_Options_Addition.png' | relative_url }})
+6. Add the following line to the existing **Create Options** section
+  ```
+  "User": "root",
+  ```
+ ![Create Options addition]({{ '/assets/images/Create_Options_Addition.png' | relative_url }})
 7. Select **Save**, then select **Next**
 
 ## Specify routes
