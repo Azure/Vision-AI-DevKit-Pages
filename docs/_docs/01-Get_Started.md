@@ -1,6 +1,6 @@
 ---
 title: "Get Started"
-permalink: /docs/01-Get_Started/
+permalink: /docs/Get_Started/
 excerpt: "How to quickly install and set up your development environment to use the Vision AI DevKit."
 variable:
   - platform: windows

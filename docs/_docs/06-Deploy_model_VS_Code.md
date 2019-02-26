@@ -19,7 +19,7 @@ This page will help you deploy the pre-built vision model to your device using *
 ## What you will need
 * Latest version of Visual Studio (VS) Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
 * Python 3.6 by Anaconda [(Download Here)](https://www.anaconda.com/download/){:target="_blank"}
-* Vision Dev Kit sample model [(Download Here)]()
+* Vision Dev Kit sample model [(Download Here)](){:target="_blank"}
 * USB-C cable to connect Dev Kit hardware to your PC.
 * HDMI cable to connect Dev Kit hardware to a monitor.
 * Active Wi-Fi access point with Internet connectivity.
@@ -57,6 +57,7 @@ This page will help you deploy the pre-built vision model to your device using *
       easydict==1.9
       tensorflow==1.12.0
       ```
+      
 5. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, then choose *run as administrator*) then execute the following commands:
       ```
       pip install msgpack==0.6.1 
@@ -82,4 +83,4 @@ This page will help you deploy the pre-built vision model to your device using *
     ```
     to sign in to your Azure account and select your subscription.
 
-9. Create a new IoT Hub with an IoT Edge device using the instructions found in [Setup Azure resources]{% link docs/Setup_Azure_resources.md %}
+9. Create a new IoT Hub with an IoT Edge device using the instructions found in [Setup Azure resources]{% link docs/Setup_Azure_Resources %}
