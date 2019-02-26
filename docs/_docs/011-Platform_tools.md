@@ -1,4 +1,4 @@
----
+-
 title: "ADB Platform Tools"
 permalink: /docs/adb_platform_tools/
 excerpt: "Instructions for ADB platform tools"
@@ -26,8 +26,26 @@ Fastboot is a protocal that can be used to perform a firmware update to Vision A
 
 ## Most popular ADB commands
 
-> adb
+Show you all the available adb commands <br>
+  `adb`
 
-Shows you all the available adb commands
+Check that device is recognized <br>
+  `adb devices`
+  
+In order to run Linux commands in a device <br>
+  `adb shell [command]` 
+  or <br>
+  `adb shell`
+  that allows you to run multiple commands in shell
+  
+Type <br>
+  `exit` 
+to exit shell
 
+Check the firmware version of the device <br>
+  `adb shell cat /etc/version`
 
+Check the battery level of teh device (notice that the answer is provided as % without a %-sign as an example 80)
+  `adb shell cat /sys/class/power_supply/battery/capacity`
+
+You can find other usefull adb commands from the troubleshooting section
