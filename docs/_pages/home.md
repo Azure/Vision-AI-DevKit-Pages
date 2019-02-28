@@ -14,7 +14,7 @@ excerpt: >
 more_info:
   - title: "Have a device?"
     excerpt: |
-      ## [Setup your device here.](https://aka.ms/VisionAIGetStarted-Landing/)
+      ## [Setup your device here.](https://aka.ms/VAIDKGetStarted-Landing/)
       ## Build your own vision AI solution
       Go to our [GitHub repository](https://aka.ms/vaidkgithub-Landing) to find an Azure Notebook with a reference model to start with. 
   - title: "Additional Resources"

@@ -83,4 +83,11 @@ This page will help you deploy the pre-built vision model to your device using *
     ```
     to sign in to your Azure account and select your subscription.
 
-9. Create a new IoT Hub with an IoT Edge device using the instructions found in [Setup Azure resources]({{ '/docs/Setup_Azure_Resources' | relative_url }})
+9. Create a new IoT Hub with an IoT Edge device using the instructions found in [Setup Azure resources]({{ '/docs/Setup_Azure_Resources' | relative_url }}).
+  Note: If you have an exisitng IoT Hub and Edge device(s) already created for your Vision AI DevKit hardware, you can reuse them instead of creating new ones.
+
+10. Create a new workspace in VS Code as described in [Get started with Azure Machine Learning for Visual Studio Code](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-vscode-tools). You can also use 00-aml-configuration.py script described in the next section to create a new workspace.
+
+## Deploy a Model Container Image to a Vision AI Dev Kit device in Visual Studio Code
+
+1. Download the latest Visual Studio Code sample from the [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/sample-solution-1).
