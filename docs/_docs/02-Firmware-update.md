@@ -26,9 +26,9 @@ last_modified_at: 2019-02-25
 * Open a command line prompt on your computer and use the command <br>
 `adb devices` <br>
 You will see output similar to this, if your computer and camera are connected properly.
-`C:\Tools>adb devices
-List of devices attached
-efb99xxx        device` <br>
+`C:\Tools>adb devices` <br>
+`List of devices attached` <br>
+`efb99xxx        device` <br>
 If you do not see the device, try rebooting the camera hardware. There are several methods available to reboot:
 
 * Use the pin hole on the right side of the camera to click once.
