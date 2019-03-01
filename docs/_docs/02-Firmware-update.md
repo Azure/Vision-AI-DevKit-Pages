@@ -26,8 +26,9 @@ last_modified_at: 2019-02-25
 * Open a command line prompt on your computer and use the command <br>
 `adb devices` <br>
 You will see output similar to this, if your computer and camera are connected properly.
-![adb devices command output]({{ '/assets/images/adb_devices_output.png' | relative_url }})
-<br>
+`C:\Tools>adb devices
+List of devices attached
+efb99xxx        device` <br>
 If you do not see the device, try rebooting the camera hardware. There are several methods available to reboot:
 
 * Use the pin hole on the right side of the camera to click once.
@@ -53,18 +54,16 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (usin
 
 3. Extract the contents of the .TGZ file downloaded. If you end up with a .TAR file, extract the contents of this file as well. You should end up with more than 120 files located in the final extraction folder.
 
-4. Make sure that your platform tools directory is included in your path environment variable. From a CMD window, a simple set path=%path%;F:\AI-CAM\platform-tools_r28.0.1-windows\platform-tools (replace with the right path) would do.
+4. Download [FastBootUpgrade.bat]({{ '/Needed/FastbootUpgrad.zip' | relative_url }}) and extract it into the directory you extracted the firmware files to.
 
-5. Download [FastBootUpgrade.bat]({{ '/Needed/FastbootUpgrad.zip' | relative_url }}) and extract it into the directory you extracted the firmware files to.
+5. From a command prompt run `adb devices` to verify the camera is attached and recognized.
 
-6. From a command prompt run `adb devices` to verify the camera is attached and recognized.
+6. Run FastBootUpgrade.bat
 
-7. Run FastBootUpgrade.bat
-
-8. Follow the instructions given, the camera will update and reboot when the process is complete.
+7. Follow the instructions given, the camera will update and reboot when the process is complete.
     * If you get stuck at the message *waiting for device*, please reboot the camera hardware and run FastBootUpgrade.bat again. If you keep hitting the same message, please charge the device for 10+ minutes to make sure that the battery is charged.
 
-9. In your command prompt run the command `adb shell cat /etc/version_` to confirm that you see the updated firmware version.
+8. In your command prompt run the command `adb shell cat /etc/version` to confirm that you see the updated firmware version.
 
 
 
