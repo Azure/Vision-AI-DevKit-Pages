@@ -9,6 +9,17 @@ variable:
     name: macOS
 last_modified_at: 2019-02-25
 ---
+<br>
+<br>
+## What will you do
+- Run the OOBE (Out-of-the-BoX experience) <br>
+- Configure you device to connect to WiFI
+- Configure you device to connect to IoT Hub
+
+## What will you need
+- An IoT Hub configured in your Azure subcription
+- IoT Edge device connection string in order to connect your device to IoT Hub
+
 ## OOBE (Out-of-the-Box Experience)
 In the context of Vision AI Dev Kit OOBE refers to an operation where you first activite the access point in the device and connect your PC to device's own WiFi. This allows you to configure password password for future login and possible other connection methods like SSH. During OOBE you also define the WiFi where the device connects to for internet access. The last step of the OOBE is to provide the connections string for IoT Edge device which enables the device to connect to your IoT Hub. After that the device automatically downloads the modules defined for the device in IoT Hub.
 
