@@ -66,10 +66,8 @@ This page will help you deploy the pre-built vision model to your device using *
       tensorflow==1.12.0
       ```
 
-5. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, then choose *run as administrator*) then execute the following commands:
+5. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, then choose *run as administrator*) then execute the following command:
       ```
-      pip install msgpack==0.6.1 
-      pip install --ignore-installed PyYAML==4.2b1 
       pip install --upgrade -r requirements.txt
       ```
 
