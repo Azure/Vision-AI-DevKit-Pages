@@ -138,11 +138,11 @@ Note: This .py script will import “current_config.py” under “VisionSample\
 
 13.	Check object detection results:
 (mobilenet-imagenet model can detect 1000 object classes listed in the "VisionSample\MachineLearning\models\mobilenet-imagenet\orig\output_labels.txt")
-•	Use platform tools commands [adb shell > iotedge logs <module name>]  (e.g. “iotedge logs VisionSampleImagenet”) to check module image outputs:
+  *	Use platform tools commands [adb shell > iotedge logs <module name>]  (e.g. “iotedge logs VisionSampleImagenet”) to check module image outputs.
 ![Use ADB to module impage outputs Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_check_detection_results_screenshot.png' | relative_url }})    
 
-If the device is connected to external screen through HDMI, you should be able to see detection on screen as below:
-
+If the Vision AI DevKit camera is connected to an  external screen through HDMI, you should be able to see detection on screen as below.
+![Image of a display showing recognition box with text]({{ '/assets/images/VSC_Deploy_object_detection_screenshot.png' | relative_url }})
  
 •	Select [AZURE IOT HUB DEVICES > … > Select IoT Hub] command and [AZURE IOT HUB DEVICES > … > Start Monitoring D2C Message] command to monitor the messages sent from AI Vision Kit device to Azure IoT Hub:
  
