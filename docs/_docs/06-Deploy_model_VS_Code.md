@@ -134,7 +134,7 @@ Note: This .py script will import “current_config.py” under “VisionSample\
 11.	Configure device as IoT Edge device using the connection string for Iot Edge device used in step 10 above to deployment the manifest. 
 
 12.	Monitor the deployment status for the AI Vision Kit device by using platform tools commands: [adb shell], [docker ps] and [docker logs edgeAgent] commands.
- ![Use ADB to monitor deployment status Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_monitor_deployment_screenshot.png' | relative_url }})
+![Use ADB to monitor deployment status Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_monitor_deployment_screenshot.png' | relative_url }})
 
 13.	Check object detection results:
 (mobilenet-imagenet model can detect 1000 object classes listed in the "VisionSample\MachineLearning\models\mobilenet-imagenet\orig\output_labels.txt")
