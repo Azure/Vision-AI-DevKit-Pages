@@ -100,20 +100,22 @@ This page will help you deploy the pre-built vision model to your device using *
 
 2.	Launch Visual Studio Code, and select [File > Open Folder…] command to open “VisionSample” directory as workspace root.
 
-3.	Use [Python: Select Interpreter] command in the command palette box or click the current “Python interpreter” option on the bottom line to set "python.pythonPath" in .vscode\settings.json.
- 
+3.	Use the [Python: Select Interpreter] command in the command palette box or click the current “Python interpreter” option on the bottom line to set "python.pythonPath" in .vscode\settings.json.
+![Setting the pythonPath screen shot]({{ '/assets/images/VSC_Deploy_Python_Path.png' | relative_url }}) 
 
 4.	Install Azure ML SDK and required packages (Skip this step if you already did step 4 of previous section)
-Close VS Code and launch VS Code again by “Run as administrator”.  Select [Terminal > New Terminal] command to open a terminal window, change directory to “VisionSample\MachineLearning\scripts”, and execute the following commands to install required Python packages: 
-pip install msgpack==0.6.1 
-pip install --ignore-installed PyYAML==4.2b1 
-pip install --upgrade -r requirements.txt 
+  * Close VS Code and launch VS Code again by “Run as administrator”.
+  * Select [Terminal > New Terminal] command to open a terminal window, change directory to “VisionSample\MachineLearning\scripts”, and execute the following commands to install required Python packages: 
+    ```
+    pip install msgpack==0.6.1 
+    pip install --ignore-installed PyYAML==4.2b1 
+    pip install --upgrade -r requirements.txt 
+    ```
 Note: The above installation steps works for the latest Azure Machine Learning SDK version v1.0.8 and install Python 3.6.5 by Anaconda with Python version 3.6.5 link. If the version of AML SDK, Python, or other packages will be changed in the future, you might have to install or upgrade packages manually.
 
-
-
 5.	Open “00-aml-configuration.py” under “VisionSample\MachineLearning\scripts” folder and replace the following 3 fake settings to your Azure Machine Learning Service Workspace settings:
- 
+![Setting the pythonPath screen shot]({{ '/assets/images/VSC_Deploy_mod_00-aml-configuration.py_screenshot.png' | relative_url }})
+
 6.	Click [Run Cell] or [Run All Cells] link on the top line of the cell.  It will create a new workspace if it doesn’t exist and write a “config.json” file under “VisionSample\aml_config” folder.
  
 7.	Open “01-convert-model-containerize.py” under “VisionSample\MachineLearning\scripts” folder and click [Run Cell] or [Run All Cells] link to register model, convert model, create container image, and write settings related to the container image to “.env” file under “VisionSample\EdgeSolution” folder.
