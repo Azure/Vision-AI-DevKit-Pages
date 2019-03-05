@@ -117,44 +117,29 @@ Note: The above installation steps works for the latest Azure Machine Learning S
 ![Setting the pythonPath screen shot]({{ '/assets/images/VSC_Deploy_mod_00-aml-configuration.py_screenshot.png' | relative_url }})
 
 6.	Click [Run Cell] or [Run All Cells] link on the top line of the cell.  It will create a new workspace if it doesn’t exist and write a “config.json” file under “VisionSample\aml_config” folder.
- 
+![Modify config.json screen shot]({{ '/assets/images/VSC_Deploy_config-json_screenshot.png' | relative_url }}) 
+
 7.	Open “01-convert-model-containerize.py” under “VisionSample\MachineLearning\scripts” folder and click [Run Cell] or [Run All Cells] link to register model, convert model, create container image, and write settings related to the container image to “.env” file under “VisionSample\EdgeSolution” folder.
 Note: This .py script will import “current_config.py” under “VisionSample\MachineLearning\scripts\model_configs” folder to process the model specified in “current_config.py”.  So, it can be reused to process different model by changing current_config.py’s content.  The initial content in current_config.py is for the pre-trained model “imagenet_2_frozen.pb” under “VisionSample\MachineLearning\models\mobilenet-imagenet\orig” folder.
- 
+![Initial contents of current_config.json screen shot]({{ '/assets/images/VSC_Deploy_current-config-py_Initial_content_screenshot.png' | relative_url }}) 
+
 8.	Right click “deployment.template.json” file under “VisionSample\EdgeSolution” folder and select [Generate IoT Edge Deployment Manifest] command to create a new “deployment.json” file under “VisionSample\EdgeSolution\config” folder.
- 
+![Open deployment.template.json screen shot]({{ '/assets/images/VSC_Deploy_open_deployment-template-json_screenshot.png' | relative_url }}) 
+
 9.	Click [Explorer] icon, click […] at [AZURE IOT HUB DEVICES] section right side, and select [Select IoT Hub] command to select an IoT Hub.
 10.	 Expand [AZURE IOT HUB DEVICES] section, right-click an IoT edge device, select [Create Development for Single Device] command, select “deployment.json” file under “VisionSample\EdgeSolution\config” folder, and click [Select Edge Deployment Manifest] button to deploy the container image to the IoT edge device.
- 
- 
+![Open deployment.template.json from VSC Screenshot]({{ '/assets/images/VSC_Deploy_Select-Edge-Deployment-Manifest_screenshot.png' | relative_url }})  
+ ![Open deployment.template.json from VSC Screenshot #2]({{ '/assets/images/VSC_Deploy_Select-Edge-Deployment-Manifest_screenshot2.png' | relative_url }})
 
 11.	Configure device as IoT Edge device using the connection string for Iot Edge device used in step 10 above to deployment the manifest. 
 
 12.	Monitor the deployment status for the AI Vision Kit device by using platform tools commands: [adb shell], [docker ps] and [docker logs edgeAgent] commands.
- 
+ ![Use ADB to monitor deployment status Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_monitor_deployment_screenshot.png' | relative_url }})
+
 13.	Check object detection results:
 (mobilenet-imagenet model can detect 1000 object classes listed in the "VisionSample\MachineLearning\models\mobilenet-imagenet\orig\output_labels.txt")
 •	Use platform tools commands [adb shell > iotedge logs <module name>]  (e.g. “iotedge logs VisionSampleImagenet”) to check module image outputs:
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ ![Use ADB to module impage outputs Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_check_detection_results_screenshot.png' | relative_url }})    
 
 If the device is connected to external screen through HDMI, you should be able to see detection on screen as below:
 
