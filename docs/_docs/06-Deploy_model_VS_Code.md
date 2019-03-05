@@ -29,6 +29,7 @@ This page will help you deploy the pre-built vision model to your device using *
 1. If not already available, install VS Code using the link above.
 2. If not already available, install Python 3.6 by Anaconda (using default options) using the link above.
 Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.
+
 ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
 
    * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
