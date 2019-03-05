@@ -97,3 +97,78 @@ This page will help you deploy the pre-built vision model to your device using *
 ## Deploy a Model Container Image to a Vision AI Dev Kit device in Visual Studio Code
 
 1. Download the latest Visual Studio Code sample from the [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/sample-solution-1).
+
+2.	Launch Visual Studio Code, and select [File > Open Folder…] command to open “VisionSample” directory as workspace root.
+
+3.	Use [Python: Select Interpreter] command in the command palette box or click the current “Python interpreter” option on the bottom line to set "python.pythonPath" in .vscode\settings.json.
+ 
+
+4.	Install Azure ML SDK and required packages (Skip this step if you already did step 4 of previous section)
+Close VS Code and launch VS Code again by “Run as administrator”.  Select [Terminal > New Terminal] command to open a terminal window, change directory to “VisionSample\MachineLearning\scripts”, and execute the following commands to install required Python packages: 
+pip install msgpack==0.6.1 
+pip install --ignore-installed PyYAML==4.2b1 
+pip install --upgrade -r requirements.txt 
+Note: The above installation steps works for the latest Azure Machine Learning SDK version v1.0.8 and install Python 3.6.5 by Anaconda with Python version 3.6.5 link. If the version of AML SDK, Python, or other packages will be changed in the future, you might have to install or upgrade packages manually.
+
+
+
+5.	Open “00-aml-configuration.py” under “VisionSample\MachineLearning\scripts” folder and replace the following 3 fake settings to your Azure Machine Learning Service Workspace settings:
+ 
+6.	Click [Run Cell] or [Run All Cells] link on the top line of the cell.  It will create a new workspace if it doesn’t exist and write a “config.json” file under “VisionSample\aml_config” folder.
+ 
+7.	Open “01-convert-model-containerize.py” under “VisionSample\MachineLearning\scripts” folder and click [Run Cell] or [Run All Cells] link to register model, convert model, create container image, and write settings related to the container image to “.env” file under “VisionSample\EdgeSolution” folder.
+Note: This .py script will import “current_config.py” under “VisionSample\MachineLearning\scripts\model_configs” folder to process the model specified in “current_config.py”.  So, it can be reused to process different model by changing current_config.py’s content.  The initial content in current_config.py is for the pre-trained model “imagenet_2_frozen.pb” under “VisionSample\MachineLearning\models\mobilenet-imagenet\orig” folder.
+ 
+8.	Right click “deployment.template.json” file under “VisionSample\EdgeSolution” folder and select [Generate IoT Edge Deployment Manifest] command to create a new “deployment.json” file under “VisionSample\EdgeSolution\config” folder.
+ 
+9.	Click [Explorer] icon, click […] at [AZURE IOT HUB DEVICES] section right side, and select [Select IoT Hub] command to select an IoT Hub.
+10.	 Expand [AZURE IOT HUB DEVICES] section, right-click an IoT edge device, select [Create Development for Single Device] command, select “deployment.json” file under “VisionSample\EdgeSolution\config” folder, and click [Select Edge Deployment Manifest] button to deploy the container image to the IoT edge device.
+ 
+ 
+
+11.	Configure device as IoT Edge device using the connection string for Iot Edge device used in step 10 above to deployment the manifest. 
+
+12.	Monitor the deployment status for the AI Vision Kit device by using platform tools commands: [adb shell], [docker ps] and [docker logs edgeAgent] commands.
+ 
+13.	Check object detection results:
+(mobilenet-imagenet model can detect 1000 object classes listed in the "VisionSample\MachineLearning\models\mobilenet-imagenet\orig\output_labels.txt")
+•	Use platform tools commands [adb shell > iotedge logs <module name>]  (e.g. “iotedge logs VisionSampleImagenet”) to check module image outputs:
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If the device is connected to external screen through HDMI, you should be able to see detection on screen as below:
+
+ 
+•	Select [AZURE IOT HUB DEVICES > … > Select IoT Hub] command and [AZURE IOT HUB DEVICES > … > Start Monitoring D2C Message] command to monitor the messages sent from AI Vision Kit device to Azure IoT Hub:
+ 
+ 
+
+Retraining the Machine learning models:
+
+14.	Open “02-mobilenet-transfer-learning-cloud.py” and click [Run Cell] or [Run All Cells] link to retrain a new mobilenet model on cloud by “soda_cans” data under “VisionSample\MachineLearning\data\soda_cans” folder.
+ 
+15.	After [Run All Cells] execution finished, it will write a “va-snpe-engine-library_config.json” config file to its new model folder, write its model config file to “VisionSample\MachineLearning\scripts\model_configs” and overwrite “current_config.py”.
+ 
+16.	Repeat step 7 and 8 to open and execute “01-convert-model-containerize.py” and use the new generated “deployment.json” to deploy the new model image “retrained_graph.pb” under “VisionSample\MachineLearning\models\mobilenet-retrain-cloud\outputs” folder.
+17.	Open “03-mobilenet-transfer-learning-local.py” and click [Run Cell] or [Run All Cells] link to retrain a new mobilenet model on a local machine by “soda_cans” data under “VisionSample\MachineLearning\data\soda_cans” folder.  It will write a “va-snpe-engine-library_config.json” config file to its new model folder, write its model config file to “VisionSample\MachineLearning\scripts\model_configs” and overwrite “current_config.py”.
+ 
+18.	Repeat step 7 and 8 to open and execute “01-convert-model-containerize.py” and use the new generated “deployment.json” to deploy the new model image “retrained_graph_local.pb” under “VisionSample\MachineLearning\models\mobilenet-retrain-local” folder. 
+
