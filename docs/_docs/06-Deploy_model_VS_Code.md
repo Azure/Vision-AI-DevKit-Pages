@@ -27,7 +27,7 @@ This page will help you deploy the pre-built vision model to your device using *
 
 ## Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
 1. If not already available, install VS Code using the link above.
-2. If not already avialable, install Python 3.6 by Anaconda (using default options) using the link above.
+2. If not already available, install Python 3.6 by Anaconda (using default options) using the link above.
 
    * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
    * Create a Python 3.6 runtime environment using the command:
@@ -139,7 +139,7 @@ Note: This .py script will import “current_config.py” under “VisionSample\
 13.	Check object detection results:
 (mobilenet-imagenet model can detect 1000 object classes listed in the "VisionSample\MachineLearning\models\mobilenet-imagenet\orig\output_labels.txt")
 •	Use platform tools commands [adb shell > iotedge logs <module name>]  (e.g. “iotedge logs VisionSampleImagenet”) to check module image outputs:
- ![Use ADB to module impage outputs Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_check_detection_results_screenshot.png' | relative_url }})    
+![Use ADB to module impage outputs Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_check_detection_results_screenshot.png' | relative_url }})    
 
 If the device is connected to external screen through HDMI, you should be able to see detection on screen as below:
 
