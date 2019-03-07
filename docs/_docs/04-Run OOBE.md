@@ -9,8 +9,6 @@ variable:
     name: macOS
 last_modified_at: 2019-02-25
 ---
-<br>
-<br>
 ## What will you do
 - Run the OOBE (Out-of-the-BoX experience) <br>
 - Configure you device to connect to WiFI

@@ -7,10 +7,9 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-02-25
+last_modified_at: 2019-03-07
 ---
-<br>
-<br>
+
 ## What you will do
 * Check the firmware version of the device
 * Update the firmware in your device, if necessary
