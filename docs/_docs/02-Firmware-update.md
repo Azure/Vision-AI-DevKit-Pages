@@ -22,7 +22,7 @@ last_modified_at: 2019-03-07
 
 ## Verify your computer is connected to the Vision AI Dev Kit hardware
 * Connect your computer and the Vision AI Dev Kit camera using a USB-C cable
-* Open a command line prompt on your computer and use the command <br>
+* Open a command line prompt on your computer and use the command
     ```
     adb devices
     ```
