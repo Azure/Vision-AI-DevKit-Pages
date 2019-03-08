@@ -9,6 +9,7 @@ variable:
     name: macOS
 last_modified_at: 2019-03-07
 ---
+
 This page will help you deploy a pre-build vision model to your device through the Azure portal.
 
 
