@@ -26,8 +26,8 @@ This page will help you deploy the pre-built vision model to your device using *
 * Latest Vision Dev Kit hardware firmware installed.
 
 ## Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
-1. If not already available, install VS Code using the link above.
-2. If not already available, install Python 3.6 by Anaconda (using default options) using the link above.
+1. If not already available, install VS Code [using the link above.]('/docs/Deploy_Model_VS_Code/#what-you-will-need' | relative_url)
+2. If not already available, install Python 3.6 by Anaconda (using default options) using the link in the 'What you will need' section of this document (above).
   * Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.
 
     ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
