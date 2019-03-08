@@ -86,5 +86,3 @@ Review your deployment information, then select **Submit**.
 
 ## Verify output on the monitor
 Connect the HDMI cable to the camera hardware and your monitor. A few minutes after submitting your deployment, you should start to see video on the monitor with bounding boxes drawing around objects the camera can see and evaluate.
-
-![Verify that all modules are reported by the device]({{ '/assets/images/VisionSample_IoTHub.png' | relative_url }})
