@@ -7,8 +7,9 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-02-15
+last_modified_at: 2019-03-07
 ---
+
 This page will help you deploy a pre-build vision model to your device through the Azure portal.
 
 
@@ -85,5 +86,3 @@ Review your deployment information, then select **Submit**.
 
 ## Verify output on the monitor
 Connect the HDMI cable to the camera hardware and your monitor. A few minutes after submitting your deployment, you should start to see video on the monitor with bounding boxes drawing around objects the camera can see and evaluate.
-
-

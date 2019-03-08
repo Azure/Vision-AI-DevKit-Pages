@@ -7,12 +7,10 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-02-25
+last_modified_at: 2019-03-07
 ---
-<br>
-<br>
-## What will you do
-- Run the OOBE (Out-of-the-BoX experience) <br>
+## What you will do
+- Run the OOBE (Out-of-the-BoX experience)
 - Configure you device to connect to WiFI
 - Configure you device to connect to IoT Hub
 
@@ -28,7 +26,7 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 
 1. From your PC, look for a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device's Wi-Fi mac address, e.g. MSIOT_BD097D).
 2. Connect to the MSIOT_xxxxxx Wi-Fi access point.
-	* Check the label at the bottom of the device whether there is a default passphrase. If there is no label, see the Troubleshooting Section.
+  * Check the label at the bottom of the device whether there is a default passphrase. If there is no label, see the Troubleshooting Section.
 
 ### Notes
 - If your device LEDs are not flashing RED, review the Troubleshooting section in the left side menu.
@@ -36,9 +34,10 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 
 ## Connect the Vision AI Dev Kit to your Azure IoT Hub
 * Use a browser to visit [http://setupaicamera.ms](http://setupaicamera.ms){:target="_blank"}.
-	* If you do not see the below screen, verify that your computer is connected to the reference hardware's access point. 
 
 ![Vision AI Developer Kit starting screen]({{ '/assets/images/visual-ai-getting-started-screen.png' | relative_url }})
+
+* If you do not see the below above, verify that your computer is connected to the reference hardware's access point.
 
 * Tap **Next** to open the SSH configuration screen.
 
@@ -51,7 +50,7 @@ When you first power up the Visual AI DevKit hardware, or connect it to a charge
 Select the Wi-Fi network your camera will connect to from the drop down, then enter the access password.
 
 ### Notes
-- The Wi-Fi access password cannot have spaces (even at the end of the passwd string), or the camera will be unable to connect to the Wi-Fi network. You will see a confirmation screen when the camera successfully connects to your selected Wi-Fi network.
+* The Wi-Fi access password cannot have spaces (even at the end of the passwd string), or the camera will be unable to connect to the Wi-Fi network. You will see a confirmation screen when the camera successfully connects to your selected Wi-Fi network.
 
 * Tap **Next**  to open the 'Connect to Microsoft Azure' screen.
 
