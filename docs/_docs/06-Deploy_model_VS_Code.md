@@ -48,7 +48,7 @@ This page will help you deploy the pre-built vision model to your device using *
     * **Docker extension**  
       ![Screen shot of VSCode Extension installation dialog]({{ '/assets/images/VSCode_Extension_Install.png' | relative_url }})  
 4. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. (If you choose to use the sample code as-is, skip to: [*Deploy a Model Container Image to the Vision AI Dev Kit hardware in Visual Studio Code*]( {{'/docs/Deploy_Model_VS_Code/#deploy-a-model-container-image-to-a-vision-ai-dev-kit-device-in-visual-studio-code' | relative_url}} ))
-    * Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, you will need to create a *requirements.txt* file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined.
+      * Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, you will need to create a *requirements.txt* file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined.
 
     Recommended contents:
     ```
@@ -63,7 +63,7 @@ This page will help you deploy the pre-built vision model to your device using *
       wheel==0.30.0
       easydict==1.9
       tensorflow==1.12.0
-      ```
+      ```  
 5. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, then choose *run as administrator*) then execute the following command:
       ```
       pip install --ignore-installed PyYAML==4.2b1 
