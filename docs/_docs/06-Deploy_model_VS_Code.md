@@ -108,7 +108,7 @@ Note: The above installation steps works for the latest Azure Machine Learning S
 6.	Click [Run Cell] or [Run All Cells] link on the top line of the cell.  It will create a new workspace if it doesn’t exist and write a “config.json” file under “sample-solution-1\aml_config” folder.
 ![Modify config.json screen shot]({{ '/assets/images/VSC_Deploy_config-json_screenshot.png' | relative_url }}) 
 7.	Open “01-convert-model-containerize.py” under “sample-solution-1\MachineLearning\scripts” folder and click [Run Cell] or [Run All Cells] link to register model, convert model, create container image, and write settings related to the container image to “.env” file under “sample-solution-1\EdgeSolution” folder.
-Note: This .py script will import “current_config.py” under “sample-solution-1\MachineLearning\scripts\model_configs” folder to process the model specified in “current_config.py”.  So, it can be reused to process different model by changing current_config.py’s content.  The initial content in current_config.py is for the pre-trained model “imagenet_2_frozen.pb” under “sample-solution-1\MachineLearning\models\mobilenet-imagenet\orig” folder.
+  * Note: This .py script will import “current_config.py” under “sample-solution-1\MachineLearning\scripts\model_configs” folder to process the model specified in “current_config.py”.  So, it can be reused to process different model by changing current_config.py’s content.  The initial content in current_config.py is for the pre-trained model “imagenet_2_frozen.pb” under “sample-solution-1\MachineLearning\models\mobilenet-imagenet\orig” folder.
 ![Initial contents of current_config.json screen shot]({{ '/assets/images/VSC_Deploy_current-config-py_Initial_content_screenshot.png' | relative_url }}) 
 8.	Right click “deployment.template.json” file under “sample-solution-1\EdgeSolution” folder and select [Generate IoT Edge Deployment Manifest] command to create a new “deployment.json” file under “sample-solution-1\EdgeSolution\config” folder.
 ![Open deployment.template.json screen shot]({{ '/assets/images/VSC_Deploy_open_deployment-template-json_screenshot.png' | relative_url }}) 
@@ -131,10 +131,7 @@ If the Vision AI DevKit camera is connected to an  external screen through HDMI,
  
 ## Retraining the machine learning models
 1.	Open “02-mobilenet-transfer-learning-cloud.py” and click [Run Cell] or [Run All Cells] link to retrain a new mobilenet model on cloud by “soda_cans” data under “sample-solution-1\MachineLearning\data\soda_cans” folder.
- 
 2.	After [Run All Cells] execution finished, it will write a “va-snpe-engine-library_config.json” config file to its new model folder, write its model config file to “sample-solution-1\MachineLearning\scripts\model_configs” and overwrite “current_config.py”.
- 
 3.	Repeat step 7 and 8 to open and execute “01-convert-model-containerize.py” and use the new generated “deployment.json” to deploy the new model image “retrained_graph.pb” under “sample-solution-1\MachineLearning\models\mobilenet-retrain-cloud\outputs” folder.
 4.	Open “03-mobilenet-transfer-learning-local.py” and click [Run Cell] or [Run All Cells] link to retrain a new mobilenet model on a local machine by “soda_cans” data under “sample-solution-1\MachineLearning\data\soda_cans” folder.  It will write a “va-snpe-engine-library_config.json” config file to its new model folder, write its model config file to “sample-solution-1\MachineLearning\scripts\model_configs” and overwrite “current_config.py”.
- 
 5.	Repeat step 7 and 8 to open and execute “01-convert-model-containerize.py” and use the new generated “deployment.json” to deploy the new model image “retrained_graph_local.pb” under “sample-solution-1\MachineLearning\models\mobilenet-retrain-local” folder. 
