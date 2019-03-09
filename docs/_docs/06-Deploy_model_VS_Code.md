@@ -107,7 +107,7 @@ This page will help you deploy the pre-built vision model to your device using *
 Note: The above installation steps works for the latest Azure Machine Learning SDK version v1.0.8 and install Python 3.6.5 by Anaconda with Python version 3.6.5 link. If the version of AML SDK, Python, or other packages will be changed in the future, you might have to install or upgrade packages manually.
 5.	Open “00-aml-configuration.py” under “sample-solution-1\MachineLearning\scripts” folder and replace the following 3 fake settings to your Azure Machine Learning Service Workspace settings:
 ![Setting the pythonPath screen shot]({{ '/assets/images/VSC_Deploy_mod_00-aml-configuration.py_screenshot.png' | relative_url }})
-6.	Click [Run Cell] or [Run All Cells] link on the top line of the cell.  It will create a new workspace if it doesn’t exist and write a “config.json” file under “sample-solution-1\aml_config” folder.
+6.	Click [Run Cell] or [Run All Cells] link on the top line of the cell.  It will create a new workspace if it doesn’t exist and write a “config.json” file under “sample-solution-1\aml_config” folder.  
 ![Modify config.json screen shot]({{ '/assets/images/VSC_Deploy_config-json_screenshot.png' | relative_url }}) 
 7.	Open “01-convert-model-containerize.py” under “sample-solution-1\MachineLearning\scripts” folder and click [Run Cell] or [Run All Cells] link to register model, convert model, create container image, and write settings related to the container image to “.env” file under “sample-solution-1\EdgeSolution” folder.
   * Note: This .py script will import “current_config.py” under “sample-solution-1\MachineLearning\scripts\model_configs” folder to process the model specified in “current_config.py”.  So, it can be reused to process different model by changing current_config.py’s content.  The initial content in current_config.py is for the pre-trained model “imagenet_2_frozen.pb” under “sample-solution-1\MachineLearning\models\mobilenet-imagenet\orig” folder.
@@ -122,7 +122,8 @@ Note: The above installation steps works for the latest Azure Machine Learning S
 12.	Monitor the deployment status for the AI Vision Kit device by using platform tools commands: [adb shell], [docker ps] and [docker logs edgeAgent] commands.
 ![Use ADB to monitor deployment status Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_monitor_deployment_screenshot.png' | relative_url }})
 13.	Check object detection results:
-(mobilenet-imagenet model can detect 1000 object classes listed in the "sample-solution-1\MachineLearning\models\mobilenet-imagenet\orig\output_labels.txt")
+(mobilenet-imagenet model can detect 1000 object classes listed in the  "sample-solution-1\MachineLearning\models\mobilenet-imagenet\orig\output_labels.txt")
+
   *	Use platform tools commands [adb shell > iotedge logs <module name>]  (e.g. “iotedge logs sample-solution-1Imagenet”) to check module image outputs.
 ![Use ADB to module impage outputs Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_check_detection_results_screenshot.png' | relative_url }})    
 
