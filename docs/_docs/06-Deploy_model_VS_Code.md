@@ -31,16 +31,16 @@ This page will help you deploy the pre-built vision model to your device using *
     * Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.
         ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
 
-  * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
-  * Create a Python 3.6 runtime environment using the command:
-   ```
-   conda create -n py36 python=3.6 anaconda
-   ```
-  * Press y when it asks Proceed (y/n)?
-  * Activate the environment using *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)* or the command line:
-   ```
-   conda activate py36
-   ```
+    * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
+    * Create a Python 3.6 runtime environment using the command:
+     ```
+     conda create -n py36 python=3.6 anaconda
+     ```
+    * Press y when it asks Proceed (y/n)?
+    * Activate the environment using *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)* or the command line:
+     ```
+     conda activate py36
+     ```  
 3. Open VS Code and install the following extensions:
     * **Azure Machine Learning** (this will automatically add **Azure Account** and **Microsoft Python** extensions)
     * **Azure IoT Hub Toolkit**
