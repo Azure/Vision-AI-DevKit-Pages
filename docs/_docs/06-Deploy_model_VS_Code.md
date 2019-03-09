@@ -27,10 +27,10 @@ This page will help you deploy the pre-built vision model to your device using *
 * Latest Vision Dev Kit hardware firmware installed.
 
 ## Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
-1. If not already available, install VS Code [using the link above.]({{ '/docs/Deploy_Model_VS_Code/#what-you-will-need' | relative_url }})
-2. If not already available, install Python 3.6 by Anaconda (using default options) [using the link above.]( {{'/docs/Deploy_Model_VS_Code/#what-you-will-need' | relative_url}} )
+1. If not already available, download and install VS Code. [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
+2. If not already available, install Python 3.6 by Anaconda (using default options). [(Download Here)](https://www.anaconda.com/download/){:target="_blank"}
 
-  * Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.
+    * Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.
 
     ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
 
@@ -44,7 +44,7 @@ This page will help you deploy the pre-built vision model to your device using *
    ```
    conda activate py36
    ```
-   or selecting *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*
+      or selecting *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*
 
 3. Open VS Code and install the following extensions:
     * **Azure Machine Learning** (this will automatically add **Azure Account** and **Microsoft Python** extensions)
