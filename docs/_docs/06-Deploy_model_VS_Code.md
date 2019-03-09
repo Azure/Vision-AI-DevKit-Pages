@@ -28,7 +28,7 @@ This page will help you deploy the pre-built vision model to your device using *
 ## Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
 1. If not already available, download and install VS Code. [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
 2. If not already available, install Python 3.6 by Anaconda (using default options). [(Download here)](https://www.anaconda.com/download){:target="_blank"}
-  Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.
+    * Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.
         ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
   * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
   * Create a Python 3.6 runtime environment using the command:
@@ -128,7 +128,7 @@ If the Vision AI DevKit camera is connected to an  external screen through HDMI,
  
 •	Select [AZURE IOT HUB DEVICES > … > Select IoT Hub] command and [AZURE IOT HUB DEVICES > … > Start Monitoring D2C Message] command to monitor the messages sent from AI Vision Kit device to Azure IoT Hub:
  
-## Retraining the Machine learning models
+## Retraining the machine learning models
 1.	Open “02-mobilenet-transfer-learning-cloud.py” and click [Run Cell] or [Run All Cells] link to retrain a new mobilenet model on cloud by “soda_cans” data under “sample-solution-1\MachineLearning\data\soda_cans” folder.
  
 2.	After [Run All Cells] execution finished, it will write a “va-snpe-engine-library_config.json” config file to its new model folder, write its model config file to “sample-solution-1\MachineLearning\scripts\model_configs” and overwrite “current_config.py”.
