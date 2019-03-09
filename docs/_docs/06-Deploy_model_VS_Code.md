@@ -130,13 +130,12 @@ If the Vision AI DevKit camera is connected to an  external screen through HDMI,
  
 •	Select [AZURE IOT HUB DEVICES > … > Select IoT Hub] command and [AZURE IOT HUB DEVICES > … > Start Monitoring D2C Message] command to monitor the messages sent from AI Vision Kit device to Azure IoT Hub:
  
-Retraining the Machine learning models:
-
-14.	Open “02-mobilenet-transfer-learning-cloud.py” and click [Run Cell] or [Run All Cells] link to retrain a new mobilenet model on cloud by “soda_cans” data under “sample-solution-1\MachineLearning\data\soda_cans” folder.
+##Retraining the Machine learning models
+1.	Open “02-mobilenet-transfer-learning-cloud.py” and click [Run Cell] or [Run All Cells] link to retrain a new mobilenet model on cloud by “soda_cans” data under “sample-solution-1\MachineLearning\data\soda_cans” folder.
  
-15.	After [Run All Cells] execution finished, it will write a “va-snpe-engine-library_config.json” config file to its new model folder, write its model config file to “sample-solution-1\MachineLearning\scripts\model_configs” and overwrite “current_config.py”.
+2.	After [Run All Cells] execution finished, it will write a “va-snpe-engine-library_config.json” config file to its new model folder, write its model config file to “sample-solution-1\MachineLearning\scripts\model_configs” and overwrite “current_config.py”.
  
-16.	Repeat step 7 and 8 to open and execute “01-convert-model-containerize.py” and use the new generated “deployment.json” to deploy the new model image “retrained_graph.pb” under “sample-solution-1\MachineLearning\models\mobilenet-retrain-cloud\outputs” folder.
-17.	Open “03-mobilenet-transfer-learning-local.py” and click [Run Cell] or [Run All Cells] link to retrain a new mobilenet model on a local machine by “soda_cans” data under “sample-solution-1\MachineLearning\data\soda_cans” folder.  It will write a “va-snpe-engine-library_config.json” config file to its new model folder, write its model config file to “sample-solution-1\MachineLearning\scripts\model_configs” and overwrite “current_config.py”.
+3.	Repeat step 7 and 8 to open and execute “01-convert-model-containerize.py” and use the new generated “deployment.json” to deploy the new model image “retrained_graph.pb” under “sample-solution-1\MachineLearning\models\mobilenet-retrain-cloud\outputs” folder.
+4.	Open “03-mobilenet-transfer-learning-local.py” and click [Run Cell] or [Run All Cells] link to retrain a new mobilenet model on a local machine by “soda_cans” data under “sample-solution-1\MachineLearning\data\soda_cans” folder.  It will write a “va-snpe-engine-library_config.json” config file to its new model folder, write its model config file to “sample-solution-1\MachineLearning\scripts\model_configs” and overwrite “current_config.py”.
  
-18.	Repeat step 7 and 8 to open and execute “01-convert-model-containerize.py” and use the new generated “deployment.json” to deploy the new model image “retrained_graph_local.pb” under “sample-solution-1\MachineLearning\models\mobilenet-retrain-local” folder. 
+5.	Repeat step 7 and 8 to open and execute “01-convert-model-containerize.py” and use the new generated “deployment.json” to deploy the new model image “retrained_graph_local.pb” under “sample-solution-1\MachineLearning\models\mobilenet-retrain-local” folder. 
