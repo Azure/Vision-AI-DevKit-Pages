@@ -35,12 +35,11 @@ This page will help you deploy the pre-built vision model to your device using *
    ```
    conda create -n py36 python=3.6 anaconda
    ```
-  (Press y when it asks Proceed (y/n)?)
-  * Activate the environment using the command:
+  * Press y when it asks Proceed (y/n)?
+  * Activate the environment using *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)* or the command line:
    ```
    conda activate py36
    ```
-   or selecting *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*
 3. Open VS Code and install the following extensions:
     * **Azure Machine Learning** (this will automatically add **Azure Account** and **Microsoft Python** extensions)
     * **Azure IoT Hub Toolkit**
