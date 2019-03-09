@@ -11,7 +11,6 @@ last_modified_at: 2019-02-25
 ---
 This page will help you deploy the pre-built vision model to your device using **Visual Studio (VS) Code**.
 
-
 ## What you will do
 * Configure a VS Code dev environment
 * Deploy the pre-built sample model container image through VS Code
@@ -28,11 +27,12 @@ This page will help you deploy the pre-built vision model to your device using *
 
 ## Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
 1. If not already available, download and install VS Code. [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
+
 2. If not already available, install Python 3.6 by Anaconda (using default options). [(Download Here)](https://www.anaconda.com/download/){:target="_blank"}
 
     * Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.
 
-    ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
+        ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
 
    * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
    * Create a Python 3.6 runtime environment using the command:
