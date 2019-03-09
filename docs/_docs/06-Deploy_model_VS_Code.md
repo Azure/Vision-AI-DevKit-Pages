@@ -30,7 +30,7 @@ This page will help you deploy the pre-built vision model to your device using *
 2. If not already available, install Python 3.6 by Anaconda (using default options). [(Download here)](https://www.anaconda.com/download){:target="_blank"}
     * Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.
         ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
-        
+
   * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
   * Create a Python 3.6 runtime environment using the command:
    ```
@@ -41,12 +41,15 @@ This page will help you deploy the pre-built vision model to your device using *
    ```
    conda activate py36
    ```
+
 3. Open VS Code and install the following extensions:
     * **Azure Machine Learning** (this will automatically add **Azure Account** and **Microsoft Python** extensions)
     * **Azure IoT Hub Toolkit**
     * **Azure IoT Edge**
     * **Docker extension**
+
   ![Screen shot of VSCode Extension installation dialog]({{ '/assets/images/VSCode_Extension_Install.png' | relative_url }})
+  
 4. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. (If you choose to use the sample code as-is, skip to: [*Deploy a Model Container Image to the Vision AI Dev Kit hardware in Visual Studio Code*]( {{'/docs/Deploy_Model_VS_Code/#deploy-a-model-container-image-to-a-vision-ai-dev-kit-device-in-visual-studio-code' | relative_url}} ))
     Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, you will need to create a *requirements.txt* file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined.
 
