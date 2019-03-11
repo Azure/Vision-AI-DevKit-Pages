@@ -13,6 +13,7 @@ This page will help you deploy the pre-built vision model to your device using *
 ## What you will do
 * Configure a VS Code dev environment
 * Deploy the pre-built sample model container image through VS Code
+
 ## What you will need
 * Latest version of Visual Studio (VS) Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
 * Python 3.6 by Anaconda [(Download Here)](https://www.anaconda.com/download/){:target="_blank"}
@@ -61,7 +62,7 @@ This page will help you deploy the pre-built vision model to your device using *
       easydict==1.9
       tensorflow==1.12.0
      ```
-     
+
 4. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, then choose *run as administrator*) then execute the following command:
       ```
       pip install --ignore-installed PyYAML==4.2b1 
