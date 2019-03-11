@@ -60,7 +60,8 @@ This page will help you deploy the pre-built vision model to your device using *
       wheel==0.30.0
       easydict==1.9
       tensorflow==1.12.0
-     ```  
+     ```
+     
 4. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, then choose *run as administrator*) then execute the following command:
       ```
       pip install --ignore-installed PyYAML==4.2b1 
