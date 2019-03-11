@@ -27,9 +27,7 @@ This page will help you deploy the pre-built vision model to your device using *
 
 ## Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
 
-1. If not already available, download and install VS Code. [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
-
-2. If not already available, install Python 3.6 by Anaconda (using default options). [(Download here)](https://www.anaconda.com/download){:target="_blank"}
+1. If not already available, download and install VS Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"} and Python 3.6 by Anaconda (using default options). [(Download here)](https://www.anaconda.com/download){:target="_blank"}
 
     * Note: You must select the check-box to 'Add Anaconda to the system PATH environment variables' (as shown below) during the Anaconda install.  
         ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
@@ -44,14 +42,14 @@ This page will help you deploy the pre-built vision model to your device using *
      ```
      conda activate py36
      ```  
-3. Open VS Code and install the following extensions:
+2. Open VS Code and install the following extensions:
     * **Azure Machine Learning** (this will automatically add **Azure Account** and **Microsoft Python** extensions)
     * **Azure IoT Hub Toolkit**
     * **Azure IoT Edge**
     * **Docker extension**  
       ![Screen shot of VSCode Extension installation dialog]({{ '/assets/images/VSCode_Extension_Install.png' | relative_url }})  
 
-4. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. (If you choose to use the sample code as-is, skip to: [*Deploy a Model Container Image to the Vision AI Dev Kit hardware in Visual Studio Code*]( {{'/docs/Deploy_Model_VS_Code/#deploy-a-model-container-image-to-a-vision-ai-dev-kit-device-in-visual-studio-code' | relative_url}} ))
+3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. (If you choose to use the sample code as-is, skip to: [*Deploy a Model Container Image to the Vision AI Dev Kit hardware in Visual Studio Code*]( {{'/docs/Deploy_Model_VS_Code/#deploy-a-model-container-image-to-a-vision-ai-dev-kit-device-in-visual-studio-code' | relative_url}} ))
 
     * Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, you will need to create a *requirements.txt* file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined.
 
@@ -69,29 +67,29 @@ This page will help you deploy the pre-built vision model to your device using *
       easydict==1.9
       tensorflow==1.12.0
       ```  
-5. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, then choose *run as administrator*) then execute the following command:
+4. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, then choose *run as administrator*) then execute the following command:
       ```
       pip install --ignore-installed PyYAML==4.2b1 
       pip install --upgrade -r requirements.txt
       ```
-6. Restart Visual Studio Code in the Python 3.6 runtime environment, by executing the following command in an **Anaconda Prompt (py36)** window:
+5. Restart Visual Studio Code in the Python 3.6 runtime environment, by executing the following command in an **Anaconda Prompt (py36)** window:
     ```
     code
     ```
       This will enable VS code to inherit the environment variables of the **Python 3.6** runtime environment.
-7. Open the *command palette* in VS Code *(Ctrl-Shift-P)*, then enter 
+6. Open the *command palette* in VS Code *(Ctrl-Shift-P)*, then enter 
     ```
     Python: Select Interpreter
     ```
     to select your Python interpreter (*Python 3.6*)
-8. In the VS Code *command pallette*, enter 
+7. In the VS Code *command pallette*, enter 
     ```
     Azure: Sign In
     ```
     to sign in to your Azure account and select your subscription.
-9. Create a new IoT Hub with an IoT Edge device using the instructions found in [Setup Azure resources]({{ '/docs/Setup_Azure_Resources' | relative_url }}).
+8. Create a new IoT Hub with an IoT Edge device using the instructions found in [Setup Azure resources]({{ '/docs/Setup_Azure_Resources' | relative_url }}).
   Note: If you have an exisitng IoT Hub and Edge device(s) already created for your Vision AI DevKit hardware, you can reuse them instead of creating new ones.
-10. Create a new workspace in VS Code as described in [Get started with Azure Machine Learning for Visual Studio Code](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-vscode-tools). You can also use 00-aml-configuration.py script described in the next section to create a new workspace.
+9. Create a new workspace in VS Code as described in [Get started with Azure Machine Learning for Visual Studio Code](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-vscode-tools). You can also use 00-aml-configuration.py script described in the next section to create a new workspace.
 
 ## Deploy a Model Container Image to a Vision AI Dev Kit device in Visual Studio Code
 1. Download or Clone the latest Visual Studio Code sample from the [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/sample-solution-1).
