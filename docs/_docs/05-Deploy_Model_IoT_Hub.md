@@ -44,19 +44,19 @@ The Azure portal has a wizard that walks you through creating the deployment man
 
 	* **Name** - VisionSample
 	* **Image URI** - mcr.microsoft.com/aivision/visionsamplemodule:1.0.4_SSD_linklocal-arm32v7
-	* **Container Create Options** - `{<br>
-  "HostConfig": {<br>
-    "Binds": [<br>
-      "/data/misc/camera:/app/vam_model_folder"<br>
-    ],<br>
-    "NetworkMode": "host"<br>
-  },<br>
-  "NetworkingConfig": {<br>
-    "EndpointsConfig": {<br>
-      "host": {}<br>
-    }<br>
-  }<br>
-}<br> 
+	* **Container Create Options** - `{
+  "HostConfig": {
+    "Binds": [
+      "/data/misc/camera:/app/vam_model_folder"
+    ],
+    "NetworkMode": "host"
+  },
+  "NetworkingConfig": {
+    "EndpointsConfig": {
+      "host": {}
+    }
+  }
+}
 ` 
 	* **Restart Policy** - Always
 	* **Desired Status** - running
