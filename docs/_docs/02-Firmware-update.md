@@ -27,7 +27,7 @@ last_modified_at: 2019-03-07
     adb devices
     ```
 
-You should see output similar to this, if your computer and camera are connected properly.
+You should see output similar to this, if your computer and camera are connected properly.  
     ```
     C:\Tools>adb devices
     List of devices attached
