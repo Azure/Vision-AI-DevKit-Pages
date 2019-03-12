@@ -10,6 +10,7 @@ variable:
 last_modified_at: 2019-02-25
 ---
 This page will help you deploy the pre-built vision model to your device using **Visual Studio (VS) Code**.
+
 ## What you will do
 * Configure a VS Code dev environment
 * Deploy the pre-built sample model container image through VS Code
