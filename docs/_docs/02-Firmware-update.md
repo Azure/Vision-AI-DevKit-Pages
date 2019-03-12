@@ -27,14 +27,14 @@ last_modified_at: 2019-03-11
     adb devices
     ```
 
-You should see output similar to this, if your computer and camera are connected properly:
+    You should see output similar to this, if your computer and camera are connected properly:
         ```
         C:\Tools>adb devices
         List of devices attached
         efb99xxx        device
         ```
 
-If you do not see the device, try rebooting the camera hardware. There are several methods available to reboot:
+    If you do not see the device, try rebooting the camera hardware. There are several methods available to reboot:
 
 * Use the pin hole on the right side of the camera to click once.
 * Press the power button on the back once.
