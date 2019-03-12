@@ -7,12 +7,12 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-07
+last_modified_at: 2019-03-11
 ---
 
 ## What you will do
-* Check the firmware version of the device
-* Update the firmware in your device, if necessary
+* Verify connectivity between your computer and the Vision AI Dev Kit hardware
+* Update the firmware in your device
 
 ## What you will need
 * Vision AI Dev Kit hardware
