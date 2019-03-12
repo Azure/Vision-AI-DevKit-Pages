@@ -44,20 +44,6 @@ If you do not see the device, try rebooting the camera hardware. There are sever
     ```
 * Long press the power button for longer than 12 seconds to force a shut down. Then hold the power button for longer than 12 seconds again to start the device.
 
-## Useful ADB commands when the device is connected to a computer using a USB-C cable
-1.	Check to see if device is connected to PC
-    ```
-    adb devices
-    ```
-2.	Check the battery level
-    ```
-    adb shell cat /sys/class/power_supply/battery/capacity
-    ```
-3.	Check firmware version
-    ```
-    adb shell cat /etc/version
-    ```
-
 ## Updating the Firmware
 The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (using a 2A charger) before starting the firmware flashing process.
 
@@ -83,6 +69,20 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes** (usin
     * If you get stuck at the message *waiting for device*, please reboot the camera hardware and run FastBootUpgrade.bat again. If you keep hitting the same message, please charge the device for 10+ minutes to make sure that the battery is charged.
 
 8. To confirm your device has accepted the updated firmware, check the version by running the following in a command prompt:
+    ```
+    adb shell cat /etc/version
+    ```
+
+## Useful ADB commands when the device is connected to a computer using a USB-C cable
+1.	Check to see if device is connected to PC
+    ```
+    adb devices
+    ```
+2.	Check the battery level
+    ```
+    adb shell cat /sys/class/power_supply/battery/capacity
+    ```
+3.	Check firmware version
     ```
     adb shell cat /etc/version
     ```
