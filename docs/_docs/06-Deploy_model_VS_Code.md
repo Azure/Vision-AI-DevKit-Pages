@@ -10,14 +10,11 @@ variable:
 last_modified_at: 2019-02-25
 ---
 This page will help you deploy the pre-built vision model to your device using **Visual Studio (VS) Code**.
-
 ## What you will do
-
 * Configure a VS Code dev environment
 * Deploy the pre-built sample model container image through VS Code
 
 ## What you will need
-
 * Latest version of Visual Studio (VS) Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
 * Python 3.6 by Anaconda [(Download Here)](https://www.anaconda.com/download/){:target="_blank"}
 * Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
@@ -28,7 +25,6 @@ This page will help you deploy the pre-built vision model to your device using *
 * Latest Vision Dev Kit hardware firmware installed.
 
 ## Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit  
-
 1. If not already available, download and install VS Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"} and Python 3.6 by Anaconda (using default options). [(Download here)](https://www.anaconda.com/download){:target="_blank"}
 
     * Select the check-box to 'Add Anaconda to the system PATH environment variables' in the *Advanced Installation Options* (as shown below) during the Anaconda install.  
@@ -36,11 +32,13 @@ This page will help you deploy the pre-built vision model to your device using *
 
     * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
     * Create a Python 3.6 runtime environment using the command:
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 9e5e196... Update 06-Deploy_model_VS_Code.md
      ```
      conda create -n py36 python=3.6 anaconda
      ```
-
     * Press y when it asks Proceed (y/n)?
     * Activate the environment using *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)* or the command line:
      ```
