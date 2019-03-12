@@ -13,6 +13,7 @@ last_modified_at: 2019-03-07
 For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use. All the instructions for steps introduced in page can be found from the left side menu.
 
 ## Initial setup
+
 * There are a few steps to take in order to get the Vision AI Dev Kit set up.
 * The picture below illustrates the steps and the dependencies between them.
 * Initial setup also includes deploying VisionSample that is an example module with image recognition capabilities built in.
