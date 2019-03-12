@@ -12,7 +12,7 @@ last_modified_at: 2019-03-11
 
 ## What you will do
 * Verify connectivity between your computer and the Vision AI Dev Kit hardware
-* Update the firmware in your device
+* Update the Vision AI Dev Kit firmware
 
 ## What you will need
 * Vision AI Dev Kit hardware
