@@ -37,7 +37,7 @@ This page will help you deploy the pre-built vision model to your device using *
     * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
     * Create a Python 3.6 runtime environment using the command:
 
-     ```Python
+     ```
      conda create -n py36 python=3.6 anaconda
      ```
 
