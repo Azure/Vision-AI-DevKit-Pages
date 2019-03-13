@@ -1,7 +1,7 @@
 # main links
 main: &default_main
   - title: "Get Started"
-    url: https://aka.ms/VAIDKGetStarted-Landing
+    url: /docs/01-Get_Started/
     target: _self
   - title: "Assets (GitHub)"
     url: https://aka.ms/VAIDKGitHub-Landing/
