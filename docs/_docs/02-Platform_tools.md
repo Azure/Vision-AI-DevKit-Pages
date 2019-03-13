@@ -71,4 +71,4 @@ Download and install the Platform Tools using these links for your development O
    exit
    ```
 
-Specific ADB commands for troubleshooting can be found in the [troubleshooting section]({{ 'docs/troubleshooting' | relative }})
+Specific ADB commands for troubleshooting can be found in [troubleshooting.]({{ 'docs/troubleshooting' | relative }})
