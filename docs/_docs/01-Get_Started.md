@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-07
+last_modified_at: 2019-03-13
 ---
 
 For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use. All the instructions for steps introduced in page can be found from the left side menu.
@@ -24,7 +24,7 @@ For first-time users of the **Vision AI DevKit**, this page will help you get yo
 
 You will need an installation of platform tools, which include the Android Debug Bridge (ADB) and Fastboot. These tools are used for checking device connectivity and running various command-line tasks included firmware updates.
 
-## [Firmware Update]({{ '/docs/Firmware-update/' | relative_url }})
+## [Firmware Update]({{ '/docs/Firmware/' | relative_url }})
 
 Although not absolutely mandatory we strongly recommend you to check the firmware version of you device and update it to latest version if needed before starting to use Vision AI Dev Kit.
 
