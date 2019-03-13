@@ -6,3 +6,23 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+article{
+    .page__inner-wrap {
+        p,
+        li,
+        dl {
+            font-size: 0.75em !important;
+        }
+        header {
+            background-image: url("/Vision-AI-DevKit-Pages/assets/images/node-graphic.png");
+            background-position: center;
+            background-size: cover;
+        
+            #page-title{
+                margin-bottom: 0px;
+                padding-bottom: 0.5em;
+            }
+        }
+    }
+}
