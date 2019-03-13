@@ -24,7 +24,12 @@ Fastboot is a protocal for communicating with bootloaders over USB or ethernet. 
 
 ## Installing Platform Tools
 
-Download and install the Platform Tools using these links for your development OS:
+If you have a package manager installed (Chocolatey/Homebrew/Apt/Yum or similar), use a command-line similar to:
+
+```
+choco install adb
+```
+(replacing 'choco' with the package manager of your choice) to install the Platform Tools. Alternatively, you can download and install the Platform Tools using these links for your development OS:
 
 * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip){:target="_blank"}
 * [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip){:target="_blank"}

@@ -16,6 +16,7 @@ last_modified_at: 2019-03-13
 ## What will you need
 - An configured Azure IoT Hub
 - IoT Edge device connection string for your device
+    - This is the string obtained in [Setup Azure Resources]({{ '/docs/Setup_Azure_Resources/' | relative_url }})
 
 ## Connect your PC to the Visual AI DevKit hardware Wi-Fi access point
 On initial power up, you will see three Red LED lights. The LEDs will start flashing within 10 seconds of power up, indicating the device is in Wi-Fi access point mode.
