@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting"
+title: "Troubleshooting and Tips"
 permalink: /docs/troubleshooting/
-excerpt: "How to troubleshoot issues related to Vision AI Dev Kit"
+excerpt: "Tips and troubleshooting suggestions for the Vision AI Dev Kit"
 variable:
   - platform: windows
     name: Windows
