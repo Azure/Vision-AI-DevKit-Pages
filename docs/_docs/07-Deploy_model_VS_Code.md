@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-02-25
+last_modified_at: 2019-03-13
 ---
 This page will help you deploy the pre-built vision model to your device using **Visual Studio (VS) Code**.
 
