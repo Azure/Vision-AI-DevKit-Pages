@@ -10,7 +10,7 @@ header:
     - label: "Order <i class='fas fa-chevron-right'></i>"
       url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
 excerpt: >
-  Integrated with Azure IoT Edge and working with the Microsoft Azure Machine Learning service (public preview), this Azure IoT Starter kit enables developers to build vision AI solution and run their AI models on the device.
+  Integrated with Azure IoT Edge and working with the Microsoft Azure Machine Learning Service, this Azure IoT Starter kit enables developers to create and evalutate Intelligent Edge vision solutions, evaluating cloud trained vision AI inference models solutions locally on the device.
 more_info:
   - title: "Have a device?"
     excerpt: |
@@ -46,15 +46,13 @@ advantages:
             ]);</script>
   - title: "Create Intelligent Apps for IoT Sensors"
     excerpt: >
-        In this era of intelligent cloud and intelligent edge, developers will need to write applications for a range of connected devices. The Azure IoT Edge runtime makes it easy to create applications from cloud to edge, leveraging
-        advanced AI services. Today we are announcing the public preview of a vision AI developer kit—the newest addition in the Microsoft Azure IoT Starter kit family—for IoT solution makers to easily deploy AI models built using
-        Azure Machine Learning and Azure IoT Edge.
+        In the era of intelligent cloud and intelligent edge, developers will need to write applications for a range of connected devices. The Azure IoT Edge runtime makes it easy to create applications from cloud to edge, leveraging advanced AI services. The Vision AI Developer Kit, a member of the Microsoft Azure IoT Starter kit family, can be used by IoT solution makers to easily deploy AI models built using Azure Machine Learning and Azure IoT Edge.
 qualcomm:
   - image_path: /assets/images/ai-kit-diagram.png
     alt: "placeholder image 2"
     title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 200px'>"
     excerpt: >
-        The device uses the Qualcomm Visual Intelligence Platform for hardware acceleration of the AI model to deliver superior inferencing performance. Customers can use the device to create new solutions for a variety of scenarios, from industrial safety, retail, home and enterprise security cameras, smart home devices and more. 
+        The Vision AI Dev Kit features the Qualcomm Visual Intelligence Platform for hardware acceleration of AI models to deliver superior inferencing performance. Use the DevKit to create new solutions for a variety of scenarios, such as industrial safety, retail, security, and more. 
 ---
 
 <div class="feature__outer_wrapper">
