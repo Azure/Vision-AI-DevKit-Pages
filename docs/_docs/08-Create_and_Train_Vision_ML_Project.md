@@ -36,4 +36,4 @@ last_modified_at: 2019-03-13
 2. Export with platform selected
 
 3. Congratulations! The first vision model is trained and downloaded
-(You can move the model files to Jupyter Notebook directory and follow Notebook to continue)
+(You can move the model files to the Jupyter Notebook directory and follow the Notebook instructions to continue).
