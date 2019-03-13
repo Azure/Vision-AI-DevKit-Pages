@@ -1,54 +1,74 @@
 ---
-title: "ADB Platform Tools"
-permalink: /docs/adb_platform_tools/
-excerpt: "Instructions for ADB platform tools"
+title: "Platform Tools"
+permalink: /docs/platform_tools/
+excerpt: "Platform Tools Instructions"
 variable:
   - platform: windows
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-02-25
+last_modified_at: 2019-03-13
 ---
-<br>
-<br>
-In order to be able to communicate with Vision AI Dev Kit from the command line and update the firmware when needed you'll need Platform Tools. Platform tools is a collection of command line tools of which the most essential ones are ADB and Fastboot.
+In order to communicate with the Vision AI DevKit using a command line, including updating the firmware when needed, you will need the Android SDK Platform Tools. The Vision AI DevKit specifically uses the Android Debug Bridge (ADB) and Fastboot.
 
 ## What is ADB?
-Android Debug Bridge (adb) is a versatile command-line tool that lets you communicate with a device. 
-The adb command facilitates a variety of device actions, such as installing and debugging apps, 
-and it provides access to a Unix shell that you can use to run a variety of commands on a device.
+Android Debug Bridge (ADB) is a versatile command-line tool that lets you communicate with a device. The ADB command facilitates a variety of device actions, such as installing and debugging apps, and it provides access to a Unix shell that you can use to run a variety of commands on a device. It is a client-server program that includes three components:
+
+* A client, which sends commands. The client runs on your development machine. You can invoke a client from a command-line terminal by issuing an adb command.
+* A daemon (adbd), which runs commands on a device. The daemon runs as a background process on each device.
+* A server, which manages communication between the client and the daemon. The server runs as a background process on your development machine.
 
 ## What is Fastboot?
-Fastboot is a protocal that can be used to perform a firmware update to Vision AI Dev Kit and flash the device.
 
-## Platform Tools
-* Install ADB (Android Debug Bridge) and Fastboot tool. Download for [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip), [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip){:target="_blank"} or [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip){:target="_blank"}
+Fastboot is a protocal for communicating with bootloaders over USB or ethernet. The Vision AI DevKit uses Fastboot for firmware updates.
 
-## Most popular ADB commands
+## Installing Platform Tools
 
-Show you all the available adb commands <br>
-  `adb`
+Download and install the Platform Tools using these links for your development OS:
 
-Check that device is recognized <br>
-  `adb devices`
+* [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip){:target="_blank"}
+* [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip){:target="_blank"}
+* [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip){:target="_blank"}
+
+## Common ADB commands  
+
+* Show connected devices
+   ```
+   adb devices
+   ```
   
-In order to run Linux commands in a device <br>
-  `adb shell [command]` 
-  or <br>
-  `adb shell`
-  that allows you to run multiple commands in shell
+* Check device firmware version
+   ```
+   adb shell cat /etc/version
+   ```
+
+* Check device battery level (provided as % value)
+   ```
+   adb shell cat /sys/class/power_supply/battery/capacity
+   ```
   
-Type <br>
-  `exit` 
-to exit shell
+* Reboot the device
+   ```
+   adb reboot
+   ```
 
-Check the firmware version of the device <br>
-  `adb shell cat /etc/version`
+* Show available adb command options
+   ```
+   adb
+   ```
+* Run a Linux command on the device
+   ```
+   adb shell [command]
+   ```
 
-Check the battery level of teh device (notice that the answer is provided as % without a %-sign as an example 80) <br>
-  `adb shell cat /sys/class/power_supply/battery/capacity`
+* Interactively run Linux commands on the device
+   ```
+   adb shell
+   ```
   
-Reboot the device <br>
-   `adb reboot` <br>
+* Exit the shell
+   ```
+   exit
+   ```
 
-You can find other usefull adb commands from the troubleshooting section
+Specific ADB commands for troubleshooting can be found in the [troubleshooting section]({{ 'docs/troubleshooting' | relative }})

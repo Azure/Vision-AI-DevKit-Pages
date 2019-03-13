@@ -20,7 +20,7 @@ For first-time users of the **Vision AI DevKit**, this page will help you get yo
 
 ![High level steps to take for the initial Vision AI Dev Kit setup]({{ '/assets/images/GetStarted.PNG' | relative_url }})
 
-## [Platform Tools]({{ 'docs/adb_platform_tools' | relative_url }})
+## [Platform Tools]({{ 'docs/platform_tools' | relative_url }})
 
 You will need an installation of platform tools, which include the Android Debug Bridge (ADB) and Fastboot. These tools are used for checking device connectivity and running various command-line tasks included firmware updates.
 

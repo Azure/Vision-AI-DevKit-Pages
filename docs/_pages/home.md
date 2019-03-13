@@ -6,6 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/node-graphic.jpg
   image: /assets/images/camera-render-transparent.png
+  alt: "Picture of the Vision AI DevKit camera hardware"
   actions:
     - label: "Order <i class='fas fa-chevron-right'></i>"
       url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
@@ -49,7 +50,7 @@ advantages:
         In the era of intelligent cloud and intelligent edge, developers will need to write applications for a range of connected devices. The Azure IoT Edge runtime makes it easy to create applications from cloud to edge, leveraging advanced AI services. The Vision AI Developer Kit, a member of the Microsoft Azure IoT Starter kit family, can be used by IoT solution makers to easily deploy AI models built using Azure Machine Learning and Azure IoT Edge.
 qualcomm:
   - image_path: /assets/images/ai-kit-diagram.png
-    alt: "placeholder image 2"
+    alt: "Vision AI DevKit software architecture diagram"
     title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 200px'>"
     excerpt: >
         The Vision AI Dev Kit features the Qualcomm Visual Intelligence Platform for hardware acceleration of AI models to deliver superior inferencing performance. Use the DevKit to create new solutions for a variety of scenarios, such as industrial safety, retail, security, and more. 
