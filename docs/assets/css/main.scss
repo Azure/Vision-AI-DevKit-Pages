@@ -5,7 +5,14 @@
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+
+
+.layout--single{
+    #page-title{
+        color: #ffffff;
+        padding: 2em 0em 2em 0em;
+    }
+}
 
 article{
     .page__inner-wrap {
@@ -26,10 +33,4 @@ article{
         }
     }
 }
-
-.layout--single{
-    #page-title{
-        color: #ffffff;
-        padding: 2em 0em 2em 0em;
-    }
-}
+@import "minimal-mistakes"; // main partials
