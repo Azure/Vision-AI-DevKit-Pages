@@ -19,7 +19,7 @@ last_modified_at: 2019-03-13
 
 ## Setup your vision classifier
 1. Using a browser, login to the Azure Custom Vision Service (Preview) at [https://www.customvision.ai.](https://www.customvision.ai)
-    - (Note: You will need to use the specific username iristest3@outlook.com at this time. The username/password combination is a temporary measure for downloading a model in the format needed by the Vision AI Dev Kit. An upcoming release of customvision.ai will provide this support to all users. Please contact Mahesh Yadav, the owner of this test project, for access details.)
+    - (Note: You will need to use a specific username/password at this time. This is a temporary measure for downloading a model in the format needed by the Vision AI Dev Kit. An upcoming release of customvision.ai will provide this support to all users. Please review the Teams Wiki for access details.)
 
 2. Follow these instructions for [How to build a classifier with Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier), with the following modifications for the Vision AI Dev Kit hardware.
 
