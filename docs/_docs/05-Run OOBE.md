@@ -1,5 +1,5 @@
 ---
-title: "Run OOBE"
+title: "OOBE"
 permalink: /docs/Run_OOBE/
 excerpt: "Run OOBE (Ouf-Of-Box-Experience) - Connect device to WiFi and IoT Hub"
 variable:

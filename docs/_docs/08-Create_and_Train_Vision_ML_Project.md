@@ -1,5 +1,5 @@
 ---
-title: "Create and Train a Vision ML Project for the Vision AI DevKit using Azure services"
+title: "Create/Train with CustomVision.AI"
 permalink: /docs/Create_Train_Vision_ML_Project/
 excerpt: "Guide to manually creating and training a Vision ML Project for the Vision AI DevKit using Azure services"
 variable:

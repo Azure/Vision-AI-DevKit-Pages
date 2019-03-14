@@ -1,5 +1,5 @@
 ---
-title: "Setup Azure resources"
+title: "Azure Resources"
 permalink: /docs/Setup_Azure_Resources/
 excerpt: "Set up your Azure account, IoT Hub and IoT Edge for Vision AI Dev Kit"
 variable:
