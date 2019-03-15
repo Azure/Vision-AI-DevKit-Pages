@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-13
+last_modified_at: 2019-03-15
 ---
 ## Guide to device LEDs
 <style type="text/css">
@@ -74,15 +74,30 @@ last_modified_at: 2019-03-13
 
 ## Display issues
 
-* Use a direct HDMI connection to the display. Using converters, e.g. Display Port to HDMI, will usually not work.
-* The neural processing engine (or other parts of the stack) require a reboot occasionally. `adb reboot` will help to reset all sub-systems.
-* The labels presented on the HDMI output may be incorrect. The display process picks the label of the last object that was detected and presents it to the UI. This is not an inferencing bug. `logcat | grep SNPE` will show you the inferenced objects.
+* Use a direct HDMI connection to the display. Converters, e.g. Display Port to HDMI, will usually cause the output to fail.
+* The neural processing engine (or other parts of the stack) may require a reboot occasionally. The command line
+  ```
+  adb reboot
+  ```
+will help to reset all sub-systems.
+
+* The labels presented on the HDMI output may be incorrect. The display process picks the label of the last object that was detected and presents it to the UI. This is not an inferencing bug. The command line
+```
+logcat | grep SNPE
+```
+will show you the inferenced objects.
 
 ## Camera hardware Wi-Fi access point passphrase
 
-The Vision AI Dev Kit camera hardware should have a unique Wi-Fi access point passphrase found on a sticker on the bottom of the device. If there is no sticker, use `ADB tools: Run adb shell cat /data/misc/wifi/hostapd_virtual.conf` to display the access point configuration details. The output will be similar to this:
+The Vision AI Dev Kit camera hardware should have a unique Wi-Fi access point passphrase found on a sticker on the bottom of the device. If there is no sticker, use the command line
 
-```    
+```
+adb shell cat /data/misc/wifi/hostapd_virtual.conf
+```
+
+to display the access point configuration details. The output will be similar to this:
+```
+
       >   ctrl_interface=/var/run/hostapd
       >   interface=softap0
       >   #driver=nl80211
@@ -104,15 +119,28 @@ The Vision AI Dev Kit camera hardware should have a unique Wi-Fi access point pa
 ```
   The line marked with three dashes above contains the passphrase, which is unique to each device.
 
+##Unable to connect the Vision AI DevKit hardware to a Wi-Fi network
+The Wi-Fi passphrase for your local Wi-fi network cannot have spaces (even at the end of the passphrase string), or the camera will be unable to connect to the Wi-Fi network.
+
 ## Display the Vision AI DevKit hardware MAC address
 
 Use the ADB command line:
-
 ```
-    adb shell ifconfig wlan0
+adb shell ifconfig wlan0
 ```
 
 Look for **HWaddr** in the output. The MAC address will be in a format similar to this:  00:0A:G5:5B:20:9E
+
+## Rebooting the Vision AI DevKit hardware
+
+  * Click the reset button once, using the pin hole on the right side of the camera.
+  * Press the power button on the back once.
+  * Use the command line:
+      ```
+      adb reboot
+      ```
+
+  * Long press the power button more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.
 
 ## Recover Vision AI Dev Kit hardware after a failed firmware update
 
@@ -131,36 +159,34 @@ Re-flash using Fastboot, a part of the platform tools, if the device will enter 
 
 ## Check Docker Container status
 
-Within the adb shell, use
+Use the command lines
 ```
-docker ps
+adb shell docker ps
 ```
 or
 ```
-watch docker ps
+adb shell watch docker ps
 ```
 
-* If edgeAgent is still being downloaded, you will see the docker container is empty. To check if it’s in progress, you can use
-
-```
-watch ifconfig wlan0
-```
+* If edgeAgent is still being downloaded, you will see the docker container is empty. To check if it’s in progress, you can use the command line
+    ```
+    adb shell watch ifconfig wlan0
+    ```
 to see if the RX bytes are increasing.
-* If edgeAgent is downloaded, you will see it running. Once you see edgeAgent is downloaded, you can type
-
-```
-docker logs -f edgeAgent
-```
+* If edgeAgent is downloaded, you will see it running. Once you see edgeAgent is downloaded, you can use the command line
+  ```
+  adb shell docker logs -f edgeAgent
+  ```
 to see the progress. Once completed, the device is ready to deploy a module from IoT Hub.
 
 ## Review logs and progress of the IoT Edge Agent
 ```
-docker logs -f edgeAgent
+adb shell docker logs -f edgeAgent
 ```
 
 * After you see a “Start module <your module name>” message, you can use 
 ```
-docker logs -f <your module name>
+adb shell docker logs -f <your module name>
 ```
 to review logs for your module(s).
 
@@ -169,5 +195,4 @@ to review logs for your module(s).
     adb shell ifconfig wlan0
 
 ## Improve inferencing accuracy by using the CPU in place of the DSP
-Do to quantization, the DSP may provide low quality inferencing. To run inferencing on the CPU, change the `va-snpe-engine-library_config.json` fields `NetworkIO` and `Runtime` to a value of 0.
-
+Do to quantization, the DSP may provide low quality inferencing. To run inferencing on the CPU, change the **va-snpe-engine-library_config.json** fields ***NetworkIO*** and ***Runtime*** to the value of 0.

@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-13
+last_modified_at: 2019-03-15
 ---
 In order to communicate with the Vision AI DevKit using a command line, including updating the firmware when needed, you will need the Android SDK Platform Tools. The Vision AI DevKit specifically uses the Android Debug Bridge (ADB) and Fastboot.
 
@@ -76,4 +76,4 @@ choco install adb
    exit
    ```
 
-Specific ADB commands for troubleshooting can be found in [troubleshooting.]({{ 'docs/troubleshooting' | relative }})
+Specific suggestions for using ADB commands to troubleshoot issues can be found in [Troubleshooting and Tips.]({{ '/docs/troubleshooting/' | relative_url }})

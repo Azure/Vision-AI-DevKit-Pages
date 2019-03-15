@@ -7,21 +7,20 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-13
+last_modified_at: 2019-03-15
 ---
 ## What you will do
 * Create a vision classifier model using the Azure Custom Vision (Preview) portal.
 
 ## What you will need
-* A valid Azure subscription. [Create an account for free.}(https://azure.microsoft.com/free/)
+* A valid Azure subscription. [Create an account for free.](https://azure.microsoft.com/free/)
 * A set of images for use in training your classifier.
-* Specific login credentials to download Vision AI DevKit compatible models. 
 
 ## Setup your vision classifier
 1. Using a browser, login to the Azure Custom Vision Service (Preview) at [https://www.customvision.ai.](https://www.customvision.ai)
-    - (Note: You will need to use a specific username/password at this time. This is a temporary measure for downloading a model in the format needed by the Vision AI Dev Kit. An upcoming release of customvision.ai will provide this support to all users. Please review the Teams Wiki for access details.)
+    - (Note: Please review the Teams Wiki for pre-GA access details.)
 
-2. Follow these instructions for [How to build a classifier with Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier), with the following modifications for the Vision AI Dev Kit hardware.
+2. Follow these instructions for [How to build a classifier with Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier), using the following information for the Vision AI Dev Kit hardware.
 
     - When creating a new project, use these recommended settings:
          - **Project Type** - [Classification]
@@ -33,7 +32,9 @@ last_modified_at: 2019-03-13
 1. Download the trained models using the **Export** button in the  **Performance** tab of the customvision.ai portal.
 ![Image of the Export button in customvision.ai portal]({{ '/assets/images/Export_Vision_Model.png' | relative_url }})
 
-2. Export with platform selected
+2. Select Vision AI Dev Kit platform
 
-3. Congratulations! The first vision model is trained and downloaded
+3. Export with platform selected
+
+4. Congratulations! The first vision model is trained and downloaded
 (You can move the model files to the Jupyter Notebook directory and follow the Notebook instructions to continue).

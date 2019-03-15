@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-13
+last_modified_at: 2019-03-15
 ---
 
 For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use. All the instructions for steps introduced in page can be found from the left side menu.
@@ -28,11 +28,11 @@ You will need an installation of platform tools, which include the Android Debug
 
 Although not absolutely mandatory we strongly recommend you to check the firmware version of you device and update it to latest version if needed before starting to use Vision AI Dev Kit.
 
-## [Azure account, Azure IoT Hub and IoT Edge]({{ '/docs/Setup_Azure_Resources/' | relative_url }})
+## [Azure account, Azure IoT Hub and IoT Edge]({{ '/docs/Setup_Azure_resources/' | relative_url }})
 
 The Azure IoT Hub portal and a configured IoT Edge device are used for deployment of machine learning and other modules and control of data traffic between your device and the cloud. Use of these tools requires an active Azure account. 
 
-## [OOBE (Out-of-the-Box Experience)]({{ '/docs/Run_OOBE/' | relative_url }})
+## [OOBE (Out-of-Box Experience)]({{ '/docs/Run_OOBE/' | relative_url }})
 
 All the steps described above are pre-requisites for OOBE, even though some of them can be completed independent from each other. During OOBE, you will link your device with correct Azure IoT Hub and configure its Wi-Fi access. 
 
@@ -46,7 +46,7 @@ This section provides instructions for deploying the VisionSample model to your 
 
 ## Setting up your SW development envinronment
 
-While there are several ways to train machine learning models and develop additional logic for the Vision AI Dev Kit we recommend using VS Code for that work.
+While there are several ways to train machine learning models and develop additional logic for the Vision AI Dev Kit we recommend using [Visual Studio (VS) Code](https://code.visualstudio.com).
 
 ## [Deploying a model using VS Code]({{ '/docs/Deploy_Model_VS_Code/' | relative_url }})
 

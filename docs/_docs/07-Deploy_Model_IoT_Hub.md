@@ -7,18 +7,18 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-13
+last_modified_at: 2019-03-15
 ---
-This page will help you deploy a pre-build vision model to your device through the Azure portal.
+A supported method of deploying Vision AI modules to the Vision AI DevKit is through Azure Iot Hub.
 
 ## What you will do
 
-* Deploy a pre-built sample module through the Azure portal
+* Deploy a pre-built sample module using Azure IoT Hub
 
 ## What you will need
 
 * An [IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal){:target="_blank"} configured in your Azure Subscription
-* Vision AI Dev Kit camera hardware configured and connected as an [IoT Edge device](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal){:target="_blank"}
+* Vision AI Dev Kit camera hardware configured and connected to Azure IoT Hub as an [IoT Edge device](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal){:target="_blank"}
 * HDMI cable
 * Monitor with an HDMI input connector
 
@@ -30,12 +30,12 @@ This page will help you deploy a pre-build vision model to your device through t
 
 ![Azure portal 'Set Modules']({{ '/assets/images/Set_Modules.png' | relative_url }})
 
-Note:  If the **Set Modules** option is not available, ensure that you are selecting the IoT Edge item from the list below **Automatic Device Management**.  The **Set Modules** option is not available via the **IoT devices** link under the **Explorers** heading
+  - If the **Set Modules** option is not available, ensure that you are selecting the IoT Edge item from the list below **Automatic Device Management**.  The **Set Modules** option is not available via the **IoT devices** link under the **Explorers** heading
 
 ## Configure a deployment manifest
 A deployment manifest is a JSON document that describes which modules to deploy, how data flows between the modules, and desired properties of the module twins. For more information on deployment manifests, see [Understand how IoT Edge modules can be used, configured, and reused](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition){:target="_blank"}.
 
-The Azure portal has a wizard that walks you through creating the deployment manifest, instead of building the JSON document manually. It has three steps: **Add modules**, **Specify routes**, and **Review deployment**.
+The Azure portal uses a wizard to walk you through creating the deployment manifest. It has three steps: **Add modules**, **Specify routes**, and **Review deployment**.
 
 ### Add modules
 1. In the **Deployment modules** section of the page, select **Add**.
@@ -75,16 +75,20 @@ The Azure portal has a wizard that walks you through creating the deployment man
 7. Select **Save**, then select **Next**
 
 ### Specify routes
-By default the wizard gives you a route called *route*, defined as FROM /* INTO $upstream, which means that any messages output by any module is sent to your IoT hub.
 
-Add or update the routes with information from Declare routes, then select **Next** to continue to the review section. For the sample module, no changes are required.
+By default the wizard gives you a route called *route*, defined as FROM /* INTO $upstream, which means that any messages output by any module will be sent to your IoT hub.
+
+While the sample module requires no changes, you can qdd or update the routes with information from Declare routes, then select **Next** to continue to the review section.
 
 ### Review deployment
-The review section shows you the JSON deployment manifest that was created based on your selections in the previous two sections. Note that there are two modules declared that you didn't add: **$edgeAgent** and **$edgeHub**. These two modules make up the [IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime){:target="_blank"} and are required defaults for every deployment.
+
+The review section shows you the JSON deployment manifest created based on your selections in the previous two sections.
+
+* Note: There are two modules declared that you didn't add, **$edgeAgent** and **$edgeHub**. These modules represent the [IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime){:target="_blank"} and are required for every deployment.
 
  ![Verify that all modules are reported by the device]({{ '/assets/images/VisionSample_IoTHub1.png' | relative_url }})
 
-* Review your deployment information, then select **Submit**.
+Review your deployment information, then select **Submit**.
 
 ## Verify output on the monitor
-Connect the HDMI cable to the camera hardware and your monitor. A few minutes after submitting your deployment, you should start to see video on the monitor with bounding boxes drawing around objects the camera can see and evaluate.
+Connect the HDMI cable to the Vision AI DevKit hardware and your monitor. A few minutes after submitting your deployment, you should start to see video on the monitor with bounding boxes drawing around objects the camera can see and evaluate.
