@@ -82,7 +82,7 @@ Add or update the routes with information from Declare routes, then select **Nex
 ### Review deployment
 The review section shows you the JSON deployment manifest that was created based on your selections in the previous two sections. Note that there are two modules declared that you didn't add: **$edgeAgent** and **$edgeHub**. These two modules make up the [IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime){:target="_blank"} and are required defaults for every deployment.
 
- ![Verify that all modules are reported by the device]({{ '/assets/images/VisionSample_IoTHub.png' | relative_url }})
+ ![Verify that all modules are reported by the device]({{ '/assets/images/VisionSample_IoTHub1.png' | relative_url }})
 
 * Review your deployment information, then select **Submit**.
 
