@@ -74,6 +74,7 @@ last_modified_at: 2019-03-15
 
 ## Display issues
 
+* Your display needs to have a minimum resolution of 1080p.
 * Use a direct HDMI connection to the display. Converters, e.g. Display Port to HDMI, will usually cause the output to fail.
 * The neural processing engine (or other parts of the stack) may require a reboot occasionally. The command line
   ```
