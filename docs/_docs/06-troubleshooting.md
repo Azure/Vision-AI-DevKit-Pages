@@ -44,9 +44,9 @@ last_modified_at: 2019-03-15
   </tr>
   <tr>
     <td class="tg-llyw"><br>  SoftAP Mode<br>  </td>
-    <td class="tg-0pky"><br>Blink Amber<br></td>
-    <td class="tg-0pky"><br>Blink Amber<br></td>
-    <td class="tg-0pky"><br>Blink Amber<br></td>
+    <td class="tg-0pky"><br>Red<br></td>
+    <td class="tg-0pky"><br>Red<br></td>
+    <td class="tg-0pky"><br>Red<br></td>
     <td class="tg-0pky"><br>WiFi in AP mode. Reconfigure WiFi connection.<br></td>
   </tr>
   <tr>
@@ -122,6 +122,9 @@ to display the access point configuration details. The output will be similar to
 
 ##Unable to connect the Vision AI DevKit hardware to a Wi-Fi network
 The Wi-Fi passphrase for your local Wi-fi network cannot have spaces (even at the end of the passphrase string), or the camera will be unable to connect to the Wi-Fi network.
+
+## Connect your Vision AI DevKit to a different Wi-Fi network
+To change the Wi-Fi network your DevKit hardware connects to, long press the power button for more than 5 seconds to turn on the DevKit hardware access point. Connect your PC to the Wi-Fi access point using the instructions in [OOBE.]({{ '/docs/Run_OOBE/' | relative_url }}) Run through the OOBE process again, making the approriate Wi-Fi network changes.
 
 ## Display the Vision AI DevKit hardware MAC address
 
