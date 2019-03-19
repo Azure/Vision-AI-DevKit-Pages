@@ -18,7 +18,7 @@ For first-time users of the **Vision AI DevKit**, this page will help you get yo
 * The picture below illustrates the steps and the dependencies between them.
 * Initial setup also includes deploying VisionSample that is an example module with image recognition capabilities built in.
 
-![High level steps to take for the initial Vision AI Dev Kit setup]({{ '/assets/images/GetStarted.PNG' | relative_url }})
+    ![High level steps to take for the initial Vision AI Dev Kit setup]({{ '/assets/images/GetStarted.PNG' | relative_url }})
 
 ## [Platform Tools]({{ '/docs/platform_tools/' | relative_url }})
 
