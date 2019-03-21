@@ -10,11 +10,14 @@ variable:
 last_modified_at: 2019-03-15
 ---
 ## What you will do
-* Create a vision classifier model using the Azure Custom Vision (Preview) portal.
+* Create a vision classifier model using the Azure Custom Vision (Preview) portal, create a container and deploy it to the device
 
-## What you will need
+## What you will need for training the model
 * A valid Azure subscription. [Create an account for free.](https://azure.microsoft.com/free/)
 * A set of images for use in training your classifier.
+
+## What you will for containerizing and deployment
+* For deployment using VS Code you'll need a verified VS Code environment. The instructions are available [Deploy model: VS Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_VS_Code/) page.
 
 ## Setup your vision classifier
 1. Using a browser, login to the Azure Custom Vision Service (Preview) at [https://www.customvision.ai.](https://www.customvision.ai)
