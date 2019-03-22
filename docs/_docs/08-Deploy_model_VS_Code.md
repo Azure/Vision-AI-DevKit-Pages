@@ -17,7 +17,7 @@ The easiest way to deploy Vision AI models to the Vision AI DevKit is through th
 
 ## What you will need
 * Latest version of Visual Studio (VS) Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
-* Python 3.6 by Anaconda [(Download Here)](https://www.anaconda.com/download/){:target="_blank"}
+* Python 3.7 by Anaconda [(Download Here)](https://www.anaconda.com/download/){:target="_blank"}
 * Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
 * Latest Azure Machine Learning SDK for Python [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py)
 * Azure IoT Hub and Azure IoT Edge device configured for your Vision AI DevKit hardware [(Instructions)]({{ '/docs/Setup_Azure_resources/' | relative_url}})
@@ -33,15 +33,7 @@ The easiest way to deploy Vision AI models to the Vision AI DevKit is through th
         ![Screen shot of Anaconda installation dialog box to add Anaconda to the system PATH variables]({{ '/assets/images/Anaconda_path_set_screenshot.png' | relative_url }})
 
     * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
-    * Create a Python 3.6 runtime environment using the command:
-     ```
-     conda create -n py36 python=3.6 anaconda
-     ```
-    * Press 'y' when asked '*Proceed (y/n)?*'
-    * Activate the environment using *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)* or the command line:
-     ```
-     conda activate py36
-     ```  
+    
 2. Open VS Code. Click the Extensions icon in the Activity Bar (left side) and install the following extensions:
     * **Azure Machine Learning** (this will automatically add **Azure Account** and **Microsoft Python** extensions)
     * **Azure IoT Hub Toolkit**
@@ -54,34 +46,31 @@ The easiest way to deploy Vision AI models to the Vision AI DevKit is through th
 
     Recommended requirements.txt contents:
     ```
-      azure-cli-core==2.0.55
-      azure-mgmt-containerregistry==2.6.0
-      azure-mgmt-resource==2.0.0
-      azureml-core==1.0.8
-      azureml-contrib-iot==1.0.8
-      msgpack==0.6.1
-      PyYAML==4.2b1
-      pyqt5==5.9.2
-      wheel==0.30.0
+      azure-cli-core==2.0.60
+      azure-mgmt-containerregistry==2.7.0
+      azure-mgmt-resource==2.1.0
+      azureml-contrib-iot==1.0.18
+      azureml-core==1.0.18
       easydict==1.9
-      tensorflow==1.12.0
+      numpy==1.16
+      tensorflow==1.13.1
+      wheel==0.30.0
      ```
 
-4. Open the **Anaconda Prompt (py36)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (py36)*, choose *run as administrator*), then execute the following command lines:
+4. Open the **Anaconda Prompt (base)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (base)*, choose *run as administrator*), then execute the following command lines:
       ```
-      pip install --ignore-installed PyYAML==4.2b1 
       pip install --upgrade -r requirements.txt
       ```
-5. Restart Visual Studio Code in the Python 3.6 runtime environment, by executing the following command in an **Anaconda Prompt (py36)** window:
+5. Restart Visual Studio Code in the Python 3.7 runtime environment, by executing the following command in an **Anaconda Prompt (base)** window:
     ```
     code
     ```
-      This will enable VS code to inherit the environment variables of the **Python 3.6** runtime environment.
+      This will enable VS code to inherit the environment variables of the **Python 3.7** runtime environment.
 6. Open the *command palette* in VS Code *(Ctrl-Shift-P)*, then enter 
     ```
     Python: Select Interpreter
     ```
-    to select your Python interpreter (*Python 3.6*)
+    to select your Python interpreter (*Python 3.7*)
 7. In the VS Code *command pallette*, enter 
     ```
     Azure: Sign In
