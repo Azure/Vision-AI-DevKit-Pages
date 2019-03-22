@@ -3,7 +3,7 @@ main: &default_main
   - title: "Get Started"
     url: /docs/Get_Started/
     target: _self
-  - title: "Assets (GitHub)"
+  - title: "GitHub Repository (Preview Registration Required)"
     url: https://aka.ms/VAIDKGitHub-Landing/
     target: _blank
   - title: "Community"
