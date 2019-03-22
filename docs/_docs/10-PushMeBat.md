@@ -1,5 +1,5 @@
 ---
-title: Push DLC model quickly to the device"
+title: Push DLC model quickly to the device
 permalink: /docs/PushMeBat/
 excerpt: "Guide to quickly push DLC model directly to device without contanerizing it first"
 variable:
@@ -31,22 +31,22 @@ last_modified_at: 2019-03-15
 
     6.	Copy and paste the following into the Container Create Options field: 
 
-    {
-    "HostConfig": {
-    "Binds": [
-    "/data/misc/camera:/app/vam_model_folder"
-    ],
-    "NetworkMode": "host"
-    },
-    "NetworkingConfig": {
-    "EndpointsConfig": {
-    "host": {}
-    }
-    },
-    "Cmd": [
-    "-p False"
-    ]
-    }
+        {
+        "HostConfig": {
+        "Binds": [
+        "/data/misc/camera:/app/vam_model_folder"
+        ],
+        "NetworkMode": "host"
+        },
+        "NetworkingConfig": {
+        "EndpointsConfig": {
+        "host": {}
+        }
+        },
+        "Cmd": [
+        "-p False"
+        ]
+        }
  
     7.	Then click Save
 
@@ -60,8 +60,10 @@ last_modified_at: 2019-03-15
 4.	Make sure you have your "model" folder created and containing the following three file types (following are basic example names):
 
     1.	Label.txt file
+    
     2.	Model.dlc file
-    3.	Config.json file
+    
+    3.	VAM Configuration file (va-snpe-engine-library_config.json)
 
 5.	Make sure you also have the pushme.bat file in the same parent folder as the model folder noted above.
 
