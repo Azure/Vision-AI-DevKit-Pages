@@ -40,7 +40,7 @@ The easiest way to deploy Vision AI models to the Vision AI DevKit is through th
     * **Azure IoT Edge**
     * **Docker extension**
       * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery)
-3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. If you choose to use the sample code as-is, skip to: [*Deploy a Model Container Image to the Vision AI Dev Kit hardware in Visual Studio Code*]( {{'/docs/Deploy_Model_VS_Code/#deploy-a-model-container-image-to-a-vision-ai-dev-kit-device-in-visual-studio-code' | relative_url}} )
+3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. 
 
     * Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, there is a *requirements.txt* in GitHub under [VisionSample\MachineLearning\scripts](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/MachineLearning/scripts) folder that can be used to specify correct versions. Please copy the file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined. Below is the content of the file if you prefer creating it locally.
 
