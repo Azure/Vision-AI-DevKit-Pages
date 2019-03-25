@@ -36,6 +36,7 @@ last_modified_at: 2019-03-15
 ![Image of the Export button in customvision.ai portal]({{ '/assets/images/Export_Vision_Model.png' | relative_url }})
 
 2. Select Vision AI Dev Kit platform
+![Custom Vision AI export]({{ '/assets/images/customvisionai_export.JPG' | relative_url }})
 
 3. Export will provide you with model.dlc and labels.txt files that are needed in the next phase.
 
