@@ -1,7 +1,7 @@
 ﻿---
 layout: splash
 permalink: /
-title: Introducing the Vision AI Developer Kit for IoT Solution Makers
+title: A smart camera for the Intelligent Edge
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/node-graphic.png
@@ -11,11 +11,7 @@ header:
     - label: "Order <i class='fas fa-chevron-right'></i>"
       url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
 excerpt: >
-  With this Azure IoT Starter kit, developers can validate cloud trained Vision AI models to do intelligent Vision AI inferencing locally on the AI Camera.
-
-  The Vision AI Dev Kit leverages Azure IoT Edge and working with the Microsoft Azure Machine Learning Sevice.
-
-  Integrated with Azure IoT Edge and working with the Microsoft Azure Machine Learning Service, this Azure IoT Starter kit enables developers to create and evaluate Intelligent Edge vision solutions, evaluating cloud trained vision AI inference models solutions locally on the device.
+  Jumpstart your Azure Vision Machine Learning Journey today 
 more_info:
   - title: "Have a device?"
     excerpt: |
