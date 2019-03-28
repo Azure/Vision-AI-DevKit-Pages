@@ -3,14 +3,14 @@ main: &default_main
   - title: "Get Started"
     url: /docs/Get_Started/
     target: _self
-  - title: "GitHub Repo (Preview Registration Required)"
-    url: https://aka.ms/VAIDKGitHub-Landing/
+  - title: "Get Help"
+    url: https://aka.ms/VAIDKGetHelp-Landing/
     target: _blank
   - title: "Community"
     url: https://aka.ms/VAIDKTechComm-Landing
     target: _blank
-  - title: "Get Help"
-    url: https://aka.ms/VAIDKGetHelp-Landing/
+  - title: "GitHub Repo (Preview Registration Required)"
+    url: https://aka.ms/VAIDKGitHub-Landing/
     target: _blank
   - title: "Gitter"
     url: https://aka.ms/VAIDKGitter-Landing/
