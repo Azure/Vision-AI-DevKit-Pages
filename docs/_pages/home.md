@@ -11,7 +11,18 @@ header:
     - label: "Order <i class='fas fa-chevron-right'></i>"
       url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
 excerpt: >
-  Jumpstart your Azure Vision Machine Learning Journey today 
+  Jumpstart your Azure Vision Machine Learning Journey today
+VAIDK_More:
+  - title: "Start fast"
+    excerpt: Using the tutorial project, the Vision AI DevKit will be up and running in minutes, regardless of your current skill level with Machine Learning
+  - title: "Build and deploy vision models flexibly"
+    excerpt: Use Azure CustomVision.AI, Jupyter notebooks or Visual Studio Code to create, train and deploy your own models. Then use the power of Azure IoT Edge to push your models to the DevKit with ease, whether the camera is on your desk or in another country.
+  - title: "Prove your concept, then move to scale"
+    excerpt: With the Vision AI DevKit and Azure services, you can quickly take your project from concept to reality, then scale to your real world needs.
+  - title: "Join the Azure Machine Learning community"
+    excerpt: Engage with other developers who are using the power of Azure Machine Learning to bring projects to life.
+  - title: "Neural network processing on the device or combined with the cloud"
+    excerpt: With the Intelligent Edge, powered by Azure Services, your models can run directly on the device for fast response, then send only the important data to the cloud for more advanced processing and response.
 more_info:
   - title: "Have a device?"
     excerpt: |
