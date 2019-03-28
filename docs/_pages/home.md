@@ -5,7 +5,7 @@ title: A smart camera for the Intelligent Edge
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/node-graphic.png
-  image: /assets/images/camera-render-transparent.png
+  image: /assets/images/camera-render-transparent-small.png
   alt: "Picture of the Vision AI DevKit camera hardware"
   actions:
     - label: "Order <i class='fas fa-chevron-right'></i>"

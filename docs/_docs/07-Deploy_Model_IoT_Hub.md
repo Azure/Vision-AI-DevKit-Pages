@@ -78,7 +78,7 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
 
 By default the wizard gives you a route called *route*, defined as FROM /* INTO $upstream, which means that any messages output by any module will be sent to your IoT hub.
 
-While the sample module requires no changes, you can qdd or update the routes with information from Declare routes, then select **Next** to continue to the review section.
+While the sample module requires no changes, you can add or update the routes with information from Declare routes, then select **Next** to continue to the review section.
 
 ### Review deployment
 

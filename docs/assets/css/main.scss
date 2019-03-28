@@ -83,13 +83,14 @@ article{
 
         .page__hero-image {
             position: absolute;
-            height: calc(100% + 5px);
+            height: calc(100% + 15px);
             left: 0;
             right: 0;
+            top: 0;
             margin-left: auto;
             width: 34%;
             max-width: 456px;
-            background-size: cover;
+            background-size: contain;
         }
     }
 }
