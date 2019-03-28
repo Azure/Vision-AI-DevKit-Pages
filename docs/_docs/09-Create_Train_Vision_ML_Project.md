@@ -27,7 +27,7 @@ last_modified_at: 2019-03-26
     - When creating a new project, use these recommended settings:
          - **Project Type** - [Classification]
          - **Classification Type** -  [Multiclass (Single tag per image)]
-         - **Domain** - [General(compact)] 
+         - **Domain** - [General(compact)]
          - ** Basic images + Vision AI Dev Kit
 
 ## Export the trained vision model for the Vision AI DevKit
