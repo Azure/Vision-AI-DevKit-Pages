@@ -1,5 +1,5 @@
 ---
-title: "Model Create/Train: CustomVision.AI"
+title: "Create model using CustomVision.AI"
 permalink: /docs/Create_Train_Vision_ML_Project/
 excerpt: "Guide to manually creating and training a Vision ML Project for the Vision AI DevKit using Azure services"
 variable:
@@ -44,6 +44,6 @@ last_modified_at: 2019-03-26
 
 ## Containerize and deploy you model
 
-1. For containerizing and deploying you model using VS Code please follow the instructions in [vision-ai-developer-kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/BasicEdgeSolution) /sample-solutions/VisionSample/BasicEdgeSolution.
+1. For containerizing and deploying you model using VS Code please follow the instructions in [vision-ai-developer-kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/CreateAndDeployEdgeContainer) /sample-solutions/VisionSample/CreateAndDeployEdgeContainer.
 
 2. You can also move the model files to the Jupyter Notebook directory and follow the Notebook instructions to continue.
