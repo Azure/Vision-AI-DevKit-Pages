@@ -37,6 +37,7 @@ article{
 }
 
 .page__footer {
+    margin-top: 0em !important; //override 
     color: #737373 !important; // override
     p, strong {
         color: #737373 !important; // override
@@ -91,6 +92,7 @@ article{
             width: 34%;
             max-width: 456px;
             background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }
@@ -148,11 +150,6 @@ article{
                 border-top: 1px solid #cccccc;
             }
 
-            .feature__item--dual {
-                &:first-child {
-                    color: #fff;
-                }
-            }
 
             .feature__wrapper {
                 max-width: 1280px;

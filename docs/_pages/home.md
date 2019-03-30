@@ -14,29 +14,32 @@ excerpt: >
   Jumpstart your Azure Vision Machine Learning Journey today
 VAIDK_More:
   - title: "Start fast"
-    excerpt: Using the tutorial project, the Vision AI DevKit will be up and running in minutes, regardless of your current skill level with Machine Learning
-  - title: "Build and deploy vision models flexibly"
-    excerpt: Use Azure CustomVision.AI, Jupyter notebooks or Visual Studio Code to create, train and deploy your own models. Then use the power of Azure IoT Edge to push your models to the DevKit with ease, whether the camera is on your desk or in another country.
-  - title: "Prove your concept, then move to scale"
-    excerpt: With the Vision AI DevKit and Azure services, you can quickly take your project from concept to reality, then scale to your real world needs.
-  - title: "Join the Azure Machine Learning community"
-    excerpt: Engage with other developers who are using the power of Azure Machine Learning to bring projects to life.
-  - title: "Neural network processing on the device or combined with the cloud"
-    excerpt: With the Intelligent Edge, powered by Azure Services, your models can run directly on the device for fast response, then send only the important data to the cloud for more advanced processing and response.
+    excerpt: |
+      Using the [tutorial project](https://aka.ms/VAIDKGetStarted-Landing/), the Vision AI DevKit will be up and running in minutes, regardless of your current skill level with Machine Learning
+      # Build and deploy vision models flexibly
+      Use [Azure CustomVision.AI](https://customvision.ai/){:target="_blank"}, [Jupyter notebooks](https://jupyter.org/){:target="_blank"} or [Visual Studio Code](https://code.visualstudio.com){:target="_blank"} to create,train and deploy your own models. Then use the power of [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/){:target="_blank"} to push your models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.
+      # Prove your concept, then move to scale
+      With the Vision AI DevKit and Azure services, you can quickly take your project from concept to reality, then scale to your real world needs.
+  - title: "Neural network processing: on the Intelligent Edge and with the Intelligent Cloud"
+    excerpt: |
+     With an [Intelligent Edge device and Azure Intelligent Cloud Services](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, your models can run locally for fast response, then use the cloud for more advanced processing and response on only the most important data.
+     # Azure Machine Learning
+     Dig deeper into Microsoft's Machine learning efforts with the [Microsoft Azure Machine Learning Studio](https://studio.azureml.net/){:target="_blank"}.
+     
 more_info:
-  - title: "Have a device?"
+  - title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 200px'>"
+    excerpt: >
+        The Vision AI Dev Kit features the [Qualcomm Visual Intelligence Platform](https://www.qualcomm.com/news/onq/2018/05/07/qualcomm-vision-intelligence-platform-microsoft-azure-bring-edge-ai-solution){:target="_blank"} for hardware acceleration of AI models to deliver superior inferencing performance. Create new solutions for a variety of scenarios, such as industrial safety, retail, security, and more.
+  - title: ""
     excerpt: |
-      ## [Setup your device here.](https://aka.ms/VAIDKGetStarted-Landing/)
-      ## Build your own vision AI solution
-      Go to our [GitHub repository](https://aka.ms/vaidkgithub-Landing) to find an Azure Notebook with a reference model to start with. 
-  - title: "Additional Resources"
-    excerpt: |
-      * [Read our blog post](https://azure.microsoft.com/en-us/blog/iot-swc-2018-iot-solutions-for-the-built-world/)
-      * [Join the Internet of Things Microsoft Tech Community](https://aka.ms/VAIDK-IoTTechCommunity)
-      * [Get Started now on IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
-      * [Register a new IoT Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal)
-      * [Use Azure AI Gallery to build your solution](https://gallery.azure.ai/)
-      * [Use Custom Vision Service to bring your own models to life.](https://customvision.ai/)
+     # Have a device?
+      * [Get Started](https://aka.ms/VAIDKGetStarted-Landing/)
+
+     # Additional Resources
+      * [DevKit announcement](https://azure.microsoft.com/en-us/blog/iot-swc-2018-iot-solutions-for-the-built-world/){:target="_blank"}
+      * [Join the Internet of Things Microsoft Tech Community](https://aka.ms/VAIDK-IoTTechCommunity){:target="_blank"}
+      * [Use Azure AI Gallery to build your solution](https://gallery.azure.ai/){:target="_blank"}
+
 advantages:
   - excerpt: |
         <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin amp-big-play-centered" tabindex="0"></video>
@@ -62,20 +65,13 @@ advantages:
 qualcomm:
   - title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 200px'>"
     excerpt: >
-        The Vision AI Dev Kit features the Qualcomm Visual Intelligence Platform for hardware acceleration of AI models to deliver superior inferencing performance. Use the DevKit to create new solutions for a variety of scenarios, such as industrial safety, retail, security, and more.
-    image_path: /assets/images/ai-kit-diagram.png
-    alt: "Vision AI DevKit software architecture diagram"
-    
+        The Vision AI DevKit features the [Qualcomm Visual Intelligence Platform](https://www.qualcomm.com/news/onq/2018/05/07/qualcomm-vision-intelligence-platform-microsoft-azure-bring-edge-ai-solution){:target="_blank"} for hardware acceleration of AI models to deliver superior inferencing performance. Create new solutions for a variety of scenarios, such as industrial safety, retail, security, and more.  
 ---
 
 <div class="feature__outer_wrapper">
+{% include feature_row id="VAIDK_More" type="dual" %}
+</div>
+
+<div class="feature__outer_wrapper">
 {% include feature_row id="more_info" type="dual" %}
-</div>
-
-<div class="feature__outer_wrapper">
-{% include feature_row id="advantages" type="dual" %}
-</div>
-
-<div class="feature__outer_wrapper">
-{% include feature_row id="qualcomm" type="left" %}
 </div>
