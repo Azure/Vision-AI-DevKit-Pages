@@ -44,7 +44,7 @@ Once OOBE is complete, your camera device is ready to receive modules, such as t
 
 This section provides instructions for deploying the VisionSample model to your device using IoT Hub. This step can also be pre-configured during the IoT Hub and IoT Edge device setup prior to running OOBE.
 
-## Setting up your SW development envinronment
+## Setting up your SW development environment
 
 While there are several ways to train machine learning models and develop additional logic for the Vision AI Dev Kit we recommend using [Visual Studio (VS) Code](https://code.visualstudio.com).
 
