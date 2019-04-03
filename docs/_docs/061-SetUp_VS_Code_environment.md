@@ -78,7 +78,7 @@ last_modified_at: 2019-03-15
 
 ## Linux and MacOS users
 
-### Linux/iOS - Note these insturctions are draft and are still being improved
+Linux/iOS - Note these insturctions are draft and are still being improved
 
 For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
 
@@ -99,7 +99,7 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
       
 3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. 
 
-4. Install and configure development software.
+## Install and configure development software.
    1. Install the build tools.
 
       ```terminal
