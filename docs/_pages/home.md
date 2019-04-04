@@ -23,8 +23,6 @@ VAIDK_More:
   - title: "Neural network processing: on the Intelligent Edge and with the Intelligent Cloud"
     excerpt: |
      With an [Intelligent Edge device and Azure Intelligent Cloud Services](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, your models can run locally for fast response, then use the cloud for more advanced processing and response on only the most important data.
-     # Azure Machine Learning
-     Dig deeper into Microsoft's Machine learning efforts with the [Microsoft Azure Machine Learning Studio](https://studio.azureml.net/){:target="_blank"}.
      
 more_info:
   - title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 200px'>"
