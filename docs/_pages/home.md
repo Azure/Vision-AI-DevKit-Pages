@@ -36,7 +36,6 @@ more_info:
      # Additional Resources
       * [DevKit announcement](https://azure.microsoft.com/en-us/blog/iot-swc-2018-iot-solutions-for-the-built-world/){:target="_blank"}
       * [Join the Internet of Things Microsoft Tech Community](https://aka.ms/VAIDK-IoTTechCommunity){:target="_blank"}
-      * [Use Azure AI Gallery to build your solution](https://gallery.azure.ai/){:target="_blank"}
 
 advantages:
   - excerpt: |
