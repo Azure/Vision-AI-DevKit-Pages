@@ -23,7 +23,7 @@ last_modified_at: 2019-03-15
 
 ## Windows users
 
-## Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
+### Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
 1. If not already available, install VS Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"} and Python 3.7 by Anaconda (using default options). [(Download here)](https://www.anaconda.com/download){:target="_blank"}
 
     * Select the check-box to 'Add Anaconda to the system PATH environment variables' in the *Advanced Installation Options* (as shown below) during the Anaconda install.  
@@ -37,7 +37,7 @@ last_modified_at: 2019-03-15
     * **Azure IoT Edge**
     * **Docker extension**
       * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery)
-3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. 
+3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages.
 
     * Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, there is a *requirements.txt* in GitHub under [VisionSample\MachineLearning\scripts](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/MachineLearning/scripts) folder that can be used to specify correct versions. Please copy the file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined. Below is the content of the file if you prefer creating it locally.
 
@@ -82,7 +82,7 @@ Linux/iOS - Note these insturctions are draft and are still being improved
 
 For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
 
-## Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
+### Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
 1. If not already available, install VS Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"} and Python 3.7 by Anaconda (using default options). [(Download here)](https://www.anaconda.com/download){:target="_blank"}
 
     * Select the check-box to 'Add Anaconda to the system PATH environment variables' in the *Advanced Installation Options* (as shown below) during the Anaconda install.  
@@ -99,7 +99,7 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
       
 3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. 
 
-## Install and configure development software.
+### Install and configure development software.
    1. Install the build tools.
 
       ```terminal
