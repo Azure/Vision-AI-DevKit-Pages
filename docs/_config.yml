@@ -98,7 +98,6 @@ whitelist:
   - jekyll-remote-theme
   - jekyll-include-cache
 
-
 # Archives
 category_archive:
   type: liquid
@@ -108,3 +107,7 @@ tag_archive:
   path: /tags/
 
 github: [metadata]
+
+# Analytics
+google_site_verification: "UA-137900817-1"
+bing_site_verification: "7FFAA2BF3CE3F4E565C0AF00D66AE7D4"
