@@ -1,5 +1,5 @@
 ---
-title: "Get Started"
+title: "Quick Start Guide"
 permalink: /docs/Get_Started/
 excerpt: "How to quickly install and set up your development environment to use the Vision AI DevKit."
 variable:

@@ -16,4 +16,34 @@ main: &default_main
     url: https://aka.ms/VAIDKGitter-Landing/
     target: _blank
     
-docs: *default_main
+# documentation links
+docs: 
+  - title: Getting Started
+    children:
+      - title: "OOBE"
+      - url: /docs/Run_OOBE/
+      - title: "Troubleshooting and Tips"
+      - url: /docs/troubleshooting
+      - title: "Update firmware"
+      - url: /docs/Firmware/ 
+
+  - title: Environment Setup
+    children:
+      - title: "Platform Tools"
+      - url: /docs/platform_tools
+      - title: "Visual Studio (VS) Code"
+      - url: /docs/Setup_VS_Code_environment/
+      - title: "Azure Resources"
+      - url: /docs/Setup_Azure_resources/
+
+  - title: "Create a Vision Model"
+    children:
+      - title: "Using CustomVision.AI"
+      - url: /docs/Create_Train_Vision_ML_Project/
+
+  - title: Deploy a vision model
+    children:
+      - title: Using Azure IoT Hub
+      - url: /docs/Deploy_Model_IoT_Hub/
+      - title: Using VS Code
+      - url: /docs/Deploy_model_VS_Code/
