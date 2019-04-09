@@ -1,5 +1,5 @@
 ---
-title: "Set up VS Code environment"
+title: "Setup VS Code environment"
 permalink: /docs/SetUp_VS_Code/
 excerpt: "Visual Studio Code setup instructions for Windows, Linux and MacOS"
 variable:

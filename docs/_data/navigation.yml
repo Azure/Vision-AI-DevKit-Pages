@@ -33,7 +33,7 @@ docs:
       - title: "Platform Tools"
         url: /docs/platform_tools
       - title: "Visual Studio (VS) Code"
-        url: /docs/Setup_VS_Code_environment/
+        url: /docs/SetUp_VS_Code/
       - title: "Azure Resources"
         url: /docs/Setup_Azure_resources/
 
