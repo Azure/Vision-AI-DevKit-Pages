@@ -1,5 +1,5 @@
 ---
-title: "Deploy model: VS Code"
+title: "Deploy with Visual Studio Code"
 permalink: /docs/Deploy_model_VS_Code/
 excerpt: "Using Visual Studio Code deployment to deploy models to the Vision AI DevKit hardware."
 variable:
