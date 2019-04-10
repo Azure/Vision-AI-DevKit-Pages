@@ -11,14 +11,14 @@ last_modified_at: 2019-03-15
 ---
 ## What you will do
 
-- Configure your device to connect to WiFI.
-- Configure your device to connect to Azure IoT Hub using the IoT Edge device you configured in [Azure Resources.]({{ '/docs/Setup_Azure_resources/' | relative_url }})
+- Configure and connect the Vision AI DevKit hardware to Wi-Fi.
+- Configure and connect the Vision AI DevKit hardware to Azure IoT Hub and an IoT Edge device.
 
 ## What will you need
 
-- A configured Azure IoT Hub, with a configured Azure IoT Edge device for use with your Vision Ai DevKit hardware
-- IoT Edge device connection string for your device.
-  - This is the string obtained in [Azure Resources.]({{ '/docs/Setup_Azure_resources/' | relative_url }})
+- A configured Azure IoT Edge device within Azure IoT Hub.
+- The IoT Edge device connection string.
+  - This is the string obtained during configuration of [Azure Resources.]({{ '/docs/Setup_Azure_resources/' | relative_url }})
 
 ## Connect your PC to the Visual AI DevKit hardware Wi-Fi access point
 

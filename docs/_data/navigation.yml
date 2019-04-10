@@ -28,7 +28,7 @@ docs:
       - title: "Update firmware"
         url: /docs/Firmware/ 
 
-  - title: Environment Setup
+  - title: Tools and Connections
     children:
       - title: "Hardware Connections"
         url: /docs/Hardware_connections/
