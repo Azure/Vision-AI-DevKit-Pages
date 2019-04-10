@@ -73,6 +73,6 @@ The Vision AI DevKit can send the output of camera inferencing to a monitor dire
 
 Connect the HDMI cable to the HDMI port on both the Vision AI DevKit hardware and your monitor. Your monitor will start to display the camera video, with bounding boxes drawing around recognized objects, a few minutes after your model is deployed to the camera.
 
-Notes:
+### Notes
 
 * The object label presented in the bounding box may appear incorrect. If a new object appears in the space befor the bounding box is drawn, the label of the last object detected will be presented. This is not an inferencing bug.
