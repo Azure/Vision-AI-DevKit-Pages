@@ -73,12 +73,6 @@ The Vision AI DevKit can send the output of camera inferencing to a monitor dire
 
 Connect the HDMI cable to the HDMI port on both the Vision AI DevKit hardware and your monitor. Your monitor will start to display the camera video, with bounding boxes drawing around recognized objects, a few minutes after your model is deployed to the camera.
 
-Notes: 
-
-* The HDMI cable used for connecting the DevKit hardware should not use any port adapters.
+Notes:
 
 * The object label presented in the bounding box may appear incorrect. If a new object appears in the space befor the bounding box is drawn, the label of the last object detected will be presented. This is not an inferencing bug.
-
-* The connected monitor must have a resolution of at least 1080p.
-
-* Televisions or gaming specific monitors may not be recognized by the Vision AI DevKit.
