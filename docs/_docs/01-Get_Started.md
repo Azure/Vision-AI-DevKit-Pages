@@ -30,11 +30,11 @@ Although not absolutely mandatory we strongly recommend you to check the firmwar
 
 ## [Azure account, Azure IoT Hub and IoT Edge]({{ '/docs/Setup_Azure_resources/' | relative_url }})
 
-The Azure IoT Hub portal and a configured IoT Edge device are used for deployment of machine learning and other modules and control of data traffic between your device and the cloud. Use of these tools requires an active Azure account. 
+The Azure IoT Hub portal and a configured IoT Edge device are used for deployment of machine learning and other modules and control of data traffic between your device and the cloud. Use of these tools requires an active Azure account.
 
 ## [OOBE (Out-of-Box Experience)]({{ '/docs/Run_OOBE/' | relative_url }})
 
-All the steps described above are pre-requisites for OOBE, even though some of them can be completed independent from each other. During OOBE, you will link your device with correct Azure IoT Hub and configure its Wi-Fi access. 
+All the steps described above are pre-requisites for OOBE, even though some of them can be completed independent from each other. During OOBE, you will link your device with correct Azure IoT Hub and configure its Wi-Fi access.
 
 ## Post-OOBE
 
@@ -46,7 +46,7 @@ This section provides instructions for deploying the VisionSample model to your 
 
 ## Setting up your SW development environment
 
-While there are several ways to train machine learning models and develop additional logic for the Vision AI Dev Kit we recommend using [Visual Studio (VS) Code](https://code.visualstudio.com).
+There are several ways to train machine learning models and develop additional logic for the Vision AI Dev Kit. We highly recommend using [Visual Studio (VS) Code](https://code.visualstudio.com).
 
 ## [Deploying a model using VS Code]({{ '/docs/Deploy_Model_VS_Code/' | relative_url }})
 
