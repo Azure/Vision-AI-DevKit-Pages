@@ -53,7 +53,7 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes or have
     ```
     set path=%path%;<platform tools path>
     ```
-2. Download the latest firmware/image released by Altek *(website link TBD)*
+2. Download the latest firmware/image released by Altek *(website link TBD)* [*(Internal-only Microsoft link)*](https://microsoftapc.sharepoint.com/teams/Selfhost-VisionAIDevKit/Shared%20Documents/General/Altek%20FW%20Image/NextUnderTest)
 
 3. Extract the contents of the .TGZ file downloaded. If you end up with a .TAR file, extract the contents of this file as well. You should end up with more than 120 files located in the final extraction folder.
 
