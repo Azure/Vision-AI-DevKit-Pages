@@ -74,7 +74,8 @@ last_modified_at: 2019-03-15
 
 ## Display issues
 
-* Your display needs to have a minimum resolution of 1080p.
+* Your display must have a minimum resoltion of 1080p.
+* Televisions or gaming specific monitors may not be recognized by the Vision AI DevKit.
 * Use a direct HDMI connection to the display. Converters, e.g. Display Port to HDMI, will usually cause the output to fail.
 * The neural processing engine (or other parts of the stack) may require a reboot occasionally. The command line
   ```

@@ -24,14 +24,16 @@ docs:
       - title: "OOBE"
         url: /docs/Run_OOBE/
       - title: "Troubleshooting and Tips"
-        url: /docs/troubleshooting
+        url: /docs/troubleshooting/
       - title: "Update firmware"
         url: /docs/Firmware/ 
 
   - title: Environment Setup
     children:
+      - title: "Hardware Connections"
+        url: /docs/Hardware_connections/
       - title: "Platform Tools"
-        url: /docs/platform_tools
+        url: /docs/platform_tools/
       - title: "Visual Studio (VS) Code"
         url: /docs/SetUp_VS_Code/
       - title: "Azure Resources"
