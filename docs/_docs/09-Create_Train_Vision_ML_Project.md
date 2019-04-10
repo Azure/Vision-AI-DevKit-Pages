@@ -1,7 +1,7 @@
 ---
-title: "Create model using CustomVision.AI"
+title: "Create and deploy a vision AI model with CustomVision.AI"
 permalink: /docs/Create_Train_Vision_ML_Project/
-excerpt: "Guide to manually creating and training a Vision ML Project for the Vision AI DevKit using Azure services"
+excerpt: "Guide to creating, training and deploying a Vision ML Project for the Vision AI DevKit using Azure Custome Vision Service (customvision.ai)."
 variable:
   - platform: windows
     name: Windows
@@ -10,7 +10,7 @@ variable:
 last_modified_at: 2019-03-26
 ---
 ## What you will do
-* Create a vision classifier model using the Azure Custom Vision (Preview) portal, create a container and deploy it to the device
+* Create a vision classifier model using the [Azure Custom Vision Service](https://customvision.ai) portal, create a container and deploy it to the device
 
 ## What you will need for training the model
 * A valid Azure subscription. [Create an account for free.](https://azure.microsoft.com/free/)
@@ -44,6 +44,6 @@ last_modified_at: 2019-03-26
 
 ## Containerize and deploy you model
 
-1. For containerizing and deploying you model using VS Code please follow the instructions in [vision-ai-developer-kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/CreateAndDeployEdgeContainer) /sample-solutions/VisionSample/CreateAndDeployEdgeContainer.
+1. For containerizing and deploying your model using VS Code please follow the instructions in [vision-ai-developer-kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/CreateAndDeployEdgeContainer) /sample-solutions/VisionSample/CreateAndDeployEdgeContainer.
 
 2. You can also move the model files to the Jupyter Notebook directory and follow the Notebook instructions to continue.
