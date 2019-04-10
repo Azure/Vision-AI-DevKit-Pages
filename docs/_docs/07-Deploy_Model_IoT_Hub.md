@@ -42,28 +42,28 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
 2. Select the **IoT Edge Module**. ![Azure portal 'Add Modules']({{ '/assets/images/Add_Modules.png' | relative_url }})
 3. Provide a name for the module, then specify the container image. To deploy the pre-configured sample, use the following values:
 
-	* **Name** - VisionSample
-	* **Image URI** - mcr.microsoft.com/aivision/visionsamplemodule:1.0.4_SSD_linklocal-arm32v7
-	* **Container Create Options** - 
 ```
-{
-  "HostConfig": {
-    "Binds": [
-      "/data/misc/camera:/app/vam_model_folder"
-    ],
-    "NetworkMode": "host"
-  },
-  "NetworkingConfig": {
-    "EndpointsConfig": {
-      "host": {}
-    }
-  }
-}
+  Name - VisionSample
+  Image URI - mcr.microsoft.com/aivision/visionsamplemodule:1.0.4_SSD_linklocal-arm32v7
+  Container Create Options - 
+      {
+        "HostConfig": {
+          "Binds": [
+            "/data/misc/camera:/app/vam_model_folder"
+          ],
+          "NetworkMode": "host"
+        },
+        "NetworkingConfig": {
+          "EndpointsConfig": {
+            "host": {}
+          }
+        }
+      }
+  Restart Policy - Always
+  Desired Status - running
 ```
-	* **Restart Policy** - Always
-	* **Desired Status** - running
 
-    For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties). For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties).
+For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties). For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties).
 
 4. Select **Save**
 5. Select **Configure advanced Edge Runtime settings** 

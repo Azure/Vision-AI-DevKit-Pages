@@ -10,7 +10,7 @@ variable:
 last_modified_at: 2019-03-15
 ---
 
-* Page page contains instructions for Windows, Linux and MacOS users
+* Instructions for Windows, Linux and MacOS users
 
 ## What you will do
 * Configure a VS Code dev environment
