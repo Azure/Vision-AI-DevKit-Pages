@@ -22,7 +22,7 @@ VAIDK_More:
       * Already have a Vision ML model? Convert and deploy models from many existing formats.
 
       # Deploy fast
-      [Azure IoT Edge](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_model_IoT_Hub/){:target="_blank"} can push your Vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        
+      [Azure IoT Edge](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_IoT_Hub/){:target="_blank"} can push your Vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        
 
   - title: "Prove your concept"
     excerpt: |
