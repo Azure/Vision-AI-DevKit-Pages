@@ -56,11 +56,11 @@ Mobilenet-imagenet model can detect the 1000 object classes listed in the  *Visi
 
     ![Use ADB to module impage outputs Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_check_detection_results_screenshot.png' | relative_url }})
 
-If the Vision AI DevKit camera is connected to an  external screen through HDMI, you should be able to see bounding boxes with text indictating detection, as below.
-![Image of a display showing recognition box with text]({{ '/assets/images/VSC_Deploy_object_detection_screenshot.png' | relative_url }})
-
 In VS Code, select **AZURE IOT HUB DEVICES > … > Select IoT Hub** and then **AZURE IOT HUB DEVICES > … > Start Monitoring D2C Message** command to monitor the messages sent from the AI Vision DevKit to your Azure IoT Hub.
     ![Screenshot of message monitoring output]({{ '/assets/images/VSC-Deploy-Monitor-messages.png' | relative_url }})
+
+### Verify output on the monitor
+Connect the HDMI cable to the Vision AI DevKit hardware and your monitor. A few minutes after submitting your deployment, you should start to see video on the monitor with bounding boxes drawing around objects the camera can see and evaluate.
 
 ## Retraining the machine learning model
 1. Open *02-mobilenet-transfer-learning-cloud.py* and click **Run Cell** or **Run All Cells** to train a new mobilenet model in the cloud using *soda_cans* data under the *VisionSample\MachineLearning\data\soda_cans* folder.
