@@ -1,5 +1,5 @@
 ---
-title: "Deploy model: IoT Hub"
+title: "Deploy a Vision AI model with Azure IoT Hub"
 permalink: /docs/Deploy_Model_IoT_Hub/
 excerpt: "How to deploy a pre-built vision model to the Vision AI DevKit through the Azure portal."
 variable:
@@ -9,24 +9,23 @@ variable:
     name: macOS
 last_modified_at: 2019-03-15
 ---
-A supported method of deploying Vision AI modules to the Vision AI DevKit is through Azure Iot Hub.
 
 ## What you will do
 
-* Deploy a pre-built sample module using Azure IoT Hub
+* Deploy a pre-built sample model container image to the Vision AI DevKit hardware using Azure IoT Hub
 
 ## What you will need
 
-* An [IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal){:target="_blank"} configured in your Azure Subscription
-* Vision AI Dev Kit camera hardware configured and connected to Azure IoT Hub as an [IoT Edge device](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal){:target="_blank"}
-* HDMI cable
-* Monitor with an HDMI input connector
+* Configured Azure Iot Hub with the Vision AI DevKit registered as an IoT Edge device ([Instructions](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Setup_Azure_resources/){:target="_blank"})
+* Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
+* (optional) Monitor and HDMI cable
 
 ## Select your Vision AI DevKit hardware in the Azure portal
-1. Sign in to the [Azure portal](https://portal.azure.com/){:target="_blank"} and navigate to your IoT hub.
-2. Select **IoT Edge** from the menu.
-3. Click on the ID of the target camera hardware from the list of devices.
-4. Select **Set Modules**.
+1. Download or Clone the latest Visual Studio Code sample from the [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
+2. Sign in to the [Azure portal](https://portal.azure.com/){:target="_blank"} and navigate to your IoT hub.
+3. Select **IoT Edge** from the menu.
+4. Click on the ID of the target camera hardware from the list of devices.
+5. Select **Set Modules**.
 
 ![Azure portal 'Set Modules']({{ '/assets/images/Set_Modules.png' | relative_url }})
 

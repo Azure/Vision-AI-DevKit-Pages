@@ -12,7 +12,7 @@ last_modified_at: 2019-04-11
 
 ## What you will do
 * Configure VS Code for model deployment
-* Deploy the pre-built sample model container image to the Visual AI DevKit hardware
+* Deploy a pre-built sample model container image to the Visual AI DevKit hardware
 
 ## What you will need
 * Visual Studio (VS) Code and subsidary tools [(Instructions)](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/){:target="_blank"}
