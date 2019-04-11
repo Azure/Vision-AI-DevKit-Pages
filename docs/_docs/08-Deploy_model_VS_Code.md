@@ -1,5 +1,5 @@
 ---
-title: "Deploy with Visual Studio Code"
+title: "Deploy a Vision AI model with Visual Studio Code"
 permalink: /docs/Deploy_model_VS_Code/
 excerpt: "Using Visual Studio Code deployment to deploy models to the Vision AI DevKit hardware."
 variable:
@@ -7,25 +7,21 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-15
+last_modified_at: 2019-04-11
 ---
 
 ## What you will do
-* Configure a VS Code dev environment
-* Deploy the pre-built sample model container image through VS Code
+* Configure VS Code for model deployment
+* Deploy the pre-built sample model container image to the Visual AI DevKit hardware
 
 ## What you will need
-* Latest version of Visual Studio (VS) Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
-* Python 3.7 by Anaconda [(Download Here)](https://www.anaconda.com/download/){:target="_blank"}
+* Visual Studio (VS) Code and subsidary tools [(Instructions)](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/){:target="_blank"}
 * Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
-* Latest Azure Machine Learning SDK for Python [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py)
 * Azure IoT Hub and Azure IoT Edge device configured for your Vision AI DevKit hardware [(Instructions)]({{ '/docs/Setup_Azure_resources/' | relative_url}})
-* USB-C cable to connect Dev Kit hardware to your PC.
-* HDMI cable to connect Dev Kit hardware to a monitor.
 * Active Wi-Fi access point with Internet connectivity.
-* Latest Vision Dev Kit hardware firmware installed.
+* (optional) HDMI cable and monitor to view video from the Visual AI DevKit.
 
-## Deploy a Model Container Image to a Vision AI Dev Kit device in Visual Studio Code
+## Deploy the sample model container image to the Vision AI DevKit
 
 1. Download or Clone the latest Visual Studio Code sample from the [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
 2. Launch Visual Studio Code, and select [File > Open Folder…] command to open the “VisionSample” directory as the workspace root.
