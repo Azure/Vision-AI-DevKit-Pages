@@ -15,16 +15,11 @@ excerpt: >
 VAIDK_More:
   - title: "Start fast"
     excerpt: |
-      Using the [tutorial project](https://aka.ms/VAIDKGetStarted-Landing/), the Vision AI DevKit can be up and running in minutes, regardless of your current skill level with Vision Machine Learning. Don't have a DevKit yet? Start building an [image classifier](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier) with [Azure Custom Vision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home).
+      Get up and running in minutes using the [tutorial project](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with Vision Machine Learning.
       # Build fast
-      * Just getting started with Vision ML? [Azure Custom Vision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier){:target="_blank"} can do the hard work to get your project up and running quickly with only a few labeled images to start off with.
+      * New to Vision ML? Waiting for your DevKit to arrive? Let [Azure Custom Vision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier){:target="_blank"} do the hard work, starting with only a few labeled images.
       * Experienced with Vision ML? [Jupyter notebooks](https://jupyter.org/){:target="_blank"} or [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) can be used to create, train and deploy your custom vision ML models.
-      * Convert and deploy existing models from other formats to work with the Vision AI DevKit -
-        * [MobileNet ImageNet](https://github.com/Microsoft/vision-ai-developer-kit/blob/master/machine-learning-reference/notebooks/01-convert-model-containerize.ipynb)
-        * [Squeezenet Caffe](https://github.com/Microsoft/vision-ai-developer-kit/blob/master/machine-learning-reference/notebooks/03-squeezenet-custom-vision.ipynb)
-        * Tensorflow
-
-        Note: Some links require Vision AI DevKit GitHub repository access (currently in private preview.)
+      * Already have a Vision ML model you want to try out? Convert and deploy existing MobileNet ImageNet, Squeezenet Caffe, and Tensorflow models to work with the Vision AI DevKit.
 
       # Deploy fast
       [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/){:target="_blank"} can push your Vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country, using [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_model_VS_Code/) or [Jupyter notebooks](https://github.com/Microsoft/vision-ai-developer-kit/blob/master/machine-learning-reference/notebooks/04-Deploy-Trained-Model.ipynb)         
