@@ -26,8 +26,6 @@ last_modified_at: 2019-03-15
 ### Setup and Configure Visual Studio (VS) Code for container deployment to the Vision AI Dev Kit
 1. If not already available, install VS Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"} and Python 3.7 by Anaconda (using default options). [(Download here)](https://www.anaconda.com/download){:target="_blank"}
 
-  
-
     * Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
     
 2. Open VS Code. Click the Extensions icon in the Activity Bar (left side) and install the following extensions:
@@ -53,7 +51,7 @@ last_modified_at: 2019-03-15
       wheel==0.30.0
      ```
 
-4. Open the **Anaconda Prompt (base)** as an administrator (right-click *Start Menu\Programs\Anaconda3 (64-bit)\Anaconda Prompt (base)*, choose *run as administrator*), then execute the following command lines:
+4. Use the **Anaconda Prompt (base)** as an administrator, then execute the following command lines:
       ```
       pip install --upgrade -r requirements.txt
       ```
