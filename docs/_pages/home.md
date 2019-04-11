@@ -24,6 +24,8 @@ VAIDK_More:
         * [Squeezenet Caffe](https://github.com/Microsoft/vision-ai-developer-kit/blob/master/machine-learning-reference/notebooks/03-squeezenet-custom-vision.ipynb)
         * Tensorflow
 
+        Note: Some links require Vision AI DevKit GitHub repository access (currently in private preview.)
+
       # Deploy fast
       [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/){:target="_blank"} can push your Vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country, using [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_model_VS_Code/) or [Jupyter notebooks](https://github.com/Microsoft/vision-ai-developer-kit/blob/master/machine-learning-reference/notebooks/04-Deploy-Trained-Model.ipynb)         
 
