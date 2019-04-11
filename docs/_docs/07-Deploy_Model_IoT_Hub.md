@@ -21,7 +21,7 @@ last_modified_at: 2019-03-15
 * (optional) Monitor and HDMI cable
 
 ## Select your Vision AI DevKit hardware in the Azure portal
-1. Download or Clone the latest Visual Studio Code sample from the [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
+1. Download or Clone the latest Vision AI DevKit repository from [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
 2. Sign in to the [Azure portal](https://portal.azure.com/){:target="_blank"} and navigate to your IoT hub.
 3. Select **IoT Edge** from the menu.
 4. Click on the ID of the target camera hardware from the list of devices.

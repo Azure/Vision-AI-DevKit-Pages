@@ -23,7 +23,7 @@ last_modified_at: 2019-04-11
 
 ## Deploy the sample model container image to the Vision AI DevKit
 
-1. Download or Clone the latest Visual Studio Code sample from the [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
+1. Download or Clone the latest Vision AI DevKit repository from [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
 2. Launch Visual Studio Code, and select [File > Open Folder…] command to open the “VisionSample” directory as the workspace root.
 3. Use the [Python: Select Interpreter] command in the command palette box or click the current “Python interpreter” option on the bottom line to set "python.pythonPath" in .vscode\settings.json.
 ![Setting the pythonPath screen shot]({{ '/assets/images/VSC_Deploy_Python37.JPG' | relative_url }}) 
