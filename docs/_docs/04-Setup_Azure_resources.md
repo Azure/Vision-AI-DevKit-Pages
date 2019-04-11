@@ -1,7 +1,7 @@
 ---
-title: "Azure Resources"
+title: "Configure Azure IoT Hub and IoT Edge device"
 permalink: /docs/Setup_Azure_resources/
-excerpt: "Set up your Azure account, IoT Hub and IoT Edge for Vision AI Dev Kit"
+excerpt: "Set up your Azure account, IoT Hub and IoT Edge device for Vision AI Dev Kit"
 variable:
   - platform: windows
     name: Windows
@@ -10,19 +10,20 @@ variable:
 last_modified_at: 2019-03-15
 ---
 
-## Configuring Azure resources for use with the Vision AI DevKit
+## What you will do
 
-The Vision AI Dev Kit will need to be associated with [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/) as an IoT Edge Device to utilize Azure services. You can use an existing Azure IoT Hub instance, or create a new one for your Vision AI project.
+* Create an Azure IoT Hub instance
+* Associate the Vision AI DevKit as as an IoT Edge Device
 
-### Using Azure IoT Hub
+### Azure IoT Hub
 
-Azure IoT Hub enables reliable and secure bi-directional communications between devices and a solution back end. You will need to create a new or use an existing Azure IoT Hub instance to work with the Vision AI DevKit. These instructions cover creating a new IoT Hub instance:
+Azure IoT Hub enables reliable and secure bi-directional communications between devices and a solution back end. You will need to create a new or use an existing Azure IoT Hub instance to work with the Vision AI DevKit.
 
 #### [Create an IoT hub using the Azure portal](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal){:target="_blank"}
 
-### Register the Vision AI Dev Kit hardware as an Azure IoT Edge device
+### Azure IoT Edge device
 
-Before you can use your Vision AI DevKit hardware with Azure IoT Edge, you will need to register it with your IoT hub. Once you register the device, you receive a connection string which will be used when running OOBE, where you set up the DevKit hardware for Edge workloads. Use these instructions:
+To use your Vision AI DevKit hardware with Azure IoT Hub for Edge workloads, you will need to register the hardware as an IoT Edge device. Upon registration, you are provided a connection string to use during the Vision AI DevKit OOBE experience.
 
 #### [Register a new Azure IoT Edge device from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal){:target="_blank"}
 

@@ -19,7 +19,7 @@ last_modified_at: 2019-03-15
 * Latest version of Visual Studio (VS) Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
 * Python 3.7 by Anaconda [(Download Here)](https://www.anaconda.com/download/){:target="_blank"}
 * Latest Azure Machine Learning SDK for Python [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py)
-* Azure subscription and preferrably Azure IoT Hub (it's a prerequisite to deploy a module to the device using any method available)
+* Azure subscription with configured Azure IoT Hub
 
 ## Windows users
 

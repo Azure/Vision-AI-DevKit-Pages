@@ -36,7 +36,7 @@ docs:
         url: /docs/platform_tools/
       - title: "Visual Studio (VS) Code"
         url: /docs/SetUp_VS_Code/
-      - title: "Azure Resources"
+      - title: "Azure IoT Hub and IoT Edge device"
         url: /docs/Setup_Azure_resources/
 
   - title: "Create a Vision Model"
