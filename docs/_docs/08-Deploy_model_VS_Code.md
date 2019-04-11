@@ -9,7 +9,6 @@ variable:
     name: macOS
 last_modified_at: 2019-03-15
 ---
-The easiest way to deploy Vision AI models to the Vision AI DevKit is through the use of **Visual Studio (VS) Code**.
 
 ## What you will do
 * Configure a VS Code dev environment
