@@ -17,29 +17,26 @@ VAIDK_More:
     excerpt: |
       Get up and running in minutes using the [tutorial project](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with Vision Machine Learning.
       # Build fast
-      * New to Vision ML? Waiting for your DevKit to arrive? Let [Azure Custom Vision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier){:target="_blank"} do the hard work, starting with only a few labeled images.
+      * New to Vision ML? Waiting for your DevKit? Let [Azure Custom Vision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier){:target="_blank"} do the hard work, starting with only a few labeled images.
       * Experienced with Vision ML? [Jupyter notebooks](https://jupyter.org/){:target="_blank"} or [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) can be used to create, train and deploy your custom vision ML models.
-      * Already have a Vision ML model you want to try out? Convert and deploy existing MobileNet ImageNet, Squeezenet Caffe, and Tensorflow models to work with the Vision AI DevKit.
+      * Already have a Vision ML model? Convert and deploy models from many existing formats.
 
       # Deploy fast
-      [Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/){:target="_blank"} can push your Vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country, using [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_model_VS_Code/) or [Jupyter notebooks](https://github.com/Microsoft/vision-ai-developer-kit/blob/master/machine-learning-reference/notebooks/04-Deploy-Trained-Model.ipynb)         
+      [Azure IoT Edge](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_model_VS_Code/){:target="_blank"} can push your Vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        
 
   - title: "Prove your concept"
     excerpt: |
       With the Vision AI DevKit and Azure services, quickly take your project from concept to reality.
 
+      # Join the Community
+      Get help and help others with Vision ML projects by joining our [Tech Community]((https://aka.ms/VAIDK-IoTTechCommunity){:target="_blank"})
       # Intelligent Edge: Fast local processing, backed by the power of the cloud 
       As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit runs your Vision ML models locally for fast image inference. You can add business logic to your concept, sending only the most important data to the cloud for more advanced processing and response.
      
 more_info:
   - title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 200px'>"
     excerpt: >
-        The Vision AI Dev Kit features the [Qualcomm Visual Intelligence Platform](https://www.qualcomm.com/news/onq/2018/05/07/qualcomm-vision-intelligence-platform-microsoft-azure-bring-edge-ai-solution){:target="_blank"} for hardware acceleration of AI models to deliver superior inferencing performance. Create new solutions for a variety of scenarios, such as industrial safety, retail, security, and more.
-  - title: ""
-    excerpt: |
-     # Additional Resources
-      * [DevKit announcement](https://azure.microsoft.com/en-us/blog/iot-swc-2018-iot-solutions-for-the-built-world/){:target="_blank"}
-      * [Join the Internet of Things Microsoft Tech Community](https://aka.ms/VAIDK-IoTTechCommunity){:target="_blank"}
+        The Vision AI Dev Kit features the [Qualcomm Visual Intelligence Platform](https://www.qualcomm.com/news/onq/2018/05/07/qualcomm-vision-intelligence-platform-microsoft-azure-bring-edge-ai-solution){:target="_blank"} for hardware acceleration of AI models to deliver superior inferencing performance.
 
 advantages:
   - excerpt: |
