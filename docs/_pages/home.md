@@ -85,5 +85,5 @@ Quonos:
 </div>
 
 <div class="feature__outer_wrapper">
-{% include feature_row id="more_info" type="dual" %}
+{% include feature_row id="more_info" type="center" %}
 </div>
