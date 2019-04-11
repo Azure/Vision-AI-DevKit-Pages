@@ -17,7 +17,7 @@ VAIDK_More:
     excerpt: |
       Get up and running in minutes using the [tutorial project](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with Vision Machine Learning.
       # Build fast
-      * New to Vision ML? Waiting for your DevKit? Let [Azure Custom Vision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier){:target="_blank"} do the hard work, starting with only a few labeled images.
+      * New to Vision ML? Waiting for your DevKit? Let [Azure Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Create_Train_Vision_ML_Project/){:target="_blank"} do the hard work, starting with only a few labeled images.
       * Experienced with Vision ML? Use [Jupyter notebooks](https://jupyter.org/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) create and train your custom vision ML models.
       * Already have a Vision ML model? Convert and deploy models from many existing formats.
 
