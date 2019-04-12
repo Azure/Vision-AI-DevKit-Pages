@@ -17,7 +17,8 @@ last_modified_at: 2019-03-26
 * A set of images for use in training your classifier.
 
 ## What you will need for containerizing and deployment
-* For deployment using VS Code you'll need a verified VS Code environment. The instructions are available [Deploy model: VS Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_VS_Code/) page.
+* For deployment using VS Code you'll need a verified VS Code environment. The instructions are available [Deploy model: VS Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_VS_Code/) page. If you are only going to VS Code for containerizing the model, you don't need Anaconda/Python. However, they will be needed for many other activities like building a business logic module that takes actions based on what camera sees.
+* You will also needed [Docker](https://www.docker.com/get-started) for containerizing the image using your local resources and Docker extension for VS Code. Docker installation and login are also instructed later in the instructions. Don't sign in Docker Desktop after Docker is installed.
 
 ## Setup your vision classifier
 1. Using a browser, login to the Azure Custom Vision Service (Preview) at [https://www.customvision.ai.](https://www.customvision.ai)
