@@ -29,7 +29,7 @@ last_modified_at: 2019-03-26
          - **Project Type** - [Classification]
          - **Classification Type** -  [Multiclass (Single tag per image)]
          - **Domain** - [General(compact)]
-         - ** Basic images + Vision AI Dev Kit
+         - ** Basic Platforms + Vision AI Dev Kit
 
 3. Note that to use Custom Vision Service, you will need to create [Custom Vision Training and Prediction resources](https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=microsoft_azure_cognitiveservices_customvision#create/Microsoft.CognitiveServicesCustomVision) (it is also instructed in 2. step below) in the in the Azure portal. This will create both a Training and Prediction resource.
 
