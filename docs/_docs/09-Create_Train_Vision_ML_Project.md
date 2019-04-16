@@ -47,8 +47,4 @@ last_modified_at: 2019-03-26
 
 ## Containerize and deploy you model
 
-1. For containerizing and deploying your model using VS Code please follow the instructions in [vision-ai-developer-kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/CreateAndDeployEdgeContainer) /sample-solutions/VisionSample/CreateAndDeployEdgeContainer.
-
-These instructions will guide you through the process of containerizing the image using the resources in your local computer.
-
-2. You can also move the model files to the Jupyter Notebook directory and follow the Notebook instructions to continue.
+For containerizing and deploying your model using VS Code please follow the instructions in [vision-ai-developer-kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/CreateAndDeployEdgeContainer/sample-solutions/VisionSample/CreateAndDeployEdgeContainer).
