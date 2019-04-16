@@ -22,7 +22,7 @@ For first-time users of the **Vision AI DevKit**, this page will help you get yo
 
 ## [Platform Tools]({{ '/docs/platform_tools/' | relative_url }})
 
-You will need an installation of platform tools, which include the Android Debug Bridge (ADB) and Fastboot. These tools are used for checking device connectivity and running various command-line tasks included firmware updates.
+You will need an installation of platform tools, which include the Android Debug Bridge (ADB) and Fastboot. These tools are used for checking device connectivity and running various command-line tasks including firmware updates.
 
 ## [Firmware Update]({{ '/docs/Firmware/' | relative_url }})
 
