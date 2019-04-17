@@ -58,3 +58,5 @@ docs:
         url: /docs/Display_issues/
       - title: "Wi-Fi issues"
         url: /docs/Wi-Fi_issues/
+      - title: "Firmware update failure"
+        url: /docs/Recover_device/

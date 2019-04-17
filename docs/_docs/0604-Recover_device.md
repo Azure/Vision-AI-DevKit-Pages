@@ -1,5 +1,5 @@
 ---
-title: "Recover from a failed firmware update"
+title: "Firmware update failure"
 permalink: /docs/Recover_device/
 excerpt: "Recover from a failed firmware update"
 variable:
