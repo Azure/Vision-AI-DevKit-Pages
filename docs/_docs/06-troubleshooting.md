@@ -22,21 +22,6 @@ last_modified_at: 2019-04-17
 
   * Long press the power button more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.
 
-## Recover Vision AI Dev Kit hardware after a failed firmware update
-
-Re-flash using Fastboot, a part of the platform tools, if the device will enter fastboot mode.
-
-    > $ adb reboot bootloader
-    > $ fastboot devices
-    > $ fastboot flash abl abl.elf
-    > $ fastboot flash boot qcs605-boot.img
-    > $ fastboot flash system qcs605-sysfs.ext4
-    > $ fastboot flash userdata qcs605-usrfs.ext4
-    > $ fastboot flash persist qcs605-persist.ext4
-    > $ fastboot flash cache qcs605-cache.ext4
-    > $ fastboot flash systemrw qcs605-systemrw.ext4
-    > $ fastboot reboot
-
 ## Check Docker Container status
 
 Use the command line
