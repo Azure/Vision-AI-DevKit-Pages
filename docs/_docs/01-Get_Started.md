@@ -20,14 +20,6 @@ For first-time users of the **Vision AI DevKit**, this page will help you get yo
 
     ![High level steps to take for the initial Vision AI Dev Kit setup]({{ '/assets/images/GetStarted.PNG' | relative_url }})
 
-## [Platform Tools]({{ '/docs/platform_tools/' | relative_url }})
-
-You will need an installation of platform tools, which include the Android Debug Bridge (ADB) and Fastboot. These tools are used for checking device connectivity and running various command-line tasks including firmware updates.
-
-## [Firmware Update]({{ '/docs/Firmware/' | relative_url }})
-
-Although not absolutely mandatory we strongly recommend you to check the firmware version of you device and update it to latest version if needed before starting to use Vision AI Dev Kit.
-
 ## [Azure account, Azure IoT Hub and IoT Edge]({{ '/docs/Setup_Azure_resources/' | relative_url }})
 
 The Azure IoT Hub portal and a configured IoT Edge device are used for deployment of machine learning and other modules and control of data traffic between your device and the cloud. Use of these tools requires an active Azure account.
@@ -51,3 +43,11 @@ There are several ways to train machine learning models and develop additional l
 ## [Deploying a model using VS Code]({{ '/docs/Deploy_Model_VS_Code/' | relative_url }})
 
 This section provides instructions for deploying the VisionSample model to your device using VS Code
+
+## [Firmware Update]({{ '/docs/Firmware/' | relative_url }})
+
+Although not absolutely mandatory we strongly recommend you to check the firmware version of you device and update it to latest version if needed before starting to use Vision AI Dev Kit.
+
+## [Platform Tools]({{ '/docs/platform_tools/' | relative_url }})
+
+You will need an installation of platform tools, which include the Android Debug Bridge (ADB) and Fastboot. These tools are used for checking device connectivity and running various command-line tasks including firmware updates.
