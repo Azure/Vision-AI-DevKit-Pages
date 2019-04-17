@@ -54,3 +54,5 @@ docs:
     children:
       - title: "Guide to device LEDs"
         url: /docs/Guide_to_device_LEDs/
+      - title: "Display issues"
+        url: /docs/Display_issues/
