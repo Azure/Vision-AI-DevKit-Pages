@@ -47,4 +47,5 @@ last_modified_at: 2019-03-26
 
 ## Containerize and deploy you model
 
-For containerizing and deploying your model using VS Code please follow the instructions in [vision-ai-developer-kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/CreateAndDeployEdgeContainer/sample-solutions/VisionSample/CreateAndDeployEdgeContainer).
+For containerizing and deploying your model using VS Code please follow the instructions in [vision-ai-developer-kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/CreateAndDeployEdgeContainer)
+(configuration for this specific task is stored in GitHub under sample-solutions/VisionSample/CreateAndDeployEdgeContainer).
