@@ -19,12 +19,11 @@ main:
 # documentation links
 docs: 
   - title: Getting Started
-    url: /docs/Get_Started/
     children:
-      - title: "OOBE"
+      - title: "Quick Start Guide"
+        url: /docs/Get_Started/
+      - title: "Setup your device"
         url: /docs/Run_OOBE/
-      - title: "Update firmware"
-        url: /docs/Firmware/ 
 
   - title: Tools and Connections
     children:
@@ -49,8 +48,14 @@ docs:
       - title: Using VS Code
         url: /docs/Deploy_model_VS_Code/
 
-  - title: Troubleshooting and Tips
-    url: /docs/troubleshooting/
+  - title: Managing your device
+    children:
+      - title: "Firmware update"
+        url: /docs/Firmware/ 
+      - title: "Rebooting"
+        url: /docs/Reboot/
+
+  - title: Troubleshooting
     children:
       - title: "Guide to device LEDs"
         url: /docs/Guide_to_device_LEDs/
@@ -60,3 +65,12 @@ docs:
         url: /docs/Wi-Fi_issues/
       - title: "Firmware update failure"
         url: /docs/Recover_device/
+
+  - title: Tips
+    children:
+      - title: "Review logs"
+        url: /docs/Review_logs/
+      - title: "Docker Container Status"
+        url: /docs/Docker_status/
+      - title: "Improve Inferencing"
+        url: /docs/Inferencing_accuracy/

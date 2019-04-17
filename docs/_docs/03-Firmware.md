@@ -1,5 +1,5 @@
 ---
-title: "Firmware"
+title: "Firmware update"
 permalink: /docs/Firmware/
 excerpt: "Downloading and updating Vision AI Dev Kit hardware firmware."
 variable:

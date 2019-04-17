@@ -75,5 +75,3 @@ choco install adb
    ```
    exit
    ```
-
-Specific suggestions for using ADB commands to troubleshoot issues can be found in [Troubleshooting and Tips.]({{ '/docs/troubleshooting/' | relative_url }})

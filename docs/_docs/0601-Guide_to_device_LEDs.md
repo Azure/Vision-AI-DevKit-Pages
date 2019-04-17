@@ -11,8 +11,6 @@ last_modified_at: 2019-04-17
 ---
 ## Guide to device LEDs
 
-![Image of DevKit camera with LEDs highlighted]({{ '/assets/images/LED_Guide.PNG' | relative_url }})
-
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -77,3 +75,5 @@ last_modified_at: 2019-04-17
     <td class="tg-0lax"><br>Device is rebooting<br></td>
   </tr>
 </table>
+
+![Image of DevKit camera with LEDs highlighted]({{ '/assets/images/LED_Guide.PNG' | relative_url }})

@@ -1,5 +1,5 @@
 ---
-title: "OOBE"
+title: "Setup your device"
 permalink: /docs/Run_OOBE/
 excerpt: "Run OOBE (Ouf-Of-Box-Experience) - Connect device to WiFi and IoT Hub"
 variable:
@@ -22,13 +22,13 @@ last_modified_at: 2019-03-15
 
 ## Connect your PC to the Visual AI DevKit hardware Wi-Fi access point
 
-Within 10 seconds of initial power up, you will see three Red LED lights. This indicates the device is in Wi-Fi access point mode. If your device LEDs are not flashing RED, review [Troubleshooting and Tips.]({{ '/docs/troubleshooting/' | relative_url }})
+Within 10 seconds of initial power up, you will see three Red LED lights. This indicates the device is in Wi-Fi access point mode. If your device LEDs are not flashing RED, review the [Guide to device LEDs.]({{ '/docs/Guide_to_device_LEDs/' | relative_url }})
 
 From your PC, connect to a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device's Wi-Fi mac address, e.g. MSIOT_BD097D).
 
 ### Notes
 
-- The label at the bottom of the device will have the default Wi-Fi access point passphrase. If there is no label, see [Troubleshooting and Tips]({{ '/docs/troubleshooting/' | relative_url }}).
+- The label at the bottom of the device will have the default Wi-Fi access point passphrase. If there is no label, see [Troubleshooting Wi-Fi Issues]({{ '/docs/Wi-Fi_issues/' | relative_url }}).
 - If you have connected your device to a display via the HDMI port, the display will show a gray pattern. You will not see any text or images on your display until the IoT Edge runtime has been deployed to the device.
 
 ## Connect the Vision AI Dev Kit hardware to your Azure IoT Hub

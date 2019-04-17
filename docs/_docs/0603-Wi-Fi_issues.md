@@ -60,3 +60,7 @@ adb shell ifconfig wlan0
 ```
 
 and look for **HWaddr** in the output. The MAC address will be in a format similar to:  00:0A:G5:5B:20:9E
+
+## Get the assigned IP address for the camera hardware
+
+    adb shell ifconfig wlan0
