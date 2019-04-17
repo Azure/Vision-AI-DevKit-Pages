@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting Display Issues"
-permalink: /docs/Display_Issues/
+permalink: /docs/Display_issues/
 excerpt: "Resolving display issues"
 variable:
   - platform: windows
