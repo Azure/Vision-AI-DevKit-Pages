@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-15
+last_modified_at: 2019-04-17
 ---
 
 For first-time users of the **Vision AI DevKit**, this page will help you get your device ready for use. All the instructions for steps introduced in page can be found from the left side menu.
@@ -39,11 +39,3 @@ This section provides instructions for deploying the VisionSample model to your 
 ## [Deploy the sample model using VS Code]({{ '/docs/Deploy_Model_VS_Code/' | relative_url }})
 
 This section provides instructions for deploying the VisionSample model to your device using VS Code
-
-## [(Optional) Platform Tools]({{ '/docs/platform_tools/' | relative_url }})
-
-Platform tools, which include the Android Debug Bridge (ADB) and Fastboot, are used for checking device connectivity and running various command-line tasks including firmware updates.
-
-## [(Optional) Firmware Update]({{ '/docs/Firmware/' | relative_url }})
-
-Although not absolutely mandatory we strongly recommend you to check the firmware version of you device and update it to latest version if needed before starting to use Vision AI Dev Kit.
