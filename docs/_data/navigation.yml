@@ -20,7 +20,7 @@ main:
 docs: 
   - title: Getting Started
     children:
-      - title: "Quick Start Guide"
+      - title: "Quick Start"
         url: /docs/Get_Started/
       - title: "Setup your device"
         url: /docs/Run_OOBE/
