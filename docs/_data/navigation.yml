@@ -25,17 +25,6 @@ docs:
       - title: "Setup your device"
         url: /docs/Run_OOBE/
 
-  - title: Tools and Connections
-    children:
-      - title: "Hardware Connections"
-        url: /docs/Hardware_connections/
-      - title: "Platform Tools"
-        url: /docs/platform_tools/
-      - title: "Visual Studio (VS) Code"
-        url: /docs/SetUp_VS_Code/
-      - title: "Azure IoT Hub and IoT Edge device"
-        url: /docs/Setup_Azure_resources/
-
   - title: "Create a Vision Model"
     children:
       - title: "Using CustomVision.AI"
@@ -54,6 +43,17 @@ docs:
         url: /docs/Firmware/ 
       - title: "Rebooting"
         url: /docs/Reboot/
+
+  - title: Tools and Connections
+    children:
+      - title: "Hardware Connections"
+        url: /docs/Hardware_connections/
+      - title: "Platform Tools"
+        url: /docs/platform_tools/
+      - title: "Visual Studio (VS) Code"
+        url: /docs/SetUp_VS_Code/
+      - title: "Azure IoT Hub and IoT Edge device"
+        url: /docs/Setup_Azure_resources/
 
   - title: Troubleshooting
     children:
