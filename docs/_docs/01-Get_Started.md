@@ -32,22 +32,18 @@ All the steps described above are pre-requisites for OOBE, even though some of t
 
 Once OOBE is complete, your camera device is ready to receive modules, such as the VisionSample ML module (providing example image recognition capabilities.) Modules can be deployed via [VS Code](https://code.visualstudio.com/), [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/) or from [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps).
 
-## [Deploying a model using IoT Hub]({{ '/docs/Deploy_Model_IoT_Hub/' | relative_url }})
+## [Deploy the sample model using IoT Hub]({{ '/docs/Deploy_Model_IoT_Hub/' | relative_url }})
 
 This section provides instructions for deploying the VisionSample model to your device using IoT Hub. This step can also be pre-configured during the IoT Hub and IoT Edge device setup prior to running OOBE.
 
-## Setting up your SW development environment
-
-There are several ways to train machine learning models and develop additional logic for the Vision AI Dev Kit. We highly recommend using [Visual Studio (VS) Code](https://code.visualstudio.com).
-
-## [Deploying a model using VS Code]({{ '/docs/Deploy_Model_VS_Code/' | relative_url }})
+## [Deploy the sample model using VS Code]({{ '/docs/Deploy_Model_VS_Code/' | relative_url }})
 
 This section provides instructions for deploying the VisionSample model to your device using VS Code
 
-## [Firmware Update]({{ '/docs/Firmware/' | relative_url }})
+## [(Optional) Platform Tools]({{ '/docs/platform_tools/' | relative_url }})
+
+Platform tools, which include the Android Debug Bridge (ADB) and Fastboot, are used for checking device connectivity and running various command-line tasks including firmware updates.
+
+## [(Optional) Firmware Update]({{ '/docs/Firmware/' | relative_url }})
 
 Although not absolutely mandatory we strongly recommend you to check the firmware version of you device and update it to latest version if needed before starting to use Vision AI Dev Kit.
-
-## [Platform Tools]({{ '/docs/platform_tools/' | relative_url }})
-
-You will need an installation of platform tools, which include the Android Debug Bridge (ADB) and Fastboot. These tools are used for checking device connectivity and running various command-line tasks including firmware updates.
