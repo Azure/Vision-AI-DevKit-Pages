@@ -5,6 +5,7 @@
 $primary-color: #006699 !default;
 $footer-background-color: #393939 !default;
 
+
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin

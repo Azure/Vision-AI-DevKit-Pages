@@ -9,9 +9,31 @@ variable:
     name: macOS
 last_modified_at: 2019-04-17
 ---
-## Camera hardware Wi-Fi access point passphrase
+## Unable to connect to a Wi-Fi network
 
-The Vision AI Dev Kit camera hardware should have a unique Wi-Fi access point passphrase found on a sticker on the bottom of the device. If there is no sticker, use the command line
+The Wi-Fi passphrase for your local Wi-fi network cannot have spaces (even at the end of the passphrase string), or the camera will be unable to connect to the Wi-Fi network.
+
+## Display the hardware MAC address
+
+Use the ADB command line
+
+```
+adb shell ifconfig wlan0
+```
+
+and look for **HWaddr** in the output. The MAC address will be in a format similar to:  00:0A:G5:5B:20:9E
+
+## Display the assigned IP address
+
+Use the ADB command line
+
+```
+adb shell ifconfig wlan0
+```
+
+## Obtain the Wi-Fi access point passphrase
+
+The Vision AI Dev Kit camera hardware should have a unique Wi-Fi access point passphrase found on a sticker on the bottom of the device. If there is no sticker, use the ADB command line
 
 ```
 adb shell cat /data/misc/wifi/hostapd_virtual.conf
@@ -43,24 +65,6 @@ to display the access point configuration details. The output will be similar to
 
   The line marked with three dashes above contains the passphrase, which is unique to each device.
 
-## Unable to connect the Vision AI DevKit hardware to a Wi-Fi network
+## Changing the configured Wi-Fi network
 
-The Wi-Fi passphrase for your local Wi-fi network cannot have spaces (even at the end of the passphrase string), or the camera will be unable to connect to the Wi-Fi network.
-
-## Connect your Vision AI DevKit to a different Wi-Fi network
-
-To change the Wi-Fi network your DevKit hardware connects to, long press the power button for more than 5 seconds to turn on the DevKit hardware access point. Connect your PC to the Wi-Fi access point using the instructions in [OOBE.]({{ '/docs/Run_OOBE/' | relative_url }}) Run through the OOBE process again, making the approriate Wi-Fi network changes.
-
-## Display the Vision AI DevKit hardware MAC address
-
-Use the ADB command line
-
-```
-adb shell ifconfig wlan0
-```
-
-and look for **HWaddr** in the output. The MAC address will be in a format similar to:  00:0A:G5:5B:20:9E
-
-## Get the assigned IP address for the camera hardware
-
-    adb shell ifconfig wlan0
+To change the Wi-Fi network your DevKit hardware connects to, long press the power button for more than 5 seconds to turn on the DevKit hardware access point. Connect your PC to the Wi-Fi access point by running the [Setup your device]({{ '/docs/Run_OOBE/' | relative_url }}) process again, using the new Wi-Fi network settings.

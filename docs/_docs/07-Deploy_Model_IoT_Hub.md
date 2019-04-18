@@ -1,5 +1,5 @@
 ---
-title: "Deploy a Vision AI model with Azure IoT Hub"
+title: "Deploy a vision AI model with Azure IoT Hub"
 permalink: /docs/Deploy_Model_IoT_Hub/
 excerpt: "How to deploy a pre-built vision model to the Vision AI DevKit through the Azure portal."
 variable:

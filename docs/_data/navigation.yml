@@ -20,7 +20,7 @@ main:
 docs: 
   - title: Getting Started
     children:
-      - title: "Quick Start"
+      - title: "Quick start"
         url: /docs/Get_Started/
       - title: "Setup your device"
         url: /docs/Run_OOBE/
@@ -34,7 +34,7 @@ docs:
     children:
       - title: Using Azure IoT Hub
         url: /docs/Deploy_Model_IoT_Hub/
-      - title: Using VS Code
+      - title: Using Visual Studio (VS) Code
         url: /docs/Deploy_model_VS_Code/
 
   - title: Manage your device
@@ -48,7 +48,7 @@ docs:
     children:
       - title: "Hardware Connections"
         url: /docs/Hardware_connections/
-      - title: "Platform Tools"
+      - title: "Platform tools"
         url: /docs/platform_tools/
       - title: "Visual Studio (VS) Code"
         url: /docs/SetUp_VS_Code/
@@ -57,13 +57,13 @@ docs:
 
   - title: Troubleshooting
     children:
-      - title: "Guide to device LEDs"
+      - title: "Device LEDs"
         url: /docs/Guide_to_device_LEDs/
-      - title: "Display issues"
+      - title: "Display output"
         url: /docs/Display_issues/
-      - title: "Wi-Fi issues"
+      - title: "Wi-Fi"
         url: /docs/Wi-Fi_issues/
-      - title: "Firmware update failure"
+      - title: "Firmware update"
         url: /docs/Recover_device/
 
   - title: Tips
@@ -72,5 +72,5 @@ docs:
         url: /docs/Review_logs/
       - title: "Docker Container Status"
         url: /docs/Docker_status/
-      - title: "Improve Inferencing"
+      - title: "Improve inferencing accuracy"
         url: /docs/Inferencing_accuracy/
