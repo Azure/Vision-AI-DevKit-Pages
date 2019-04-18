@@ -37,7 +37,7 @@ docs:
       - title: Using VS Code
         url: /docs/Deploy_model_VS_Code/
 
-  - title: Managing your device
+  - title: Manage your device
     children:
       - title: "Firmware update"
         url: /docs/Firmware/ 
