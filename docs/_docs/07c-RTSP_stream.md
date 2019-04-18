@@ -17,7 +17,7 @@ last_modified_at: 2019-04-18
 ## What you will need
 
 * Sample model or other vision model deployed to the Vision AI DevKit
-* Media player supporting the RTSP protocol (VLC Player or QT Media Player)
+* Media player supporting the RTSP protocol ([VLC Player](https://www.videolan.org/vlc/) or similar)
 * PC and Vision AI DevKit connected to the same network
 
 ## Obtain the IP address of the Vision AI DevKit
