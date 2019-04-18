@@ -11,18 +11,18 @@ header:
     - label: "Order <i class='fas fa-chevron-right'></i>"
       url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
 excerpt: >
-  Jumpstart your Azure Vision Machine Learning Journey today
+  Jumpstart your Azure vision machine learning journey today
 VAIDK_More:
   - title: "Start fast"
     excerpt: |
-      Get up and running in minutes using the [tutorial project](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with Vision Machine Learning.
+      Get up and running in minutes using the [tutorial project](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with vision machine learning.
       # Build fast
       * New to Vision ML? Waiting for your DevKit? Let [Azure Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Create_Train_Vision_ML_Project/){:target="_blank"} do the hard work, starting with only a few labeled images.
-      * Experienced with Vision ML? Use [Jupyter notebooks](https://jupyter.org/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) create and train your custom vision ML models.
-      * Already have a Vision ML model? Convert and deploy models from many existing formats.
+      * Experienced with vision ML? Use [Jupyter notebooks](https://jupyter.org/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) create and train your custom vision ML models.
+      * Already have a vision ML model? Convert and deploy models from many existing formats.
 
       # Deploy fast
-      [Azure IoT Edge](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_IoT_Hub/){:target="_blank"} can push your Vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        
+      [Azure IoT Edge](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_IoT_Hub/){:target="_blank"} can push your vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        
 
   - title: "Prove your concept"
     excerpt: |
@@ -31,7 +31,7 @@ VAIDK_More:
       # Join the Community
       Get help and help others with Vision ML projects by joining our [Tech Community](https://aka.ms/VAIDK-IoTTechCommunity){:target="_blank"}
       # Intelligent Edge: Fast local processing, backed by the power of the cloud 
-      As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit runs your Vision ML models locally for fast image inference. You can add business logic to your concept, sending only the most important data to the cloud for more advanced processing and response.
+      As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit runs your vision ML models locally for fast image inference. You can add business logic to your concept, sending only the most important data to the cloud for more advanced processing and response.
      
 more_info:
   - title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 125px'>"

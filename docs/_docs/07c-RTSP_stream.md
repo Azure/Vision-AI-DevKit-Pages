@@ -40,7 +40,7 @@ ifconfig wlan0
   3. Copy the IP address found in the Azure module.
     ![IP address highlighted in Module Identity Twin screen]({{ '/assets/images/IP_Address_Module_Identity_Twin.png' | relative_url }})
 
-## Connect to the video strea
+## Connect to the video stream
 Any media player supporting the RTSP protocol can be used to display the live video stream from the Vision AI DevKit. (This example will use VLC Media Player.)
 
 1. Open VLC Media Player, select the ***Media*** tab, then select ***Open Network Stream***.
@@ -50,7 +50,7 @@ Any media player supporting the RTSP protocol can be used to display the live vi
 2. Enter the RTSP address in the form
 
     ```
-    http://<IP address>:8000/live
+    http://<IP address>:8900/live
     ```
 under on the ***Network*** tab, then select ***Play***.
 
