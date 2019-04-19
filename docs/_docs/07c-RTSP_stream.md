@@ -18,7 +18,7 @@ last_modified_at: 2019-04-18
 
 * Sample model or other vision model deployed to the Vision AI DevKit
 * Media player supporting the RTSP protocol ([VLC Player](https://www.videolan.org/vlc/) or similar)
-* PC and Vision AI DevKit connected to the same network
+* PC and Vision AI DevKit connected to the same Wi-Fi network
 
 ## Obtain the IP address of the Vision AI DevKit
 
