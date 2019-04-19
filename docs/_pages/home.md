@@ -57,9 +57,13 @@ advantages:
 
                 }
             ]);</script>
-  - title: "Create Intelligent Apps for IoT Sensors"
+  - title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 125px'>"
     excerpt: >
-        In the era of intelligent cloud and intelligent edge, developers will need to write applications for a range of connected devices. The Azure IoT Edge runtime makes it easy to create applications from cloud to edge, leveraging advanced AI services. The Vision AI Developer Kit, a member of the Microsoft Azure IoT Starter kit family, can be used by IoT solution makers to easily deploy AI models built using Azure Machine Learning and Azure IoT Edge.
+        The Vision AI DevKit features the [Qualcomm Visual Intelligence Platform](https://www.qualcomm.com/news/onq/2018/05/07/qualcomm-vision-intelligence-platform-microsoft-azure-bring-edge-ai-solution){:target="_blank"} for hardware acceleration of AI models to deliver superior inferencing performance.<br><br><br>
+
+        <img src='assets/images/msft-logo-gray.svg' alt='Microsoft' style='max-width: 160px'><br><br>
+
+        As an Azure IoT starter kit, the Vision AI DevKit can use the [Azure Machine Learning service](https://azure.microsoft.com/en-us/services/machine-learning-service/) to build, train and deploy AI models. Packaged into containers, these models are executed on the camera using [Azure IoT Edge](https://azure.microsoft.com/en-us/services/iot-edge/).
 
 Quonos:
   - image_path: /assets/images/icon-innovation.svg
@@ -86,8 +90,4 @@ Quonos:
 
 <div class="feature__outer_wrapper">
 {% include feature_row id="advantages" type="dual" %}
-</div>
-
-<div class="feature__outer_wrapper">
-{% include feature_row id="more_info" type="center" %}
 </div>
