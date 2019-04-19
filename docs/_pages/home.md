@@ -39,24 +39,8 @@ more_info:
         The Vision AI Dev Kit features the [Qualcomm Visual Intelligence Platform](https://www.qualcomm.com/news/onq/2018/05/07/qualcomm-vision-intelligence-platform-microsoft-azure-bring-edge-ai-solution){:target="_blank"} for hardware acceleration of AI models to deliver superior inferencing performance.
 
 advantages:
-  - excerpt: |
-        <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin amp-big-play-centered" tabindex="0"></video>
-        <script>
-            var myOptions = {
-                "nativeControlsForTouch": false,
-                controls: true,
-                autoplay: false,
-                width: "100%",
-                height: "auto",
-            }
-            myPlayer = amp("azuremediaplayer", myOptions);
-            myPlayer.src([
-                {
-                    "src": "https://easstandardhosting123.blob.core.windows.net/asset-0a1504fe-8b97-4e8f-a312-2a5eef36c891/Vision_AI_101418.mp4?sv=2015-07-08&sr=c&si=1da79a8d-775c-4a56-af1a-173c36a1823b&sig=W7ACJX%2F0FrlqxYg7TlPfjojO3Ajf%2FiHy7eW4%2FfgK%2BAk%3D&st=2018-10-25T01%3A49%3A06Z&se=2118-10-25T01%3A49%3A06Z",
-                    "type": "video/mp4"
-
-                }
-            ]);</script>
+  - video_path: https://easstandardhosting123.blob.core.windows.net/asset-0a1504fe-8b97-4e8f-a312-2a5eef36c891/Vision_AI_101418.mp4?sv=2015-07-08&sr=c&si=1da79a8d-775c-4a56-af1a-173c36a1823b&sig=W7ACJX%2F0FrlqxYg7TlPfjojO3Ajf%2FiHy7eW4%2FfgK%2BAk%3D&st=2018-10-25T01%3A49%3A06Z&se=2118-10-25T01%3A49%3A06Z
+    video_poster: /assets/images/node-graphic.jpg
   - title: "Create Intelligent Apps for IoT Sensors"
     excerpt: >
         In the era of intelligent cloud and intelligent edge, developers will need to write applications for a range of connected devices. The Azure IoT Edge runtime makes it easy to create applications from cloud to edge, leveraging advanced AI services. The Vision AI Developer Kit, a member of the Microsoft Azure IoT Starter kit family, can be used by IoT solution makers to easily deploy AI models built using Azure Machine Learning and Azure IoT Edge.
