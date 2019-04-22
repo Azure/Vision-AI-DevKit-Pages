@@ -17,7 +17,7 @@ last_modified_at: 2019-04-11
 
 ## What you will need
 
-* Visual Studio (VS) Code with required extentions [(Instructions)](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/){:target="_blank"}
+* Visual Studio (VS) Code with required extentions [(Instructions)]({{ '/docs/SetUp_VS_Code/' | relative_url}})
 * Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
 * Azure IoT Hub and Azure IoT Edge device configured for your Vision AI DevKit hardware [(Instructions)]({{ '/docs/Setup_Azure_resources/' | relative_url}})
 * Active Wi-Fi access point with Internet connectivity.
