@@ -18,7 +18,7 @@ last_modified_at: 2019-03-15
 
 * VS Code
 * Python 3.7 by Anaconda
-* Latest Azure Machine Learning SDK for Python
+* Azure Machine Learning, Azure IoT Hub Toolkit and Azure Iot Edge extensions for VS Code
 * Azure subscription with configured Azure IoT Hub
 
 ## Windows users
