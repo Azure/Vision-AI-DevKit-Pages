@@ -26,8 +26,6 @@ During device setup, you will link your device with your configured Azure IoT Hu
 
 ## Deploy the VisionSample model
 
-Once device setup is complete, you are ready to deploy models to the device, such as the VisionSample ML model. Deployment can be done using [Visual Studio Code](https://code.visualstudio.com/), [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/) or from the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps).
+Once device setup is complete, you are ready to deploy models to the device, such as the VisionSample ML model. Deployment can be done using [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/) or from the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps).
 
 ## [Deploy the sample model using IoT Hub]({{ '/docs/Deploy_Model_IoT_Hub/' | relative_url }})
-
-## [Deploy the sample model using Visual Studio Code]({{ '/docs/Deploy_Model_VS_Code/' | relative_url }})

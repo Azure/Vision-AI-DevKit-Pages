@@ -22,10 +22,8 @@ docs:
     children:
       - title: "Quick start"
         url: /docs/Get_Started/
-      - title: "Setup your device"
-        url: /docs/Run_OOBE/
 
-  - title: "Create a Vision Model"
+  - title: "Build a Vision Model"
     children:
       - title: "Using CustomVision.AI"
         url: /docs/Create_Train_Vision_ML_Project/
@@ -39,6 +37,8 @@ docs:
 
   - title: Manage your device
     children:
+      - title: "Setup your device"
+        url: /docs/Run_OOBE/
       - title: "Firmware update"
         url: /docs/Firmware/ 
       - title: "Rebooting"
