@@ -13,6 +13,7 @@ last_modified_at: 2019-04-17
 
 Re-flash using Fastboot, a part of the platform tools, if the device will enter fastboot mode.
 
+```terminal
     > $ adb reboot bootloader
     > $ fastboot devices
     > $ fastboot flash abl abl.elf
@@ -23,3 +24,4 @@ Re-flash using Fastboot, a part of the platform tools, if the device will enter 
     > $ fastboot flash cache qcs605-cache.ext4
     > $ fastboot flash systemrw qcs605-systemrw.ext4
     > $ fastboot reboot
+```

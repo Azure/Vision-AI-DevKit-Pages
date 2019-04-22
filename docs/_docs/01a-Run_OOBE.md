@@ -34,9 +34,11 @@ From your PC, connect to a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 
 ## Connect the Vision AI Dev Kit hardware to your Azure IoT Hub
 
 1. Use your computer's web browser to visit [http://setupaicamera.ms](http://setupaicamera.ms){:target="_blank"}. If you do not see the below screen, verify your computer is connected to the Dev Kit hardware's access point.
+
     ![Vision AI Developer Kit starting screen]({{ '/assets/images/visual-ai-getting-started-screen.png' | relative_url }})
 
 2. Tapping **Next** will open the SSH configuration screen, where you will enter the device's Wi-Fi access point passphrase.
+
     ![Vision AI Developer Kit SSH config screen]({{ '/assets/images/SSH_setup.png' | relative_url }})
 
 3. Tapping **Next** will open the Wi-Fi configuration screen. where you will connect your Vision AI DevKit to the Wi-Fi network it will use during normal operation.
@@ -44,7 +46,8 @@ From your PC, connect to a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 
     - Select the Wi-Fi network your camera will connect to from the drop down box, then enter the Wi-Fi passphrase. You will see a confirmation screen when the camera successfully connects to your selected Wi-Fi network.
     - The Wi-Fi passphrase cannot have spaces (even at the end of the passphrase string), or the camera will be unable to connect to the Wi-Fi network.
 
-4. Tapping **Next** will open the **Connect to Microsoft Azure** screen, where you will add the IoT Edge Connection String.
+4. Tapping **Next** will open the **Connect to Microsoft Azure** screen, where you will add the IoT Edge Connection String. Note: This string is provided when creating an IoT Edge device in your IoT Hub. [See *Register a new Azure IoT Edge device from the Azure portal*]({{ '/docs/Setup_Azure_resources/#azure-iot-hub' | relative_url }})
+
     ![Vision AI Developer Kit Connect to Azure screen]({{ '/assets/images/Connect_to_Azure.png' | relative_url }})
 
 5. Tapping **Next** will take you to the **connecting** and **connected** screens.

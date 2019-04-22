@@ -25,7 +25,7 @@ last_modified_at: 2019-03-15
 
 1. Connect your computer and the Vision AI Dev Kit camera using a USB-C cable
 2. Open a command line prompt on your computer and use the command
-     ```
+     ```cmd
      adb devices
      ```
 
@@ -40,7 +40,7 @@ last_modified_at: 2019-03-15
     * Click the reset button once, using the pin hole on the right side of the camera.
     * Press the power button on the back once.
     * Use the command line:
-        ```
+        ```cmd
         adb reboot
         ```
     * Long press the power button for more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.
@@ -50,7 +50,7 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes or have
 
 ### Downloading and Extracting the latest Device Firmware
 1. Confirm that the platform tools directory (created when installing ADB and Fastboot) is included in your computer's path environment variable. For Windows, use the command line:
-    ```
+    ```cmd
     set path=%path%;<platform tools path>
     ```
 2. Download the latest firmware/image released by Altek *(website link TBD)* [*(Internal-only Microsoft link)*](https://microsoftapc.sharepoint.com/teams/Selfhost-VisionAIDevKit/Shared%20Documents/General/Altek%20FW%20Image/NextUnderTest)
@@ -62,7 +62,7 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes or have
 ### Updating the firmware
 
 5. To verify the camera is attached and recognized, run the following command line:
-    ```
+    ```cmd
     adb devices
     ```
 
@@ -72,6 +72,6 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes or have
     * If you get stuck at the message *waiting for device*, please reboot the camera hardware and run FastBootUpgrade.bat again. If you keep hitting the same message, please charge the device for 10+ minutes to make sure that the battery is charged to at least 50%.
 
 8. To confirm your device has accepted the updated firmware, check the version using this command line:
-    ```
+    ```cmd
     adb shell cat /etc/version
     ```

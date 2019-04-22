@@ -17,7 +17,7 @@ The Wi-Fi passphrase for your local Wi-fi network cannot have spaces (even at th
 
 Use the ADB command line
 
-```
+```cmd
 adb shell ifconfig wlan0
 ```
 
@@ -27,7 +27,7 @@ and look for **HWaddr** in the output. The MAC address will be in a format simil
 
 Use the ADB command line
 
-```
+```cmd
 adb shell ifconfig wlan0
 ```
 
@@ -35,13 +35,13 @@ adb shell ifconfig wlan0
 
 The Vision AI Dev Kit camera hardware should have a unique Wi-Fi access point passphrase found on a sticker on the bottom of the device. If there is no sticker, use the ADB command line
 
-```
+```cmd
 adb shell cat /data/misc/wifi/hostapd_virtual.conf
 ```
 
 to display the access point configuration details. The output will be similar to this
 
-```
+```terminal
 
       >   ctrl_interface=/var/run/hostapd
       >   interface=softap0

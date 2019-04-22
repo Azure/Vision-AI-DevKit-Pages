@@ -37,7 +37,7 @@ The Vision AI DevKit camera hardware has a USB-C connector for connection with a
 1. Connect your computer and the Vision AI Dev Kit camera using a USB-C cable
 2. Open a command line prompt on your computer and use the command
 
-     ```
+     ```cmd
      adb devices
      ```
 
@@ -53,7 +53,7 @@ The Vision AI DevKit camera hardware has a USB-C connector for connection with a
     * Press the power button on the back once.
     * Use the command line:
 
-        ```
+        ```cmd
         adb reboot
         ```
 

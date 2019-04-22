@@ -16,7 +16,7 @@ last_modified_at: 2019-04-17
 * Use a direct HDMI connection to the display. Converters, e.g. Display Port to HDMI, will usually cause the output to fail.
 * The neural processing engine (or other parts of the stack) may require a reboot occasionally. The command line
 
-  ```
+  ```cmd
   adb reboot
   ```
 
@@ -24,7 +24,7 @@ last_modified_at: 2019-04-17
 
 * The object label presented in the bounding box may appear incorrect. If a new object appears in the space befor the bounding box is drawn, the label of the last object detected will be presented. This is not an inferencing bug.
 
-  ```
+  ```cmd
   logcat | grep SNPE
   ```
 

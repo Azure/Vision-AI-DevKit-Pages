@@ -13,26 +13,26 @@ last_modified_at: 2019-04-17
 
 Use the command line
 
-```
+```cmd
 adb shell docker ps
 ```
 
 or
 
-```
+```cmd
 adb shell watch docker ps
 ```
 
 * If edgeAgent is still being downloaded, you will see the docker container is empty. To check if it’s in progress, you can use the command line
 
-    ```
+    ```cmd
     adb shell watch ifconfig wlan0
     ```
 
   to see if the RX bytes are increasing.
 * If edgeAgent is downloaded, you will see it running. Once you see edgeAgent is downloaded, you can use the command line
 
-  ```
+  ```cmd
   adb shell docker logs -f edgeAgent
   ```
 

@@ -10,9 +10,7 @@ variable:
 last_modified_at: 2019-04-17
 ---
 
-For first-time users of the **Vision AI DevKit**, the links here will help you get your device ready to go and deploy the VisionSample model from GitHub.
-
-## Azure account and hardware setup
+For first-time users of the **Vision AI DevKit**, the links below will take you from setting up your Azure account to seeing video output showing recognized objects using the VisionSample model.
 
   ![High level steps to take for the initial Vision AI Dev Kit setup]({{ '/assets/images/GetStarted.PNG' | relative_url }})
 

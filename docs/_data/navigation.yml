@@ -23,6 +23,11 @@ docs:
       - title: "Quick start"
         url: /docs/Get_Started/
 
+  - title: Tutorials
+    children:
+      - title: "Hands On Lab - Using the VisionSample"
+        url: /docs/Tutorial-HOL_Using_the_VisionSample
+
   - title: "Build a Vision Model"
     children:
       - title: "Using CustomVision.AI"

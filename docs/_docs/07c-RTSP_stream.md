@@ -24,7 +24,7 @@ last_modified_at: 2019-04-18
 
 ### Using ADB shell
 
-```
+```cmd
 ADB Shell
 ifconfig wlan0
 ```
@@ -41,6 +41,7 @@ ifconfig wlan0
     ![IP address highlighted in Module Identity Twin screen]({{ '/assets/images/IP_Address_Module_Identity_Twin.png' | relative_url }})
 
 ## Connect to the video stream
+
 Any media player supporting the RTSP protocol can be used to display the live video stream from the Vision AI DevKit. (This example will use VLC Media Player.)
 
 1. Open VLC Media Player, select the ***Media*** tab, then select ***Open Network Stream***.
@@ -49,9 +50,10 @@ Any media player supporting the RTSP protocol can be used to display the live vi
 
 2. Enter the RTSP address in the form
 
-    ```
+    ```cmd
     http://<IP address>:8900/live
     ```
+
 under on the ***Network*** tab, then select ***Play***.
 
-    ![VLC Open Media dialog box]({{ '/assets/images/VLC_RTSP_Dialog.png' | relative_url }})
+  ![VLC Open Media dialog box]({{ '/assets/images/VLC_RTSP_Dialog.png' | relative_url }})

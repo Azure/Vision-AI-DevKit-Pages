@@ -26,7 +26,7 @@ Fastboot is a protocal for communicating with bootloaders over USB or ethernet. 
 
 If you have a package manager installed (Chocolatey/Homebrew/Apt/Yum or similar), use a command-line similar to:
 
-```
+```cmd
 choco install adb
 ```
 (replacing 'choco' with the package manager of your choice) to install the Platform Tools. Alternatively, you can download and install the Platform Tools using these links for your development OS:
@@ -38,40 +38,40 @@ choco install adb
 ## Common ADB commands  
 
 * Show connected devices
-   ```
+   ```cmd
    adb devices
    ```
   
 * Check device firmware version
-   ```
+   ```cmd
    adb shell cat /etc/version
    ```
 
 * Check device battery level (provided as % value)
-   ```
+   ```cmd
    adb shell cat /sys/class/power_supply/battery/capacity
    ```
   
 * Reboot the device
-   ```
+   ```cmd
    adb reboot
    ```
 
 * Show available adb command options
-   ```
+   ```cmd
    adb
    ```
 * Run a Linux command on the device
-   ```
+   ```cmd
    adb shell [command]
    ```
 
 * Interactively run Linux commands on the device
-   ```
+   ```cmd
    adb shell
    ```
   
 * Exit the shell
-   ```
+   ```cmd
    exit
    ```

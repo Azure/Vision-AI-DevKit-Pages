@@ -15,7 +15,7 @@ last_modified_at: 2019-04-17
   * Press the power button on the back once.
   * Use the command line
 
-      ```
+      ```cmd
       adb reboot
       ```
 

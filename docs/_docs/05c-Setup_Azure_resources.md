@@ -23,7 +23,7 @@ Azure IoT Hub enables reliable and secure bi-directional communications between 
 
 ### Azure IoT Edge device
 
-To use your Vision AI DevKit hardware with Azure IoT Hub for Edge workloads, you will need to register the hardware as an IoT Edge device. Upon registration, you are provided a connection string to use during the Vision AI DevKit OOBE experience.
+To use your Vision AI DevKit hardware with Azure IoT Hub for Edge workloads, you will need to register the hardware as an IoT Edge device. Upon registration, you are provided a connection string you will use during Vision AI DevKit hardware setup. Please ensure you make copy the string somewhere you can refer to.
 
 #### [Register a new Azure IoT Edge device from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal){:target="_blank"}
 

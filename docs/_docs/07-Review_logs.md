@@ -11,13 +11,13 @@ last_modified_at: 2019-04-17
 ---
 ## Review logs and progress of the IoT Edge Agent
 
-```
-adb shell docker logs -f edgeAgent
-```
-
-* After you see a “Start module <your module name>” message, you can use 
-
+  ```cmd
+  adb shell docker logs -f edgeAgent
   ```
+
+* After you see a “Start module (your module name)” message, you can use
+
+  ```cmd
   adb shell docker logs -f <your module name>
   ```
 

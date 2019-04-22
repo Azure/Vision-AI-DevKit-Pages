@@ -55,27 +55,27 @@ last_modified_at: 2019-03-15
 
 5. Use the **Anaconda Prompt (base)** as an administrator, then execute the following command lines:
 
-      ```
-      pip install --upgrade -r requirements.txt
-      ```
+    ```cmd
+    pip install --upgrade -r requirements.txt
+    ```
 
 6. Restart Visual Studio Code in the Python 3.7 runtime environment, by executing the following command in an **Anaconda Prompt (base)** window:
 
-    ```
+    ```cmd
     code
     ```
 
       This will enable VS code to inherit the environment variables of the **Python 3.7** runtime environment.
 7. Open the *command palette* in VS Code *(Ctrl-Shift-P)*, then enter
 
-    ```
+    ```cmd
     Python: Select Interpreter
     ```
 
     to select your Python interpreter (*Python 3.7*)
 8. In the VS Code *command pallette*, enter
 
-    ```
+    ```cmd
     Azure: Sign In
     ```
 
@@ -93,7 +93,7 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
 
    1. Install the build tools.
 
-      ```terminal
+      ```cmd
       sudo apt-get install build-essential checkinstall
       sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev
          \ libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
@@ -102,26 +102,33 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
 
    2. Download Python 3.7.2.
 
-      ```terminal
+      ```cmd
       cd /usr/src
       sudo wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
       ```
 
-   3. Extract tgz: `sudo tar xzf Python-3.7.2.tgz`
+   3. Extract tgz
+      ```cmd
+      sudo tar xzf Python-3.7.2.tgz
+      ```
 
    4. Compile.
 
-      ```terminal
+      ```cmd
       cd Python-3.7.2
       sudo ./configure --enable-optimizations
       sudo make altinstall
       ```
 
-   5. Add alias into ~/.bashrc: `alias python='/usr/local/bin/python3.7m'`
+   5. Add alias into ~/.bashrc
+   
+      ```cmd
+      alias python='/usr/local/bin/python3.7m'
+      ```
 
    6. Install pip:
 
-       ```terminal
+       ```cmd
        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
        sudo python get-pip.py
        sudo pip install --upgrade pip

@@ -67,9 +67,9 @@ For more information about *Container Create Options*, *Restart Policy*, and *De
 4. Select **Save**
 5. Select **Configure advanced Edge Runtime settings** 
 6. Add the following line to the existing **Create Options** section
-  ```
-  "User": "root",
-  ```
+    ```cmd
+    "User": "root",
+    ```
  ![Create Options addition]({{ '/assets/images/Create_Options_Addition.png' | relative_url }})
 7. Select **Save**, then select **Next**
 

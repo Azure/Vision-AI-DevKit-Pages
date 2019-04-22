@@ -44,16 +44,17 @@ last_modified_at: 2019-04-11
  ![Open deployment.template.json from VSC Screenshot #2]({{ '/assets/images/VSC_Deploy_Select-Edge-Deployment-Manifest_screenshot2.png' | relative_url }})
 10.	Configure the device as an IoT Edge device using the connection string for your Vision AI DevKit, obtained earlier.
 11.	Monitor the deployment status for the AI Vision Kit device by the command lines
-```
-adb shell docker ps
-adb shell docker logs edgeAgent
-```
+    ```cmd
+    adb shell docker ps
+    adb shell docker logs edgeAgent
+    ```
 ![Use ADB to monitor deployment status Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_monitor_deployment_screenshot.png' | relative_url }})
 12.	Check object detection results using the command line
-```
-adb shell iotedge logs <module name>
-```
-(e.g. “iotedge logs VisionSampleImagenet”.)
+
+    ```cmd
+    adb shell iotedge logs <module name>
+    (e.g. “adb shell iotedge logs VisionSampleImagenet”)
+    ```
 Mobilenet-imagenet model can detect the 1000 object classes listed in the  *VisionSample\MachineLearning\models\mobilenet-imagenet\orig\output_labels.txt*.
 
     ![Use ADB to module impage outputs Screenshot]({{ '/assets/images/VSC_Deploy_Using_ADB_to_check_detection_results_screenshot.png' | relative_url }})
