@@ -25,7 +25,7 @@ docs:
 
   - title: Tutorials
     children:
-      - title: "Hands On Lab - Using the VisionSample"
+      - title: "Hands On Lab - Using the VisionSample AI model"
         url: /docs/Tutorial-HOL_Using_the_VisionSample
 
   - title: "Build a Vision Model"
