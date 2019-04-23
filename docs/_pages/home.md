@@ -33,39 +33,17 @@ VAIDK_More:
       # Intelligent Edge: Fast local processing, backed by the power of the cloud 
       As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit runs your vision ML models locally for fast image inference. You can add business logic to your concept, sending only the most important data to the cloud for more advanced processing and response.
      
-more_info:
-  - title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 125px'>"
-    excerpt: >
-        The Vision AI Dev Kit features the [Qualcomm Visual Intelligence Platform](https://www.qualcomm.com/news/onq/2018/05/07/qualcomm-vision-intelligence-platform-microsoft-azure-bring-edge-ai-solution){:target="_blank"} for hardware acceleration of AI models to deliver superior inferencing performance.
-
 advantages:
   - video_path: https://easstandardhosting123.blob.core.windows.net/asset-0a1504fe-8b97-4e8f-a312-2a5eef36c891/Vision_AI_101418.mp4?sv=2015-07-08&sr=c&si=1da79a8d-775c-4a56-af1a-173c36a1823b&sig=W7ACJX%2F0FrlqxYg7TlPfjojO3Ajf%2FiHy7eW4%2FfgK%2BAk%3D&st=2018-10-25T01%3A49%3A06Z&se=2118-10-25T01%3A49%3A06Z
     video_poster: /assets/images/Video_poster.png
-  - title: "<img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 125px'>"
+
+  - title: "<img src='assets/images/msft-logo-gray.svg' alt='Microsoft' style='max-width: 160px'>"
     excerpt: >
+        As an Azure IoT starter kit, the Vision AI DevKit can use the [Azure Machine Learning service](https://azure.microsoft.com/en-us/services/machine-learning-service/) to build, train and deploy AI models. Packaged into containers, these models are executed on the camera using [Azure IoT Edge](https://azure.microsoft.com/en-us/services/iot-edge/).<br><br><br>
+
+        <img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 125px'><br><br>
+
         The Vision AI DevKit features the [Qualcomm Visual Intelligence Platform](https://www.qualcomm.com/news/onq/2018/05/07/qualcomm-vision-intelligence-platform-microsoft-azure-bring-edge-ai-solution){:target="_blank"} for hardware acceleration of AI models to deliver superior inferencing performance.<br><br><br>
-
-        <img src='assets/images/msft-logo-gray.svg' alt='Microsoft' style='max-width: 160px'><br><br>
-
-        As an Azure IoT starter kit, the Vision AI DevKit can use the [Azure Machine Learning service](https://azure.microsoft.com/en-us/services/machine-learning-service/) to build, train and deploy AI models. Packaged into containers, these models are executed on the camera using [Azure IoT Edge](https://azure.microsoft.com/en-us/services/iot-edge/).
-
-Quonos:
-  - image_path: /assets/images/icon-innovation.svg
-    alt: "placeholder 2"
-    excerpt: >
-        This is a a test of the emergency broadcast system
-  - image_path: /assets/images/icon-cog.svg
-    alt: "placeholder 2"
-    excerpt: >
-        This is a a test of the emergency broadcast system
-  - image_path: /assets/images/icon-mount.svg
-    alt: "placeholder 2"
-    excerpt: >
-        This is a a test of the emergency broadcast system
-  - image_path: /assets/images/icon-sdk.svg
-    alt: "placeholder 2"
-    excerpt: >
-        This is a a test of the emergency broadcast system
 ---
 
 <div class="feature__outer_wrapper">
