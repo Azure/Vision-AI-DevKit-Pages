@@ -78,18 +78,23 @@ Follow [these instructions]({{ '/docs/Run_OOBE/#connect-the-vision-ai-dev-kit-ha
 
 To deploy an sample AI model, we will use the 'AI Vision Dev Kit Get Started Module' from the IoT Edge marketplace.
 
-> [!NOTE]
-> This module is currently hidden in the marketplace thus is only visible with the link below.
+> [!NOTE] This module is currently hidden in the marketplace thus is only visible with the link below.
 
 - Go to [this link](https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryResultsListBlade/selectedSubMenuItemId/%7B%22menuItemId%22%3A%22gallery%2FInternetOfThings_MP%2FIoTEdgeModules%22%2C%22resourceGroupId%22%3A%22%22%2C%22resourceGroupLocation%22%3A%22%22%2C%22dontDiscardJourney%22%3Afalse%2C%22launchingContext%22%3A%7B%22galleryItemId%22%3A%22IoTEdgeModules%22%2C%22source%22%3A%5B%22GalleryFeaturedMenuItemPart%22%5D%2C%22menuItemId%22%3A%22InternetOfThings_MP%22%2C%22subMenuItemId%22%3A%22IoTEdgeModules%22%7D%7D), which will require you to sign-in to the Azure portal. In the list of IoT Edge Modules, scroll down to find the 'AI Vision Dev Kit Get Started Module' (you may need to click the 'Load more' button at the bottom). Click the icon, then  click on `Create`.
+
+> [!Note] A direct link will be given to customers once the module is published publicly.
+
 - Choose your subscription, your IoT Hub named `myIoTHub`, find your device named `myAiDevKitDevice` and click on `Next`.
 
-> [!Note]
-> TModule URI needs to be updated today to use a test version. This step won't be required by customers once released. To edit the module URI, click on `Configure` and update the URI to be `ebertrams/visionsamplemodule:1.0.13_SSD-arm32v7`.
+> [!Note] Module URI needs to be updated today to use a test version.
+
+To edit the module URI, click on `Configure` and update the URI to be `ebertrams/visionsamplemodule:1.0.13_SSD-arm32v7`.
+
+> [!Note] This step won't be required by customers once released.
 
 - Confirm the deployment by clicking on `Next` twice then `Submit`.
 
-After a few minutes (after the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor!
+After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor!
 
 ## Build a custom AI model
 
