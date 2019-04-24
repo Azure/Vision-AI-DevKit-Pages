@@ -27,11 +27,13 @@ last_modified_at: 2019-04-22
 
 ## Setup the Vision AI DevKit
 
-Note: If you have already completed the [Quick Start]({{ '/docs/Get_Started/' | relative_url}}) process, you only need to install the Azure CLI and Azure CLI IoT extention from 'Setup Azure IoT resources'. After installing these, you can skip to 'Build a Custom AI Module'.
+Note: If you have already completed the [Quick Start]({{ '/docs/Get_Started/' | relative_url}}) process, you only need to [install the Azure CLI tools]({{ '/docs/Tutorial-HOL_Using_the_VisionSample/#install-azure-command-line-interface-cli-tools' | relative_url}}) before moving directly to [Create a Custom AI Module with Azure Custom Vision service]({{ '/docs/Tutorial-HOL_Using_the_VisionSample/#create-a-custom-ai-model-with-azure-custom-vision-service' | relative_url }}).
 
-### Setup Azure IoT resources
+### Azure IoT resources
 
 To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an IoT Hub register and remotely manage your DevKit as an Edge device. All required resources are free. Here are the steps to set this up quickly:
+
+#### Install Azure Command Line Interface (CLI) tools
 
 - [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
@@ -52,6 +54,8 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     ```cmd
     az extension add --name azure-cli-iot-ext
     ```
+
+#### Create Azure Iot resources
 
 - Create a resource group to manage all your Azure resources for this project:
 
@@ -79,7 +83,7 @@ Note:If your receive an error because there is already a free hub in use on your
 
 Follow [these instructions]({{ '/docs/Run_OOBE/#connect-the-vision-ai-dev-kit-hardware-to-your-azure-iot-hub' | relative_url }}) to set up your device to Wifi and register it as an IoT Edge device connected to your IoT Hub.
 
-### Deploy the sample vision AI model
+## Deploy the sample vision AI model
 
 To deploy an sample AI model, we will use the 'AI Vision Dev Kit Get Started Module' from the IoT Edge marketplace.
 
@@ -101,7 +105,7 @@ To edit the module URI, click on `Configure` and update the URI to be `ebertrams
 
 After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor!
 
-## Build a custom AI model
+## Create a custom AI model with Azure Custom Vision service
 
 You will build a custom AI model to detect when an analog temperature gauge is getting into the warning or danger zone. We will use this website [Simulated Analog Guage](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html) to simulate our analog temperature gauge and will use [Custom Vision](https://www.customvision.ai/) to build a custom model.
 
