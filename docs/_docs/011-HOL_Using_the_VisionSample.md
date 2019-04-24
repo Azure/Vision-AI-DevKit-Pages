@@ -57,21 +57,21 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     az group create --name AiDevKitResources --location westus2
     ```
 
-- Create a free IoT Hub:
+- Create a free F1 IoT Hub (Note: replace {myIoTHub} with a unique name):
 
     ```cmd
-    az iot hub create --resource-group AiDevKitResources --name myIoTHub --sku F1
+    az iot hub create --resource-group AiDevKitResources --name {myIoTHub} --sku F1
     ```
-[!NOTE] If your free hub is already in use 
 
+[!NOTE] If your receive an error because there is already a free hub in use on your subscription, change the SKU to S1. You may also see an error that the IoT Hub name is not available. IoT Hub names must be globally unique. Please try another name.
 
 - Register your Vision AI DevKit in IoT Hub.
 
     ```cmd
-    az iot hub device-identity create --hub-name myIoTHub --device-id myAiDevKitDevice --edge-enabled
+    az iot hub device-identity create --hub-name {myIoTHub} --device-id myAiDevKitDevice --edge-enabled
     ```
 
-Copy the connection string given back after this last command. You will use this string in the next step.
+- Retrieve the connection string for your device, which links your physical device with its identity in IoT Hub. Copy the the `connectionString` value. You will use this value when setting up your DevKit hardware.
 
 ### Connect your Vision AI DevKit
 
