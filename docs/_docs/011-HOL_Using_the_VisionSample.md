@@ -19,15 +19,15 @@ last_modified_at: 2019-04-22
 
 ## What you will need
 
-- Active Azure subscription (Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F.)
+- Active Azure subscription (Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F.){:target="_blank"}
 - Vision AI DevKit hardware
 - Monitor supporting HDMI input and an HDMI cable (Do not use any cable adapters.)
 - Azure Command-Line Interface (CLI) installation
-- Ubuntu for Windows [Windows Store link](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab)
+- Ubuntu for Windows [Windows Store link](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab){:target="_blank"}
 
 ## Setup the Vision AI DevKit
 
-Note: If you have already completed the [Quick Start]({{ '/docs/Get_Started/' | relative_url}}) process, you only need to [install the Azure CLI tools]({{ '/docs/Tutorial-HOL_Using_the_VisionSample/#install-azure-command-line-interface-cli-tools' | relative_url}}) before moving directly to [Create a Custom AI Module with Azure Custom Vision service]({{ '/docs/Tutorial-HOL_Using_the_VisionSample/#create-a-custom-ai-model-with-azure-custom-vision-service' | relative_url }}).
+Note: If you have already completed the [Quick Start]({{ '/docs/Get_Started/' | relative_url}}){:target="_blank"} process, you only need to [install the Azure CLI tools]({{ '/docs/Tutorial-HOL_Using_the_VisionSample/#install-azure-command-line-interface-cli-tools' | relative_url}}) before moving directly to [Create a Custom AI Module with Azure Custom Vision service]({{ '/docs/Tutorial-HOL_Using_the_VisionSample/#create-a-custom-ai-model-with-azure-custom-vision-service' | relative_url }}).
 
 ### Azure IoT resources
 
@@ -35,7 +35,7 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
 
 #### Install Azure Command Line Interface (CLI) tools
 
-- [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+- [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest){:target="_blank"}.
 
 - Login to your Azure subscription with Azure CLI:
 
@@ -55,7 +55,7 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     azure account set --subscription <SubscriptionId>
     ```
 
-- [Install Azure CLI IoT extension](https://github.com/Azure/azure-iot-cli-extension):
+- [Install Azure CLI IoT extension](https://github.com/Azure/azure-iot-cli-extension){:target="_blank"}:
 
     ```cmd
     az extension add --name azure-cli-iot-ext
@@ -87,7 +87,7 @@ Note: If your receive an error because there is already a free hub in use on you
 
 ### Connect your Vision AI DevKit
 
-Follow [these instructions]({{ '/docs/Run_OOBE/#connect-the-vision-ai-dev-kit-hardware-to-your-azure-iot-hub' | relative_url }}) to set up your device for Wifi and register it as an IoT Edge device connected to your IoT Hub.
+Follow [these instructions]({{ '/docs/Run_OOBE/#connect-the-vision-ai-dev-kit-hardware-to-your-azure-iot-hub' | relative_url }}){:target="_blank"} to set up your device for Wifi and register it as an IoT Edge device connected to your IoT Hub.
 
 ## Deploy the sample vision AI model
 
@@ -95,7 +95,7 @@ To deploy an sample AI model, we will use the 'AI Vision Dev Kit Get Started Mod
 
 > [!NOTE] This module is currently hidden in the marketplace thus is only visible with the link below.
 
-- Go to [this link](https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryResultsListBlade/selectedSubMenuItemId/%7B%22menuItemId%22%3A%22gallery%2FInternetOfThings_MP%2FIoTEdgeModules%22%2C%22resourceGroupId%22%3A%22%22%2C%22resourceGroupLocation%22%3A%22%22%2C%22dontDiscardJourney%22%3Afalse%2C%22launchingContext%22%3A%7B%22galleryItemId%22%3A%22IoTEdgeModules%22%2C%22source%22%3A%5B%22GalleryFeaturedMenuItemPart%22%5D%2C%22menuItemId%22%3A%22InternetOfThings_MP%22%2C%22subMenuItemId%22%3A%22IoTEdgeModules%22%7D%7D), which will require you to sign-in to the Azure portal. In the list of IoT Edge Modules, scroll down to find the 'AI Vision Dev Kit Get Started Module' (you may need to click the 'Load more' button at the bottom). Click the icon, then  click on `Create`.
+- Go to [this link](https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryResultsListBlade/selectedSubMenuItemId/%7B%22menuItemId%22%3A%22gallery%2FInternetOfThings_MP%2FIoTEdgeModules%22%2C%22resourceGroupId%22%3A%22%22%2C%22resourceGroupLocation%22%3A%22%22%2C%22dontDiscardJourney%22%3Afalse%2C%22launchingContext%22%3A%7B%22galleryItemId%22%3A%22IoTEdgeModules%22%2C%22source%22%3A%5B%22GalleryFeaturedMenuItemPart%22%5D%2C%22menuItemId%22%3A%22InternetOfThings_MP%22%2C%22subMenuItemId%22%3A%22IoTEdgeModules%22%7D%7D){:target="_blank"}, which will require you to sign-in to the Azure portal. In the list of IoT Edge Modules, scroll down to find the 'AI Vision Dev Kit Get Started Module' (you may need to click the 'Load more' button at the bottom). Click the icon, then  click on `Create`.
 
 > [!Note] A direct link will be given to customers once the module is published publicly.
 
@@ -113,11 +113,11 @@ After a few minutes (once the module has downloaded to your DevKit), you should 
 
 ## Create a custom AI model with Azure Custom Vision service
 
-You will build a custom AI model to detect when an analog temperature gauge is getting into the warning or danger zone. We will use this website [Simulated Analog Guage](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html) to simulate our analog temperature gauge and will use [Custom Vision](https://www.customvision.ai/) to build a custom model.
+You will build a custom AI model to detect when an analog temperature gauge is getting into the warning or danger zone. We will use this website [Simulated Analog Guage](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html){:target="_blank"} to simulate our analog temperature gauge and will use [Custom Vision](https://www.customvision.ai/){:target="_blank"} to build a custom model.
 
 ### Setup up a new Custom Vision project
 
-- Login to the Azure Custom Vision Service at [https://www.customvision.ai](https://www.customvision.ai).
+- Login to the Azure Custom Vision Service at [https://www.customvision.ai](https://www.customvision.ai){:target="_blank"}.
 
 - Create a new project, use these recommended settings:
 
@@ -158,7 +158,7 @@ To deploy your custom model, we will first store your model in a publicly access
     az storage account create --name aidevkitstorage --resource-group AiDevKitResources --location westus --sku Standard_LRS --kind StorageV2
     ```
 
-- Login to the [Azure portal](http://portal.azure.com) and go to your new storage resource.
+- Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your new storage resource.
 - From the `overview` tab, click on `Blobs` service.
 - `Add a new container` and select `Upload`.
 - `Upload` the three files you got from the custom vision service.
@@ -166,7 +166,7 @@ To deploy your custom model, we will first store your model in a publicly access
 
 ### Updating the configuration of the Get Started module to use your new custom model
 
-- Login to the [Azure portal](http://portal.azure.com) and go to your ioT Hub resource.
+- Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your ioT Hub resource.
 - Click on `IoT Edge` tab and then on your camera device named `myAiDevKitDevice`.
 - Click on the `SamplemoduleMobilenetforAIVisionDevkit` module name and click on `Module Identity Twin`.
 - Update the three desired properties (model, label, vam config) to map to your new URLs and hit `Save`.
@@ -175,7 +175,7 @@ After a few minutes, your device should now be running your custom model!
 
 ### Test your new model
 
-- Go to [Simulated Analog Gauge](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html) to view the simulated an analog gauge
+- Go to [Simulated Analog Gauge](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html){:target="_blank"} to view the simulated an analog gauge
 - Verify that the camera sees the simulated guage and correctly classify the gauge's output as green / yellow / red from your DevKit's connected monitor.
 
 ## Clean up
@@ -188,4 +188,4 @@ az group delete --name AiDevKitResources
 
 ## Learn more
 
-To learn more, visit [VisionAIDevKit.com](https://visionaidevkit.com).
+To learn more, visit [VisionAIDevKit.com](https://visionaidevkit.com){:target="_blank"}.
