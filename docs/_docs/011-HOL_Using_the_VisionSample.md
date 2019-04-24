@@ -43,10 +43,16 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     az login
     ```
 
-- Verify the correct subscription is being used (if not use `azure account set --subscription`):
+- Verify the correct subscription is being used:
 
     ```cmd
     az account list --output table
+    ```
+
+    If the incorrect subscription is being used, use the following command to change to the correct one:
+
+    ```cmd
+    azure account set --subscription
     ```
 
 - [Install Azure CLI IoT extension](https://github.com/Azure/azure-iot-cli-extension):
@@ -55,7 +61,7 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     az extension add --name azure-cli-iot-ext
     ```
 
-#### Create Azure Iot resources
+#### Create Azure IoT resources
 
 - Create a resource group to manage all your Azure resources for this project:
 
@@ -69,7 +75,7 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     az iot hub create --resource-group AiDevKitResources --name {myIoTHub} --sku F1
     ```
 
-Note:If your receive an error because there is already a free hub in use on your subscription, change the SKU to S1. You may also see an error that the IoT Hub name is not available. IoT Hub names must be globally unique. Please try another name.
+Note: If your receive an error because there is already a free hub in use on your subscription, change the SKU to S1. You may also see an error that the IoT Hub name is not available. IoT Hub names must be globally unique. Please try another name.
 
 - Register your Vision AI DevKit in IoT Hub.
 
@@ -77,11 +83,11 @@ Note:If your receive an error because there is already a free hub in use on your
     az iot hub device-identity create --hub-name {myIoTHub} --device-id myAiDevKitDevice --edge-enabled
     ```
 
-- Retrieve the connection string for your device, which links your physical device with its identity in IoT Hub. Copy the the `connectionString` value. You will use this value when setting up your DevKit hardware.
+- Retrieve the connection string for your device, which links your physical device with its identity in IoT Hub. Copy the the `connectionString` value. You will use this value when connecting your Vision AI DevKit.
 
 ### Connect your Vision AI DevKit
 
-Follow [these instructions]({{ '/docs/Run_OOBE/#connect-the-vision-ai-dev-kit-hardware-to-your-azure-iot-hub' | relative_url }}) to set up your device to Wifi and register it as an IoT Edge device connected to your IoT Hub.
+Follow [these instructions]({{ '/docs/Run_OOBE/#connect-the-vision-ai-dev-kit-hardware-to-your-azure-iot-hub' | relative_url }}) to set up your device for Wifi and register it as an IoT Edge device connected to your IoT Hub.
 
 ## Deploy the sample vision AI model
 
