@@ -1,6 +1,6 @@
 ---
 title: "Create and deploy a vision AI model with CustomVision.AI"
-permalink: /docs/Create_Train_Vision_ML_Project/
+permalink: /docs/Create_Train_Vision_ML_Project-a/
 excerpt: "Guide to creating, training and deploying a Vision ML Project for the Vision AI DevKit using Azure Custome Vision Service (customvision.ai)."
 variable:
   - platform: windows
