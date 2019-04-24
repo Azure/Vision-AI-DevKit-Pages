@@ -25,7 +25,7 @@ docs:
 
   - title: Tutorials
     children:
-      - title: "Hands On Lab - Setup the DevKit, then create and deploy your vision AI module"
+      - title: "Hands On Lab - Setup the DevKit, create and deploy a vision AI module"
         url: /docs/Tutorial-HOL_Using_the_VisionSample
       - title: "Build a model with CustomVision.AI and deploy to a device"
         url: /docs/Create_Train_Vision_ML_Project/
