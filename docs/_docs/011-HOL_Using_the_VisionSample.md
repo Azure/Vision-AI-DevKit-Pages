@@ -1,5 +1,5 @@
 ---
-title: "Hands on Lab - Deploying the VisionSample module; Creating and deploying your own sample module."
+title: "Hands on Lab - Setup the DevKit; Create and deploy a custom vision AI module."
 permalink: /docs/Tutorial-HOL_Using_the_VisionSample/
 excerpt: "How to quickly setup the Vision AI DevKit and see objects recognized."
 variable:
@@ -62,6 +62,8 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     ```cmd
     az iot hub create --resource-group AiDevKitResources --name myIoTHub --sku F1
     ```
+[!NOTE] If your free hub is already in use 
+
 
 - Register your Vision AI DevKit in IoT Hub.
 
