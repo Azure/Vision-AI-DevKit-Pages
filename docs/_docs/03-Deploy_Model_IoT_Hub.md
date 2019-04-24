@@ -21,6 +21,7 @@ last_modified_at: 2019-03-15
 * (optional) Monitor and HDMI cable
 
 ## Select your Vision AI DevKit hardware in the Azure portal
+
 1. Download or Clone the latest Vision AI DevKit repository from [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
 2. Sign in to the [Azure portal](https://portal.azure.com/){:target="_blank"} and navigate to your IoT hub.
 3. Select **IoT Edge** from the menu.
@@ -29,47 +30,51 @@ last_modified_at: 2019-03-15
 
 ![Azure portal 'Set Modules']({{ '/assets/images/Set_Modules.png' | relative_url }})
 
-  - If the **Set Modules** option is not available, ensure that you are selecting the IoT Edge item from the list below **Automatic Device Management**.  The **Set Modules** option is not available via the **IoT devices** link under the **Explorers** heading
+  Note: If the **Set Modules** option is not available, ensure that you are selecting the IoT Edge item from the list below **Automatic Device Management**.  The **Set Modules** option is not available via the **IoT devices** link under the **Explorers** heading
 
 ## Configure a deployment manifest
+
 A deployment manifest is a JSON document that describes which modules to deploy, how data flows between the modules, and desired properties of the module twins. For more information on deployment manifests, see [Understand how IoT Edge modules can be used, configured, and reused](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition){:target="_blank"}.
 
 The Azure portal uses a wizard to walk you through creating the deployment manifest. It has three steps: **Add modules**, **Specify routes**, and **Review deployment**.
 
 ### Add modules
+
 1. In the **Deployment modules** section of the page, select **Add**.
 2. Select the **IoT Edge Module**. ![Azure portal 'Add Modules']({{ '/assets/images/Add_Modules.png' | relative_url }})
 3. Provide a name for the module, then specify the container image. To deploy the pre-configured sample, use the following values:
 
-```
-  Name - VisionSample
-  Image URI - mcr.microsoft.com/aivision/visionsamplemodule:1.0.4_SSD_linklocal-arm32v7
-  Container Create Options - 
-      {
-        "HostConfig": {
-          "Binds": [
-            "/data/misc/camera:/app/vam_model_folder"
-          ],
-          "NetworkMode": "host"
-        },
-        "NetworkingConfig": {
-          "EndpointsConfig": {
-            "host": {}
+    ```terminal
+      Name - VisionSample
+      Image URI - mcr.microsoft.com/aivision/visionsamplemodule:1.0.4_SSD_linklocal-arm32v7
+      Container Create Options -
+          {
+            "HostConfig": {
+              "Binds": [
+                "/data/misc/camera:/app/vam_model_folder"
+              ],
+              "NetworkMode": "host"
+            },
+            "NetworkingConfig": {
+              "EndpointsConfig": {
+                "host": {}
+              }
+            }
           }
-        }
-      }
-  Restart Policy - Always
-  Desired Status - running
-```
+      Restart Policy - Always
+      Desired Status - running
+    ```
 
-For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties). For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties).
+      For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties). For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties).
 
 4. Select **Save**
-5. Select **Configure advanced Edge Runtime settings** 
+5. Select **Configure advanced Edge Runtime settings**
 6. Add the following line to the existing **Create Options** section
+
     ```cmd
     "User": "root",
     ```
+
  ![Create Options addition]({{ '/assets/images/Create_Options_Addition.png' | relative_url }})
 7. Select **Save**, then select **Next**
 
@@ -90,4 +95,5 @@ The review section shows you the JSON deployment manifest created based on your 
 Review your deployment information, then select **Submit**.
 
 ## Verify output on the monitor
+
 Connect the HDMI cable to the Vision AI DevKit hardware and your monitor. A few minutes after submitting your deployment, you should start to see video on the monitor with bounding boxes drawing around objects the camera can see and evaluate.

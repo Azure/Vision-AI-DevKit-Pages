@@ -11,12 +11,12 @@ last_modified_at: 2019-04-17
 ---
 ## Reboot the Vision AI DevKit hardware
 
-  * Click the reset button once, using the pin hole on the right side of the camera.
-  * Press the power button on the back once.
-  * Use the command line
+* Click the reset button once, using the pin hole on the right side of the camera.
+* Press the power button on the back once.
+* Use the command line
 
-      ```cmd
-      adb reboot
-      ```
+  ```cmd
+  adb reboot
+  ```
 
-  * Long press the power button more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.
+* Long press the power button more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.

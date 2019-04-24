@@ -41,7 +41,7 @@ last_modified_at: 2019-03-15
 
     Recommended requirements.txt contents:
 
-    ```
+    ```terminal
       azure-cli-core==2.0.60
       azure-mgmt-containerregistry==2.7.0
       azure-mgmt-resource==2.1.0
@@ -108,6 +108,7 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
       ```
 
    3. Extract tgz
+
       ```cmd
       sudo tar xzf Python-3.7.2.tgz
       ```
@@ -121,7 +122,7 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
       ```
 
    5. Add alias into ~/.bashrc
-   
+
       ```cmd
       alias python='/usr/local/bin/python3.7m'
       ```
@@ -145,4 +146,4 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
     * **Docker extension**
       * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery)
 
-3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages. 
+3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages.
