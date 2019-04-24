@@ -1,5 +1,5 @@
 ---
-title: "Hands on Lab - Using the Vision AI DevKit with the VisionSample model"
+title: "Hands on Lab - Deploying the VisionSample module; Creating and deploying your own sample module."
 permalink: /docs/Tutorial-HOL_Using_the_VisionSample/
 excerpt: "How to quickly setup the Vision AI DevKit and see objects recognized."
 variable:
@@ -23,6 +23,7 @@ last_modified_at: 2019-04-22
 - Vision AI DevKit hardware
 - Monitor supporting HDMI input and an HDMI cable (Do not use any cable adapters.)
 - Azure Command-Line Interface (CLI) installation
+- Ubuntu for Windows [Windows Store link](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab)
 
 ## Setup the Vision AI DevKit
 

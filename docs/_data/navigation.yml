@@ -25,20 +25,10 @@ docs:
 
   - title: Tutorials
     children:
-      - title: "Hands On Lab - Using the VisionSample AI model"
+      - title: "Hands On Lab - Deploying the VisionSample module and creating and deploying your own sample module"
         url: /docs/Tutorial-HOL_Using_the_VisionSample
-
-  - title: "Build a Vision Model"
-    children:
-      - title: "Using CustomVision.AI"
+      - title: "Build a model with CustomVision.AI and deploy to a device"
         url: /docs/Create_Train_Vision_ML_Project/
-
-  - title: Deploy a Vision model
-    children:
-      - title: Using Azure IoT Hub
-        url: /docs/Deploy_Model_IoT_Hub/
-      - title: Using Visual Studio (VS) Code
-        url: /docs/Deploy_model_VS_Code/
 
   - title: Manage your device
     children:
@@ -81,3 +71,7 @@ docs:
         url: /docs/Inferencing_accuracy/
       - title: "View RTSP video stream"
         url: /docs/RTSP_stream
+      - title: Deploy a vision AI model using Azure IoT Hub
+        url: /docs/Deploy_Model_IoT_Hub/
+      - title: Deploy a vision AI model using Visual Studio (VS) Code
+        url: /docs/Deploy_model_VS_Code/
