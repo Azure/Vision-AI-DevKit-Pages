@@ -122,7 +122,7 @@ You will build a custom AI model to detect when an analog temperature gauge is g
 
 Some training images have already been collected for you based on the simulated analog temperature gauge.
 
-- Download the training images from [TrainingData.zip](https://github.com/ebertrams/ai-dev-kit-hands-on-lab-2019/blob/master/TrainingData/TrainingData.zip).
+- Download the training images from [TrainingData.zip]({{ '/Needed/TrainingData.zip' | relative_url }}).
 - Uncompress the downloaded .zip file.
 - Upload the images to custom vision per color (Green/Yellow/Red), tagging each image with the appropriate color (Green/Yellow/Red) during upload.
 
