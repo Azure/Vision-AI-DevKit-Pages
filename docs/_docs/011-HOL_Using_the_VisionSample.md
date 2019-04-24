@@ -27,6 +27,8 @@ last_modified_at: 2019-04-22
 
 ## Setup the Vision AI DevKit
 
+Note: If you have already completed the [Quick Start]({{ '/docs/Get_Started/' | relative_url}}) process, you only need to install the Azure CLI and Azure CLI IoT extention from 'Setup Azure IoT resources'. After installing these, you can skip to 'Build a Custom AI Module'.
+
 ### Setup Azure IoT resources
 
 To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an IoT Hub register and remotely manage your DevKit as an Edge device. All required resources are free. Here are the steps to set this up quickly:
@@ -63,7 +65,7 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     az iot hub create --resource-group AiDevKitResources --name {myIoTHub} --sku F1
     ```
 
-[!NOTE] If your receive an error because there is already a free hub in use on your subscription, change the SKU to S1. You may also see an error that the IoT Hub name is not available. IoT Hub names must be globally unique. Please try another name.
+Note:If your receive an error because there is already a free hub in use on your subscription, change the SKU to S1. You may also see an error that the IoT Hub name is not available. IoT Hub names must be globally unique. Please try another name.
 
 - Register your Vision AI DevKit in IoT Hub.
 
