@@ -52,7 +52,7 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     If the incorrect subscription is being used, use the following command to change to the correct one:
 
     ```cmd
-    azure account set --subscription
+    azure account set --subscription <SubscriptionId>
     ```
 
 - [Install Azure CLI IoT extension](https://github.com/Azure/azure-iot-cli-extension):
