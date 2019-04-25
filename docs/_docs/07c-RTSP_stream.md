@@ -51,7 +51,7 @@ Any media player supporting the RTSP protocol can be used to display the live vi
 2. Enter the RTSP address in the form
 
     ```cmd
-    http://<IP address>:8900/live
+    rtsp://<IP address>:8900/live
     ```
 
 under on the ***Network*** tab, then select ***Play***.
