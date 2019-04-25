@@ -32,7 +32,7 @@ if you don't already have an Azure subscription.
 
 As you configure your DevKit for use, you will connect the device to your Wi-Fi network, then link the hardware with the Azure IoT Hub you configured, using the IoT Edge device connection string you were provided in the previous step.
 
-### [DevKit setup]({{ '/docs/Run_OOBE/' | relative_url }})
+### [Configure the DevKit]({{ '/docs/Run_OOBE/' | relative_url }})
 
 ## Deploy the VisionSample model
 
