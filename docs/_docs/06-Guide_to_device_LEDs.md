@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-04-17
+last_modified_at: 2019-04-25
 ---
 ## Guide to device LEDs
 
