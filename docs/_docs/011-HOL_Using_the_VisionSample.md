@@ -121,12 +121,18 @@ You will build a custom AI model to detect when an analog temperature gauge is g
 
 - Create a new project, use these recommended settings:
 
-  - Project Type - [Classification]
-  - Classification Type - [Multiclass (Single tag per image)]
-  - Domain - [General(compact)]
-  - ** Basic Platforms + Vision AI DevKit
+  - Give it a name like `Simulated Temperature Gauge`
+    - Project Type - [Classification]
+    - Create a new Resource Group:
+        - Name it `AiDevKitResources-CustomVision`
+        - Select your Azure Subscription
+        - Select `West US 2`
+        - Select the `F0` tier if available for your subscription or `S0` otherwise
+    - Classification Type - [Multiclass (Single tag per image)]
+    - Domain - [General(compact)]
+    - ** Basic Platforms + Vision AI Dev Kit
 
-- To use Custom Vision Service, you will need to create Custom Vision training and prediction Azure resources.
+- To use the Azure Custom Vision service, you will need to create Custom Vision training and prediction Azure resources.
 
     ```cmd
     az cognitiveservices account create -n myCustomVision -g AiDevKitResources --kind CustomVision --sku F0 -l westus2 --yes
@@ -142,9 +148,9 @@ Some training images have already been collected for you based on the simulated 
 
 ### Train and export your custom model
 
-To train it with your new training data, go to your Custom Vision project and click on `Train`.
+To train your model with your new training data, go to your Custom Vision project and click on `Train`.
 
-To export it, select tab `Performances` and `Export` button. Choose the `Vision AI DevKit` option to download your new custom model and finally uncompress them.
+To export the model, select tab `Performances` and `Export` button. Choose the `Vision AI DevKit` option to download your new custom model and finally uncompress them.
 
 ## Deploy your custom model to your device
 
