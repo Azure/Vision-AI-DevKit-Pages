@@ -48,7 +48,7 @@ From your PC, connect to a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 
 
 ## Configure your DevKit with the IoT Edge Connection string
 
-1. Tapping **Next** will open the **Connect to Microsoft Azure** screen, where you will add the IoT Edge Connection String. Note: This string is provided when creating an IoT Edge device in your IoT Hub. [See *Retrive the Connection String*](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal#retrieve-the-connection-string)
+1. Tapping **Next** will open the **Connect to Microsoft Azure** screen, where you will add the IoT Edge Connection String. Note: This string is provided when creating an IoT Edge device in your IoT Hub. [See *Retrive the Connection String*](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal#retrieve-the-connection-string){:target="_blank"}
 
     ![Vision AI Developer Kit Connect to Azure screen]({{ '/assets/images/Connect_to_Azure.png' | relative_url }})
 
