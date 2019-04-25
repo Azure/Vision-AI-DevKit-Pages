@@ -32,7 +32,7 @@ docs:
 
   - title: Manage your device
     children:
-      - title: "Setup your device"
+      - title: "Configure the DevKit"
         url: /docs/Run_OOBE/
       - title: "Firmware update"
         url: /docs/Firmware/ 
