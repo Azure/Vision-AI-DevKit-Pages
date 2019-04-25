@@ -34,10 +34,10 @@ last_modified_at: 2019-03-15
     * **Azure IoT Hub Toolkit**
     * **Azure IoT Edge**
     * **Docker extension**
-      * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery)
-4. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages.
+      * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery){:target="_blank"}
+4. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py){:target="_blank"} and required packages.
 
-    * Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, there is a *requirements.txt* in GitHub under [VisionSample\MachineLearning\scripts](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/MachineLearning/scripts) folder that can be used to specify correct versions. Please copy the file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined. Below is the content of the file if you prefer creating it locally.
+    * Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, there is a *requirements.txt* in GitHub under [VisionSample\MachineLearning\scripts](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample/MachineLearning/scripts){:target="_blank"} folder that can be used to specify correct versions. Please copy the file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined. Below is the content of the file if you prefer creating it locally.
 
     Recommended requirements.txt contents:
 
@@ -81,7 +81,7 @@ last_modified_at: 2019-03-15
 
     to sign in to your Azure account and select your subscription.
 
-9. Create a new workspace in VS Code as described in [Get started with Azure Machine Learning for Visual Studio Code](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-vscode-tools). You can also use 00-aml-configuration.py script described in the next section to create a new workspace.
+9. Create a new workspace in VS Code as described in [Get started with Azure Machine Learning for Visual Studio Code](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-vscode-tools){:target="_blank"}. You can also use 00-aml-configuration.py script described in the next section to create a new workspace.
 
 ## Linux and MacOS users
 
@@ -144,6 +144,6 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
     * **Azure IoT Hub Toolkit**
     * **Azure IoT Edge**
     * **Docker extension**
-      * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery)
+      * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery){:target="_blank"}
 
-3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py) and required packages.
+3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py){:target="_blank"} and required packages.
