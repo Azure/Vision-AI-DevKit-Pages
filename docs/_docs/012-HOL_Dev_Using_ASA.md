@@ -1,5 +1,5 @@
 ---
-title: "Hands on Lab - Using Azure Stream Analytics (ASA) to create alerts."
+title: "Hands on Lab - Using Azure Stream Analytics (ASA) to create alerts"
 permalink: /docs/Tutorial-HOL_Using_ASA_for_alerts/
 excerpt: "How to use ASA and the Vision AI DevKit to create alerts."
 variable:
@@ -51,7 +51,7 @@ When you create an Azure Stream Analytics job to run on an IoT Edge device, it n
     |Name| Provide a unique name for your storage account.|
     |Location|Choose a location close to you.|
     |Subscription|Choose the same subscription as your IoT hub.|
-    |Resource group|We recommend that you use the same resource group for all of the test resources that you create during the IoT Edge quickstarts and tutorials. For example, IoTEdgeResources.|
+    |Resource group|We recommend that you use the same resource group for all test resources you create during Vision AI DevKit quick starts and tutorials.|
 
 3. Keep the default values for the other fields and select **Create**.
 
@@ -65,7 +65,7 @@ When you create an Azure Stream Analytics job to run on an IoT Edge device, it n
    | ----- | ----- |
    | Job name | Provide a name for your job. For example, **IoTEdgeJob** |
    | Subscription | Choose the same subscription as your IoT hub. |
-   | Resource group | We recommend that you use the same resource group for all of the test resources that you create during the IoT Edge quickstarts and tutorials. For example, **IoTEdgeResources**. |
+   | Resource group | We recommend that you use the same resource group for all test resources you create during the Vision AI DevKit quick starts and tutorials.|
    | Location | Choose a location close to you. |
    | Hosting environment | Select **Edge**. |
 

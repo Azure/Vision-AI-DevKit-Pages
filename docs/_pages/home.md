@@ -44,6 +44,9 @@ advantages:
         <img src='assets/images/qualcomm-logo-blue.png' alt='Qualcomm' style='max-width: 125px'><br><br>
 
         The Vision AI DevKit features the [Qualcomm Visual Intelligence Platform](https://www.qualcomm.com/news/onq/2018/05/07/qualcomm-vision-intelligence-platform-microsoft-azure-bring-edge-ai-solution){:target="_blank"} for hardware acceleration of AI models to deliver superior inferencing performance.<br><br><br>
+
+tech_specs:
+  - title: "<img src='assets/images/Peabody_Tech_Specs.png' alt='Vision AI DevKit Technical Specs image'>"
 ---
 
 <div class="feature__outer_wrapper">
@@ -53,3 +56,5 @@ advantages:
 <div class="feature__outer_wrapper">
 {% include feature_row id="advantages" type="dual" %}
 </div>
+
+<center><img src="assets/images/Peabody_Tech_Specs.png" alt="Vision AI DevKit Technical Specs image"></center>
