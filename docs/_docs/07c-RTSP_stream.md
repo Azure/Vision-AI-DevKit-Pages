@@ -1,5 +1,5 @@
 ---
-title: "Connect to the live video stream"
+title: "Connect to the live RTSP video stream"
 permalink: /docs/RTSP_stream/
 excerpt: "Connect to the live RTSP video stream"
 variable:

@@ -17,12 +17,12 @@ last_modified_at: 2019-03-15
 ## What you will need
 
 * Configured Azure Iot Hub with the Vision AI DevKit registered as an IoT Edge device ([Instructions](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Setup_Azure_resources/){:target="_blank"})
-* Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
+* Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample){:target="_blank"}.
 * (optional) Monitor and HDMI cable
 
 ## Select your Vision AI DevKit hardware in the Azure portal
 
-1. Download or Clone the latest Vision AI DevKit repository from [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample).
+1. Download or Clone the latest Vision AI DevKit repository from [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample){:target="_blank"}.
 2. Sign in to the [Azure portal](https://portal.azure.com/){:target="_blank"} and navigate to your IoT hub.
 3. Select **IoT Edge** from the menu.
 4. Click on the ID of the target camera hardware from the list of devices.
@@ -65,7 +65,7 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
       Desired Status - running
     ```
 
-      For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties). For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties).
+      For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties){:target="_blank"}. For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties){:target="_blank"}.
 
 4. Select **Save**
 5. Select **Configure advanced Edge Runtime settings**
@@ -97,3 +97,5 @@ Review your deployment information, then select **Submit**.
 ## Verify output on the monitor
 
 Connect the HDMI cable to the Vision AI DevKit hardware and your monitor. A few minutes after submitting your deployment, you should start to see video on the monitor with bounding boxes drawing around objects the camera can see and evaluate.
+
+Note: You can also view the camera output using an RTSP compatible video player. See [View RTSP video stream]({{ '/docs/RTSP_stream/' | relative_url}}){:target="_blank"} for more information.
