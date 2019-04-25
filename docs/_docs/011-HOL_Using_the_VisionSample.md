@@ -190,8 +190,9 @@ To delete all the Azure resources that you've been using in this tutorial:
 
 ```cmd
 az group delete --name AiDevKitResources
+az group delete --name AIDevKitResources-CustomVision
 ```
 
 ## Learn more
 
-To learn more, visit [VisionAIDevKit.com](https://visionaidevkit.com){:target="_blank"}.
+To learn more, return to [Vision AI DevKit - Get Started](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/).
