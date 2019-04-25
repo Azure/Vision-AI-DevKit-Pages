@@ -76,4 +76,4 @@ last_modified_at: 2019-04-25
   </tr>
 </table>
 
-![Image of DevKit camera with LEDs highlighted]({{ '/assets/images/LED_Guide.PNG' | relative_url }})
+![Image of DevKit camera with LEDs highlighted]({{ '/assets/images/LED_Guide1.png' | relative_url }})
