@@ -63,7 +63,7 @@ tech_specs_title:
 </div>
 
 <div class="feature__outer_wrapper">
-<h2 style="text-align: center;" font-size="1.25em">Technical Specifications</h2><br><br>
+<h2 style="text-align: right;" font-size="1.25em">Technical Specifications</h2><br><br>
 {% include feature_row id="tech_specs" type="dual" %}
 
 </div>
