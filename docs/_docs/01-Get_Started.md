@@ -16,27 +16,27 @@ For first-time users of the **Vision AI DevKit**, the links below will take you 
 
 ## Setup an Azure account
 
-### Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)
+### Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F){:target="_blank"}
 
-if you don't alrdy have an Azure subscription.
+if you don't already have an Azure subscription.
 
 ## Setup Azure IoT Hub and IoT Edge device
 
-Azure IoT Hub enables reliable and secure bi-directional communications between devices and the solution back end. To use your Vision AI DevKit hardware with Azure IoT Hub for edge workloads, you will need to register your DevKitas an IoT Edge device. During registration, you are provided a connection string. You will use this string during the DevKit hardware setup. Please ensure you make copy the string somewhere you can refer to.
+[Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub){:target="_blank"} enables reliable and secure bi-directional communications between devices and a cloud-hosted solution back end. To use your Vision AI DevKit hardware with Azure IoT Hub for edge workloads, you will need to register your DevKit as an IoT Edge device. During registration, you are provided a connection string. You will use this string in the section **Setup your DevKit**. Please ensure you make copy the string somewhere you can refer to.
 
-### [Create an IoT hub using the Azure portal](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal){:target="_blank"}
+### [Create an IoT hub using the Azure portal](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#create-an-iot-hub){:target="_blank"}
 
-### [Register a new Azure IoT Edge device from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal){:target="_blank"}
+### [Register a new Azure IoT Edge device from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal#create-a-device){:target="_blank"}
 
-## Setup your DevKit
+## Configure the Vision AI DevKit
 
-During device setup, you will link your DevKit with your configured Azure IoT Hub (using the IoT Edge device connection string obtained earlier), as well as connect the device to Wi-Fi.
+As you configure your DevKit for use, you will connect the device to your Wi-Fi network, then link the hardware with the Azure IoT Hub you configured, using the IoT Edge device connection string you were provided in the previous step.
 
 ### [DevKit setup]({{ '/docs/Run_OOBE/' | relative_url }})
 
 ## Deploy the VisionSample model
 
-Once device setup is complete, you are ready to deploy the VisionSample ML model to the DevKit.
+Once device configuration is complete, you are ready to deploy the VisionSample ML model to the DevKit.
 
 ### [Deploy the sample model]({{ '/docs/Deploy_Model_IoT_Hub/' | relative_url }})
 
