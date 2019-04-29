@@ -143,6 +143,6 @@ The new version of the get started module (v1.0.16 or higher) requires new setti
 ```
 
 > [!NOTE]
-> Some reliability issues have been found with the current version of the edgeHub. To fix them, click on `Configure advanced Edge runtime settings` replace the edgeHub URI from `mcr.microsoft.com/azureiotedge-hub:1.0.7-rc2` with `mcr.microsoft.com/azureiotedge-hub:1.0.7-rc2` and the edgeAgent URI from `mcr.microsoft.com/azureiotedge-agent:1.0.7-rc2` with `mcr.microsoft.com/azureiotedge-agent:1.0.7-rc2`. This will be fixed automatically with 1.0.7 release.
+> Some reliability issues have been found with the current version of the edgeHub. To fix them, click on `Configure advanced Edge runtime settings` replace the edgeHub URI from `mcr.microsoft.com/azureiotedge-hub:1.0.7-rc2` with `mcr.microsoft.com/azureiotedge-hub:1.0` and the edgeAgent URI from `mcr.microsoft.com/azureiotedge-agent:1.0` with `mcr.microsoft.com/azureiotedge-agent:1.0.7-rc2`. This will be fixed automatically with 1.0.7 release.
 
 After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor! You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/' | relative_url }}) for details
