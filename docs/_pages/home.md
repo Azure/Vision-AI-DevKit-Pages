@@ -25,12 +25,12 @@ VAIDK_More:
 
   - title: "Prove your concept"
     excerpt: |
-      With the Vision AI DevKit and Azure services, quickly take your project from concept to reality.
+      Use the Vision AI DevKit and Azure services to quickly take your Intelligent Edge project from concept to proof.
 
       # Join the Community
       Get help and help others with Vision ML projects by joining our [Tech Community](https://aka.ms/VAIDK-IoTTechCommunity){:target="_blank"}
-      # Intelligent Edge: Fast local processing, backed by the power of the cloud 
-      As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit runs your vision ML models locally for fast image inference. You can add business logic to your concept, sending only the most important data to the cloud for more advanced processing and response.
+      # Intelligent Edge: Local processing, backed by the power of the cloud 
+      As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit runs your vision ML models locally for fast image inference. With additional business logic, send only the most relevant data to the cloud for additional processing and response.
      
 advantages:
   - video_path: https://easstandardhosting123.blob.core.windows.net/asset-0a1504fe-8b97-4e8f-a312-2a5eef36c891/Vision_AI_101418.mp4?sv=2015-07-08&sr=c&si=1da79a8d-775c-4a56-af1a-173c36a1823b&sig=W7ACJX%2F0FrlqxYg7TlPfjojO3Ajf%2FiHy7eW4%2FfgK%2BAk%3D&st=2018-10-25T01%3A49%3A06Z&se=2118-10-25T01%3A49%3A06Z

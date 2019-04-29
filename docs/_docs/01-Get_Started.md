@@ -83,6 +83,10 @@ Note: If your receive an error because there is already a free hub in use on you
 
 - Retrieve the connection string for your device, which links your physical device with its identity in IoT Hub. Copy the the `connectionString` value. You will use this value when connecting your Vision AI DevKit.
 
+    ```cmd
+    az iot hub device-identity show-connection-string --device-id myAiDevKitDevice --hub-name {myIoTHub}
+    ```
+
 ## Setup your Vision AI DevKit
 
 Follow [these instructions]({{ '/docs/Run_OOBE/#connect-the-vision-ai-dev-kit-hardware-to-your-azure-iot-hub' | relative_url }}){:target="_blank"} to set up your device for Wifi and register it as an IoT Edge device connected to your IoT Hub.
@@ -93,7 +97,7 @@ To deploy an sample AI model, we will use the 'AI Vision Dev Kit Get Started Mod
 
 > [!NOTE] This module is currently hidden in the marketplace thus is only visible with the link below.
 
-- Go to [this link](https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryResultsListBlade/selectedSubMenuItemId/%7B%22menuItemId%22%3A%22gallery%2FInternetOfThings_MP%2FIoTEdgeModules%22%2C%22resourceGroupId%22%3A%22%22%2C%22resourceGroupLocation%22%3A%22%22%2C%22dontDiscardJourney%22%3Afalse%2C%22launchingContext%22%3A%7B%22galleryItemId%22%3A%22IoTEdgeModules%22%2C%22source%22%3A%5B%22GalleryFeaturedMenuItemPart%22%5D%2C%22menuItemId%22%3A%22InternetOfThings_MP%22%2C%22subMenuItemId%22%3A%22IoTEdgeModules%22%7D%7D){:target="_blank"}, which will require you to sign-in to the Azure portal. In the list of IoT Edge Modules, scroll down to find the 'AI Vision Dev Kit Get Started Module' (you may need to click the 'Load more' button at the bottom). Click the icon, then  click on `Create`.
+- Go to [this link](https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryFeaturedMenuItemBlade/selectedMenuItemId/home/searchQuery/AI%20vision%20dev%20kit/resetMenuId/){:target="_blank"}, which will require you to sign-in to the Azure portal. In the list of IoT Edge Modules, scroll down to find the 'AI Vision Dev Kit Get Started Module (preview)' (you may need to click the 'Load more' button at the bottom). Click the icon, then  click on `Create`.
 
 > [!Note] A direct link will be given to customers once the module is published publicly.
 
@@ -101,10 +105,44 @@ To deploy an sample AI model, we will use the 'AI Vision Dev Kit Get Started Mod
 
 > [!Note] Module URI needs to be updated today to use a test version.
 
-To edit the module URI, click on `Configure` and update the URI to be `ebertrams/visionsamplemodule:1.0.13_SSD-arm32v7`.
+To edit the module URI, click on `Configure` and update the URI to be `ebertrams/visionsamplemodule:1.0.16_SSD-arm32v7`.
+
+The new version of the get started module (v1.0.16 or higher) requires new settings in the createOptions. Please replace its createOptions by the following and hit `Save`:
+
+```terminal
+    {
+      "HostConfig": {
+        "Binds": [
+          "/data/misc/camera:/app/vam_model_folder",
+           "/run/systemd:/run/systemd"
+        ],
+        "NetworkMode": "host"
+      },
+      "NetworkingConfig": {
+        "EndpointsConfig": {
+          "host": {}
+        }
+      }
+    }
+```
 
 > [!Note] This step won't be required by customers once released.
 
 - Confirm the deployment by clicking on `Next` twice then `Submit`.
+
+[!NOTE]
+> On the latest firmware, a regression has been introduced. To work around it, you need to click on `Configure advanced Edge runtime settings` and replace the createOptions of the edgeHub with the following:
+>
+```terminal
+ {
+   "User": "root",
+   "HostConfig": {
+     "PortBindings": {}
+   }
+ }
+```
+
+> [!NOTE]
+> Some reliability issues have been found with the current version of the edgeHub. To fix them, click on `Configure advanced Edge runtime settings` replace the edgeHub URI from `mcr.microsoft.com/azureiotedge-hub:1.0.7-rc2` with `mcr.microsoft.com/azureiotedge-hub:1.0.7-rc2` and the edgeAgent URI from `mcr.microsoft.com/azureiotedge-agent:1.0.7-rc2` with `mcr.microsoft.com/azureiotedge-agent:1.0.7-rc2`. This will be fixed automatically with 1.0.7 release.
 
 After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor! You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/' | relative_url }}) for details

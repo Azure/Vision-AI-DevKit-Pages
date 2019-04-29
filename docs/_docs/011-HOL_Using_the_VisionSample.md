@@ -30,7 +30,7 @@ You will build a custom AI model to detect when an analog temperature gauge is g
 
 - Login to the Azure Custom Vision Service at [https://www.customvision.ai](https://www.customvision.ai){:target="_blank"}.
 
-- Create a new project, use these recommended settings:
+- Create a new project, using these recommended settings:
 
   - Give it a name like `Simulated Temperature Gauge`
     - Project Type - [Classification]
@@ -77,9 +77,11 @@ To deploy your custom model, we will first store your model in a publicly access
 
 - Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your new storage resource.
 - From the `overview` tab, click on `Blobs` service.
-- `Add a new container` and select `Upload`.
-- `Upload` the three files you got from the custom vision service.
-- Copy the three URLs of these files.
+- `Add a new container`, with a name such ase `model001`, selecting `Container (anonymous read access for contains and blobs)` for the `Public access level`.
+
+- Click on the container you created, select `Upload`.
+- Select the three files files downloaded from the Custom Vision service and click 'Upload'.
+- Copy the three URLs for each of these files.
 
 ### Updating the configuration of the Get Started module to use your new custom model
 
@@ -88,7 +90,7 @@ To deploy your custom model, we will first store your model in a publicly access
 - Click on the `SamplemoduleMobilenetforAIVisionDevkit` module name and click on `Module Identity Twin`.
 - Update the three desired properties (model, label, vam config) to map to your new URLs and hit `Save`.
 
-After a few minutes, your device should now be running your custom model!
+After a few minutes, your device should now be running your custom model.
 
 ### Test your new model
 
