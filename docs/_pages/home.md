@@ -15,11 +15,10 @@ excerpt: >
 VAIDK_More:
   - title: "Start fast"
     excerpt: |
-      Get up and running in minutes using the [tutorial project](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with vision machine learning.
+      [Get up and running in minutes](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with vision machine learning.
       # Build fast
       * New to Vision ML? Waiting for your DevKit? Let [Azure Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Create_Train_Vision_ML_Project/){:target="_blank"} do the hard work, starting with only a few labeled images.
       * Experienced with vision ML? Use [Jupyter notebooks](https://jupyter.org/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) create and train your custom vision ML models.
-      * Already have a vision ML model? Convert and deploy models from many existing formats.
 
       # Deploy fast
       [Azure IoT Edge](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_IoT_Hub/){:target="_blank"} can push your vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        
