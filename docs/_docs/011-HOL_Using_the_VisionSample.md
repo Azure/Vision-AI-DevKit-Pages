@@ -90,6 +90,18 @@ To deploy your custom model, we will first store your model in a publicly access
 - Click on the `SamplemoduleMobilenetforAIVisionDevkit` module name and click on `Module Identity Twin`.
 - Update the three desired properties (model, label, vam config) to map to your new URLs and hit `Save`.
 
+```terminal
+{
+    "properties.desired":{
+        "ModelUrl":"URL",
+        "LabelURL":"URL",
+        "ConfigUrl":"URL",
+        "FreqToSendMsg":12,
+        "ObjectOfInterest":"ALL"
+    }
+}
+
+
 After a few minutes, your device should now be running your custom model.
 
 ### Test your new model
