@@ -31,11 +31,21 @@ If you have a package manager installed (Chocolatey/Homebrew/Apt/Yum or similar)
 choco install adb
 ```
 
-(replacing 'choco' with the package manager of your choice) to install the Platform Tools. Alternatively, you can download and install the Platform Tools using these links for your development OS:
+(replacing 'choco' with the package manager of your choice) to install the Platform Tools. Alternatively, you can download and extract the zip containing the Platform Tools to a folder on your PC.
+
+### Download Links
 
 * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip){:target="_blank"}
 * [MAC](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip){:target="_blank"}
 * [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip){:target="_blank"}
+
+### Set path
+
+Add the directory you extracted the platform tools into to your computer's path environment variable. For Windows, use the command line:
+
+    ```cmd
+    set path=%path%;<platform tools path>
+    ```
 
 ## Common ADB commands  
 
