@@ -71,8 +71,10 @@ To deploy your custom model, we will first store your model in a publicly access
 - Create a storage account:
 
     ```cmd
-    az storage account create --name aidevkitstorage --resource-group AiDevKitResources --location westus --sku Standard_LRS --kind StorageV2
+    az storage account create --name {storageaccountname} --resource-group AiDevKitResources --location westus --sku Standard_LRS --kind StorageV2
     ```
+
+    Note: Replace {storageaccountname} in the command-line with a unique name. The name can be no more than 24 characters long and must be in lower-case letters.
 
 - Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your new storage resource.
 - From the `overview` tab, click on `Blobs` service.
