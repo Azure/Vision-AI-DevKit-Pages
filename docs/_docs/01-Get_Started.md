@@ -72,6 +72,8 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     az iot hub create --resource-group AiDevKitResources --name {myIoTHub} --sku F1
     ```
 
+  This process can take 3 - 5 minutes.
+
 Note: If your receive an error because there is already a free hub in use on your subscription, change the SKU to S1. You may also see an error that the IoT Hub name is not available. IoT Hub names must be globally unique. Please try another name.
 
 - Register your Vision AI DevKit in IoT Hub.

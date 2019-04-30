@@ -76,7 +76,7 @@ To deploy your custom model, we will first store your model in a publicly access
 
 - Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your new storage resource.
 - From the `overview` tab, click on `Blobs` service.
-- `Add a new container`, with a name such ase `model001`, selecting `Container (anonymous read access for contains and blobs)` for the `Public access level`.
+- `Add a new container`, with a name such ase `model001`, selecting `Container (anonymous read access for containers and blobs)` for the `Public access level`.
 
 - Click on the container you created, select `Upload`.
 - Select the three files files downloaded from the Custom Vision service and click 'Upload'.
@@ -99,7 +99,7 @@ To deploy your custom model, we will first store your model in a publicly access
         "ObjectOfInterest":"ALL"
     }
 }
-
+```
 
 After a few minutes, your device should now be running your custom model.
 
