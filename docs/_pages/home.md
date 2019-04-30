@@ -49,8 +49,6 @@ tech_specs:
 
   - title: "<img src='assets/images/Peabody_spec_image2.png' alt='Vision AI DevKit specs'>"
 
-tech_specs_title:
-  - title: "Technical Specs"
 ---
 
 <div class="feature__outer_wrapper">

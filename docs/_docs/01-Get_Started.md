@@ -25,7 +25,6 @@ To get you started on your journey with vision AI, using the **Vision AI DevKit*
 - Vision AI DevKit hardware
 - Monitor supporting HDMI input and an HDMI cable (Do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }})
 - Azure Command-Line Interface (CLI) installation
-- Ubuntu for Windows [Windows Store link](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab){:target="_blank"}
 
 ## Setup Azure IoT resources
 

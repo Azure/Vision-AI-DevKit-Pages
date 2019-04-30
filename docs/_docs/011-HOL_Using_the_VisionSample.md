@@ -20,7 +20,6 @@ last_modified_at: 2019-04-29
 - Configured Vision AI DevKit hardware [(Instructions)]({{ '/docs/Get_Started/' |relative_url }}){:target="_blank"}
 - Monitor supporting HDMI input and an HDMI cable (do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }})
 - Azure Command-Line Interface (CLI) installation [(Instructions)]({{ '/docs/Get_Started/#install-azure-command-line-interface-cli-tools' | relative_url }}){:target="_blank"}
-- Ubuntu for Windows [Windows Store link](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab){:target="_blank"}
 
 ## Create a custom AI model with Azure Custom Vision service
 
