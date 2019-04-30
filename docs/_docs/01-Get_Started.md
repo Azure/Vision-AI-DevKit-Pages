@@ -105,7 +105,7 @@ To deploy an sample AI model, we will use the 'AI Vision Dev Kit Get Started Mod
 
 > [!Note] Module URI needs to be updated today to use a test version.
 
-To edit the module URI, click on `Configure` and update the URI to be `ebertrams/visionsamplemodule:1.0.16_SSD-arm32v7`.
+To edit the module URI, click on `Configure` and update the URI to be `mcr.microsoft.com/aivision/visionsamplemodule:1.0.16_SSD-arm32v7`.
 
 The new version of the get started module (v1.0.16 or higher) requires new settings in the createOptions. Please replace its createOptions by the following and hit `Save`:
 
@@ -122,7 +122,10 @@ The new version of the get started module (v1.0.16 or higher) requires new setti
         "EndpointsConfig": {
           "host": {}
         }
-      }
+      },
+      "Cmd":[
+        "-p False"
+      ]
     }
 ```
 
