@@ -98,17 +98,17 @@ To deploy an sample AI model, we will use the 'AI Vision Dev Kit Get Started Mod
 
 > [!NOTE] This module is currently hidden in the marketplace thus is only visible with the link below.
 
-- Go to [this link](https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryFeaturedMenuItemBlade/selectedMenuItemId/home/searchQuery/AI%20vision%20dev%20kit/resetMenuId/){:target="_blank"}, which will require you to sign-in to the Azure portal. In the list of IoT Edge Modules, scroll down to find the 'AI Vision Dev Kit Get Started Module (preview)' (you may need to click the 'Load more' button at the bottom). Click the icon, then  click on `Create`.
+- Go to [this link](https://ms.portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=AIDevKitPreview#blade/Microsoft_Azure_Marketplace/GalleryFeaturedMenuItemBlade/selectedMenuItemId/home/searchQuery/AI%20vision%20dev%20kit/resetMenuId/){:target="_blank"}, which will require you to sign-in to the Azure portal. You should see 'AI Vision Dev Kit Get Started Module'. Click on the name, then click the `Create` button.
 
-> [!Note] A direct link will be given to customers once the module is published publicly.
+- Choose your subscription and the IoT Hub you created (these fields may already be filled with the correct information)
+- Click 'Find device', the click on the name of the device you created, `myAiDevKitDevice` in the 'Select IoT Edge Device' panel that appears.
+- Click `Select`, then click `Create`.
 
-- Choose your subscription, your IoT Hub named `myIoTHub`, find your device named `myAiDevKitDevice` and click on `Create`.
+> [!Note] Module URI will need to be updated to use a test version.
 
-> [!Note] Module URI needs to be updated today to use a test version.
+To edit the module URI, click on `Configure` next to the name of the module (AIVisionDevKitGetStartedModule). Update the Image URI field to `mcr.microsoft.com/aivision/visionsamplemodule:1.0.16_SSD-arm32v7`.
 
-To edit the module URI, click on `Configure` and update the URI to be `mcr.microsoft.com/aivision/visionsamplemodule:1.0.16_SSD-arm32v7`.
-
-The new version of the get started module (v1.0.16 or higher) requires new settings in the createOptions. Please replace its createOptions by the following and hit `Save`:
+Version 1.0.16 or higher of the get started module requires updated Container Create Options settings. Please replace the current Container Create Options values with the following and hit `Save`:
 
 ```terminal
     {
@@ -132,10 +132,8 @@ The new version of the get started module (v1.0.16 or higher) requires new setti
 
 > [!Note] This step won't be required by customers once released.
 
-- Confirm the deployment by clicking on `Next` twice then `Submit`.
-
 [!NOTE]
-> On the latest firmware, a regression has been introduced. To work around it, you need to click on `Configure advanced Edge runtime settings` and replace the createOptions of the edgeHub with the following:
+> On the latest firmware, a regression has been introduced. To work around it, click on `Configure advanced Edge runtime settings` and replace the Create Options of the Edge Hub with the following:
 >
 ```terminal
  {
@@ -147,6 +145,8 @@ The new version of the get started module (v1.0.16 or higher) requires new setti
 ```
 
 > [!NOTE]
-> Some reliability issues have been found with the current version of the edgeHub. To fix them, click on `Configure advanced Edge runtime settings` replace the edgeHub URI from `mcr.microsoft.com/azureiotedge-hub:1.0` with `mcr.microsoft.com/azureiotedge-hub:1.0.7-rc2` and the edgeAgent URI from `mcr.microsoft.com/azureiotedge-agent:1.0` with `mcr.microsoft.com/azureiotedge-agent:1.0.7-rc2`. This will be fixed automatically with 1.0.7 release.
+> Some reliability issues have been found with the current version of the edgeHub. To fix them, click on `Configure advanced Edge runtime settings` replace the Edge Hub Image from `mcr.microsoft.com/azureiotedge-hub:1.0` with `mcr.microsoft.com/azureiotedge-hub:1.0.7-rc2` and the Edge Agent Image from `mcr.microsoft.com/azureiotedge-agent:1.0` with `mcr.microsoft.com/azureiotedge-agent:1.0.7-rc2`. This will be fixed automatically with 1.0.7 release. Click the `Save` button.
 
-After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor! (Note: the 417 Runtime Response should be replaced once the module has downloaded.) You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/' | relative_url }}) for details
+- Confirm the deployment by clicking on `Next` twice then `Submit`.
+
+After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor! (Note: the 417 Runtime Response should be replaced with 'OK' once the module has downloaded.) You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/' | relative_url }}) for details

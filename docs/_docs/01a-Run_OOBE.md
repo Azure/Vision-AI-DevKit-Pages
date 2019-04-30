@@ -22,7 +22,7 @@ last_modified_at: 2019-03-15
 
 ## Connect your PC to the Visual AI DevKit hardware Wi-Fi access point
 
-Within 10 seconds of initial power up, you will see three Red LED lights. This indicates the device is in Wi-Fi access point mode. If your device LEDs are not flashing RED, review the [Guide to device LEDs.]({{ '/docs/Guide_to_device_LEDs/' | relative_url }})
+Within 10 seconds of first power up, you should see three flashing RED LED lights. This indicates the device is in Wi-Fi access point mode. If your device LEDs are not flashing RED, long press the power button for more than 5 seconds to turn on the DevKit hardware access point.
 
 From your PC, connect to a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device's Wi-Fi mac address, e.g. MSIOT_BD097D).
 
