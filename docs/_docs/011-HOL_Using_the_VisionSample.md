@@ -64,7 +64,7 @@ To export the model, select tab `Performances` and `Export` button. Choose the `
 
 ## Deploy your custom model to your device
 
-To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the Get Started module to use this model instead of the default one. We will use a cloud blob store to store the model but a public OneDrive link woudl work just as well.
+To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the Get Started module to use this model instead of the default one. We will use a cloud blob store to store the model but a public OneDrive link would work just as well.
 
 ### Uploading new custom model files
 
