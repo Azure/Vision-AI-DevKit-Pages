@@ -73,7 +73,7 @@ To deploy your custom model, we will first store your model in a publicly access
 
 - Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your new storage resource.
 - From the `overview` tab, click on `Blobs` service.
-- `Add a new container`, with a name such ase `model001`, selecting `Container (anonymous read access for containers and blobs)` for the `Public access level`.
+- `Add a new container`, with a name such as `model001`, selecting `Container (anonymous read access for containers and blobs)` for the `Public access level`.
 
 - Click on the container you created, select `Upload`.
 - Select the three files files downloaded from the Custom Vision service and click 'Upload'.
@@ -103,7 +103,7 @@ After a few minutes, your device should now be running your custom model.
 ### Test your new model
 
 - Go to [Simulated Analog Gauge](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html){:target="_blank"} to view the simulated an analog gauge
-- Verify that the camera sees the simulated guage and correctly classify the gauge's output as green / yellow / red from your DevKit's connected monitor or using a video player supporting RTSP [(View RTSP Stream)]({{ '/docs/RTSP_stream/' | relative_url }}).
+- Verify that the camera sees the simulated gauge and correctly classifies the gauge's output as green / yellow / red from your DevKit's connected monitor or using a video player supporting RTSP [(View RTSP Stream)]({{ '/docs/RTSP_stream/' | relative_url }}).
 
 ## Clean up
 
