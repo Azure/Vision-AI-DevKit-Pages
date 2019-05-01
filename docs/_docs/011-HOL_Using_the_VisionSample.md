@@ -84,7 +84,7 @@ To deploy your custom model, we will first store your model in a publicly access
 
 - Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your ioT Hub resource.
 - Click on `IoT Edge` tab and then on your camera device named `myAiDevKitDevice`.
-- Click on the `SamplemoduleMobilenetforAIVisionDevkit` module name and click on `Module Identity Twin`.
+- Click on the `AIVisionDevkitGetStartedModule` module name and click on `Module Identity Twin`.
 - Update the three desired properties (model, label, vam config) to map to your new URLs and hit `Save`.
 
 ```terminal
