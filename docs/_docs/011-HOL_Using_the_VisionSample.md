@@ -18,7 +18,7 @@ last_modified_at: 2019-04-29
 
 - Active Azure subscription (Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F.){:target="_blank"})
 - Configured Vision AI DevKit hardware [(Instructions)]({{ '/docs/Get_Started/' |relative_url }}){:target="_blank"}
-- Monitor supporting HDMI input and an HDMI cable (do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }})
+- Monitor supporting HDMI input and an HDMI cable (do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"}
 - Azure Command-Line Interface (CLI) installation [(Instructions)]({{ '/docs/Get_Started/#install-azure-command-line-interface-cli-tools' | relative_url }}){:target="_blank"}
 
 ## Create a custom AI model with Azure Custom Vision service
@@ -32,6 +32,7 @@ You will build a custom AI model to detect when an analog temperature gauge is g
     ```cmd
     az cognitiveservices account create -n myCustomVision -g AiDevKitResources --kind CustomVision --sku F0 -l westus2 --yes
     ```
+
 - Login to the Azure Custom Vision Service at [https://www.customvision.ai](https://www.customvision.ai){:target="_blank"}.
 
 - Create a new project, using these recommended settings:

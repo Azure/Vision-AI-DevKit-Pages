@@ -23,7 +23,7 @@ To get you started on your journey with vision AI, using the **Vision AI DevKit*
 
 - Active Azure subscription (Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F.){:target="_blank"}
 - Vision AI DevKit hardware
-- Monitor supporting HDMI input and an HDMI cable (Do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }})
+- Monitor supporting HDMI input and an HDMI cable (Do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"}
 - Azure Command-Line Interface (CLI) installation
 
 ## Setup Azure IoT resources
@@ -49,7 +49,7 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     If the incorrect subscription is being used, use the following command to change to the correct one:
 
     ```cmd
-    azure account set --subscription <SubscriptionId>
+    az account set --subscription <SubscriptionId>
     ```
 
 - [Install Azure CLI IoT extension](https://github.com/Azure/azure-iot-cli-extension){:target="_blank"}:
@@ -149,4 +149,4 @@ Version 1.0.16 or higher of the get started module requires updated Container Cr
 
 - Confirm the deployment by clicking on `Next` twice then `Submit`.
 
-After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor! (Note: the 417 Runtime Response should be replaced with 'OK' once the module has downloaded.) You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/' | relative_url }}) for details
+After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor! (Note: the 417 Runtime Response should be replaced with 'OK' once the module has downloaded.) You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"} for details
