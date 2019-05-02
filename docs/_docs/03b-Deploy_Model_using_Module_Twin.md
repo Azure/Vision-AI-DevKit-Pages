@@ -1,5 +1,5 @@
 ---
-title: "Send a new Custom Vision model to a deployed Custom Vision configured module"
+title: "Send a new Custom Vision model to an already deployed module"
 permalink: /docs/Deploy_Model_using_Module_Twin/
 excerpt: "How to deploy a new Custom Vision model to a device with an existing Custom Vision configure module using the Azure portal."
 variable:
