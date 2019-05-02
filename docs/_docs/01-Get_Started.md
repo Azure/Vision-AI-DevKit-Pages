@@ -117,7 +117,7 @@ Click the `Save` button.
 >
 Click on `Configure` next to the name of the module (AIVisionDevKitGetStartedModule) then make the following changes:
 
-- Update the Image URI field to `mcr.microsoft.com/aivision/visionsamplemodule:1.0.19_SSD-arm32v7`.
+- Update the Image URI field to `mcr.microsoft.com/aivision/visionsamplemodule:1.0.20_SSD-arm32v7`.
 - Replace the current `Container Create Options` values with the following:
 
 ```terminal
