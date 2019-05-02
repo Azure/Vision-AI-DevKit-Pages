@@ -36,7 +36,7 @@ docs:
         url: /docs/Deploy_Model_IoT_Hub/
       - title: Using Visual Studio (VS) Code
         url: /docs/Deploy_model_VS_Code/
-      - title: Deploy a new CustomVision model to a deployed Iot Edge module
+      - title: By changing Model Twin values
         url: /docs/Deploy_Model_using_Module_Twin/
 
   - title: Manage your device
