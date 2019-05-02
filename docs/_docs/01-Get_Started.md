@@ -106,7 +106,7 @@ To deploy an sample AI model, we will use the 'AI Vision Dev Kit Get Started Mod
 
 > [!Note] Module URI will need to be updated to use a test version.
 
-To edit the module URI, click on `Configure` next to the name of the module (AIVisionDevKitGetStartedModule). Update the Image URI field to `mcr.microsoft.com/aivision/visionsamplemodule:1.0.16_SSD-arm32v7`.
+To edit the module URI, click on `Configure` next to the name of the module (AIVisionDevKitGetStartedModule). Update the Image URI field to `mcr.microsoft.com/aivision/visionsamplemodule:1.0.19_SSD-arm32v7`.
 
 Version 1.0.16 or higher of the get started module requires updated Container Create Options settings. Please replace the current Container Create Options values with the following and hit `Save`:
 
