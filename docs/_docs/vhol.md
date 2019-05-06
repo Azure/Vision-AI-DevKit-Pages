@@ -1,5 +1,5 @@
 ---
-title: "Build lab"
+title: "//Build 2019 lab"
 permalink: /docs/VHOL/
 excerpt: "How to quickly install and set up your development environment to use the Vision AI DevKit."
 variable:

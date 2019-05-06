@@ -102,19 +102,14 @@ We will use the 'AI Vision Dev Kit Get Started Module' from the IoT Edge Marketp
 - Click 'Find device', the click on the name of the device you created, `myAiDevKitDevice` in the 'Select IoT Edge Device' panel that appears.
 - Click `Select`, then click `Create`.
 
-> [!Note] We are using a preview version of IoT Edge for this procedure, which requires a modification to the Edge Hub and Edge Agent Image settings.
-
 In your IoT Hub, click on `IoT Edge`, under *Automatic Device Managment*. Click on the Device ID for your device, the click on the `Set Modules` menu item. Click on `Configure advanced Edge Runtime settings`.
 
 Under 'Advanced Edge Settings - Edge Hub', make the following changes:
 
-- Replace the `Image` value `mcr.microsoft.com/azureiotedge-hub:1.0` with `mcr.microsoft.com/azureiotedge-hub:1.0.7-rc2`.
 - Add the environment variable `OptimizeForPerformance`.
 
-Under 'Advanced Edge Settings - Edge Agent, replace the `Image` value `mcr.microsoft.com/azureiotedge-agent:1.0` with `mcr.microsoft.com/azureiotedge-agent:1.0.7-rc2`.
-
 Click the `Save` button.
->
+
 Click on `Configure` next to the name of the module (AIVisionDevKitGetStartedModule) then make the following changes:
 
 - Update the Image URI field to `mcr.microsoft.com/aivision/visionsamplemodule:1.0.20_SSD-arm32v7`.
