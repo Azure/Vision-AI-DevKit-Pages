@@ -15,7 +15,7 @@ last_modified_at: 2019-04-29
 ## Setup your AI dev kit device
 
 ### Hardware setup
-Make sure that your AI vision dev kit is plugged to power via USB and connected to an external screen via HDMI. Also please verify that your device 3 LEDs are displayed a solid green light.
+Make sure that your AI vision dev kit is plugged to power via USB and connected to an external screen via HDMI.
 
 ### Get an Azure subscription
 Use this account to login to Azure, see and deploy Azure resources:
