@@ -112,6 +112,7 @@ To learn more about this AI Dev Kit, visit <a href="https://azure.github.io/Visi
 ## Clean up
 Before leaving, please:
 
+- take a short <a href="https://aka.ms/buildholf" target="blank">survey</a> and help us to improve our labs for future conferences!
 
 - delete your download folder on your laptop
 
