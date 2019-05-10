@@ -15,14 +15,14 @@ last_modified_at: 2019-04-29
 ## Setup your AI dev kit device
 
 ### Hardware setup
-Make sure that your AI vision dev kit is plugged to power via USB and connected to an external screen via HDMI. Also please verify that your device 3 LEDs are displayed a solid green light.
+Make sure that your AI vision dev kit is plugged to power via USB and connected to an external screen via HDMI.
 
 ### Get an Azure subscription
 Use this account to login to Azure, see and deploy Azure resources:
-- user: lab.user00@msiotlabs.com where 00 is the number on your AI vision dev kit (between 01 and 24)
+- user: lab.user00@msiotlabs.com where 00 is the number on your AI vision dev kit (between 01 and 26)
 - password: *Provided by the lab at your station* 
 - subscription: MS IoT Labs - Vision AI DevKit
-- resource group: msiotlabs-user-00-visionkit where 00 is the number on yoru AI vision dev kit (between 01 and 24)
+- resource group: msiotlabs-user-00-visionkit where 00 is the number on yoru AI vision dev kit (between 01 and 26)
 
 ### Set up Azure IoT resources
 Your device has already been set up as an Azure IoT Edge device, connected to an IoT Hub. This will enable you to remotely manage it. Let's first verify that your setup looks correct:
@@ -112,6 +112,7 @@ To learn more about this AI Dev Kit, visit <a href="https://azure.github.io/Visi
 ## Clean up
 Before leaving, please:
 
+- take a short <a href="https://aka.ms/buildholf" target="blank">survey</a> and help us to improve our labs for future conferences!
 
 - delete your download folder on your laptop
 
