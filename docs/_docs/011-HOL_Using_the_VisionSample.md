@@ -41,8 +41,8 @@ You will build a custom AI model to detect when an analog temperature gauge is g
     - Project Type - [Classification]
     - Resource Group `AiDevKitResources-CustomVision`
     - Classification Type - [Multiclass (Single tag per image)]
-    - Domain - [General(compact)]
-    - ** Basic Platforms + Vision AI Dev Kit
+    - Domain - [General(compact)]  **NOTE: Ensure you do not select the `General` option**
+    - Export Capabilities - Vision AI Dev Kit
 
 ### Upload and tag your training data
 
@@ -50,7 +50,7 @@ Some training images have already been collected for you based on the simulated 
 
 - Download the training images from [TrainingData.zip]({{ '/Needed/TrainingData.zip' | relative_url }}).
 - Uncompress the downloaded .zip file.
-- Upload the images to custom vision in sets, per color (Green/Yellow/Red), tagging each image set with the appropriate color (Green/Yellow/Red) during upload.
+- Upload the images to custom vision in sets, per color (Green/Yellow/Red), tagging each image set with the appropriate color (Green/Yellow/Red) during upload. Upload all similarly named pictures at the same time.
 
 ### Train and export your custom model
 

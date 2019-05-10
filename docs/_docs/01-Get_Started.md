@@ -104,38 +104,9 @@ We will use the 'AI Vision Dev Kit Get Started Module' from the IoT Edge Marketp
 
 In your IoT Hub, click on `IoT Edge`, under *Automatic Device Managment*. Click on the Device ID for your device, the click on the `Set Modules` menu item. Click on `Configure advanced Edge Runtime settings`.
 
-Under 'Advanced Edge Settings - Edge Hub', make the following changes:
-
-- Add the environment variable `OptimizeForPerformance`.
+Under 'Advanced Edge Settings - Edge Hub', add the environment variable `OptimizeForPerformance`, set to `False`.
 
 Click the `Save` button.
-
-Click on `Configure` next to the name of the module (AIVisionDevKitGetStartedModule) then make the following changes:
-
-- Update the Image URI field to `mcr.microsoft.com/aivision/visionsamplemodule:1.0.20_SSD-arm32v7`.
-- Replace the current `Container Create Options` values with the following:
-
-```terminal
-    {
-      "HostConfig": {
-        "Binds": [
-          "/data/misc/camera:/app/vam_model_folder",
-           "/run/systemd:/run/systemd"
-        ],
-        "NetworkMode": "host"
-      },
-      "NetworkingConfig": {
-        "EndpointsConfig": {
-          "host": {}
-        }
-      },
-      "Cmd":[
-        "-p False"
-      ]
-    }
-```
-
-Hit `Save`
 
 - Confirm the deployment by clicking on `Next` twice then `Submit`.
 
