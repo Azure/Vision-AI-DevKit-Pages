@@ -15,22 +15,28 @@ To get you started on your journey with vision AI, using the **Vision AI DevKit*
 
 ## What you will do
 
-- Setup Azure IoT resources to manage the Vision AI DevKit.
+- Setup an Azure account (if needed) and create necessary Azure IoT resources to manage the Vision AI DevKit.
 - Setup the Vision AI DevKit to connect to Wi-Fi and register as an IoT Edge Device connected to an IoT Hub.
 - Deploy the VisionSample model to the device.
 
 ## What you will need
 
-- Active Azure subscription (Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F.){:target="_blank"}
+- Active Azure subscription (Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F.){:target="_blank"})
 - Vision AI DevKit hardware
 - Monitor supporting HDMI input and an HDMI cable (Do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"}
 - Azure Command-Line Interface (CLI) installation
 
-## Setup Azure IoT resources
+## Setup Azure account and resources
+
+### Sign up for an Azure account
+
+The Vision AI DevKit is designed to work with Azure IoT resources. To get started, you will need a new (or existing) Azure account. If you do not have an Azure account already, you can create a free account by visiting this link: [https://azure.microsoft.com/free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F.){:target="_blank"}
+
+### Setup Azure IoT resources
 
 To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an IoT Hub to register and remotely manage your DevKit as an Edge device. All required resources are free.
 
-### Install Azure Command Line Interface (CLI) tools
+#### Install Azure Command Line Interface (CLI) tools
 
 - [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest){:target="_blank"}.
 
@@ -58,7 +64,7 @@ To setup your Vision AI DevKit as an Azure IoT Edge device, you will create an I
     az extension add --name azure-cli-iot-ext
     ```
 
-### Create Azure IoT resources
+#### Create Azure IoT resources
 
 - Create a resource group to manage all your Azure resources for this project:
 
@@ -88,7 +94,7 @@ Note: If your receive an error because there is already a free hub in use on you
     az iot hub device-identity show-connection-string --device-id myAiDevKitDevice --hub-name {myIoTHub}
     ```
 
-## Setup your Vision AI DevKit
+## Setup your device
 
 Follow [these instructions]({{ '/docs/Run_OOBE/#connect-the-vision-ai-dev-kit-hardware-to-your-azure-iot-hub' | relative_url }}){:target="_blank"} to set up your device for Wifi and register it as an IoT Edge device connected to your IoT Hub.
 
