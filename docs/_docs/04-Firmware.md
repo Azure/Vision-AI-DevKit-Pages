@@ -19,7 +19,7 @@ last_modified_at: 2019-03-15
 
 * Vision AI Dev Kit hardware
 * USB-C cable
-* Installed ADB (Android Debug Bridge) and Fastboot tool. (See [Platform Tools]({{ '/docs/platform_tools' | relative_url}}) for installation instructions.)
+* * ADB command line utility and Fastboot tool. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 
 ## Verify hardware connection
 

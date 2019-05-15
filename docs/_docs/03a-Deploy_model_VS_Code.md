@@ -21,6 +21,7 @@ last_modified_at: 2019-04-11
 * Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample){:target="_blank"}.
 * Azure IoT Hub and Azure IoT Edge device configured for your Vision AI DevKit hardware [(Instructions)]({{ '/docs/Setup_Azure_resources/' | relative_url}}){:target="_blank"}
 * Active Wi-Fi access point with Internet connectivity.
+* ADB command line utility. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 * (optional) HDMI cable and monitor to view video from the Visual AI DevKit.
 
 ## Deploy the sample model container image to the Vision AI DevKit

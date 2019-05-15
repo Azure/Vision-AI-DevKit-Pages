@@ -10,7 +10,8 @@ variable:
 last_modified_at: 2019-04-17
 ---
 ## What you will need
-* ADB command line utility. ([Installation]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"} section.)
+
+* ADB command line utility. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 
 ## Reboot the Vision AI DevKit hardware
 
