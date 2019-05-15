@@ -2,9 +2,11 @@
 
 ### Connect your PC to the camera's Wi-Fi access point
 
-Within 10 seconds of first power up, you should see three flashing RED LED lights. This indicates the device is in Wi-Fi access point mode. If your device LEDs are not flashing RED, long press the power button for more than 5 seconds to turn on the DevKit hardware access point.
+- Within 10 seconds of first power up, you should see three flashing RED LED lights. This indicates the device is in Wi-Fi access point mode. If your device LEDs are not flashing RED, long press the power button for more than 5 seconds to turn on the DevKit hardware access point.
 
-From your PC, connect to a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device's Wi-Fi mac address, e.g. MSIOT_BD097D).
+{% include_relative Device_LEDs.md %}
+
+- From your PC, connect to a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device's Wi-Fi mac address, e.g. MSIOT_BD097D).
 
 #### Notes
 
