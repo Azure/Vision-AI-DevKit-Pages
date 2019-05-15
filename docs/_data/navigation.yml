@@ -47,11 +47,11 @@ docs:
         url: /docs/Firmware/ 
       - title: "Rebooting"
         url: /docs/Reboot/
-
-  - title: Tools and Connections
-    children:
-      - title: "Hardware Connections"
+      - title: "Hardware connections"
         url: /docs/Hardware_connections/
+
+  - title: Tools
+    children:
       - title: "Platform tools"
         url: /docs/platform_tools/
       - title: "Visual Studio (VS) Code"
