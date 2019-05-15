@@ -9,6 +9,10 @@ variable:
     name: macOS
 last_modified_at: 2019-04-17
 ---
+## What you will need
+
+Some troubleshooting steps require the use of an ADB command line. For more information (and to install the ADB utility, please visit the [Platform Tools]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"} section.)
+
 ## Unable to connect to a Wi-Fi network
 
 The Wi-Fi passphrase for your local Wi-fi network cannot have spaces (even at the end of the passphrase string), or the camera will be unable to connect to the Wi-Fi network.

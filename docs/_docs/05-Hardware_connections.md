@@ -22,6 +22,7 @@ last_modified_at: 2019-04-10
 * USB-C cable
 * HDMI Cable
 * Monitor with HDMI port
+* ADB command line utility ([Installation]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"} section.)
 
 ## USB connection
 

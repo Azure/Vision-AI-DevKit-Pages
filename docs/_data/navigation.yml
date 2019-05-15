@@ -79,5 +79,4 @@ docs:
       - title: "Improve inferencing accuracy"
         url: /docs/Inferencing_accuracy/
       - title: "View RTSP video stream"
-        url: /docs/RTSP_stream
-
+        url: /docs/RTSP_stream/

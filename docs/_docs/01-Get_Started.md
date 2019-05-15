@@ -95,9 +95,11 @@ Note: If your receive an error because there is already a free hub in use on you
     az iot hub device-identity show-connection-string --device-id myAiDevKitDevice --hub-name {myIoTHub}
     ```
 
-## Setup your device
+## Setup your DevKit camera
 
-Follow [these instructions]({{ '/docs/Run_OOBE/#connect-the-vision-ai-dev-kit-hardware-to-your-azure-iot-hub' | relative_url }}){:target="_blank"} to set up your device for Wifi and register it as an IoT Edge device connected to your IoT Hub.
+Configure your Vision AI DevKit camera for Wi-Fi and register the camera as an IoT Edge device connected to your IoT Hub.
+
+{% include_relative OOBE.md %}
 
 ## Deploy the sample vision AI model
 
@@ -117,6 +119,8 @@ Click the `Save` button.
 
 - Confirm the deployment by clicking on `Next` twice then `Submit`.
 
-After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor! (Note: the 417 Runtime Response should be replaced with 'OK' once the module has downloaded.)
+## View DevKit camera output
 
-You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"} for details
+After a few minutes (once the module has downloaded to your DevKit), you should see objects being detected by the camera when viewing the output from your DevKit on an HDMI connected monitor! (Note: if you see a 417 Runtime Response, it should be replaced with 'OK' once the module has downloaded.)
+
+You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/#connect-to-the-video-stream' | relative_url }}){:target="_blank"} for details

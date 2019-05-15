@@ -9,6 +9,9 @@ variable:
     name: macOS
 last_modified_at: 2019-04-17
 ---
+## What you will need
+* ADB command line utility. ([Installation]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"} section.)
+
 ## Reboot the Vision AI DevKit hardware
 
 * Click the reset button once, using the pin hole on the right side of the camera.
