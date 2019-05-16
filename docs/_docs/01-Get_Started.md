@@ -130,3 +130,11 @@ Click the `Save` button.
 After a few minutes (once the module has downloaded to your DevKit camera), you should see objects  detected by the camera showing on a monitor connected to the HDMI port on the DevKit camera. (Note: if you see a 417 Runtime Response, it should be replaced with 'OK' once the module has downloaded.)
 
 You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/#connect-to-the-video-stream' | relative_url }}){:target="_blank"} for details
+
+## Next steps
+
+In this quickstart, you configured the Vision AI DevKit camera to display output for objects recognized by the VisionSample model to a monitor or RTSP capable video player.
+
+From here, your next step is to create and deployE a custom vision ML model using the Azure Custom Vision service.
+
+[Create and deploy a vision ML model using the Azure Custom Vision service]({{ '/docs/Tutorial-HOL_Using_the_VisionSample/' | relative_url }}){:target="_blank"}
