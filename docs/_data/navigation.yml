@@ -74,7 +74,7 @@ docs:
     children:
       - title: "Review logs"
         url: /docs/Review_logs/
-      - title: "Docker Container Status"
+      - title: "Docker container status"
         url: /docs/Docker_status/
       - title: "Improve inferencing accuracy"
         url: /docs/Inferencing_accuracy/

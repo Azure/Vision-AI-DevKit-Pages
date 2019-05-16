@@ -25,7 +25,7 @@ last_modified_at: 2019-04-29
 
 You will build a custom AI model to detect when an analog temperature gauge is getting into the warning or danger zone. We will use this website [Simulated Analog Guage](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html){:target="_blank"} to simulate our analog temperature gauge and will use [Custom Vision](https://www.customvision.ai/){:target="_blank"} to build a custom model.
 
-### Setup up a new Custom Vision project
+### Setup a new Custom Vision project
 
 - Create Custom Vision training and prediction Azure resources.
 
