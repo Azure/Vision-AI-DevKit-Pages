@@ -9,7 +9,7 @@ variable:
     name: macOS
 last_modified_at: 2019-04-29
 ---
-This guide will start you on your vision AI journey with the **Vision AI DevKit**, taking you from setting up your Microsoft Azure account to seeing video output from the DevKit camera of recognized objects. We will use a VisionSample model for this process, which can recognize up to 100 different objects.
+This guide will start you on your vision AI journey with the **Vision AI DevKit**, taking you from setting up your Microsoft Azure account to seeing video output from the DevKit camera of recognized objects. We will use a VisionSample model for this process, which has been trained to recognize up to 183 different objects.
 
   ![Flow chart of the steps taken for the first use of the Vision AI Dev Kit, covered in the 'What you will do' section of this document]({{ '/assets/images/GetStarted.PNG' | relative_url }})
 

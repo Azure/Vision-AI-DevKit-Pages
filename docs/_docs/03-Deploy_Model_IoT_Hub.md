@@ -1,7 +1,7 @@
 ---
-title: "Deploy a vision AI model with Azure IoT Hub"
+title: "Deploy a vision AI container module using Azure IoT Hub"
 permalink: /docs/Deploy_Model_IoT_Hub/
-excerpt: "How to deploy a pre-built vision model to the Vision AI DevKit through the Azure portal."
+excerpt: "How to deploy a pre-built vision module to the Vision AI DevKit camera using the Azure portal."
 variable:
   - platform: windows
     name: Windows
@@ -12,21 +12,19 @@ last_modified_at: 2019-03-15
 
 ## What you will do
 
-* Deploy a pre-built sample model container image to the Vision AI DevKit hardware using Azure IoT Hub
+* Deploy a pre-built sample container module to the Vision AI DevKit camera using Azure IoT Hub
 
 ## What you will need
 
 * Configured Azure Iot Hub with the Vision AI DevKit registered as an IoT Edge device ([Instructions](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Setup_Azure_resources/){:target="_blank"})
-* Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample){:target="_blank"}.
 * (optional) Monitor and HDMI cable
 
 ## Select your Vision AI DevKit hardware in the Azure portal
 
-1. Download or Clone the latest Vision AI DevKit repository from [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample){:target="_blank"}.
-2. Sign in to the [Azure portal](https://portal.azure.com/){:target="_blank"} and navigate to your IoT hub.
-3. Select **IoT Edge** from the menu.
-4. Click on the ID of the target camera hardware from the list of devices.
-5. Select **Set Modules**.
+1. Sign in to the [Azure portal](https://portal.azure.com/){:target="_blank"} and navigate to your IoT hub.
+2. Select **IoT Edge** from the menu.
+3. Click on the ID of the target camera hardware from the list of devices.
+4. Select **Set Modules**.
 
 ![Azure portal 'Set Modules']({{ '/assets/images/Set_Modules.png' | relative_url }})
 
@@ -94,8 +92,8 @@ The review section shows you the JSON deployment manifest created based on your 
 
 Review your deployment information, then select **Submit**.
 
-## Verify output on the monitor
+## Verify DevKit camera output
 
-Connect the HDMI cable to the Vision AI DevKit hardware and your monitor. A few minutes after submitting your deployment, you should start to see video on the monitor with bounding boxes drawing around objects the camera can see and evaluate.
+After a few minutes (once the module has downloaded to your DevKit camera), you should see objects detected by the camera showing on a monitor connected to the HDMI port on the DevKit camera. (Note: if you see a 417 Runtime Response, it should be replaced with ‘OK’ once the module has downloaded.)
 
-Note: You can also view the camera output using an RTSP compatible video player. See [View RTSP video stream]({{ '/docs/RTSP_stream/' | relative_url}}){:target="_blank"} for more information.
+You can optionally use a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera. See [View RTSP video stream]({{ '/docs/RTSP_stream/' | relative_url}}){:target="_blank"} for more information.

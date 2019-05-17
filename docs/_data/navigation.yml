@@ -30,13 +30,13 @@ docs:
 #      - title: "- Build and deploy a model with CustomVision.AI"
 #        url: /docs/Create_Train_Vision_ML_Project/
 
-  - title: Deploying a model
+  - title: How to - Deploy
     children:
-      - title: Using Azure IoT Hub
+      - title: Container module using Azure IoT Hub
         url: /docs/Deploy_Model_IoT_Hub/
-      - title: Using Visual Studio (VS) Code
+      - title: Container module using Visual Studio (VS) Code
         url: /docs/Deploy_model_VS_Code/
-      - title: By changing Model Twin values
+      - title: Model using Model Twin
         url: /docs/Deploy_Model_using_Module_Twin/
 
   - title: Manage your device
