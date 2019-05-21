@@ -16,6 +16,7 @@ last_modified_at: 2019-04-17
 ## Display issues
 
 * Your display must have a minimum resoltion of 1080p.
+* The RTSP stream for network media playback should be set to 1080p.
 * Televisions or gaming specific monitors may not be recognized by the Vision AI DevKit.
 * Use a direct HDMI connection to the display. Converters, e.g. Display Port to HDMI, will usually cause the output to fail.
 * The neural processing engine (or other parts of the stack) may require a reboot occasionally. The command line
