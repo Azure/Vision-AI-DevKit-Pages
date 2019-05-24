@@ -1,5 +1,5 @@
 ---
-title: "Bug bash lab"
+title: "May 2019 Bug bash lab"
 permalink: /docs/bblab/
 excerpt: "Bush bash lab instructions for running the OOBE and creating a customvision.ai model"
 variable:
@@ -7,95 +7,94 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-04-29
+last_modified_at: 2019-05-24
 ---
 
-# AI dev kit Bug bash 2019
+## What you will do
 
-## What are you going to do
+- Set up a Vision AI DevKit camera and needed Azure services
+- Train a model using [Azure Custom Vision service](https://customvision.ai){:target="_blank"}, then deploy the model to the Vision AI DevKit
 
-This bug bash lab consist of two phases
-1. Setting up your device and needed Azure services
-2. Training a model using customvision.ai and deploying it to the camera
+## Pre-requisites
 
-### Hardware setup
-Make sure that your AI vision dev kit is plugged to power via USB
-
-### Get an Azure subscription
-- Use your own Azure subscription for the lab. Microsoft employee specific instructions can be found from the lab invidation
+- Vision AI DevKit camera, connected to power via USB
+- Active Azure subscription
 
 ### Connect your PC to the camera's Wi-Fi access point
 
-- You device is in a state where is has a fresh firmware update to it. It should flash red lights indicating that it is running and access point you can connect you PC to.
-- From your PC, connect to a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device's Wi-Fi mac address, e.g. MSIOT_BD097D). If there is a password listed in the device that is needed during OOBE
-- OOBE guides you through the process of creating Azure resources and connecting your device to them. The device connects to Azure IoT Hub that controls the network traffic between the device and cloud. During OOBE you'll create IoT Hub and a IoT Edge device in a hub that represent the camera.
-- OOBE also deployes a default VisionSample model to teh device that can recognize multiple objects.
+- Your Vision AI DevKit camera is in a state where it has been freshly updated with the latest firmware. You should see the three fron LEDs flashing red, indicating the device is running in Wi-Fi APN mode, waiting for your PC to connect.
+- From your PC, connect to the Wi-Fi network named MSIOT_xxxxxx. The name for your camera (and any required password) should be found on a sticker attached to the camera. (Note: xxxxxx is the last 6 characters of the device's Wi-Fi mac address, e.g. MSIOT_BD097D).
+- The initial user experience (OOBE) will guide you through the process of creating Azure resources, configuring your device to use them. You will use Azure IoT Hub to control network traffic between the device and the Azure resources. During OOBE you'll create the IoT Hub with an IoT Edge device which represents your camera.
+- OOBE also deploys a default VisionSample model to the camera, which can recognize multiple objects.
 
-## Build your own AI model
-We'll build our own AI model to detect when someone is wearing an hard hat. You have an hard hat on your desk which well be used to validate your model built with <a href="https://www.customvision.ai/" target="blank">Custom Vision</a>.
+## Build a custom AI model
+
+You will build a custom AI model to detect when someone is wearing an hard hat. (You should have a hard hat on your desk to use for model validation.) You will use the [Azure Custom Vision service](https://customvision.ai){:target="_blank"} to build the model.
 
 ### Setup up a new Custom Vision project
-- Login to the Azure Custom Vision Service (Preview) at <a href="https://www.customvision.ai/" target="blank">https://www.customvision.ai/</a>.
+- Login to Azure Custom Vision Service at [https://customvision.ai](https://customvision.ai){:target="_blank"}.
 
-- Create a new project, use these recommended settings:
+- Create a new project, us\ing these recommended settings:
     - Give it a name like `Simulated HardHat Detector`
     - Project Type - [Classification]
     - Use the existing resource group
     - Classification Type - [Multiclass (Single tag per image)]
-    - Domain - [General(compact)]
+    - Domain - [General(compact)] **NOTE: Ensure you do not select the `General` option**
     - Export Capabilites - Vision AI Dev Kit
 
 ### Upload and tag your training data
 Some training images have already been collected for you for the hard hat use case.
 
-Download them and upload them to your Custom Vision project:
-- Downlaod the .zip file at this location: <a href="https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL" target="blank">https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL</a>
-- Uncompress it
-- Upload images to custom vision per tag (HardHat/NoHardHat) and tag them appropriately them during upload. Upload all pictures names similarly (like HardHat) at the same time.
+- Download the .zip file containing the sample images from: <a href="https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL" target="blank">https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL</a>
+- Uncompress the zip file to a local directory
+- Upload images to custom vision in batches, one batch per tag (images containing *HardHat* in the name, then *NoHardHat*), adding the appropriate tag during upload.
 
 ### Train and export your custom model
-To train it with your new training data, go to your Custom Vision project and click on `Train`.
 
-To export it, select tab `Performances` and `Export` button. Choose the `Vision AI Dev Kit` option to download your new custom model and finally uncompress them.
+To train your model using the uploaded training images, go to your Custom Vision project and click on `Train`.
 
-### Deploy your custom model to your device
-To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the Get Started module to use this model instead of the default one. We will use a cloud blob store to store the model but a public OneDrive link would work just as well.
+To export your model, select the `Performances` tab, then click the `Export` button. Choose the `Vision AI Dev Kit` option to download your model, then  uncompress the files to a local directory.
 
-#### Uploading new custom model files
+### Deploy your custom model to your camera
+
+To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the VisionSample module to use this new model. We will use a cloud blob store to store the model, but any publically accessible file storage system will work.
+
+#### Upload your trained model files
+
 We'll start by creating a new storage account and then upload your model to it.
-- Login to the <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a>
-- Search for `Storage` and select the `Storage accounts` service
-- Use your existing subscription and resource group
-- Give it a unique name, upper case characters are not allowed
-- Select the West-US 2 region
-- Click on `Review+Create` (other default options shoudl be correct)
-- Wait until until provisioning is complete and navigate to yoru new storage account
-- From the `overview` tab, click on `Blobs` service
-- `Add a new container`, give it a name like `hardhatmodel` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`
-- Click on the container just created, Click on the `Upload` button and select your files from the custom vision service and `Upload`
-- Copy the three URLs of these files by clicking on each of them and copying their URL to the clipboard
 
-#### Updating the configuration of the Get Started module to use your new custom model
+- Login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a>.
+- Search for `Storage` and select `Storage accounts`.
+- Use your existing Azure subscription and resource group.
+- Create a new storage account with a unique name (NOTE: upper case characters are not allowed).
+- Select the `West-US 2` region.
+- Click on `Review+Create` (other default options should be correct).
+- Wait until until provisioning is complete and navigate to your new storage account.
+- From the `overview` tab, click on `Blobs`.
+- Click `Add a new container`, give it a name like `hardhatmodel` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`.
+- Click on the container just created, then click  the `Upload` button and select the files you downloaded from the Azure Custom Vision service.
+- Copy the three URLs of the uploaded files for later use.
 
-- Login to the <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a> and go to your ioT Hub resource
-- Click on `IoT Edge` tab and then on your camera device named `visionkit`
-- Click on the `AIVisionDevKitGetStartedModule` module name and click on `Module Identity Twin`
-- Update the three desired properties (model, label, vam config) to map to your new URLs and hit `Save`
+#### Update the configuration of the VisionSample module to use your custom model
+
+- Login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a> and go to the IoT Hub resource you created earlier.
+- Click the `IoT Edge` tab, then click on IoT edge  device named `visionkit`.
+- Click on the `AIVisionDevKitGetStartedModule`  name, then click `Module Identity Twin`.
+- Update the three desired properties (model, label, vam config) with the URLs you saved earlier, then click `Save`.
 
 After a few minutes, your device should now be running your custom model!
 
 ### Test your new model
-- Put your hard hat on and smile at the camera !
-- Verify that the camera picks it up and correctly classify you as wearing the hard hat
+
+- Put your hard hat on and smile at the camera!
+- Verify the camera correctly classifies you as wearing a hard hat.
 
 ## Going further
-As a next step, you could re-use the same training images but build an object detection model instead of an image classifier. For that, please use this <a href="https://iris-demo1.azurewebsites.net/projects" target="blank">environment of custom vision</a> and use its labeling tool.
+As a next step, you could re-use the same training images but build an object detection model instead of an image classifier. To do this, please go to this <a href="https://iris-demo1.azurewebsites.net/projects" target="blank">demo environment of the Azure Custom Vision service</a> and use the labeling tool.
 
-To learn more about this AI Dev Kit, visit <a href="https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/" target="blank">https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/</a> 
-
+To learn more about the Vision AI DevKit, visit <a href="https://visionaidevkit.com/" target="blank">https://visionaidevkit.com</a> 
 
 ## Clean up
 Before leaving, please:
-
 
 Thank you!
