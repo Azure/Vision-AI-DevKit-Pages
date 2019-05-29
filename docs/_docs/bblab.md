@@ -12,7 +12,7 @@ last_modified_at: 2019-05-29
 
 ## What you will do
 
-- Set up a Vision AI DevKit camera and needed Azure services
+- Set up a Vision AI DevKit camera and needed Azure services 
 - Train a model using [Azure Custom Vision service](https://customvision.ai){:target="_blank"}, then deploy the model to the Vision AI DevKit
 
 ## Pre-requisites
