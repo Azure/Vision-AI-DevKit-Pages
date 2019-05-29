@@ -1,0 +1,55 @@
+{% assign navigation = site.data.navigation[include.nav] %}
+
+<nav class="nav__list">
+  {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
+  <ul class="nav__items">
+    {% for nav in navigation %}
+      {% assign is_expanded = false %}
+      {% if nav.children != null %}
+        {% for child in nav.children %}
+          {% if child.url == page.url and is_expanded == false %}
+            {% assign is_expanded = true %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      <li class="tree-item{% if is_expanded == true %} is-expanded{% endif %}">
+        {% if nav.url %}
+          {% comment %} internal/external URL check {% endcomment %}
+          {% if nav.url contains "://" %}
+            {% assign nav_url = nav.url %}
+          {% else %}
+            {% assign nav_url = nav.url | relative_url %}
+          {% endif %}
+
+          <span class="fas fa-angle-right tree-expander-indicator"></span><span class="nav__sub-title"><a href="{{ nav_url }}">{{ nav.title }}</a></span>
+        {% else %}
+          <span class="nav__sub-title"><span class="fas fa-angle-right tree-expander-indicator"></span>{{ nav.title }}</span>
+        {% endif %}
+
+        {% if nav.children != null %}
+        <ul>
+          {% for child in nav.children %}
+            {% comment %} internal/external URL check {% endcomment %}
+            {% if child.url contains "://" %}
+              {% assign child_url = child.url %}
+            {% else %}
+              {% assign child_url = child.url | relative_url %}
+            {% endif %}
+
+            {% comment %} set "active" class on current page {% endcomment %}
+            {% if child.url == page.url %}
+              {% assign active = "active" %}
+            {% else %}
+              {% assign active = "" %}
+            {% endif %}
+
+            <li><a href="{{ child_url }}" class="{{ active }}">{{ child.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -163,3 +163,8 @@
 
     return init(function () { });
 }));
+
+$('.tree-expander-indicator').click(function() {
+    //$('ul', $(this).parent().parent()).eq(0).toggle();
+    $(this).parent().parent().toggleClass("is-expanded");
+});
