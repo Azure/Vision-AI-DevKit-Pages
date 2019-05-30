@@ -12,33 +12,27 @@ last_modified_at: 2019-04-29
 
 ## What you will do
 
-- Build a vision AI model for detecting the state (Green/Yellow/Red) of a simulated analog temperature guage using the Azure Custom Vision service.
-- Deploy the vision AI module to the Vision AI DevKit camera with Azure IoT Edge. 
+- Build a vision AI model for detecting the state (Green/Yellow/Red) of a simulated analog temperature gauge using the Azure Custom Vision service.
+- Deploy the vision AI module to the Vision AI DevKit camera using Azure IoT Edge.
 
 ## What you will need
 
 - Active Azure subscription (Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F.){:target="_blank"})
 - Configured Vision AI DevKit camera [(Instructions)]({{ '/docs/Get_Started/' |relative_url }}){:target="_blank"}
 - Monitor supporting HDMI input and an HDMI cable (do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"}
-- Azure Command-Line Interface (CLI) installation [(Instructions)]({{ '/docs/Get_Started/#install-azure-command-line-interface-cli-tools' | relative_url }}){:target="_blank"}
 
 ## Create a vision AI model with Azure Custom Vision service
 
 In this tutorial, you will build a vision AI model to detect when an analog temperature gauge is getting into the warning or danger zone. We will use this website [Simulated Analog Guage](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html){:target="_blank"} to simulate our analog temperature gauge and will use the [Azure Custom Vision](https://www.customvision.ai/){:target="_blank"} service to build the model.
 
-Note: Each of the command lines below should be executed in a command prompt dialog opened on your computer. The Azure CLI extension listed in `What you will need` should be installed before starting.
-
 ### Setup a new Azure Custom Vision project
-
-- Create Custom Vision training and prediction Azure resources.
-
-    ```cmd
-    az cognitiveservices account create -n myCustomVision -g AiDevKitResources --kind CustomVision --sku F0 -l westus2 --yes
-    ```
 
 - Login to the Azure Custom Vision Service at [https://www.customvision.ai](https://www.customvision.ai){:target="_blank"}.
 
 - Create a new project, using these recommended settings:
+
+  - Training and prediction resources
+    - SKU - F0
 
   - Name - `Simulated Temperature Gauge`
     - Project Type - [Classification]
@@ -55,38 +49,34 @@ Note: Each of the command lines below should be executed in a command prompt dia
 
 ### Train and export your custom model
 
-To train your model with your training data, go to your Custom Vision project and click on `Train`.
-
-To export the model, select the`Performances` tab and then click the `Export` button. Choose the `Vision AI DevKit` option to download your new custom model, then uncompress them to a folder on your system.
+- Go to your Custom Vision project and click on `Train`.
+- Select the `Performances` tab and then click the `Export` button.
+- Choose the `Vision AI DevKit` option to download your new custom model, then uncompress the files to a folder on your system.
 
 ## Deploy your custom model to your device
 
-To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the `AI Vision Dev Kit Get Started Module (preview)`, (used in the Quick Start) to use the model you just trained. We will place the mdoel files in a cloud blob store. A public OneDrive link would work as well.
+To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the `AI Vision Dev Kit Get Started Module (preview)`, (used in the Quick Start) to use the model you just trained. We will place the model files in a cloud blob store. A public OneDrive link would work as well.
 
 ### Upload new model files to Azure Blob Store
 
-- Create a storage account:
+- Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and create a new storage resource.
+  - Use a unique name (less than 24 characters in length, using all lower case letters)
+  - SKU = Standard_LRS
+  - Kind = Storage V2
 
-    ```cmd
-    az storage account create --name {storageaccountname} --resource-group AiDevKitResources --location westus --sku Standard_LRS --kind StorageV2
-    ```
-
-    Note: Replace {storageaccountname} in the command-line with a unique name. The name can be no more than 24 characters long and must be in lower-case letters.
-
-- Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your new storage resource.
 - From the `overview` tab, click on `Blobs` service.
 - Click `Add a new container`, using a name such as `model001`, selecting `Container (anonymous read access for containers and blobs)` for the `Public access level`.
 
 - Click on the container you created, then click `Upload`.
 - Select the three files downloaded from the Custom Vision service and click `Upload`.
-- Copy the three URLs for each of these files for use later.
+- Copy the three URLs for each of these files for later use.
 
 ### Modify the configuration of the `Get Started` module
 
 - Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your ioT Hub resource.
 - Click the `IoT Edge` tab and then click on your device named `myAiDevKitDevice`.
 - Click on the `AIVisionDevkitGetStartedModule` module name and click on `Module Identity Twin`.
-- Update the properties `ModelUrl`, `LabelUrl` and `ConfigURL` to the URLs you just recieved and click `Save`.
+- Update the properties `ModelUrl`, `LabelUrl` and `ConfigURL` to the URLs you just received and click `Save`.
 
 ```terminal
 {
@@ -105,7 +95,7 @@ After a few minutes, your device should be running your custom model.
 ### Test your new model
 
 - Go to [Simulated Analog Gauge](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html){:target="_blank"} using your computer browser.
-- Point the DevKit camera at the guage on your montitor and verify the camera sees the simulated gauge and correctly classifies the gauge's output as green / yellow / red by viewing the output on your DevKit's connected monitor or by using a video player supporting an RTSP source. [(View RTSP Stream)]({{ '/docs/RTSP_stream/' | relative_url }})
+- Point the DevKit camera at the gauge on your monitor and verify the camera sees the simulated gauge and correctly classifies the gauge's output as green / yellow / red by viewing the output on your DevKit's connected monitor or by using a video player supporting an RTSP source. [(View RTSP Stream)]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"}
 
 ## Clean up
 
