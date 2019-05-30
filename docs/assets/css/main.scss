@@ -194,19 +194,37 @@ article{
 
 .nav__list {
     .tree-item{
-        ul{
-            display: none;
+        &:not(.has-children){
+            .tree-expander-indicator:first-of-type{
+                visibility: hidden;
+            }
         }
 
         &.is-expanded{
-            .tree-expander-indicator{
+            .tree-expander-indicator:first-of-type{
                 -webkit-transform: rotate(90deg);
                 transform: rotate(90deg);
             }
 
-            ul{
+            >ul{
                 display: inherit;
             }
         }
+
+        &:not(.is-expanded){
+            .tree-expander-indicator:first-of-type{
+                -webkit-transform: none;
+                transform: none;
+            }
+            
+            >ul{
+                display: none;
+            }
+        }
+
+        .tree-item{
+            margin-left: 5px;
+        }
+
     }
 }
