@@ -19,19 +19,20 @@ Azure Stream Analytics provides a richly structured query syntax for data analys
 
 To do that, we will build and deploy an ASA module at the edge.
 
-The type of telemetry data sent by Custom Vision models output a different format than in the above tutorial. So we will need to adjust the ASA query to account for that. Here is an example of an ASA query taking inputs from Custom Vision models and smoothing out results before raising an alert when a tag is consistently found after 1 full second: **ASA query code to be provided by ASA team**
+The telemetry data sent by Custom Vision models use a different format than in the above tutorial. So we will need to adjust the ASA query to account for that. Here is an example of an ASA query taking inputs from Custom Vision models and smoothing out results before raising an alert when a tag is consistently found after 1 full second: **ASA query code to be provided by ASA team**
 
 ## What you will do
 
-* Create an Azure Stream Analytics job to process data on the edge.
-* Connect the new Azure Stream Analytics job with other IoT Edge modules.
-* Deploy the Azure Stream Analytics job to an IoT Edge device from the Azure portal.
+* Create an Azure Stream Analytics job to process data from the Vision AI DevKit camera
+* Connect the Azure Stream Analytics job with other IoT Edge modules
+* Deploy the Azure Stream Analytics job to your Vision AI DevKit camera from the Azure portal
 
   ![Diagram - Tutorial architecture, stage and deploy ASA job]({{ '/assets/images/asa-architecture.png' | relative_url }})
 
 ## What you will need
 
-* Configured Vision AI DevKit
+* A valid Azure subscription ([Create an account for free.](https://azure.microsoft.com/free/))
+* Vision AI DevKit camera configured with the VisionSample model
 * Configured Azure IoT Hub
 
 ## Create an Azure Stream Analytics (ASA) job
@@ -75,7 +76,7 @@ When you create an Azure Stream Analytics job to run on an IoT Edge device, it n
 
 Once your Stream Analytics job is created in the Azure portal, you can configure it with an input, an output, and a query to run on the data that passes through.
 
-Using the three elements of input, output, and query, this section creates a job that receives temperature data from the IoT Edge device. It analyzes that data in a rolling 30-second window. If the average temperature in that window goes over 70 degrees, then an alert is sent to the IoT Edge device. You'll specify exactly where the data comes from and goes in the next section when you deploy the job.  
+Using the three elements of input, output, and query, this section creates a job that receives person detection notifications from the Vision AI DevKit camera. It analyzes that data in a rolling 15-second window. If a person is detected for the first time that window, an alert is sent. You'll specify exactly where the data comes from and goes in the next section when you deploy the job.  
 
 1. Navigate to your Stream Analytics job in the Azure portal.
 
@@ -85,7 +86,7 @@ Using the three elements of input, output, and query, this section creates a job
 
 1. Choose **Edge Hub** from the drop-down list.
 
-1. In the **New input** pane, enter **temperature** as the input alias.
+1. In the **New input** pane, enter **personDetection** as the input alias.
 
 1. Keep the default values for the other fields, and select **Save**.
 
@@ -101,24 +102,27 @@ Using the three elements of input, output, and query, this section creates a job
 
 1. Under **Job Topology**, select **Query**.
 
-1. Replace the default text with the following query. The SQL code sends a reset command to the alert output if the average machine temperature in a 30-second window reaches 70 degrees. The reset command has been pre-programmed into the sensor as an action that can be taken.
+1. Replace the default text with the following query. The SQL code sends an alert if a person is detected for the first time in a 15-second window.
 
     ```sql
-    SELECT  
-        'reset' AS command
-    INTO
-       alert
-    FROM
-       temperature TIMESTAMP BY timeCreated
-    GROUP BY TumblingWindow(second,30)
-    HAVING Avg(machine.temperature) > 70
+   -- PERSON DETECTION: Define threshold for detection
+   WITH personDetection AS(
+      SELECT count(*) as countPerson
+      FROM input
+      GROUP BY TUMBLINGWINDOW(second,0.5)
+      HAVING label='person' and confidence>50
+   )
+   -- Send alert only if it's the first time in 15s
+   SELECT 'alert' FROM personDetection
+   WHERE countPerson>10
+   AND  ISFIRST(second, 15) OVER (WHEN countPerson>10)=1
     ```
 
 1. Select **Save**.
 
 ### Configure IoT Edge settings
 
-To prepare your Stream Analytics job to be deployed on an IoT Edge device, you need to associate the job with a container in a storage account. When you go to deploy your job, the job definition is exported to the storage container.
+To prepare your Stream Analytics job to be deployed to the Vision AI DevKit camera, you need to associate the job with a container in a storage account. When you go to deploy your job, the job definition is exported to the storage container.
 
 1. Under **Configure**, select **Storage account settings**.
 
@@ -132,22 +136,15 @@ To prepare your Stream Analytics job to be deployed on an IoT Edge device, you n
 
 ## Deploy the job
 
-You are now ready to deploy the Azure Stream Analytics job on your IoT Edge device.
+You are now ready to deploy the Azure Stream Analytics job on your Vision AI DevKit camera.
 
-In this section, you use the **Set Modules** wizard in the Azure portal to create a *deployment manifest*. A deployment manifest is a JSON file that describes all the modules that will be deployed to a device, the container registries that store the module images, how the modules should be managed, and how the modules can communicate with each other. Your IoT Edge device retrieves its deployment manifest from IoT Hub, then uses the information in it to deploy and configure all of its assigned modules.
+In this section, you use the **Set Modules** wizard in the Azure portal to create a *deployment manifest*. A deployment manifest is a JSON file that describes all the modules that will be deployed to a device, the container registries that store the module images, how the modules should be managed, and how the modules can communicate with each other. Your Vision AI DevKit camera retrieves its deployment manifest from IoT Hub, then uses the information in it to deploy and configure all of its assigned modules.
 
-For this tutorial, you deploy two modules. The first is **tempSensor**, which is a module that simulates a temperature and humidity sensor. The second is your Stream Analytics job. The sensor module provides the stream of data that your job query will analyze.
+For this tutorial, you deploy one module, which is your Stream Analytics job. The sensor module provides the stream of data that your job query will analyze. Your Vision AI DevKit camera should already have the VisionSample module deployed during the initial setup process.
 
-1. In the Azure portal, in your IoT hub, go to **IoT Edge**, and then open the details page for your IoT Edge device.
+1. In the Azure portal, in your IoT hub, go to **IoT Edge**, and then open the details page for your Vision AI DevKit camera.
 
 1. Select **Set modules**.  
-
-1. If you previously deployed the tempSensor module on this device, it might autopopulate. If it does not, add the module with the following steps:
-
-   1. Click **Add** and select **IoT Edge Module**.
-   1. For the name, type **tempSensor**.
-   1. For the image URI, enter **mcr.microsoft.com/azureiotedge-simulated-temperature-sensor:1.0**.
-   1. Leave the other settings unchanged and select **Save**.
 
 1. Add your Azure Stream Analytics Edge job with the following steps:
 
@@ -178,7 +175,7 @@ For this tutorial, you deploy two modules. The first is **tempSensor**, which is
     }
     ```
 
-   The routes that you declare here define the flow of data through the IoT Edge device. The telemetry data from tempSensor are sent to IoT Hub and to the **temperature** input that was configured in the Stream Analytics job. The **alert** output messages are sent to IoT Hub and to the tempSensor module to trigger the reset command.
+   The routes that you declare here define the flow of data through the IoT Edge device. The telemetry data from personDetection is sent to the IoT Hub and to the **personDetection** input that was configured in the Stream Analytics job. The **alert** output messages are sent to IoT Hub and to the personDection module to trigger the reset command.
 
 1. Select **Next**.
 

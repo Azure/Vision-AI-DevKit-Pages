@@ -29,6 +29,8 @@ docs:
         url: /docs/Tutorial-HOL_Using_the_VisionSample/
 #      - title: "- Build and deploy a model with CustomVision.AI"
 #        url: /docs/Create_Train_Vision_ML_Project/
+      - title: "Create object detection alerts using Azure Stream Analytics (ASA)"
+        url: /docs/Tutorial-HOL_Using_ASA_for_alerts/
 
   - title: How to - Deploy
     children:
