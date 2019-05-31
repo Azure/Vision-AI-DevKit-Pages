@@ -1,5 +1,5 @@
 ---
-title: "Hands on Lab - Using Azure Stream Analytics (ASA) to create alerts"
+title: "Hands on Lab - Using Azure Stream Analytics (ASA) to create alerts - DRAFT"
 permalink: /docs/Tutorial-HOL_Using_ASA_for_alerts/
 excerpt: "How to use ASA and the Vision AI DevKit to create alerts."
 variable:

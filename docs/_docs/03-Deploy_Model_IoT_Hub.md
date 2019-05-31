@@ -44,37 +44,15 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
 
     ```terminal
       Name - VisionSample
-      Image URI - mcr.microsoft.com/aivision/visionsamplemodule:1.0.4_SSD_linklocal-arm32v7
-      Container Create Options -
-          {
-            "HostConfig": {
-              "Binds": [
-                "/data/misc/camera:/app/vam_model_folder"
-              ],
-              "NetworkMode": "host"
-            },
-            "NetworkingConfig": {
-              "EndpointsConfig": {
-                "host": {}
-              }
-            }
-          }
-      Restart Policy - Always
-      Desired Status - running
+      Image URI - mcr.microsoft.com/aivision/visionsamplemodule:latest
+     
     ```
 
       For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties){:target="_blank"}. For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties){:target="_blank"}.
 
 4. Select **Save**
 5. Select **Configure advanced Edge Runtime settings**
-6. Add the following line to the existing **Create Options** section
-
-    ```cmd
-    "User": "root",
-    ```
-
- ![Create Options addition]({{ '/assets/images/Create_Options_Addition.png' | relative_url }})
-7. Select **Save**, then select **Next**
+6. Select **Save**, then select **Next**
 
 ### Specify routes
 
