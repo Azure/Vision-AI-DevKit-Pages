@@ -43,7 +43,7 @@ In this section, you create an Azure Stream Analytics job to take data from your
 
 When you create an Azure Stream Analytics job to run on an IoT Edge device, it needs to be stored in a way that can be called from the device. You can use an existing Azure storage account, or create a new one now.
 
-1. In the Azure portal, go to **Create a resource** > **Internet of Things** > **Stream Analytics Job**..
+1. In the Azure portal, go to **Create a resource** > **Storage** > **Storage Account**..
 
 2. Provide the following values to create your storage account:
 
