@@ -45,7 +45,7 @@ docs:
     children:
       - title: "Configure the DevKit"
         url: /docs/Run_OOBE/
-      - title: "Use USB-C cable to connect to teh device"
+      - title: "Use USB-C cable to connect to the device"
         url: /docs/Cable/    
       - title: "Use SSH to connect to the device"
         url: /docs/SSH/      
