@@ -74,6 +74,8 @@ docs:
 
   - title: Tips
     children:
+      - title: "Use SSH to connect to the device"
+        url: /docs/SSH/      
       - title: "Review logs"
         url: /docs/Review_logs/
       - title: "Docker container status"
