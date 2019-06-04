@@ -22,7 +22,7 @@ VAIDK_More:
       * Experienced with vision ML? Use [Jupyter notebooks](https://jupyter.org/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) to create and train custom vision ML models.
 
       # Deploy fast
-      [Azure IoT Edge](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Deploy_Model_IoT_Hub/){:target="_blank"} can push your containerized vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        
+      Azure IoT Edge can push your containerized vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        
 
   - title: "Prove your concept"
     excerpt: |

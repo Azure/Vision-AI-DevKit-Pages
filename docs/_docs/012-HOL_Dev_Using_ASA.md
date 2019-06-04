@@ -105,19 +105,17 @@ Using the three elements of input, output, and query, this section creates a job
 1. Replace the default text with the following query. The SQL code sends an alert if a person is detected for the first time in a 15-second window.
 
     ```sql
-   -- PERSON DETECTION: Define threshold for detection
-   WITH personDetection AS(
-      SELECT count(*) as countPerson
-      FROM input
-      GROUP BY TUMBLINGWINDOW(second,0.5)
-      HAVING label='person' and confidence>50
-   )
-   -- Send alert only if it's the first time in 15s
-   SELECT 'alert' FROM personDetection
-   WHERE countPerson>10
-   AND  ISFIRST(second, 15) OVER (WHEN countPerson>10)=1
-    ```
-
+  -- PERSON DETECTION: Define threshold for detection
+  WITH personDetection AS(
+  SELECT label,confidence,count(*) as countPerson
+  FROM input
+  GROUP BY TUMBLINGWINDOW(millisecond,500),label,confidence
+  HAVING label='person' and confidence>50)
+  -- Send alert only if it's the first time in 15s
+  SELECT 'alert' as alert FROM personDetection
+  WHERE countPerson>10
+  AND  ISFIRST(second, 15) OVER (WHEN countPerson>10)=1
+  
 1. Select **Save**.
 
 ### Configure IoT Edge settings
