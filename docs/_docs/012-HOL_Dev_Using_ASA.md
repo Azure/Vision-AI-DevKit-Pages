@@ -105,16 +105,17 @@ Using the three elements of input, output, and query, this section creates a job
 1. Replace the default text with the following query. The SQL code sends an alert if a person is detected for the first time in a 15-second window.
 
     ```sql
-  -- PERSON DETECTION: Define threshold for detection
-  WITH personDetection AS(
-  SELECT label,confidence,count(*) as countPerson
-  FROM input
-  GROUP BY TUMBLINGWINDOW(millisecond,500),label,confidence
-  HAVING label='person' and confidence>50)
-  -- Send alert only if it's the first time in 15s
-  SELECT 'alert' as alert FROM personDetection
-  WHERE countPerson>10
-  AND  ISFIRST(second, 15) OVER (WHEN countPerson>10)=1
+   WITH step1 AS(
+   SELECT label,confidence,count(*) as countPerson
+   FROM personDetection
+   GROUP BY TUMBLINGWINDOW(millisecond,500),label,confidence
+   HAVING label='person' and confidence>50
+   )
+   -- Send alert only if it's the first time in 15s
+   SELECT 'alert' as alert INTO alert FROM step1
+   WHERE countPerson>10
+   AND  ISFIRST(second, 15) OVER (WHEN countPerson>10)=1
+   ```
   
 1. Select **Save**.
 
@@ -164,13 +165,11 @@ For this tutorial, you deploy one module, which is your Stream Analytics job. Th
 
     ```json
     {
-        "routes": {
-            "telemetryToCloud": "FROM /messages/modules/tempSensor/* INTO $upstream",
-            "alertsToCloud": "FROM /messages/modules/{moduleName}/* INTO $upstream",
-            "alertsToReset": "FROM /messages/modules/{moduleName}/* INTO BrokeredEndpoint(\"/modules/tempSensor/inputs/control\")",
-            "telemetryToAsa": "FROM /messages/modules/tempSensor/* INTO BrokeredEndpoint(\"/modules/{moduleName}/inputs/temperature\")"
-        }
-    }
+    "routes": {
+    "alertsToReset": "FROM /messages/modules/{your_vision_AI_module_name}/* INTO BrokeredEndpoint(\"/modules/{your_ASA_job_name}/inputs/personDetection\")",
+    "route": "FROM /messages/modules/jstream/* INTO $upstream"
+  }
+}
     ```
 
    The routes that you declare here define the flow of data through the IoT Edge device. The telemetry data from personDetection is sent to the IoT Hub and to the **personDetection** input that was configured in the Stream Analytics job. The **alert** output messages are sent to IoT Hub and to the personDection module to trigger the reset command.
