@@ -19,7 +19,7 @@ last_modified_at: 2019-03-15
 
 * Vision AI Dev Kit hardware
 * USB-C cable
-* * ADB command line utility and Fastboot tool. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
+  * ADB command line utility and Fastboot tool. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 
 ## Verify hardware connection
 
