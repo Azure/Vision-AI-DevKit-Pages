@@ -116,7 +116,7 @@ Using the three elements of input, output, and query, this section creates a job
    WHERE countPerson>10
    AND  ISFIRST(second, 15) OVER (WHEN countPerson>10)=1
    ```
-  
+   
 1. Select **Save**.
 
 ### Configure IoT Edge settings
