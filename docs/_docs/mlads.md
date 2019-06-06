@@ -12,13 +12,12 @@ last_modified_at: 2019-06-06
 
 ## Welcome to MLADS - train you model for Vision AI Dev Kit
 
-- In this lab you'll setup a Vision AI Dev Kit
+- Setup a Vision AI Dev Kit
 - Train a model using Customvision.ai and deploy the model to the device
 - Train a model using Azure Notebooks and Azure Machine Learning service
 
 ## Pre-requisites
 
-- Vision AI DevKit camera
 - Active Azure subscription
 - Azure Machine Learning Workspace
 
@@ -92,7 +91,7 @@ We'll start by creating a new storage account and then upload your model to it.
 - Login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a> and go to the IoT Hub resource you created earlier.
 - Click the `IoT Edge` tab, then click on IoT edge  device named `visionkit`.
 - Click on the `AIVisionDevKitGetStartedModule`  name, then click `Module Identity Twin`.
-- Update the zip file with the URL you saved earlier, then click `Save`.
+- Update the zip file with the URL you saved earlier to *"ModelZipUrl": ""*, then click `Save`.
 
 After a few minutes, your device should now be running your custom model!
 
