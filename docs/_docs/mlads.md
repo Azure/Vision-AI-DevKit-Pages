@@ -32,11 +32,10 @@ last_modified_at: 2019-06-06
 
 ### Setup the camera
 
-1) Connect your laptop to the camera allocated to you
-- the camera has a fresh firmware and should be blinking three red lights. That means it's running it's own access point and you can connect to it with your laptop and setup the device
-2) If you have an existing IoT Hub and IoT Device defined access Azure portal and get a connection string for the IoT device.
-3) Once connected to the camera (unless done automatically) please open your browser and access [setupaicamera.ms](https://setupaicamera.ms){:target="_blank"}
-4) During the OOBE (Out-Of-Box Experience) Please connect the camera to *MSFTGUEST* Wifi. No password required.
+1. Connect your laptop to the camera allocated to you. The camera has a fresh firmware and should be blinking three red lights. That means it's running it's own access point and you can connect to it with your laptop and setup the device
+2. If you have an existing IoT Hub and IoT Device defined access Azure portal and get a connection string for the IoT device.
+3. Once connected to the camera (unless done automatically) please open your browser and access [setupaicamera.ms](https://setupaicamera.ms){:target="_blank"}
+4. During the OOBE (Out-Of-Box Experience) Please connect the camera to **MSFTGUEST** Wifi. No password required.
 
 Note: after the setup you will be able to stream the picture from the camera either to a browser or VLC / Open VC player. In order for that to work your laptop needs to be connected to the same network than the camera (MSFTGUEST) 
 
@@ -102,7 +101,7 @@ After a few minutes, your device should now be running your custom model!
 - Put your hard hat on and smile at the camera!
 - Verify the camera correctly classifies you as wearing a hard hat.
 
-## What you will do
+## Train and deploy a model using Azure Notebooks and Azure Machine Learning
 
 * Train a model using Azure Machine Learning and Azure Notebooks. Deploy the model to your Vision AI Dev Kit device
 
