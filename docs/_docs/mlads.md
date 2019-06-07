@@ -31,16 +31,16 @@ last_modified_at: 2019-06-06
 
 ### Setup the camera
 
-1. Connect your laptop to the camera allocated to you. The camera has a fresh firmware and should be blinking three red lights. That means it's running it's own access point and you can connect to it with your laptop and setup the device
+1. Connect your laptop to the camera allocated to you. The camera has a fresh firmware and should be blinking three red lights. That means it's running it's own access point and you can connect to it with your laptop and setup the device. You will find the access point name from the bottom of the camera. It will be in format of MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device’s Wi-Fi mac address, e.g. MSIOT_BD097D). **Note** there are 30 of these devices running the access point at the same time, finding the correct one can be challenging.
 2. If you have an existing IoT Hub and IoT Device defined access Azure portal and get a connection string for the IoT device.
 3. Once connected to the camera (unless done automatically) please open your browser and access [setupaicamera.ms](https://setupaicamera.ms){:target="_blank"}
 4. During the OOBE (Out-Of-Box Experience) Please connect the camera to **MSFTGUEST** Wifi. No password required.
 
-Note: after the setup you will be able to stream the picture from the camera either to a browser or VLC / Open VC player. In order for that to work your laptop needs to be connected to the same network than the camera (MSFTGUEST) 
+**Note:** after the setup you will be able to stream the picture from the camera either to a browser or VLC / Open VC player. In order for that to work your laptop needs to be connected to the same network than the camera (MSFTGUEST) 
 
 ### Train an example model using CustomVision.ai
 
-You will build a custom AI model to detect when someone is wearing an hard hat. (You should have a hard hat on your desk to use for model validation.) You will use the [Azure Custom Vision service](https://customvision.ai){:target="_blank"} to build the model.
+You will build a custom AI model to detect when someone is wearing a hard hat. You will use the [Azure Custom Vision service](https://customvision.ai){:target="_blank"} to build the model.
 
 ### Setup up a new Custom Vision project
 - Login to Azure Custom Vision Service at [https://customvision.ai](https://customvision.ai){:target="_blank"}.
@@ -64,7 +64,7 @@ Some training images have already been collected for you for the hard hat use ca
 
 To train your model using the uploaded training images, go to your Custom Vision project and click on `Train`.
 
-To export your model, select the `Performances` tab, then click the `Export` button. Choose the `Vision AI Dev Kit` option to download your model, then  uncompress the files to a local directory.
+To export your model, select the `Performances` tab, then click the `Export` button. Choose the `Vision AI Dev Kit` option to download your model.
 
 ### Deploy your custom model to your camera
 
@@ -97,12 +97,19 @@ After a few minutes, your device should now be running your custom model!
 
 ### Test your new model
 
-- Put your hard hat on and smile at the camera!
+- Put on a hard hat on and smile at the camera!
 - Verify the camera correctly classifies you as wearing a hard hat.
 
 ## Train and deploy a model using Azure Notebooks and Azure Machine Learning
 
-* Train a model using Azure Machine Learning and Azure Notebooks. Deploy the model to your Vision AI Dev Kit device
+* Train a model using Azure Machine Learning and Azure Notebooks.
+* In this notebook you will:
+  * Spin up a VM to your machine learning workspace
+  * Upload data to train the model
+  * Convert the model to a format that runs in Vision AI Dev Kit
+  * Create a container
+  * Create a new deployment.json that specifies the new module for the deployment
+  * Deploy the module to Vision AI Dev Kit
 
 ### Pre-requisites
 
@@ -111,14 +118,14 @@ After a few minutes, your device should now be running your custom model!
 
 ### Clone example GitHub
 
-* Log in to [Example GitHub](https://notebooks.azure.com/tedway/projects/vision-ai-dev-kit ){:target="_blank"} and clone it
+* Log in to an existing [Azure Notebook](https://notebooks.azure.com/tedway/projects/vision-ai-dev-kit ){:target="_blank"} and clone it
 * ![Clone GitHub]({{ '/assets/images/ANB_github_clone.PNG' | relative_url }})
 
 ### Prep your environment
 
 * Change the aml_config/config.json file to match the subscription details for your Azure ML Workspace
 * In case you want to use your own data go to the data folder and create a folder with your data, e.g. my_data. 
-  * In the my_data folder, copy your data.  Each folder name is the label of the images in that folder.  For example, the soda_cans folder looks like this:  
+  * In the my_data folder, copy your data. Each folder name is the label of the images in that folder.  For example, the soda_cans folder looks like this:  
     * soda_cans 
     * coke 
     * ice 
