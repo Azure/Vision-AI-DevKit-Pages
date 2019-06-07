@@ -1,48 +1,45 @@
 ---
-title: "MLADS 2019 - train your AI model for Vision AI Dev Kit"
+title: "MLADS 2019 - Train an AI model for the Vision AI DevKit"
 permalink: /docs/mlads/
-excerpt: "Bush bash lab instructions for running the OOBE and creating a customvision.ai model"
+excerpt: "MLADS lab: Setup the camera; Create a customvision.ai model"
 variable:
   - platform: windows
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-06-06
+last_modified_at: 2019-06-07
 ---
 
-## Welcome to MLADS - train you model for Vision AI Dev Kit
+## Welcome to MLADS - train an AI model for use with the Vision AI DevKit
 
-- Setup a Vision AI Dev Kit
-- Train a model using Customvision.ai and deploy the model to the device
-- Train a model using Azure Notebooks and Azure Machine Learning service
+### What you will do
 
-## Pre-requisites
+- Setup a Vision AI DevKit camera
+- Train a model using Customvision.ai and deploy the model to the camera
+- Train a model using Azure Notebooks and the Azure Machine Learning service
+- Create an Azure IoT Hub with an IoT Edge device for controlling network traffic between the camera and the cloud
+
+### What you will need
 
 - Active Azure subscription
 - Azure Machine Learning Workspace
 
-## Additional Azure resources
-- During this lab you will create:
-  - IoT Hub and Edge Device to control the network traffic between your device and cloud
-  - Cognitive services resources needed for customvision.ai
-  - Azure Storage for deploying your customvision.ai model to the camera using module twin update
-  
-  If you already have some or all of these resources you can use existing ones. Otherwise the resources will be created during the lab
+## Setup the Vision AI DevKit camera
 
-### Setup the camera
+1. The Vision AI DevKit camera you were provided should be displaying three blinking red LEDs on the front of the camera, indicating the camera is running in Wi-Fi APN mode.
+2. Connect your laptop to the camera's Wi-Fi APN. The APN for your device can be found on a sticker on the bottom of the camera. The name will be in the format 'MSIOT_xxxxxx' (xxxxxx is the last 6 characters of the device’s Wi-Fi mac address, e.g. MSIOT_BD097D). **Note** since there are 30 of these devices running in the lab, ensure you select the correct one.
+3. If you have an existing IoT Hub and IoT device for use in this lab, access the Azure portal and retrieve the  connection string for the configured IoT device. You will use this string during setup.
+4. Once connected to the camera, use your browser to open [setupaicamera.ms](https://setupaicamera.ms){:target="_blank"}
+5. During the setup process, connect the camera to **MSFTGUEST** Wifi. (No password is required).
 
-1. Connect your laptop to the camera allocated to you. The camera has a fresh firmware and should be blinking three red lights. That means it's running it's own access point and you can connect to it with your laptop and setup the device. You will find the access point name from the bottom of the camera. It will be in format of MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device’s Wi-Fi mac address, e.g. MSIOT_BD097D). **Note** there are 30 of these devices running the access point at the same time, finding the correct one can be challenging.
-2. If you have an existing IoT Hub and IoT Device defined access Azure portal and get a connection string for the IoT device.
-3. Once connected to the camera (unless done automatically) please open your browser and access [setupaicamera.ms](https://setupaicamera.ms){:target="_blank"}
-4. During the OOBE (Out-Of-Box Experience) Please connect the camera to **MSFTGUEST** Wifi. No password required.
+**Note:** After camera setup is complete, you can stream the live camera video output using a browser window or and application such as VLC / Open VC player. Your laptop will need to be connected to the same Wi-Fi network (MSFTGUEST) as the camera to display the video stream.
 
-**Note:** after the setup you will be able to stream the picture from the camera either to a browser or VLC / Open VC player. In order for that to work your laptop needs to be connected to the same network than the camera (MSFTGUEST) 
-
-### Train an example model using CustomVision.ai
+## Train an example model using CustomVision.ai
 
 You will build a custom AI model to detect when someone is wearing a hard hat. You will use the [Azure Custom Vision service](https://customvision.ai){:target="_blank"} to build the model.
 
 ### Setup up a new Custom Vision project
+
 - Login to Azure Custom Vision Service at [https://customvision.ai](https://customvision.ai){:target="_blank"}.
 
 - Create a new project, us\ing these recommended settings:
