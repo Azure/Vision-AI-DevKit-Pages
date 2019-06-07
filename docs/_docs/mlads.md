@@ -27,28 +27,28 @@ last_modified_at: 2019-06-07
 ## Setup the Vision AI DevKit camera
 
 1. The Vision AI DevKit camera you were provided should be displaying three blinking red LEDs on the front of the camera, indicating the camera is running in Wi-Fi APN mode.
-2. Connect your laptop to the camera's Wi-Fi APN. The APN for your device can be found on a sticker on the bottom of the camera. The name will be in the format 'MSIOT_xxxxxx' (xxxxxx is the last 6 characters of the device’s Wi-Fi mac address, e.g. MSIOT_BD097D). **Note** since there are 30 of these devices running in the lab, ensure you select the correct one.
+2. Connect your laptop to the camera's Wi-Fi APN. The APN for your device can be found on a sticker on the bottom of the camera. The name will be in the format 'MSIOT_xxxxxx' (xxxxxx is the last 6 characters of the device’s Wi-Fi mac address, e.g. MSIOT_BD097D). **Note:** since there are 30 of these devices running in the lab, ensure you select the correct one.
 3. If you have an existing IoT Hub and IoT device for use in this lab, access the Azure portal and retrieve the  connection string for the configured IoT device. You will use this string during setup.
 4. Once connected to the camera, use your browser to open [setupaicamera.ms](https://setupaicamera.ms){:target="_blank"}
 5. During the setup process, connect the camera to **MSFTGUEST** Wifi. (No password is required).
 
 **Note:** After camera setup is complete, you can stream the live camera video output using a browser window or and application such as VLC / Open VC player. Your laptop will need to be connected to the same Wi-Fi network (MSFTGUEST) as the camera to display the video stream.
 
-## Train an example model using CustomVision.ai
+## Train an AI model using CustomVision.ai
 
-You will build a custom AI model to detect when someone is wearing a hard hat. You will use the [Azure Custom Vision service](https://customvision.ai){:target="_blank"} to build the model.
+You will build a custom AI model to detect when someone is wearing a hard hat, using the [Azure Custom Vision service](https://customvision.ai){:target="_blank"}.
 
 ### Setup up a new Custom Vision project
 
-- Login to Azure Custom Vision Service at [https://customvision.ai](https://customvision.ai){:target="_blank"}.
+- Login to Azure Custom Vision service at [https://customvision.ai](https://customvision.ai){:target="_blank"}.
 
-- Create a new project, us\ing these recommended settings:
-    - Give it a name like `Simulated HardHat Detector`
-    - Project Type - [Classification]
-    - Use the existing resource group
-    - Classification Type - [Multiclass (Single tag per image)]
-    - Domain - [General(compact)] **NOTE: Ensure you do not select the `General` option**
-    - Export Capabilites - Vision AI Dev Kit
+- Create a new project, using these recommended settings:
+  - Give it a name like `Simulated HardHat Detector`
+  - Project Type - [Classification]
+  - Use the existing resource group
+  - Classification Type - [Multiclass (Single tag per image)]
+  - Domain - [General(compact)] **NOTE: Ensure you do not select the `General` option**
+  - Export Capabilites - Vision AI Dev Kit
 
 ### Upload and tag your training data
 Some training images have already been collected for you for the hard hat use case.
@@ -97,60 +97,59 @@ After a few minutes, your device should now be running your custom model!
 - Put on a hard hat on and smile at the camera!
 - Verify the camera correctly classifies you as wearing a hard hat.
 
-## Train and deploy a model using Azure Notebooks and Azure Machine Learning
+## Train and deploy an AI model using Azure Notebooks and Azure Machine Learning
 
-* Train a model using Azure Machine Learning and Azure Notebooks.
-* In this notebook you will:
-  * Spin up a VM to your machine learning workspace
-  * Upload data to train the model
-  * Convert the model to a format that runs in Vision AI Dev Kit
-  * Create a container
-  * Create a new deployment.json that specifies the new module for the deployment
-  * Deploy the module to Vision AI Dev Kit
+### What you will do
 
-### Pre-requisites
+- Spin up a VM to your machine learning workspace
+- Upload data to train the model
+- Convert the model to a format that runs in Vision AI Dev Kit
+- Create a container
+- Create a new deployment.json that specifies the new module for the deployment
+- Deploy the module to Vision AI Dev Kit
 
-* Vision AI DevKit camera
-* Azure Machine Learning workspace
+### What you will need
 
-### Clone example GitHub
+- Vision AI DevKit camera
+- Azure Machine Learning workspace
 
-* Log in to an existing [Azure Notebook](https://notebooks.azure.com/tedway/projects/vision-ai-dev-kit ){:target="_blank"} and clone it
-* ![Clone GitHub]({{ '/assets/images/ANB_github_clone.PNG' | relative_url }})
+### Clone the Azure notebook
 
-### Prep your environment
+- Login to this existing [Vision AI DevKit notebook](https://notebooks.azure.com/tedway/projects/vision-ai-dev-kit ){:target="_blank"} and clone it
+   ![Clone GitHub]({{ '/assets/images/ANB_github_clone.PNG' | relative_url }})
 
-* Change the aml_config/config.json file to match the subscription details for your Azure ML Workspace
-* In case you want to use your own data go to the data folder and create a folder with your data, e.g. my_data. 
-  * In the my_data folder, copy your data. Each folder name is the label of the images in that folder.  For example, the soda_cans folder looks like this:  
-    * soda_cans 
-    * coke 
-    * ice 
-    * pepsi 
+### Prepare your environment
 
-* IMPORTANT: You MUST upload more than 35 images per folder so there’s enough data for training. 
+- Change the aml_config/config.json file to match the subscription details for your Azure ML Workspace
+- In case you want to use your own data go to the data folder and create a folder with your data, e.g. my_data.
+  - In the my_data folder, copy your data. Each folder name is the label of the images in that folder.  For example, the soda_cans folder looks like this:  
+    - soda_cans
+    - coke
+    - ice
+    - pepsi
+
+- **IMPORTANT**: You MUST have 35 images or more per folder to have enough data for training.
 
 ### Run the notebook
 
-* Open the 02-mobilenet-transfer-learning-final.ipynb notebook 
+- Open the 02-mobilenet-transfer-learning-final.ipynb notebook 
 
-* Set the Kernel to Python 3.6
+- Set the Kernel to Python 3.6
 
 ![Set kernel]({{ '/assets/images/NVM_set_kernel.PNG' | relative_url }})
 
-* Run the notebook by running each cell individually
+- Run the notebook by running each cell individually
 
 ![Run notebook]({{ '/assets/images/ANB_run.PNG' | relative_url }})
 
-* In case you don't want to run a cell you can change it to markdown
+- In case you don't want to run a cell you can change it to markdown
 
 ![Markdown cell]({{ '/assets/images/ANB_markdown.PNG' | relative_url }})
 
-*Note* some cells contains two options, so please make sure that the option you don't use is set as markdown.
+*Note:* some cells contains two options, please make certain the option you don't use is set as markdown.
 
 ### Configure your IoT Hub details
 
-* Change the cell content to reflect your IoT Hub. Please note that you can use format:
-  * Iot_hub_name="youriothub"
+- Change the cell content to reflect your IoT Hub, using the format: `Iot_hub_name="youriothub"`
 
 ![IotHub Details]({{ '/assets/images/ANB_iothub.PNG' | relative_url }})
