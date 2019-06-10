@@ -67,7 +67,7 @@ To export your model, select the `Performances` tab, then click the `Export` but
 
 To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the VisionSample module to use this new model. We will use a cloud blob store to store the model, but any publically accessible file storage system will work.
 
-### Upload your trained model files
+### Upload your trained model zip file
 
 We'll start by creating a new storage account and then upload your model to it.
 

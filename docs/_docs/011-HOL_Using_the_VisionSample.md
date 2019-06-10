@@ -57,38 +57,28 @@ In this tutorial, you will build a vision AI model to detect when an analog temp
 
 To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the `AI Vision Dev Kit Get Started Module (preview)`, (used in the Quick Start) to use the model you just trained. We will place the model files in a cloud blob store. A public OneDrive link would work as well.
 
-### Upload new model files to Azure Blob Store
+### Upload your trained model zip file
 
-- Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and create a new storage resource.
-  - Use a unique name (less than 24 characters in length, using all lower case letters)
-  - SKU = Standard_LRS
-  - Kind = Storage V2
+We'll start by creating a new storage account and then upload your model to it.
 
-- From the `overview` tab, click on `Blobs` service.
-- Click `Add a new container`, using a name such as `model001`, selecting `Container (anonymous read access for containers and blobs)` for the `Public access level`.
+- Login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a>.
+- Search for `Storage` and select `Storage accounts`.
+- Use your existing Azure subscription and resource group.
+- Create a new storage account with a unique name (NOTE: upper case characters are not allowed).
+- Select the `West-US 2` region.
+- Click on `Review+Create` (other default options should be correct).
+- Wait until until provisioning is complete and navigate to your new storage account.
+- From the `overview` tab, click on `Blobs`.
+- Click `Add a new container`, give it a name like `temperaturegauge` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`.
+- Click on the container just created, then click  the `Upload` button and select the zip file you downloaded from the Azure Custom Vision service.
+- Copy the URL of the uploaded file for later use.
 
-- Click on the container you created, then click `Upload`.
-- Select the three files downloaded from the Custom Vision service and click `Upload`.
-- Copy the three URLs for each of these files for later use.
+### Update the configuration of the VisionSample module to use your custom model
 
-### Modify the configuration of the `Get Started` module
-
-- Login to the [Azure portal](http://portal.azure.com){:target="_blank"} and go to your ioT Hub resource.
-- Click the `IoT Edge` tab and then click on your device named `myAiDevKitDevice`.
-- Click on the `AIVisionDevkitGetStartedModule` module name and click on `Module Identity Twin`.
-- Update the properties `ModelUrl`, `LabelUrl` and `ConfigURL` to the URLs you just received and click `Save`.
-
-```terminal
-{
-    "properties.desired":{
-        "ModelUrl":"URL",
-        "LabelURL":"URL",
-        "ConfigUrl":"URL",
-        "FreqToSendMsg":12,
-        "ObjectOfInterest":"ALL"
-    }
-}
-```
+- Login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a> and go to the IoT Hub resource you created earlier.
+- Click the `IoT Edge` tab, then click on IoT edge  device named `visionkit`.
+- Click on the `AIVisionDevKitGetStartedModule`  name, then click `Module Identity Twin`.
+- Update the zip file with the URL you saved earlier to *"ModelZipUrl": ""*, then click `Save`.
 
 After a few minutes, your device should be running your custom model.
 
