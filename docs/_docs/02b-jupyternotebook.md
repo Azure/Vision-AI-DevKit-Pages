@@ -22,7 +22,7 @@ last_modified_at: 2019-06-03
 
 2) [Notebook VM]({{ '/docs/notebookvm/' | relative_url}}){:target="_blank"}
 
-3) Azure Notebooks]({{ '/docs/azurenotebook/' | relative_url}}){:target="_blank"} provides free online access to Jupyter notebooks running in the cloud on Microsoft Azure
+3) [Azure Notebooks]({{ '/docs/azurenotebook/' | relative_url}}){:target="_blank"} provides free online access to Jupyter notebooks running in the cloud on Microsoft Azure
 
 
 
