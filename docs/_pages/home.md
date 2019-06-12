@@ -19,7 +19,7 @@ VAIDK_More:
       [Get up and running in minutes](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with vision machine learning.
       # Build fast
       * New to Vision ML? Waiting for your DevKit? Start building a vision model, letting [Azure Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Create_Train_Vision_ML_Project/){:target="_blank"} do the heavy lifting.
-      * Experienced with vision ML? Use [Jupyter notebooks](https://jupyter.org/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) to create and train custom vision ML models.
+      * Experienced with vision ML? Use [Jupyter notebooks](https://azure.github.io/Vision-AI-DevKit-Pages/docs/jupyter/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) to create and train custom vision models using Azure Machine Learning (AML). AML services enables you to prepare data and train models. You can then convert the trained model to the custom DLC format and package into an IoT Edge module to deploy to the Vision AI Dev Kit.
 
       # Deploy fast
       Azure IoT Edge can push your containerized vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        

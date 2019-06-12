@@ -165,9 +165,10 @@ For this tutorial, you deploy one module, which is your Stream Analytics job. Th
 
     ```json
     {
-    "routes": {
-    "alertsToReset": "FROM /messages/modules/{your_vision_AI_module_name}/* INTO BrokeredEndpoint(\"/modules/{your_ASA_job_name}/inputs/personDetection\")",
-    "route": "FROM /messages/modules/jstream/* INTO $upstream"
+  "routes": {
+    "alertsToReset": "FROM /messages/modules/{your_vision_ai_module}/* INTO BrokeredEndpoint(\"/modules/{your_stream_analytics_job}/inputs/personDetection\")",
+    "route": "FROM /messages/modules/{your_stream_analytics_job}/* INTO $upstream",
+    "routeTwo": "FROM /messages/modules/{your_vision_ai_module}/* INTO $upstream"
   }
 }
     ```

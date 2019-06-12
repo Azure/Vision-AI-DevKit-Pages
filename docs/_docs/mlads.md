@@ -29,7 +29,7 @@ last_modified_at: 2019-06-07
 1. The Vision AI DevKit camera you were provided should be displaying three blinking red LEDs on the front of the camera, indicating the camera is running in Wi-Fi APN mode.
 2. Connect your laptop to the camera's Wi-Fi APN. The APN for your device can be found on a sticker on the bottom of the camera. The name will be in the format 'MSIOT_xxxxxx' (xxxxxx is the last 6 characters of the device’s Wi-Fi mac address, e.g. MSIOT_BD097D). **Note:** since there are 30 of these devices running in the lab, ensure you select the correct one.
 3. If you have an existing IoT Hub and IoT device for use in this lab, access the Azure portal and retrieve the  connection string for the configured IoT device. You will use this string during setup.
-4. Once connected to the camera, use your browser to open [setupaicamera.ms](https://setupaicamera.ms){:target="_blank"}
+4. Once connected to the camera, use your browser to open [setupaicamera.ms](https://setupaicamera.ms){:target="_blank"}. Follow the instructions on the screen and complete the whole OOBE flow. Connecting device to internet is not enough, it has to be associated with IoT Hub as well.
 5. During the setup process, connect the camera to **MSFTGUEST** Wifi. (No password is required).
 
 **Note:** After camera setup is complete, you can stream the live camera video output using a browser window or and application such as VLC / Open VC player. Your laptop will need to be connected to the same Wi-Fi network (MSFTGUEST) as the camera to display the video stream.
@@ -153,3 +153,5 @@ After a few minutes, your device should now be running your custom model!
 - Change the cell content to reflect your IoT Hub, using the format: `Iot_hub_name="youriothub"`
 
 ![IotHub Details]({{ '/assets/images/ANB_iothub.PNG' | relative_url }})
+
+-Complete the notebook by deploying the model to your IoT Hub and test it out!
