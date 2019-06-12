@@ -19,10 +19,14 @@ last_modified_at: 2019-06-04
 * Vision AI DevKit camera
 * Azure Machine Learning workspace
 
-### Clone example GitHub
-
+### Clone example GitHub and Get Started
+<!--
 * Log in to [Example GitHub](https://notebooks.azure.com/tedway/projects/vision-ai-dev-kit ){:target="_blank"} and clone it
 * ![Clone GitHub]({{ '/assets/images/ANB_github_clone.PNG' | relative_url }})
+-->
+* Clone or download the example GitHub contents (link in the top menu) 
+* Login to [Azure Notebooks](https://notebooks.azure.com/){:target="_blank"} and upload the contents to your Azure Notebook
+
 
 ### Prep your environment
 

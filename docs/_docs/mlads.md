@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-06-07
+last_modified_at: 2019-06-10
 ---
 
 ## Welcome to MLADS - train an AI model for use with the Vision AI DevKit

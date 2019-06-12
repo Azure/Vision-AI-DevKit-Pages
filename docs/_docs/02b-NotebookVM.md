@@ -28,6 +28,7 @@ last_modified_at: 2019-06-03
 
 ### Clone example notebooks from GitHub
 
+-	Add an access token to your GitHub account (if not exist yet). This is needed for being able to [clone a private GitHub](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line){:target="_blank"}. In this case the password when cloning a GitHub is your token.
 - Open the Notebook VM
 ![Create new Notebook VM]({{ '/assets/images/NVM_open_notebook.PNG' | relative_url }})
 - Open "Terminal"
