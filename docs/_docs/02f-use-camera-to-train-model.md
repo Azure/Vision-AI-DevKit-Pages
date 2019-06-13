@@ -17,13 +17,16 @@ last_modified_at: 2019-06-12
 ## What you will need
 
 - Cloned or downloaded version of [https://github.com/Microsoft/vision-ai-developer-kit](https://github.com/Microsoft/vision-ai-developer-kit){:target="_blank"}
-- Python installation (instructions instructing the usage with Anaconda prompt installed as a part of [VS Code setup instructions]({{ '/docs/SetUp_VS_Code/' | relative_url}}){:target="_blank"}
+- Python installation (instructions instructing the usage with Anaconda prompt installed as a part of [VS Code setup instructions]({{ '/docs/SetUp_VS_Code/' | relative_url}}){:target="_blank"})
 - Camera and your device running in same WiFi network?
 - IP address of your device. You can find it by using platform tools and typing in a command "adb shell ifconfig wlan0"
 
 ## Take pictures with the camera
 
-- Open Anaconda prompt or other cmd tool that allows you to run python scripts
+- Open command prompt that allows you to run python scripts. When using Windows command prompt add python to the path using a following command
+
+     set path=%path%;[path to your python folder]
+
 - Go to the directory in your device where you have the contents of vision-ai-developer-kit GitHub. 
 - Go to folder vision-ai-developer-kit-master\sample-solutions\VisionSampleToolset\IoTEdgeSolution\modules\VisionSampleModule\python_iotcc_sdk\sdk
 
