@@ -19,8 +19,6 @@ Azure Stream Analytics provides a richly structured query syntax for data analys
 
 To do that, we will build and deploy an ASA module at the edge.
 
-The telemetry data sent by Custom Vision models use a different format than in the above tutorial. So we will need to adjust the ASA query to account for that. Here is an example of an ASA query taking inputs from Custom Vision models and smoothing out results before raising an alert when a tag is consistently found after 1 full second: **ASA query code to be provided by ASA team**
-
 ## What you will do
 
 * Create an Azure Stream Analytics job to process data from the Vision AI DevKit camera
@@ -105,18 +103,21 @@ Using the three elements of input, output, and query, this section creates a job
 1. Replace the default text with the following query. The SQL code sends an alert if a person is detected for the first time in a 15-second window.
 
     ```sql
+   -- PERSON DETECTION: Define threshold for detection
    WITH step1 AS(
    SELECT label,confidence,count(*) as countPerson
    FROM personDetection
-   GROUP BY TUMBLINGWINDOW(millisecond,500),label,confidence
+   GROUP BY TUMBLINGWINDOW(second,30),label,confidence
    HAVING label='person' and confidence>50
    )
    -- Send alert only if it's the first time in 15s
-   SELECT 'alert' as alert INTO alert FROM step1
-   WHERE countPerson>10
-   AND  ISFIRST(second, 15) OVER (WHEN countPerson>10)=1
+   SELECT countPerson INTO alert FROM step1
+   WHERE countPerson>0
+   AND  ISFIRST(second, 15) OVER (WHEN countPerson>0)=1
    ```
    
+This query will create an alert everytime VisionSample recognizes a person during the period of 30 seconds. The alert will include a count of the times it identified a person during that time.
+
 1. Select **Save**.
 
 ### Configure IoT Edge settings
@@ -183,11 +184,9 @@ For this tutorial, you deploy one module, which is your Stream Analytics job. Th
 
     You should see the new Stream Analytics module running, along with the IoT Edge agent module and the IoT Edge hub.
 
-    ![tempSensor and ASA module reported by device]({{ '/assets/images/asa_module_output2.png' | relative_url }})
+ ## View data
 
-## View data
-
-Now you can go to your IoT Edge device to check out the interaction between the Azure Stream Analytics module and the tempSensor module.
+Now you can go to your IoT Edge device to check out the interaction between the Azure Stream Analytics module and AIVisionDevKitGetStartedModule module. You can run following commands either using platform tools (in Windows type *adb shell* first) or having logged in to the device using ssh.
 
 1. Check that all the modules are running in Docker:
 
@@ -204,9 +203,7 @@ Now you can go to your IoT Edge device to check out the interaction between the 
    iotedge logs -f {moduleName}  
    ```
 
-You should be able to watch the machine's temperature gradually rise until it reaches 70 degrees for 30 seconds. Then the Stream Analytics module triggers a reset, and the machine temperature drops back to 21.
-
-   ![Reset command output into module logs]({{ '/assets/images/asa_docker_log.png' | relative_url }})
+1. An additional option for checking the interaction between modules is to use [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/tag/2019-1-4){:target="_blank"}. It's currently only available for Windows. You'll need you IoT Edge device connection string to be able to poll your device.
 
 ## Clean up resources
 
@@ -283,6 +280,3 @@ Remove the container runtime.
    sudo apt-get remove --purge moby
    ```
 
-## Next steps
-
-In this tutorial, you configured an Azure Streaming Analytics job to analyze data from your IoT Edge device. You then loaded this Azure Stream Analytics module on your IoT Edge device to process and react to temperature increase locally, as well as sending the aggregated data stream to the cloud.
