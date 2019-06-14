@@ -57,15 +57,20 @@ Some training images have already been collected for you for the hard hat use ca
 - Uncompress the zip file to a local directory
 - Upload images to custom vision in batches, one batch per tag (images containing *HardHat* in the name, then *NoHardHat*), adding the appropriate tag during upload.
 
-### Train and export your custom model
+### Train your custom model
 
 To train your model using the uploaded training images, go to your Custom Vision project and click on `Train`.
 
-To export your model, select the `Performances` tab, then click the `Export` button. Choose the `Vision AI Dev Kit` option to download your model.
+To export your model, select the `Performances` tab, then click the `Export` button. Choose the `Vision AI Dev Kit` option to download your model. Instead of download press the right button of your mouse in order to see options. Select `Copy link`. It is a link that points to a zip file of your model.
+
+ ![Clone GitHub]({{ '/assets/images/cvai_link.PNG' | relative_url }})
+
+<!--
 
 ### Deploy your custom model to your camera
 
 To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the VisionSample module to use this new model. We will use a cloud blob store to store the model, but any publically accessible file storage system will work.
+
 
 ### Upload your trained model zip file
 
@@ -82,7 +87,7 @@ We'll start by creating a new storage account and then upload your model to it.
 - Click `Add a new container`, give it a name like `hardhatmodel` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`.
 - Click on the container just created, then click  the `Upload` button and select the zip file you downloaded from the Azure Custom Vision service.
 - Copy the URL of the uploaded file for later use.
-
+-->
 ### Update the configuration of the VisionSample module to use your custom model
 
 - Login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a> and go to the IoT Hub resource you created earlier.
