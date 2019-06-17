@@ -38,6 +38,8 @@ docs:
             url: /docs/notebookvm/
           - title: "Azure Notebooks"
             url: /docs/azurenotebook/
+      - title: "Use camera to take pictures"
+        url: /docs/train/
 
   - title: How to - Deploy
     children:
