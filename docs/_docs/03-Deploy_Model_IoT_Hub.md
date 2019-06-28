@@ -61,8 +61,13 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
         }
        }
   ```
+  
+4. Select **Save**
+5. Select **Configure advanced Edge Runtime settings**
+  - Under `Edge Agent`, use `Image -mcr.microsoft.com/azureiotedge-agent:1.0.7.1`
+6. Select **Save**, then select **Next**
 
-  * Optional: Deploy the Webstream module if you want to view the video output in a browser. To deploy the Webstream module, use the following values and replace the IP address with the IP address of your device:
+Optional: Deploy the Webstream module if you want to view the video output in a browser. To deploy the Webstream module, use the following values and replace the IP address with the IP address of your device:
 
   ```terminal
      Name – WebStreamModule
@@ -100,13 +105,8 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
         }
   ```
 
-  - For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties){:target="_blank"}.
-  - For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties){:target="_blank"}.
-
-4. Select **Save**
-5. Select **Configure advanced Edge Runtime settings**
-  - Under `Edge Agent`, use `Image -mcr.microsoft.com/azureiotedge-agent:1.0.7.1`
-6. Select **Save**, then select **Next**
+* For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties){:target="_blank"}.
+* For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties){:target="_blank"}.
 
 ### Specify routes
 
