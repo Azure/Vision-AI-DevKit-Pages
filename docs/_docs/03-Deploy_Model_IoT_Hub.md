@@ -42,25 +42,25 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
 2. Select the **IoT Edge Module**. ![Azure portal 'Add Modules']({{ '/assets/images/Add_Modules.png' | relative_url }})
 3. Provide a name for the module, then specify the container image. To deploy the pre-configured sample, use the following values:
 
-  ```terminal
-      Name - VisionSample
-      Image URI - mcr.microsoft.com/aivision/visionsamplemodule:latest
-      Container create options –
-      {
-        "HostConfig": {
-          "NetworkMode": "host",
-          "Binds": [
-            "/data/misc/camera:/app/vam_model_folder",
-            "/run/systemd:/run/systemd"
-            ]
-        },
-        "NetworkingConfig": {
-          "EndpointsConfig": {
-            "host": {}
+    ```terminal
+        Name - VisionSample
+        Image URI - mcr.microsoft.com/aivision/visionsamplemodule:latest
+        Container create options –
+        {
+          "HostConfig": {
+            "NetworkMode": "host",
+            "Binds": [
+              "/data/misc/camera:/app/vam_model_folder",
+              "/run/systemd:/run/systemd"
+              ]
+          },
+          "NetworkingConfig": {
+            "EndpointsConfig": {
+              "host": {}
+            }
           }
-        }
-       }
-  ```
+         }
+    ```
   
 4. Select **Save**
 5. Select **Configure advanced Edge Runtime settings**
