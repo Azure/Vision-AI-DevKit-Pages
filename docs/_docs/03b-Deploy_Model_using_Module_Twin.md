@@ -32,22 +32,20 @@ To deploy your custom model, we will first store your model in a publicly access
 * Add a new container, setting the `Public access level` to  `Container (anonymous read access for containers and blobs)`.
 
 * Click on the container you created, then click `Upload`.
-* Select the three files exported from the Custom Vision service and click 'Upload'.
-* Copy the three URLs for each of these files.
+* Select the zip files exported from the Custom Vision service and click 'Upload'.
+* Copy the URL for the uploaded zip file.
 
 ### Updating the configuration of the Get Started module to use your new custom model
 
 * Click *Dashboard* on the Azure portal side menu, then click on your  ioT Hub resource.
 * Click on `IoT Edge`, under *Automatic Device Management* and then on your camera device name.
 * Click on the IoT Edge Custom Module (such as `AIVisionDevkitGetStartedModule`) and click on `Module Identity Twin`.
-* Update the three properties (ModelUrl, LabelUrl, and ConfigUrl) with the URL you copied during the file upload earlier, then click `Save`.
+* Update the property `ModelZipUrl` with the URL to the zip file on your blob storage, then click `Save`.
 
 ```terminal
 {
     "properties.desired":{
-        "ModelUrl":"https://../MyModelFile.dlc",
-        "LabelURL":"https://../MyLabels.txt",
-        "ConfigUrl":"https://:../MyConfig.json",
+        "ModelZipUrl":"https://../MyModel.zip",
     }
 }
 ```

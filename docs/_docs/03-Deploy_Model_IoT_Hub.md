@@ -45,13 +45,65 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
     ```terminal
       Name - VisionSample
       Image URI - mcr.microsoft.com/aivision/visionsamplemodule:latest
-     
+      Container create options –
+      {
+        "HostConfig": {
+          "NetworkMode": "host",
+          "Binds": [
+            "/data/misc/camera:/app/vam_model_folder",
+            "/run/systemd:/run/systemd"
+            ]
+        },
+        "NetworkingConfig": {
+          "EndpointsConfig": {
+            "host": {}
+          }
+        }
+       }
     ```
+
+Optional: Deploy the Webstream module if you want to view the video output in a browser. To deploy the Webstream module, use the following values and replace the IP address with the IP address of your device:
+
+  ```terminal
+     Name – WebStreamModule
+     Image URI - mcr.microsoft.com/aivision/visionsamplemodule:webstream_0.0.13-arm32v7
+     Environment variables –
+        RTSP_IP <IP_address_of_camera>
+        RTSP_PORT 8900
+        RTSP_PATH live
+
+     Container create options –
+     {
+      "ExposedPorts": {
+      "3000/tcp": {},
+      "3002/tcp": {}
+     },
+      "HostConfig": {
+        "NetworkMode": "host",
+        "PortBindings": {
+        "3000/tcp": [
+          {
+            "HostPort": "3000"
+          }
+        ],
+        "3002/tcp": [
+          {
+            "HostPort": "3002"
+          }
+        ]
+      }
+      },
+        "NetworkingConfig": {
+          "EndpointsConfig": {
+            "host": {}
+          }
+        }
 
       For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties){:target="_blank"}. For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties){:target="_blank"}.
 
 4. Select **Save**
 5. Select **Configure advanced Edge Runtime settings**
+  - Under `Edge Agent`, use `Image -mcr.microsoft.com/azureiotedge-agent:1.0.7.1`
 6. Select **Save**, then select **Next**
 
 ### Specify routes
