@@ -2,7 +2,7 @@
 
 ### Connect your PC to the camera's Wi-Fi access point
 
-- Within 10 seconds of first power up, you should see three flashing RED LED lights. This indicates the device is in Wi-Fi access point mode. If your device LEDs are not flashing RED, long press the power button for more than 5 seconds to turn on the DevKit hardware access point.
+- Within 10 seconds of first power up, you should see three flashing RED LED lights. This indicates the device is in Wi-Fi access point mode. If your device LEDs are not flashing RED, long press the power button for 5 seconds to turn on the DevKit hardware access point.
 
 {% include_relative Device_LEDs.md %}
 
@@ -17,7 +17,7 @@
 
 1. Use your computer's web browser to visit [http://setupaicamera.ms](http://setupaicamera.ms){:target="_blank"}. If you do not see the below screen, verify your computer is connected to the Dev Kit hardware's access point.
 
-    ![Vision AI Developer Kit starting screen]({{ '/assets/images/visual-ai-getting-started-screen.png' | relative_url }})
+    ![Vision AI Developer Kit starting screen]({{ '/assets/images/vision-ai-getting-started-screen.png' | relative_url }})
 
 2. Tapping **Next** will open the SSH configuration screen, where you can create a new Wi-Fi access point passphrase for the camera, if desired. All settings can be left at their defaults.
 
@@ -46,7 +46,7 @@ Tapping **Next** starts the process of creating the necessary Azure resources, t
 
     ![Dialog box for inserting the unique device code into]({{ '/assets/images/Enter_Code.png' | relative_url }})
 
-3. You should reach the following screen when your code is accepted.
+3. You should reach the following screen when your code is accepted. (Press 'OK' to close the pop-up messsage, if seen.)
     ![Screen confirming connection to Azure, then allowing selection of your Azure account]({{ '/assets/images/Connected_to_Azure.png' | relative_url }})
 
     - Use the `Switch directory` link to choose the GUID of your Azure subscription.
@@ -58,4 +58,4 @@ Tapping **Next** starts the process of creating the necessary Azure resources, t
     - Click **Next** and you should see the following screen.
         ![Screen showing the camera downloading the Azure IoT Edge runtime]({{ '/assets/images/Downloading_Runtime.png' | relative_url }})
     - You will see the following screen showing your DevKit camera is ready to recognize objects.
-        ![Screen confirming camera is setup and providing the RTSP string for viewing camera output over the wire]({{ '/assets/images/Camers_Setup_Complete.png' | relative_url }})
+        ![Screen confirming camera is setup and providing the RTSP string for viewing camera output over the wire]({{ '/assets/images/Camera_Setup_Complete.png' | relative_url }})

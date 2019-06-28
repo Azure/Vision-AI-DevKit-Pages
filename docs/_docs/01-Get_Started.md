@@ -40,7 +40,7 @@ These steps will configure your DevKit camera for Wi-Fi and connect the the came
 
 ## View DevKit camera output
 
-You can view the DevKit camera output using a video player app supporting the RTSP protocol, such as VLC Player, to view the video output from your camera, or you can connect an HDMI montior to the HDMI port on the camera directly. Note: The monitor HDMI cable must not use adapters at either end to complete the connection.
+You can view the DevKit camera output with a web browser, using the URL given on the final device setup page. You can also connect an HDMI montior to the HDMI port on the camera directly or a video playback application (such as VLC Player) which support RTSP video. Note: The if using a cable, there should be no adapters at either end.
 
 For more information on using RTSP streaming, see the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/#connect-to-the-video-stream' | relative_url }}){:target="_blank"}.
 

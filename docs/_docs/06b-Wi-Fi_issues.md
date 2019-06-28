@@ -71,4 +71,4 @@ to display the access point configuration details. The output will be similar to
 
 ## Changing the configured Wi-Fi network
 
-To change the Wi-Fi network your DevKit hardware connects to, long press the power button for more than 5 seconds to turn on the DevKit hardware access point. Connect your PC to the Wi-Fi access point by running the [Configure the DevKit]({{ '/docs/Run_OOBE/' | relative_url }}) process again, using the new Wi-Fi network settings.
+To change the Wi-Fi network your DevKit hardware connects to, long press the power button for 5 seconds to turn on the DevKit hardware access point. Connect your PC to the Wi-Fi access point by running the [Configure the DevKit]({{ '/docs/Run_OOBE/' | relative_url }}) process again, using the new Wi-Fi network settings.

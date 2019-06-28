@@ -32,7 +32,8 @@ In this tutorial, you will build a vision AI model to detect when an analog temp
 - Create a new project, using these recommended settings:
 
   - Training and prediction resources
-    - SKU - F0
+    - Under 'resource group', click 'create new'
+    - SKU - F0 (or S0)
 
   - Name - `Simulated Temperature Gauge`
     - Project Type - [Classification]
@@ -97,5 +98,7 @@ az group delete --name AIDevKitResources-CustomVision
 ```
 
 ## Learn more
+
+For additional information on developing your image classification model, see [Getting started improving your classifier](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier)
 
 To learn more, return to [Vision AI DevKit - Get Started](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/).
