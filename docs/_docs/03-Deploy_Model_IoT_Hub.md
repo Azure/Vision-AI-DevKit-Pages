@@ -42,7 +42,7 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
 2. Select the **IoT Edge Module**. ![Azure portal 'Add Modules']({{ '/assets/images/Add_Modules.png' | relative_url }})
 3. Provide a name for the module, then specify the container image. To deploy the pre-configured sample, use the following values:
 
-    ```terminal
+```terminal
       Name - VisionSample
       Image URI - mcr.microsoft.com/aivision/visionsamplemodule:latest
       Container create options –
@@ -64,7 +64,7 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
 
 Optional: Deploy the Webstream module if you want to view the video output in a browser. To deploy the Webstream module, use the following values and replace the IP address with the IP address of your device:
 
-  ```terminal
+```terminal
      Name – WebStreamModule
      Image URI - mcr.microsoft.com/aivision/visionsamplemodule:webstream_0.0.13-arm32v7
      Environment variables –
@@ -98,8 +98,10 @@ Optional: Deploy the Webstream module if you want to view the video output in a 
             "host": {}
           }
         }
+```
 
-      For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties){:target="_blank"}. For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties){:target="_blank"}.
+- For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties){:target="_blank"}.
+- For more information about *Module Twin* see [Define or update desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-composition#define-or-update-desired-properties){:target="_blank"}.
 
 4. Select **Save**
 5. Select **Configure advanced Edge Runtime settings**
