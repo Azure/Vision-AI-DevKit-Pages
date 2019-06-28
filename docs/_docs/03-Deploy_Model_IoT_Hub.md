@@ -60,7 +60,7 @@ The Azure portal uses a wizard to walk you through creating the deployment manif
           }
         }
        }
-    ```
+```
 
 Optional: Deploy the Webstream module if you want to view the video output in a browser. To deploy the Webstream module, use the following values and replace the IP address with the IP address of your device:
 
