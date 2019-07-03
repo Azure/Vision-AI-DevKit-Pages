@@ -32,9 +32,11 @@ last_modified_at: 2019-03-15
 
     You should see output similar to this, if your computer and camera are connected properly:  
 
+        ```cmd
          C:\Tools>adb devices
          List of devices attached  
-         efb99xxx        device  
+         efb99xxx        device
+         ```  
 
     If you do not see the device, try rebooting the camera hardware using one of these methods:
 
@@ -60,26 +62,20 @@ The Vision AI Dev Kit hardware **must be charged for at least 10 minutes or have
     set path=%path%;<platform tools path>
     ```
 
-2. Download the latest firmware/image released by Altek *(website link TBD)* [*(Internal-only Microsoft link)*](https://microsoftapc.sharepoint.com/teams/Selfhost-VisionAIDevKit/Shared%20Documents/General/Altek%20FW%20Image/NextUnderTest)
+2. Download the latest firmware/image released by Altek - [Latest Firmware](https://store.altek.com.tw/qualcomm/downloads/Azure-IoT-Starter-Kit)
 
-3. Extract the contents of the .TGZ file downloaded. If you end up with a .TAR file, extract the contents of this file as well. You should end up with more than 120 files located in the final extraction folder.
+3. Extract the contents of the file downloaded.
 
-4. Download [FastBootUpgrade.bat]({{ '/Needed/FastbootUpgrad.zip' | relative_url }}) and extract it into the directory you extracted the firmware files to.
+4. Download [FastBootUpgrade.bat]({{ '/Needed/FastbootUpgrad.zip' | relative_url }}) and extract it into the directory you stored the firmware in.
 
 ### Updating the firmware
 
-1. To verify the camera is attached and recognized, run the following command line:
+1. Run FastBootUpgrade.bat
 
-    ```cmd
-    adb devices
-    ```
-
-2. Run FastBootUpgrade.bat
-
-3. Follow the instructions given by the batch file. The camera will update and reboot when the process is complete.
+2. Follow the instructions given by the batch file. The camera will update and reboot when the process is complete.
     * If you get stuck at the message *waiting for device*, please reboot the camera hardware and run FastBootUpgrade.bat again. If you keep hitting the same message, please charge the device for 10+ minutes to make sure that the battery is charged to at least 50%.
 
-4. To confirm your device has accepted the updated firmware, check the version using this command line:
+3. To confirm your device has accepted the updated firmware, check the version using this command line:
 
     ```cmd
     adb shell cat /etc/version
