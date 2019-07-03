@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-15
+last_modified_at: 2019-07-03
 ---
 
 ## What you will do
@@ -19,64 +19,64 @@ last_modified_at: 2019-03-15
 
 * Vision AI Dev Kit hardware
 * USB-C cable
-  * ADB command line utility and Fastboot tool. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
+* Previously installed Platform Tools (ADB command line utility and Fastboot tool) ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 
 ## Verify hardware connection
 
-1. Connect your computer and the Vision AI Dev Kit camera using a USB-C cable
-2. Open a command line prompt on your computer and use the command
+1. Connect your computer and the Vision AI DevKit camera using a USB-C cable.
+2. Open a command line prompt on your computer, then use the command line:
 
-     ```cmd
+     ```terminal
      adb devices
      ```
 
-    You should see output similar to this, if your computer and camera are connected properly:  
+    You should see output similar to this, confirming your computer and DevKit are connected properly:  
 
-        ```cmd
-         C:\Tools>adb devices
-         List of devices attached  
-         efb99xxx        device
-         ```  
+    ```terminal
+    C:\Tools>adb devices
+    List of devices attached  
+    efb99xxx        device
+    ```  
 
-    If you do not see the device, try rebooting the camera hardware using one of these methods:
+    If your DevKit is not listed, try rebooting the camera hardware using one of these methods:
 
     * Click the reset button once, using the pin hole on the right side of the camera.
     * Press the power button on the back once.
     * Use the command line:
 
-        ```cmd
+        ```terminal
         adb reboot
         ```
 
     * Long press the power button for more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.
 
-## Firmware Update
+## Updating the firmware
 
-The Vision AI Dev Kit hardware **must be charged for at least 10 minutes or have greater than 50% charge** (using a 2A charger) before starting the firmware flashing process.
+The Vision AI Dev Kit hardware **must be at least 50% charged** before starting the firmware flashing process.
 
-### Downloading and Extracting the latest Device Firmware
+### Download and extract the latest firmware
 
-1. Confirm that the platform tools directory (created when installing ADB and Fastboot) is included in your computer's path environment variable. For Windows, use the command line:
+1. Confirm that the platform tools directory (containing the ADB and Fastboot utilities) is included in your computer's path environment variable. For Windows, use the command line:
 
-    ```cmd
+    ```terminal
     set path=%path%;<platform tools path>
     ```
 
-2. Download the latest firmware/image released by Altek - [Latest Firmware](https://store.altek.com.tw/qualcomm/downloads/Azure-IoT-Starter-Kit)
+2. Download the latest firmware released by Altek for the Vision AI DevKit - [Latest Firmware](https://store.altek.com.tw/qualcomm/downloads/Azure-IoT-Starter-Kit)
 
-3. Extract the contents of the file downloaded.
+3. Extract the contents to a directory on your computer.
 
-4. Download [FastBootUpgrade.bat]({{ '/Needed/FastbootUpgrad.zip' | relative_url }}) and extract it into the directory you stored the firmware in.
+4. Download [FastBootUpgrade.bat]({{ '/Needed/FastbootUpgrad.zip' | relative_url }}) and extract it into the same directory as the firmware from the previous step.
 
-### Updating the firmware
+### Update the firmware
 
 1. Run FastBootUpgrade.bat
 
 2. Follow the instructions given by the batch file. The camera will update and reboot when the process is complete.
-    * If you get stuck at the message *waiting for device*, please reboot the camera hardware and run FastBootUpgrade.bat again. If you keep hitting the same message, please charge the device for 10+ minutes to make sure that the battery is charged to at least 50%.
+    * If you get stuck at the message *waiting for device*, please reboot the DevKit and run FastBootUpgrade.bat again.
 
-3. To confirm your device has accepted the updated firmware, check the version using this command line:
+3. To confirm your device has accepted the updated firmware, check the version using this command line, after the DevKit has rebooted:
 
-    ```cmd
+    ```ternunal
     adb shell cat /etc/version
     ```
