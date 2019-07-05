@@ -47,6 +47,8 @@ where:
 - **Object of interest** is the object you are taking pictures from like "Apple". The script will create a folder with the same name to the directory where the script is located and store the picture to the folder
 - **Number of pictures** defines how many pictures the camera takes. The time between pictures is roughly 1 seconds
 
+Note: it may be that taking pictures with the camera causes the VisionAIDevKitGetStartedModule not to function properly afterwards and the device needs to be rebooted in order to get the module to inference normally.
+
 
 
 
