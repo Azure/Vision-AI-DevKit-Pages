@@ -65,8 +65,6 @@ To export your model, select the `Performances` tab, then click the `Export` but
 
  ![Clone GitHub]({{ '/assets/images/cvai_link.PNG' | relative_url }})
 
-<!--
-
 ### Deploy your custom model to your camera
 
 To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the VisionSample module to use this new model. We will use a cloud blob store to store the model, but any publically accessible file storage system will work.
@@ -87,7 +85,7 @@ We'll start by creating a new storage account and then upload your model to it.
 - Click `Add a new container`, give it a name like `hardhatmodel` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`.
 - Click on the container just created, then click  the `Upload` button and select the zip file you downloaded from the Azure Custom Vision service.
 - Copy the URL of the uploaded file for later use.
--->
+
 ### Update the configuration of the VisionSample module to use your custom model
 
 - Login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a> and go to the IoT Hub resource you created earlier.

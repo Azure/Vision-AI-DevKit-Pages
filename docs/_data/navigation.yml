@@ -9,7 +9,7 @@ main:
   - title: "Community"
     url: https://aka.ms/VAIDKTechComm-Landing
     target: _blank
-  - title: "GitHub Repo (Preview Registration Required)"
+  - title: "GitHub Repo (Registration Required)"
     url: https://aka.ms/VAIDKGitHub-Landing/
     target: _blank
   - title: "Gitter"
