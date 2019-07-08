@@ -68,7 +68,7 @@ We'll start by creating a new storage account and then upload your model to it.
 - Create a new storage account with a unique name (NOTE: upper case characters are not allowed).
 - Select the `West-US 2` region.
 - Click on `Review+Create` (other default options should be correct).
-- Wait until until provisioning is complete and navigate to your new storage account.
+- Wait until provisioning is complete and navigate to your new storage account.
 - From the `overview` tab, click on `Blobs`.
 - Click `Add a new container`, give it a name like `temperaturegauge` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`.
 - Click on the container just created, then click  the `Upload` button and select the zip file you downloaded from the Azure Custom Vision service.
