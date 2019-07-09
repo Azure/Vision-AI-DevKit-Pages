@@ -29,33 +29,32 @@ last_modified_at: 2019-07-03
 
 Confirm that the platform tools directory (containing the ADB and Fastboot utilities) is included in your computer's path environment variable. You'll need this for the firwmare update. For Windows, use the command line:
 
-    ```terminal
-    set path=%path%;<platform tools path>
-    ```
+```terminal
+set path=%path%;<platform tools path>
+```
 
-    ```terminal
-    adb devices
-    ```
+```terminal
+adb devices
+```
 
-    You should see output similar to this, confirming your computer and DevKit are connected properly:  
+You should see output similar to this, confirming your computer and DevKit are connected properly:  
 
-    ```terminal
-    C:\Tools>adb devices
-    List of devices attached  
-    efb99xxx        device
-    ```  
+```terminal
+C:\Tools>adb devices
+List of devices attached  
+efb99xxx        device
+```  
 
-    If your DevKit is not listed, try rebooting the camera hardware using one of these methods:
+If your DevKit is not listed, try rebooting the camera hardware using one of these methods:
+* Click the reset button once, using the pin hole on the right side of the camera.
+* Press the power button on the back once.
+* Use the command line:
 
-    * Click the reset button once, using the pin hole on the right side of the camera.
-    * Press the power button on the back once.
-    * Use the command line:
+```terminal
+adb reboot
+```
 
-    ```terminal
-    adb reboot
-    ```
-
-    * Long press the power button for more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.
+* Long press the power button for more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.
 
 ## Updating the firmware
 
@@ -78,6 +77,6 @@ The Vision AI Dev Kit hardware **must be at least 50% charged** before starting 
 
 3. To confirm your device has accepted the updated firmware, check the version using this command line, after the DevKit has rebooted:
 
-    ```ternunal
+    ```terminal
     adb shell cat /etc/version
     ```
