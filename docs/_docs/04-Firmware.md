@@ -24,7 +24,14 @@ last_modified_at: 2019-07-03
 ## Verify hardware connection
 
 1. Connect your computer and the Vision AI DevKit camera using a USB-C cable.
+
 2. Open a command line prompt on your computer, then use the command line:
+
+Confirm that the platform tools directory (containing the ADB and Fastboot utilities) is included in your computer's path environment variable. You'll need this for the firwmare update. For Windows, use the command line:
+
+    ```terminal
+    set path=%path%;<platform tools path>
+    ```
 
      ```terminal
      adb devices
@@ -52,25 +59,19 @@ last_modified_at: 2019-07-03
 
 ## Updating the firmware
 
-The Vision AI Dev Kit hardware **must be at least 50% charged** before starting the firmware flashing process.
+The Vision AI Dev Kit hardware **must be at least 50% charged** before starting the firmware flashing process. 
 
 ### Download and extract the latest firmware
 
-1. Confirm that the platform tools directory (containing the ADB and Fastboot utilities) is included in your computer's path environment variable. For Windows, use the command line:
+1. Download the latest firmware released by Altek for the Vision AI DevKit - [Latest Firmware](https://store.altek.com.tw/qualcomm/downloads/Azure-IoT-Starter-Kit)
 
-    ```terminal
-    set path=%path%;<platform tools path>
-    ```
+2. Extract the contents to a directory on your computer. The zip file contains two .bat files, pdf instructions and the folder that contains the actual firmware files. You can alternatively follow the instruction int he pdf document if you want.
 
-2. Download the latest firmware released by Altek for the Vision AI DevKit - [Latest Firmware](https://store.altek.com.tw/qualcomm/downloads/Azure-IoT-Starter-Kit)
-
-3. Extract the contents to a directory on your computer.
-
-4. Download [FastBootUpgrade.bat]({{ '/Needed/FastbootUpgrad.zip' | relative_url }}) and extract it into the same directory as the firmware from the previous step.
+3. Copy the .bat files to the same folder where the firmward files are stored.
 
 ### Update the firmware
 
-1. Run FastBootUpgrade.bat
+1. Run FastBootUpgrade.bat (exact name of the file may contain a version number)
 
 2. Follow the instructions given by the batch file. The camera will update and reboot when the process is complete.
     * If you get stuck at the message *waiting for device*, please reboot the DevKit and run FastBootUpgrade.bat again.
