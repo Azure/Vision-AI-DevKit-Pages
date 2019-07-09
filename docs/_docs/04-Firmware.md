@@ -33,9 +33,9 @@ Confirm that the platform tools directory (containing the ADB and Fastboot utili
     set path=%path%;<platform tools path>
     ```
 
-     ```terminal
-     adb devices
-     ```
+    ```terminal
+    adb devices
+    ```
 
     You should see output similar to this, confirming your computer and DevKit are connected properly:  
 
@@ -51,9 +51,9 @@ Confirm that the platform tools directory (containing the ADB and Fastboot utili
     * Press the power button on the back once.
     * Use the command line:
 
-        ```terminal
-        adb reboot
-        ```
+    ```terminal
+    adb reboot
+    ```
 
     * Long press the power button for more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.
 
