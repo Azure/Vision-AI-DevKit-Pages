@@ -28,7 +28,7 @@ last_modified_at: 2019-06-12
      set path=%path%;[path to your python folder]
 
 - Go to the directory in your device where you have the contents of vision-ai-developer-kit GitHub. 
-- Go to folder vision-ai-developer-kit-master\sample-solutions\VisionSampleToolset\IoTEdgeSolution\modules\VisionSampleModule\python_iotcc_sdk\sdk
+- Go to folder vision-ai-developer-kit/samples/research/ai-vision-devkit-get-started-legacy/modules/VisionSampleModule/python_iotcc_sdk/sdk/
 
 Run command:
 
