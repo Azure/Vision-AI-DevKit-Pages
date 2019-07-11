@@ -154,7 +154,7 @@ For this tutorial, you deploy one module, which is your Stream Analytics job. Th
 
 1. Once your Stream Analytics job is published to the storage container that you created, click on the module name to see how a Stream Analytics module is structured.
 
-   The image URI points to a standard Azure Stream Analytics image. This is the same image used for every job that gets deployed to an IoT Edge device.
+   The image URL points to a standard Azure Stream Analytics image. This is the same image used for every job that gets deployed to an IoT Edge device.
 
    The module twin is configured with a desired property called **ASAJobInfo**. The value of that property points to the job definition in your storage container. This property is how the Stream Analytics image is configured with your specific job information.
 
@@ -162,7 +162,7 @@ For this tutorial, you deploy one module, which is your Stream Analytics job. Th
 
 1. Make a note of the name of your Stream Analytics module because you'll need it in the next step, then select **Next** to continue.
 
-1. Replace the default value in **Routes** with the following code. Update all three instances of _{moduleName}_ with the name of your Azure Stream Analytics module.
+1. Replace the default value in **Routes** with the following code. Before replacing change the configuration below to map to your environment by editing the {your_vision_ai_module} and {your_stream_analytics_job} with the name of your Vision AI module (default AIVisionDevKitGetStartedModule) and Azure Stream Analytics module.
 
     ```json
     {

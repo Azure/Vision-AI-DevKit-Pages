@@ -16,22 +16,19 @@ excerpt: >
 VAIDK_More:
   - title: "Start fast"
     excerpt: |
-      [Get up and running in minutes](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with vision machine learning.
+      [Get up and running in minutes](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with vision machine learning. Connect your camera to Azure IoT Hub that controls the network traffice between the device and cloud and see the camera in action by running a default Vision AI module that recognizes 187 different objects.
       # Build fast
-      * New to Vision ML? Waiting for your DevKit? Start building a vision model, letting [Azure Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Create_Train_Vision_ML_Project/){:target="_blank"} do the heavy lifting.
+      * New to Vision ML? Start building a vision model by uploading and tagging pictures, letting [Azure Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Tutorial-HOL_Using_the_VisionSample/){:target="_blank"} do the heavy lifting.
       * Experienced with vision ML? Use [Jupyter notebooks](https://azure.github.io/Vision-AI-DevKit-Pages/docs/jupyter/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) to create and train custom vision models using Azure Machine Learning (AML). AML services enables you to prepare data and train models. You can then convert the trained model to the custom DLC format and package into an IoT Edge module to deploy to the Vision AI Dev Kit.
-
-      # Deploy fast
-      Azure IoT Edge can push your containerized vision ML models to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.        
-
-  - title: "Prove your concept"
+            
+  - title: "Deploy fast"
     excerpt: |
-      Use the Vision AI DevKit and Azure services to quickly take your Intelligent Edge project from concept to proof.
+      [Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/) can push your containerized vision ML models and other modules to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.   
 
       # Join the Community
-      Get help and help others with vision ML projects by joining our [Tech Community](https://aka.ms/VAIDK-IoTTechCommunity){:target="_blank"} and Gitter
+      Get help and help others with vision ML projects by joining our [Tech Community](https://aka.ms/VAIDK-IoTTechCommunity){:target="_blank"} and [Gitter](https://aka.ms/VAIDKGitter-Landing/){:target="_blank"}
       # Build the intelligent edge
-      As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit can be combined with [Azure IoT Edge](https://azure.microsoft.com/en-us/services/iot-edge/){:target="_blank"} to deploy vision ML models and custom business logic from the cloud to the edge via standard containers. Moving these workloads to the edge of the network means vision ML inferencing work requires less cloud interaction while enabling quick reaction to local events, including operating during extended offline periods.
+      As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit does inferencing and runs containerized Azure services locally in a device. Moving these workloads to the edge of the network means vision ML inferencing work requires less cloud interaction while enabling quick reaction to local events, including operating during extended offline periods.
      
 advantages:
   - video_path: https://easstandardhosting123.blob.core.windows.net/asset-0a1504fe-8b97-4e8f-a312-2a5eef36c891/Vision_AI_101418.mp4?sv=2015-07-08&sr=c&si=1da79a8d-775c-4a56-af1a-173c36a1823b&sig=W7ACJX%2F0FrlqxYg7TlPfjojO3Ajf%2FiHy7eW4%2FfgK%2BAk%3D&st=2018-10-25T01%3A49%3A06Z&se=2118-10-25T01%3A49%3A06Z

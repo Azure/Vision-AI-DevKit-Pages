@@ -18,6 +18,8 @@ last_modified_at: 2019-04-29
 ## What you will need
 
 - Active Azure subscription (Create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F.){:target="_blank"})
+- Default AIVisionDevKitGetStartedModule running in Vision AI Dev Kit
+- To use Custom Vision Service, you will need to create Custom Vision Training and Prediction resources. This is done when creating a new project in customvision.ai. In case there are issues in setting up a new project, please try creating the resource manually in [Azure portal](https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=microsoft_azure_cognitiveservices_customvision#create/Microsoft.CognitiveServicesCustomVision){:target="_blank"}.
 - Configured Vision AI DevKit camera [(Instructions)]({{ '/docs/Get_Started/' |relative_url }}){:target="_blank"}
 - Monitor supporting HDMI input and an HDMI cable (do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"}
 
