@@ -45,8 +45,8 @@ docs:
     children:
       - title: Container module using Azure IoT Hub
         url: /docs/Deploy_Model_IoT_Hub/
-      - title: Container module using Visual Studio (VS) Code
-        url: /docs/Deploy_model_VS_Code/
+#      - title: Container module using Visual Studio (VS) Code
+#        url: /docs/Deploy_model_VS_Code/
       - title: Model using Model Twin
         url: /docs/Deploy_Model_using_Module_Twin/
 
