@@ -1,6 +1,6 @@
 ---
 title: "Deploy a vision AI model with Visual Studio Code"
-permalink: /docs/Deploy_model_VS_Code/
+permalink: /docs/Deploy_model_VS_Code orig/
 excerpt: "Using Visual Studio Code deployment to deploy models to the Vision AI DevKit hardware."
 variable:
   - platform: windows

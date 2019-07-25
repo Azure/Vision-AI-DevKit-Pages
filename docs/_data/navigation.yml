@@ -27,8 +27,8 @@ docs:
     children:
       - title: "Create and deploy a vision AI model"
         url: /docs/Tutorial-HOL_Using_the_VisionSample/
-#      - title: "- Build and deploy a model with CustomVision.AI"
-#        url: /docs/Create_Train_Vision_ML_Project/
+      - title: "Deploy a vision AI model with Visual Studio Code"
+        url: /docs/Deploy_model_VS_Code/
       - title: "Create object detection alerts using Azure Stream Analytics (ASA)"
         url: /docs/Tutorial-HOL_Using_ASA_for_alerts/
       - title: "Train a model using Azure Machine Learning and Jupyter notebooks"
