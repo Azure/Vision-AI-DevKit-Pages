@@ -140,7 +140,7 @@ You are now ready to deploy the Azure Stream Analytics job on your Vision AI Dev
 
 In this section, you use the **Set Modules** wizard in the Azure portal to create a *deployment manifest*. A deployment manifest is a JSON file that describes all the modules that will be deployed to a device, the container registries that store the module images, how the modules should be managed, and how the modules can communicate with each other. Your Vision AI DevKit camera retrieves its deployment manifest from IoT Hub, then uses the information in it to deploy and configure all of its assigned modules.
 
-For this tutorial, you deploy one module, which is your Stream Analytics job. The sensor module provides the stream of data that your job query will analyze. Your Vision AI DevKit camera should already have the VisionSample module deployed during the initial setup process.
+For this tutorial, you deploy one module, which is your Stream Analytics job. The *AIVisionDevKitGetStartedModule* provides the stream of data that your job query will analyze. Your Vision AI DevKit camera should already have the AIVisionDevKitGetStartedModule module deployed during the initial setup process.
 
 1. In the Azure portal, in your IoT hub, go to **IoT Edge**, and then open the details page for your Vision AI DevKit camera.
 
