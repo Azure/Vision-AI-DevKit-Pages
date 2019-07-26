@@ -25,7 +25,14 @@ last_modified_at: 2019-04-29
 
 ## Create a vision AI model with Azure Custom Vision service
 
-In this tutorial, you will build a vision AI model to detect when an analog temperature gauge is getting into the warning or danger zone. We will use this website [Simulated Analog Guage](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html){:target="_blank"} to simulate our analog temperature gauge and will use the [Azure Custom Vision](https://www.customvision.ai/){:target="_blank"} service to build the model.
+In this tutorial, you will build a vision AI model for workplace safety scenario that detects if a person is wearing a hard hat or not. Don't have a yellow hard hat to be able to test the functionality after you are done? You can also take pictures and use your own data to build the Vision AI model. You can also use the [camera to take pictures]({{ '/docs/train/' | relative_url }}){:target="_blank"} (you'll need python and GitHub).
+
+### Image classification vs. object detection
+
+There are two ways to train your model - image classification and object detection.
+
+*Image classification:* analyses the whole frame as a picture and doesn't draw bounding boxes. Can only identify one object per frame. Easy to train
+*Object detection:* Can identify multiple objects per image and draws bounding boxes around them. Takes a little bit more time to train as the training requires identifying the object per uploaded image. If you choose to do object detection model with hard hat data remember to include both head and hard hat to the object when applicable (not only the hat).
 
 ### Setup a new Azure Custom Vision project
 
@@ -37,32 +44,45 @@ In this tutorial, you will build a vision AI model to detect when an analog temp
     - Under 'resource group', click 'create new'
     - SKU - F0 (or S0)
 
-  - Name - `Simulated Temperature Gauge`
-    - Project Type - [Classification]
-    - Resource Group `AiDevKitResources-CustomVision`
-    - Classification Type - [Multiclass (Single tag per image)]
-    - Domain - [General(compact)]  **NOTE: Ensure you do not select the `General` option**
-    - Export Capabilities - Vision AI Dev Kit
+- Create a new project, using these recommended settings:
+  - Give it a name like `Simulated HardHat Detector`
+  - Project Type - select between [Classification] and [ObjectDetection]
+  - Use the existing resource group
+  - Classification Type - [Multiclass (Single tag per image)]
+  - Domain - [General(compact)] **NOTE: Ensure you do not select the `General` option**
+  - Export Capabilites - Vision AI Dev Kit
 
 ### Upload and tag your training data
 
 - Download the training images - [TrainingData.zip]({{ '/Needed/TrainingData.zip' | relative_url }}).
-- Uncompress the downloaded .zip file to a directory on your system.
-- Upload the images to custom vision in sets, grouped by color (ex. all files with Green in the name, then Yellow in the name, then Red), tagging each image set with the appropriate color (Green, Yellow, or Red) at upload.
+- Uncompress the zip file to a local directory
+- Upload images to custom vision in batches, 
+  - For image classification model one batch per tag (images containing *HardHat* in the name, then *NoHardHat*), adding the appropriate tag during upload.
+  - For object detection model each picture needs to be tagged separately. They can all be uploaded to customvision.ai at the same time.
 
 ### Train and export your custom model
 
 - Go to your Custom Vision project and click on `Train`.
-- Select the `Performances` tab and then click the `Export` button.
-- Choose the `Vision AI DevKit` option to download your new custom model, then uncompress the files to a folder on your system.
+- Select the `Performances` tab and then click the `Export` button
+- Choose the `Vision AI DevKit` option to download your new custom model. *Don't download yet*, please read the deployment options first
 
 ## Deploy your custom model to your device
 
-To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the `AI Vision Dev Kit Get Started Module (preview)`, (used in the Quick Start) to use the model you just trained. We will place the model files in a cloud blob store. A public OneDrive link would work as well.
+To deploy your custom model, we will first store your model in a publicly accessible location and then update the configuration of the `VisionAIDevKitGetStartedModule`, (used in the Quick Start) to use the model you just trained. We will place the model files in a cloud blob store. A public OneDrive link would work as well.
 
-### Upload your trained model zip file
+### Option 1 - use the model directly from customvision.ai
 
-We'll start by creating a new storage account and then upload your model to it.
+Instead of downloading the model from customvision.ai press the right button of your mouse in order to see options. Select `Copy link`. It is a link that points to a zip file of your model. 
+
+This is the fastest way to deploy the model to your camera . Please note that this link will expire, so this methdo should be used primarily when doing fast iterations to further develope your Vision AI model
+
+ ![Clone GitHub]({{ '/assets/images/cvai_link.PNG' | relative_url }})
+
+### Option 2 - Store and use model from your own storage
+
+Download the model from customvision.ai. Don't unzip it.
+
+We'll start by creating a new storage account and then upload your model to it. You can also store the zip file for example to OneDrive 
 
 - Login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a>.
 - Search for `Storage` and select `Storage accounts`.
@@ -72,7 +92,7 @@ We'll start by creating a new storage account and then upload your model to it.
 - Click on `Review+Create` (other default options should be correct).
 - Wait until provisioning is complete and navigate to your new storage account.
 - From the `overview` tab, click on `Blobs`.
-- Click `Add a new container`, give it a name like `temperaturegauge` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`.
+- Click `Add a new container`, give it a name like `hardhatmodel` and make sure to select `Container (anonymous read access for containers and blobs)` for the `Public access level`.
 - Click on the container just created, then click  the `Upload` button and select the zip file you downloaded from the Azure Custom Vision service.
 - Copy the URL of the uploaded file for later use.
 
@@ -83,24 +103,16 @@ We'll start by creating a new storage account and then upload your model to it.
 - Click on the `AIVisionDevKitGetStartedModule`  name, then click `Module Identity Twin`.
 - Update the zip file with the URL you saved earlier to *"ModelZipUrl": ""*, then click `Save`.
 
-After a few minutes, your device should be running your custom model.
+After a few seconds, your device should now be running your custom model! If it doesn't try editing the module twin again and save (press for example space and backspace and save)
 
 ### Test your new model
 
-- Go to [Simulated Analog Gauge](https://htmlpreview.github.io/?https://github.com/ebertrams/simulated-gauge/blob/master/SimulatedAnalogGauge.html){:target="_blank"} using your computer browser.
-- Point the DevKit camera at the gauge on your monitor and verify the camera sees the simulated gauge and correctly classifies the gauge's output as green / yellow / red by viewing the output on your DevKit's connected monitor or by using a video player supporting an RTSP source. [(View RTSP Stream)]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"}
+- Put on a hard hat on and smile at the camera!
+- Verify the camera correctly classifies you as wearing a hard hat.
 
-## Clean up
-
-To delete the Azure resources that you've been using in this tutorial, execute the following commands:
-
-```cmd
-az group delete --name AiDevKitResources
-az group delete --name AIDevKitResources-CustomVision
-```
+Note that the sample picture size in the example is small and the purpose of the tutorial is to show how easy it is to get started with Vision AI Dev Kit and custom vision! The model with roughly 50 source pictures doesn't yet do a 100% accurate recognition.
 
 ## Learn more
 
 For additional information on developing your image classification model, see [Getting started improving your classifier](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-improving-your-classifier)
 
-To learn more, return to [Vision AI DevKit - Get Started](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Get_Started/).

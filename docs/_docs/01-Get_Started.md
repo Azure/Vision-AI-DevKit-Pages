@@ -44,6 +44,12 @@ You can view the DevKit camera output with a web browser, using the URL given on
 
 For more information on using RTSP streaming, see the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/#connect-to-the-video-stream' | relative_url }}){:target="_blank"}.
 
+## Basic setup
+
+After setting up the device you will have a following setup.
+
+
+
 ## Next steps
 
 In this quick start, you configured the Vision AI DevKit camera to display output for objects recognized by the VisionSample model to a monitor or RTSP capable video player.

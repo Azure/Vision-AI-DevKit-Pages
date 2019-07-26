@@ -64,7 +64,7 @@ Some training images have already been collected for you for the hard hat use ca
 - Download the .zip file containing the sample images from: <a href="https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL" target="blank">https://1drv.ms/u/s!AkzLzaBpSgoMo9hXX4NPjd8QrfhQLA?e=M3ehCL</a>
 - Uncompress the zip file to a local directory
 - Upload images to custom vision in batches, 
-  - For iamge classification model one batch per tag (images containing *HardHat* in the name, then *NoHardHat*), adding the appropriate tag during upload.
+  - For image classification model one batch per tag (images containing *HardHat* in the name, then *NoHardHat*), adding the appropriate tag during upload.
   - For object detection model each picture needs to be tagged separately. They can all be uploaded to customvision.ai at the same time.
 
 ### Train your custom model
@@ -84,7 +84,7 @@ This is the fastest way to deploy the model to your camera in lab environment. P
 - Click on the `AIVisionDevKitGetStartedModule`  name, then click `Module Identity Twin`.
 - Update the zip file with the URL you saved earlier to *"ModelZipUrl": ""*, then click `Save`.
 
-After a few minutes, your device should now be running your custom model!
+After a few seconds, your device should now be running your custom model! If it doesn't try editing the module twin again and save (press for example space and backspace and save)
 
 ### Test your new model
 
