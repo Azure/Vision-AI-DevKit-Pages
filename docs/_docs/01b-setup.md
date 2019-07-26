@@ -19,7 +19,7 @@ After running through Get Started instructions and initial setup the camera has 
 
 Visit [Azure portal](https://ms.portal.azure.com/#home){:target="_blank"} to see and manage your IoT Hub
 
-![Initial setup]({{ '/assets/images/initial_setup.PNG' | relative_url }})
+![Initial setup]({{ '/assets/images/Initial_setup.PNG' | relative_url }})
 
 ## Module twin update
 
