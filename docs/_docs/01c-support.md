@@ -10,33 +10,34 @@ variable:
 last_modified_at: 2019-05-28
 ---
 
-## Get support for Vision Ai Dev Kit
+## Vision Ai DevKit support
 
-Vision AI Dev Kit has multiple support channels available at the moment. For questions, try Get Help first! After that it's really up to choose the channel of your convinience although we do have recommendations below.
+The Vision AI DevKit has multiple support channels available to you. We encourage you to start with our Get Help experience, but we have several other options if you need to dig further.
 
 ![Support]({{ '/assets/images/support.PNG' | relative_url }})
 
 ### [Get Help](https://visionaidevkitsupport.azurewebsites.net/){:target="_blank"}
 
-Get Help is a continuously evolving Q&A database that contains question answer pairs related to Vision AI functions and usage. Please try it out and using voting buttons to indicate the quality of the answers. Get Help is especially usefull when using platform tools (ADB) and running Linux commands on the camera itself
+Get Help is a continuously evolving Q&A database containing question/answer pairs for Vision AI DevKit functions and usage. When using it, please use the voting buttons let us know the quality of the answer you received. Get Help is especially good for explaining the ADB platform tools and how to run Linux commands on the camera itself.
 
 ### [Gitter](https://gitter.im/Microsoft/vision-ai-developer-kit){:target="_blank"}
 
-Gitter is aimed for quick questions and chat-alike discussion although nothing prevents using it for longer storytelling as well.
+Gitter is chat space for quick questions and answers with other developers using the Vision AI DevKit.
 
 ### [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/issues){:target="_blank"}
 
-Although primarily used for bugs and feature requests, you can use GitHub for support questions as well. Please add 'Support needed' tag to the issue. The benefit of using GitHub is that you are able to see if someone else has already asked and gotten an answer to a similar issue.
+GitHub, the primary portal for bug and feature request submissions,can also be used for general support questions. Please ensure you prefix the issue title with 'Support needed'.
 
-### Join the [TechCommunity](https://gitter.im/Microsoft/vision-ai-developer-kit){:target="_blank"}
+### Join the [IoT Devices Microsoft tech community](https://techcommunity.microsoft.com/t5/IoT-Devices/bd-p/HardwareEngineering){:target="_blank"}
 
-TechCommunity allows asking questions and sharing your experiences with other when using Vision AI Dev Kit, working with Azure IoT services and building Vision AI models. All news related Vision AI Dev Kit and related services will also be posted to TechCommunity
+The IoT Devices Microsoft tech community is a place for both asking questions and sharing your experiences with others as you work on your IoT solution using the Vision AI Dev Kit. It is also a place to discuss and learn about Azure IoT services and building Vision AI models. All news related Vision AI Dev Kit and related services will be posted to IoT Devices tech community.
 
-Microsoft's Internet of Things TechCommunity offers you a single entry point for staying up to date not only for Vision AI Dev Kit related topics, but generally about news and product release for Microsoft's IoT services.
+### Join the [Internet of Things (IoT) tech community](https://techcommunity.microsoft.com/t5/Internet-of-Things-IoT/ct-p/IoT){:target="_blank"}
+
+Microsoft's Internet of Things (IoT) tech community offers you a single entry point for staying up to date not only on Vision AI DevKit topics, but also news and service releases of all of Microsoft's IoT focused platforms and services.
 
 ## Issues and feature requests
 
 ![GitHub]({{ '/assets/images/github.PNG' | relative_url }})
 
-Vision AI Dev Kit has a GitHub for issues and feature request. GitHub also contains assests for training your Vision AI model, creating and deploying modules using both VS Code and Jupyter Notebooks.
-
+Use the Vision AI Dev Kit [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/issues){:target="_blank"} respository for issue and feature request submissions. The repository is also your source for Vision AI model sample training assests, as well as information on creating and deploying modules using both VS Code and Jupyter Notebooks.
