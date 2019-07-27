@@ -15,7 +15,7 @@ last_modified_at: 2019-05-28
 After running through Get Started instructions and initial setup the camera has 4 modules (containers) running:
   - edgeAgent and edgeHub are two modules that make up the [IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-runtime){:target="_blank"}
   - AIVisionDevKitGetStartedModule that is the default Vision AI model and recognizes 183 different objects
-  - WebStreamModule that streams the picture from AIVisionDevKitGetStartedModule to a web browser
+  - WebStreamModule that streams the video from AIVisionDevKitGetStartedModule to a web browser
 
 Visit [Azure portal](https://ms.portal.azure.com/#home){:target="_blank"} to see and manage your IoT Hub
 
