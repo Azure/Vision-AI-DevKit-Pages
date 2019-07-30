@@ -16,7 +16,7 @@ excerpt: >
 VAIDK_More:
   - title: "Start fast"
     excerpt: |
-      [Get up and running in minutes](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with vision machine learning. Connect your camera to Azure IoT Hub that controls the network traffice between the device and cloud and see the camera in action by running a default Vision AI module that recognizes 187 different objects.
+      [Get up and running in minutes](https://aka.ms/VAIDKGetStarted-Landing/), regardless of your current skill level with vision machine learning. Connect your camera to Azure IoT Hub that controls the network traffice between the device and cloud and see the camera in action by running a default Vision AI module that recognizes 183 different objects.
       # Build fast
       * New to Vision ML? Start building a vision model by uploading and tagging pictures, letting [Azure Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Tutorial-HOL_Using_the_VisionSample/){:target="_blank"} do the heavy lifting.
       * Experienced with vision ML? Use [Jupyter notebooks](https://azure.github.io/Vision-AI-DevKit-Pages/docs/jupyter/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) to create and train custom vision models using Azure Machine Learning (AML). AML services enables you to prepare data and train models. You can then convert the trained model to the custom DLC format and package into an IoT Edge module to deploy to the Vision AI Dev Kit.

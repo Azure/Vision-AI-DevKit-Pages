@@ -19,9 +19,14 @@ main:
 # documentation links
 docs: 
   - title: Getting Started
+    url: /docs/Get_Started/
     children:
       - title: "Quick start"
-        url: /docs/Get_Started/
+        url: /docs/quick_start/
+      - title: "Initial setup and module deployment"
+        url: /docs/setup/
+      - title: "Support and community"
+        url: /docs/support
 
   - title: Tutorials
     children:
@@ -47,7 +52,7 @@ docs:
         url: /docs/Deploy_Model_IoT_Hub/
 #      - title: Container module using Visual Studio (VS) Code
 #        url: /docs/Deploy_model_VS_Code/
-      - title: Model using Model Twin
+      - title: Model using Module Twin
         url: /docs/Deploy_Model_using_Module_Twin/
 
   - title: Manage your device

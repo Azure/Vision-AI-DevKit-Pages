@@ -1,5 +1,5 @@
 ---
-title: "Send a new Custom Vision model to an already deployed module"
+title: "Deploy a new Vision AI model to an already existing module"
 permalink: /docs/Deploy_Model_using_Module_Twin/
 excerpt: "How to deploy a new Custom Vision model to a device with an existing Custom Vision configure module using the Azure portal."
 variable:
@@ -7,19 +7,17 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-05-02
+last_modified_at: 2019-07-30
 ---
 
 ## What you will do
 
-* Modify module twin settings for an existing Custom Module deployed to the DevKit
+* Modify module twin settings for an existing Vision AI model deployed to the DevKit
 
 ## What you will need
 
-* Vision AI DevKit with a pre-existing module containing a Custom Vision created module
-  * This can be the AIVisionDevKitGetStartedModule from the tutorial or another module developed with the Azure Custom Vision service
-* New vision AI module exported from the [Azure Custom Vision](https://customvision.ai){:target="_blank"} service
-* Azure Storage acccount
+* Vision AI DevKit with a pre-existing default AIVisionDevKitGetStartedModule module
+* A new Vision AI model in a zip file including the model (.dlc file or equivalent, labels.txt and VAM config)
 
 ## Deploy your custom model to your device
 
@@ -50,8 +48,14 @@ To deploy your custom model, we will first store your model in a publicly access
 }
 ```
 
-After a few minutes, your device should now be running your new custom model.
+After a few seconds, your device should now be running your new custom model.
 
 ### Test your new model
 
 * Verify that the camera output from your DevKit's connected monitor or using a video player supporting RTSP [(View RTSP Stream)]({{ '/docs/RTSP_stream/' | relative_url }}).
+* If the module twin update doesn't seem to work try making an artificial change to the module twin properties (like hitting a space and backspace) and save again.
+* In case you are iterating multiple times improving the same model and not sure if the model has been updated one way to check it is to use platform tools (ADB) and check from the camera's file structure time stamps when the model has been applied the last time:
+
+```terminal
+adb shell ls -ls /data/misc/camera
+```

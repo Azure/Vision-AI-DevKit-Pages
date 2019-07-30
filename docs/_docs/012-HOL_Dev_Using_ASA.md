@@ -19,6 +19,8 @@ Azure Stream Analytics provides a richly structured query syntax for data analys
 
 To do that, we will build and deploy an ASA module at the edge.
 
+*Note:* this tutorial is incomplete in a way that it doesn't trigger any events yet. 
+
 ## What you will do
 
 * Create an Azure Stream Analytics job to process data from the Vision AI DevKit camera
