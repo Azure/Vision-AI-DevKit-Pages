@@ -107,13 +107,13 @@ instructions for topology modification are authored/available from Qualcomm
 ONNX support is currently experimental and most models run on CPU instead of offloaded to DSP.
 
 ONNX models from following networks can be converted to run in Vision AI Dev Kit:
-bvlc_alexnet		
-bvlc_googlenet		
-bvlc_reference_caffenet		
-bvlc_reference_rcnn_ilsvrc13		
-densenet121		
-inception_v1		
-inception_v2		
-resnet_50		
-vgg16		
-vgg19		
+* bvlc_alexnet		
+* bvlc_googlenet		
+* bvlc_reference_caffenet		
+* bvlc_reference_rcnn_ilsvrc13		
+* densenet121		
+* inception_v1		
+* inception_v2		
+* resnet_50		
+* vgg16		
+* vgg19		

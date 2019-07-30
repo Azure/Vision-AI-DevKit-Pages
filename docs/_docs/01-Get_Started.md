@@ -12,7 +12,7 @@ last_modified_at: 2019-05-28
 
 ## Got a device?
 
-- Access [Quick start]({{ '/docs/quick_start/' | relative_url }}){:target="_blank"} and start your machine learning journey with the device
+- Access [Quick start]({{ '/docs/quick_start/' | relative_url }}){:target="_blank"} and start your machine learning journey with the machine
 
 ## Learn about initial setup and module updates
 
