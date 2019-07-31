@@ -12,6 +12,8 @@ last_modified_at: 2019-07-30
 
 ## Supported Neural Network frameworks and formats
 
+Here is a list of neural networks and runtimes that run on the devices DSP that provides adequate performance for real time inferencing.
+
 <table style="width:100%">
   <tr>
     <th>Network Topology</th>
