@@ -10,15 +10,15 @@ variable:
 last_modified_at: 2019-07-26
 ---
 
-## Vision AI Model
+## Vision AI Model layout
 
-Vision AI Model that runs in Vision AI Dev Kit consists of three files.
+Vision AI models which run on the Vision AI DevKit consists of three files:
 
-* The model that is typically .dlc file format.
-* Labels.txt (file name can vary) that lists the objects that the model recognizes
-* VAM engine configuration file (va-snpe-engine-library-config.json) that contains the engine configuration
+* .DLC file - containing the model
+* .TXT file - containing a list of the objects recognized by the model
+* .json file - containing the VAM engine configuration
 
-## Contents of the VAM configuration file
+## Contents of the .json VAM engine configuration file
 
 You can check the VAM configuration file for the default model using platform tools (ADB):
 ```terminal
@@ -36,7 +36,8 @@ Here is a breakdown of key attributes and their values in VAM config:
 '1' --> BGR
 '2' --> RGB Float
 '3' --> BGR Float
--	Currently SNPE common engine supports only BGR Float
+
+    Note: SNPE common engine currently supports only BGR Float
 
 *"NetworkIO":0"* --> Network IO: Possible values:
 '0' --> UserBufer

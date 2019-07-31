@@ -6,8 +6,6 @@ language: {C,Python}
 
 This document directs you to the latest setup information for the Vision AI DevKit camera.
 
-
-
 # Table of Contents
 
 - [Introduction](#Introduction)
