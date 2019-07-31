@@ -99,7 +99,7 @@ last_modified_at: 2019-07-30
   </tr>
 </table>
 
-    *this network topology requires changes to preserve accuracy when quantized. Instructions for topology modification is available from Qualcomm.
+  *this network topology requires changes to preserve accuracy when quantized. Instructions for topology modification are available from Qualcomm.
 
 ### ONNX support
 
