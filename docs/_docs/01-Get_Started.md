@@ -26,4 +26,6 @@ last_modified_at: 2019-05-28
 
 - Learn about the options for [getting support]({{ '/docs/support/' | relative_url }}){:target="_blank"} and share your experiences related to Vision AI Dev Kit
 
+## Vision AI model and supported framework
 
+- See the basic file structure of [Vision AI Model]({{ '/docs/model/' | relative_url }})that Vision AI Dev Kit uses and the list of [Supported frameworks and runtimes]({{ '/docs/frameworks/' | relative_url }})

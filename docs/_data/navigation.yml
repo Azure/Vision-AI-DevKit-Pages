@@ -27,6 +27,10 @@ docs:
         url: /docs/setup/
       - title: "Support and community"
         url: /docs/support
+      - title: "Vision AI model"
+        url: /docs/model
+      - title: "Supported frameworks and runtimes"
+        url: /docs/frameworks
 
   - title: Tutorials
     children:

@@ -12,8 +12,8 @@ last_modified_at: 2019-04-29
 
 ## What you will do
 
-- Build a vision AI model for detecting the state (Green/Yellow/Red) of a simulated analog temperature gauge using the Azure Custom Vision service.
-- Deploy the vision AI module to the Vision AI DevKit camera using Azure IoT Edge.
+- Build a vision AI model with Azure Custom Vision service for workplace safety that detects if a person is wearing a yellow hard hat.
+- Deploy the vision AI module to the Vision AI DevKit camera using Azure IoT Edge and module twin update.
 
 ## What you will need
 
@@ -22,10 +22,11 @@ last_modified_at: 2019-04-29
 - To use Custom Vision Service, you will need to create Custom Vision Training and Prediction resources. This is done when creating a new project in customvision.ai. In case there are issues in setting up a new project, please try creating the resource manually in [Azure portal](https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=microsoft_azure_cognitiveservices_customvision#create/Microsoft.CognitiveServicesCustomVision){:target="_blank"}.
 - Configured Vision AI DevKit camera [(Instructions)]({{ '/docs/Get_Started/' |relative_url }}){:target="_blank"}
 - Monitor supporting HDMI input and an HDMI cable (do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"}
+- Yellow hard hat. See next section! 
 
 ## Create a vision AI model with Azure Custom Vision service
 
-In this tutorial, you will build a vision AI model for workplace safety scenario that detects if a person is wearing a hard hat or not. Don't have a yellow hard hat to be able to test the functionality after you are done? You can also take pictures and use your own data to build the Vision AI model. You can also use the [camera to take pictures]({{ '/docs/train/' | relative_url }}){:target="_blank"} (you'll need python and GitHub).
+In this tutorial, you will build a vision AI model for workplace safety scenario that detects if a person is wearing a hard hat or not. Don't have a yellow hard hat to be able to test the functionality after you are done? You can also take pictures and use your own data to build the Vision AI model. Take 30+ pictures for a same object from different angles and distances instead of using the pictures for hard hat model. You can also use the [camera to take pictures]({{ '/docs/train/' | relative_url }}){:target="_blank"} (you'll need python and GitHub).
 
 ### Image classification vs. object detection
 
@@ -76,7 +77,7 @@ Instead of downloading the model from customvision.ai press the right button of 
 
 This is the fastest way to deploy the model to your camera . Please note that this link will expire, so this methdo should be used primarily when doing fast iterations to further develope your Vision AI model
 
- ![Clone GitHub]({{ '/assets/images/cvai_link.PNG' | relative_url }})
+ ![Customvision.ai link]({{ '/assets/images/cvai_link.PNG' | relative_url }})
 
 ### Option 2 - Store and use model from your own storage
 
