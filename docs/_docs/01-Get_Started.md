@@ -12,15 +12,15 @@ last_modified_at: 2019-05-28
 
 ## Got a device?
 
-- Access [Quick start]({{ '/docs/quick_start/' | relative_url }}){:target="_blank"} and start your machine learning journey with the machine
+- Access [Quick Start]({{ '/docs/quick_start/' | relative_url }}){:target="_blank"} and start your machine learning journey with the VIsion AI DevKit
 
 ## Learn about initial setup and module updates
 
-- See the [setup]({{ '/docs/setup/' | relative_url }}){:target="_blank"} after you have run through the quick start and learn about the options for updating the Vision AI model in a camera and deploy new modules.
+- See the [setup]({{ '/docs/setup/' | relative_url }}){:target="_blank"} after running the quick start and learn about the options for updating the Vision AI model in a camera and deploying new modules.
 
 ## Use GitHub to find assets and examples
 
-- Clone or download [Vision AI Dev Kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit){:target="_blank"} and continue your machine learning journey. GitHub provides additional assets for example for model conversion using VS Code. There are also examples for creating AI models using Jupyter Notebooks and Azure Machine Learning service.
+- Clone or download [Vision AI Dev Kit GitHub](https://github.com/Microsoft/vision-ai-developer-kit){:target="_blank"} and continue your machine learning journey. GitHub provides additional assets such as examples of model conversion using VS Code. There are also examples for creating AI models using Jupyter Notebooks and Azure Machine Learning service.
 
 ## Community and support channels
 
@@ -28,4 +28,4 @@ last_modified_at: 2019-05-28
 
 ## Vision AI model and supported framework
 
-- See the basic file structure of [Vision AI Model]({{ '/docs/model/' | relative_url }})that Vision AI Dev Kit uses and the list of [Supported frameworks and runtimes]({{ '/docs/frameworks/' | relative_url }})
+- See the basic file structure of [Vision AI Model]({{ '/docs/model/' | relative_url }}) that the Vision AI Dev Kit uses and the list of [Supported frameworks and runtimes]({{ '/docs/frameworks/' | relative_url }})
