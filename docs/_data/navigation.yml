@@ -23,7 +23,7 @@ docs:
     children:
       - title: "Quick start"
         url: /docs/quick_start/
-      - title: "Initial setup and module deployment"
+      - title: "Module Update and Deployment"
         url: /docs/setup/
       - title: "Support and community"
         url: /docs/support

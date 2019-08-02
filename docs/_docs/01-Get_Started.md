@@ -7,12 +7,12 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-05-28
+last_modified_at: 2019-08-01
 ---
 
 ## Got a device?
 
-- Access [Quick Start]({{ '/docs/quick_start/' | relative_url }}){:target="_blank"} and start your machine learning journey with the VIsion AI DevKit
+- Access [Quick Start]({{ '/docs/quick_start/' | relative_url }}){:target="_blank"} and start your machine learning journey with the Vision AI Dev Kit
 
 ## Learn about initial setup and module updates
 
@@ -24,8 +24,8 @@ last_modified_at: 2019-05-28
 
 ## Community and support channels
 
-- Learn about the options for [getting support]({{ '/docs/support/' | relative_url }}){:target="_blank"} and share your experiences related to Vision AI Dev Kit
+- Learn about the options for [getting support]({{ '/docs/support/' | relative_url }}){:target="_blank"} and sharing your experiences related to Vision AI Dev Kit.
 
 ## Vision AI model and supported framework
 
-- See the basic file structure of [Vision AI Model]({{ '/docs/model/' | relative_url }}) that the Vision AI Dev Kit uses and the list of [Supported frameworks and runtimes]({{ '/docs/frameworks/' | relative_url }})
+- See the basic file structure of the [Vision AI Model]({{ '/docs/model/' | relative_url }}) that the Vision AI Dev Kit uses and the list of [Supported frameworks and runtimes]({{ '/docs/frameworks/' | relative_url }}).

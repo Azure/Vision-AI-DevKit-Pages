@@ -1,5 +1,5 @@
 ---
-title: "Module update and deployment"
+title: "Module Update and Deployment"
 permalink: /docs/setup/
 excerpt: "Vision AI Dev Kit and Azure components"
 variable:
@@ -25,13 +25,13 @@ Visit [Azure portal](https://ms.portal.azure.com/#home){:target="_blank"} to see
 
 Deploying a new module using module twin update sets the AIVisionDevKitGetStartedModule to use the Vision AI model from external location. That location can be any location that is publicly accessible. Module twin is a representation of module's metadata in IoT Hub and changes to the metadata made in IoT Hub are applied to the module in IoT Edge device in seconds.
 
-Note that this method requires AIVisionDevKitGetStartedModule to run in the device. This method only updates the Vision AI model, but the module itself. Updating AI model using module twin update is recommend when doing fast iteration with a Vision AI model using for example [customvision.ai](https://customvision.ai){:target="_blank"} for model training.
+Note that this method requires AIVisionDevKitGetStartedModule to run in the device. This method updates not only the Vision AI model, but also the module itself. Using a module twin update to update an AI model is recommended during fast iterations of  Vision AI model such as those produced by [customvision.ai](https://customvision.ai){:target="_blank"} for model training.
 
 ![Module twin update]({{ '/assets/images/module_twin_update.PNG' | relative_url }})
 
 ## Module deployment
 
-Updating module configuration in the camera happens with deployment.json file that defines the set of modules and their characteristics per deployment. Modules are deployed from Azure Container Registry (ACR). The picture below is a simplified version of the deployment. Typically edgeAgent and edgeHub are deployed from Microsoft Container Registry (mcr) where are additional modules are often located in user's person ACR.
+Updating module configuration in the camera happens with deployment.json file that defines the set of modules and their characteristics per deployment. Modules are deployed from Azure Container Registry (ACR). The picture below is a simplified version of the deployment. Typically edgeAgent and edgeHub are deployed from Microsoft Container Registry (MCR) whereas additional modules are often located in the user's personal ACR.
 
 IoT Hub provides graphical UI for defining the deployment.json. Tutorials using VS Code and Jupyter Notebook also use this method to deploy the modules and utilize a template for deployment.json
 
