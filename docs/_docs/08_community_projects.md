@@ -1,7 +1,7 @@
 ---
-title: "AI for Dementia"
+title: "Vision AI dev Kit"
 permalink: /docs/community_project
-excerpt: "AI for Dementia"
+excerpt: "Vision AI dev Kit"
 variable:
   - platform: windows
     name: Windows

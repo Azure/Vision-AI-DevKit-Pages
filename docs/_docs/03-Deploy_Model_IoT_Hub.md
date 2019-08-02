@@ -102,6 +102,7 @@ Optional: Deploy the Webstream module if you want to view the video output in a 
             "host": {}
           }
         }
+     }
   ```
 
 * For more information about *Container Create Options*, *Restart Policy*, and *Desired Status* see [EdgeAgent desired properties](https://docs.microsoft.com/en-us/azure/iot-edge/module-edgeagent-edgehub#edgeagent-desired-properties){:target="_blank"}.
