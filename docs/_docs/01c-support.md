@@ -38,4 +38,4 @@ The *IoT Devices* channel in Microsoft's IoT tech community is a place for both 
 
 ![GitHub]({{ '/assets/images/github.PNG' | relative_url }})
 
-Use the Vision AI Dev Kit [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/issues){:target="_blank"} respository for issue and feature request submissions. You can also see from GitHub which issues are already known and when there is a fix can be expected.
+Use the Vision AI Dev Kit [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/issues){:target="_blank"} respository for issue and feature request submissions. You can also see from GitHub which issues are already known and when there is a fix expected.
