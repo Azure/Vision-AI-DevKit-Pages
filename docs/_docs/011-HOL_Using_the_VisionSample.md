@@ -26,14 +26,15 @@ last_modified_at: 2019-04-29
 
 ## Create a vision AI model with Azure Custom Vision service
 
-In this tutorial, you will build a vision AI model for workplace safety scenario that detects if a person is wearing a hard hat or not. Don't have a yellow hard hat to be able to test the functionality after you are done? You can also take pictures and use your own data to build the Vision AI model. Take 30+ pictures for a same object from different angles and distances instead of using the pictures for hard hat model. You can also use the [camera to take pictures]({{ '/docs/train/' | relative_url }}){:target="_blank"} (you'll need python and GitHub).
+In this tutorial, you will build a vision AI model for workplace safety scenario that detects if a person is wearing a hard hat or not. Don't have a yellow hard hat to be able to test the functionality after you are done? You can also take pictures and use your own data to build the Vision AI model. Take 30+ pictures for a same object from different angles and distances instead of using the pictures for hard hat model. You can also use the [camera to take pictures]({{ '/docs/train/' | relative_url }}){:target="_blank"} (you'll need to install Python and GitHub).
 
 ### Image classification vs. object detection
 
 There are two ways to train your model - image classification and object detection.
 
-*Image classification:* analyses the whole frame as a picture and doesn't draw bounding boxes. Can only identify one object per frame. Easy to train
-*Object detection:* Can identify multiple objects per image and draws bounding boxes around them. Takes a little bit more time to train as the training requires identifying the object per uploaded image. If you choose to do object detection model with hard hat data remember to include both head and hard hat to the object when applicable (not only the hat).
+*Image classification:* Analyzes the whole frame as a picture and doesn't draw bounding boxes. Can only identify one object per frame. Easy to train.
+
+*Object detection:* Can identify multiple objects per image and draws bounding boxes around them. Takes a little bit more time to train as the training requires identifying the object per uploaded image. If you choose to do object detection model with hard hat data, remember to include both the wearer's head and hard hat as the object when applicable (not only the hat).
 
 ### Setup a new Azure Custom Vision project
 
