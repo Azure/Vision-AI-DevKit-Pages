@@ -16,7 +16,7 @@ last_modified_at: 2019-04-23
 
 ## What you will need to create and train a model
 
-* A valid Azure subscription. [Create an account for free.](https://azure.microsoft.com/free/)
+* A valid Azure account. [Create an account for free.](https://azure.microsoft.com/free/)
 * A set of images for use in training the classifier model.
 
 ## What you will need to containerize and deploy the model

@@ -1,5 +1,5 @@
 ---
-title: "Hands on Lab - Using Azure Stream Analytics (ASA) to create alerts - DRAFT"
+title: "Using Azure Stream Analytics (ASA) to create alerts"
 permalink: /docs/Tutorial-HOL_Using_ASA_for_alerts/
 excerpt: "How to use ASA and the Vision AI DevKit to create alerts."
 variable:
@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-04-22
+last_modified_at: 2019-08-02
 ---
 ## Overview
 
@@ -31,7 +31,7 @@ To do that, we will build and deploy an ASA module at the edge.
 
 ## What you will need
 
-* A valid Azure subscription ([Create an account for free.](https://azure.microsoft.com/free/))
+* A valid Azure account ([Create an account for free.](https://azure.microsoft.com/free/))
 * Vision AI DevKit camera configured with the VisionSample model
 * Configured Azure IoT Hub
 
@@ -186,9 +186,9 @@ For this tutorial, you deploy one module, which is your Stream Analytics job. Th
 
     You should see the new Stream Analytics module running, along with the IoT Edge agent module and the IoT Edge hub.
 
- ## View data
+## View data
 
-Now you can go to your IoT Edge device to check out the interaction between the Azure Stream Analytics module and AIVisionDevKitGetStartedModule module. You can run following commands either using platform tools (in Windows type *adb shell* first) or having logged in to the device using ssh.
+Now you can go to your IoT Edge device to check out the interaction between the Azure Stream Analytics module and AIVisionDevKitGetStartedModule module. You can run the following commands either using platform tools (in Windows type *adb shell* first) or having logged in to the device using ssh.
 
 1. Check that all the modules are running in Docker:
 
@@ -205,7 +205,7 @@ Now you can go to your IoT Edge device to check out the interaction between the 
    iotedge logs -f {moduleName}  
    ```
 
-1. An additional option for checking the interaction between modules is to use [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/tag/2019-1-4){:target="_blank"}. It's currently only available for Windows. You'll need you IoT Edge device connection string to be able to poll your device.
+1. An additional option for checking the interaction between modules is to use [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/tag/2019-1-4){:target="_blank"}. It's currently only available for Windows. You'll need your IoT Edge device connection string to be able to poll your device.
 
 ## Clean up resources
 
@@ -231,7 +231,7 @@ If you want to remove the IoT Edge runtime and related resources from your devic
 
 #### Windows
 
-Uninstall the IoT Edge runtime.
+Uninstall the IoT Edge runtime:
 
    ```powershell
    . {Invoke-WebRequest -useb aka.ms/iotedge-win} | Invoke-Expression; `
