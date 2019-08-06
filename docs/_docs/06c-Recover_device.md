@@ -7,15 +7,15 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-04-17
+last_modified_at: 2019-08-03
 ---
 ## What you will need
 
-* ADB command line utility. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
+* ADB command line utility ([Instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 
 ## Recover Vision AI Dev Kit hardware after a failed firmware update
 
-Re-flash using Fastboot, a part of the platform tools, if the device will enter fastboot mode.
+Re-flash using Fastboot, a part of the platform tools, if the device will enter Fastboot Mode.
 
 ```terminal
     > $ adb reboot bootloader

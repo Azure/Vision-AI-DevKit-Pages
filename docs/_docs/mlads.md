@@ -21,7 +21,8 @@ last_modified_at: 2019-06-10
 
 ### What you will need
 
-- Active Azure subscription
+- Active Azure account
+
 - Azure Machine Learning Workspace
 
 ## Setup the Vision AI DevKit camera
@@ -76,7 +77,7 @@ We'll start by creating a new storage account and then upload your model to it.
 
 - Login to <a href="http://portal.azure.com" target="blank">http://portal.azure.com</a>.
 - Search for `Storage` and select `Storage accounts`.
-- Use your existing Azure subscription and resource group.
+- Use your existing Azure account and resource group.
 - Create a new storage account with a unique name (NOTE: upper case characters are not allowed).
 - Select the `West-US 2` region.
 - Click on `Review+Create` (other default options should be correct).

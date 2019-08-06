@@ -7,9 +7,9 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-05-28
+last_modified_at: 2019-08-02
 ---
-This guide will start you on your vision AI journey with the **Vision AI DevKit**, taking you from setting up your Microsoft Azure account to seeing video output from the DevKit camera of recognized objects. We will use a VisionSample model for this process, which has been trained to recognize up to 183 different objects.
+This guide will start you on your vision AI journey with the **Vision AI DevKit**, taking you from setting up your Microsoft Azure account to seeing video output of recognized objects by the DevKit camera. We will use a VisionSample model for this process, which has been trained to recognize up to 183 different objects.
 
   ![Flow chart of the steps taken for the first use of the Vision AI Dev Kit, covered in the 'What you will do' section of this document]({{ '/assets/images/new_OOBE_flow.PNG' | relative_url }})
 
@@ -22,7 +22,7 @@ This guide will start you on your vision AI journey with the **Vision AI DevKit*
 
 ## What you will need
 
-- Active Azure subscription
+- Active Azure account
 - Vision AI DevKit camera hardware
 - Monitor supporting HDMI input with an HDMI cable (do not use any cable adapters), or an [RTSP supporting video player application]({{ '/docs/RTSP_stream/' | relative_url }}){:target="_blank"}
 
@@ -30,7 +30,7 @@ This guide will start you on your vision AI journey with the **Vision AI DevKit*
 
 ### Azure account
 
-The Vision AI DevKit is configured to work with Microsoft Azure IoT resources. To get started, you will need a new or existing Azure subscription. You can create a free account by visiting this link: [https://azure.microsoft.com/free](https://aka.ms/azureaccount/){:target="_blank"}
+The Vision AI DevKit is configured to work with Microsoft Azure IoT resources. To get started, you will need a new or existing Azure account. You can create a free account by visiting this link: [https://azure.microsoft.com/free](https://aka.ms/azureaccount/){:target="_blank"}.
 
 ## Setup your DevKit camera
 
@@ -40,13 +40,13 @@ These steps will configure your DevKit camera for Wi-Fi and connect the the came
 
 ## View DevKit camera output
 
-You can view the DevKit camera output with a web browser, using the URL given on the final device setup page. You can also connect an HDMI montior to the HDMI port on the camera directly or a video playback application (such as VLC Player) which support RTSP video. Note: The if using a cable, there should be no adapters at either end.
+You can view the DevKit camera output with a web browser, using the URL given on the final device setup page. You can also connect an HDMI montior to the HDMI port on the camera directly or a video playback application (such as VLC Player) that supports RTSP video. Note: If using a cable, there should be no adapters at either end.
 
 For more information on using RTSP streaming, see the topic [**View RTSP video stream**]({{ '/docs/RTSP_stream/#connect-to-the-video-stream' | relative_url }}){:target="_blank"}.
 
 ## Basic setup
 
-After setting up the device you will have a following setup.
+After setting up the device, you will have a following setup.
 
 
 
