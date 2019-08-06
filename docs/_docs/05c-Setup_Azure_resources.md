@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-03-15
+last_modified_at: 2019-08-03
 ---
 
 ## What you will do
@@ -23,7 +23,7 @@ last_modified_at: 2019-03-15
 
 ### Azure IoT Edge device
 
-To use your Vision AI DevKit hardware with Azure IoT Hub for Edge workloads, you will need to register the hardware as an IoT Edge device. Upon registration, you are provided a connection string you will use during Vision AI DevKit hardware setup. Please ensure you make copy the string somewhere you can refer to.
+To use your Vision AI DevKit hardware with Azure IoT Hub for Edge workloads, you will need to register the hardware as an IoT Edge device. Upon registration, you are provided a connection string you will use during Vision AI DevKit hardware setup. Please ensure you  copy the string somewhere you can refer to.
 
 ### [Register a new Azure IoT Edge device from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal#create-a-device){:target="_blank"}
 
