@@ -31,12 +31,11 @@ last_modified_at: 2019-07-03
 
 2. Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
 
-3. Open VS Code. Click the Extensions icon in the Activity Bar (left side) and install the following extensions:
-    * **Azure Machine Learning** (this will automatically add **Azure Account** and **Microsoft Python** extensions)
-    * **Azure IoT Hub Toolkit**
-    * **Azure IoT Edge**
-    * **Docker**
-      * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery){:target="_blank"}
+3. Open VS Code. Click the Extensions icon in the Activity Bar (left side) and install Vision AI Dev Kit extension. It bundles together several other needed extensions:
+    ![VS Cpde extensions]({{ '/assets/images/VSC_Deploy_extension.png' | relative_url }})
+
+   * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery){:target="_blank"}
+
 4. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py){:target="_blank"} and required packages.
 
     * Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, there is a *requirements.txt* in GitHub under [VisionSample\MachineLearning\scripts](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/samples/research/VisionSample/MachineLearning/scripts){:target="_blank"} folder that can be used to specify correct versions. Please copy the file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined. Below is the content of the file if you prefer creating it locally.
