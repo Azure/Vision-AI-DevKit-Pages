@@ -93,7 +93,7 @@ docs:
       - title: "Display output"
         url: /docs/Display_issues/
       - title: "Wi-Fi"
-        url: /docs/wifi_issues/
+        url: /docs/06b_wifi_issues/
       - title: "Firmware update"
         url: /docs/Recover_device/
 
