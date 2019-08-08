@@ -8,7 +8,7 @@ variable:
   - platform: macos
     name: macOS
 last_modified_at: 2019-08-03
-
+---
 * ADB command line Utility ([Instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 
 ## Unable to connect to a Wi-Fi network

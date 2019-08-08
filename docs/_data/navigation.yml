@@ -47,6 +47,7 @@ docs:
         url: /docs/train/
 
   - title: Vision AI
+    url: /docs/visionai
     children:      
       - title: "Vision AI model"
         url: /docs/model
@@ -93,7 +94,7 @@ docs:
       - title: "Display output"
         url: /docs/Display_issues/
       - title: "Wi-Fi"
-        url: /docs/06b_wifi_issues/
+        url: /docs/wifi_issues/
       - title: "Firmware update"
         url: /docs/Recover_device/
 
@@ -105,5 +106,7 @@ docs:
         url: /docs/Docker_status/
       - title: "Improve inferencing accuracy"
         url: /docs/Inferencing_accuracy/
-      - title: "View RTSP video stream"
+      - title: "View RTSP video stream in a media player"
         url: /docs/RTSP_stream/
+      - title: "Clean up your Azure resources"
+        url: /docs/clean_up/
