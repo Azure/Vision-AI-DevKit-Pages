@@ -106,7 +106,7 @@ You can learn more about what Scott is working on <a href="https://github.com/ss
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 /*
 var disqus_config = function () {
-this.page.url = https://azure.github.io/Vision-AI-DevKit-Pages/docs/testing_page;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.url = https://azure.github.io/Vision-AI-DevKit-Pages/docs/testing_page#;  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = community_project_01; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
