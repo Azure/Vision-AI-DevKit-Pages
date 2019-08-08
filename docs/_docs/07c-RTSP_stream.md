@@ -32,7 +32,7 @@ ifconfig wlan0
 
 ### Using Azure IoT Hub
 
-  1. Go to your device in Azure IoT Hub and select the model deployed on your device. (This example uses the VisionSample model.)
+  1. Go to your device in Azure IoT Hub and select the model deployed on your device. (This example uses the AIVisionDevKitGetStartedModule module)
     ![Azure IoT Hub Edge device screen with model file highlighted]({{ '/assets/images/VisionSample_IoTHub2.png' | relative_url }})
 
   2. Click ***Module Identity Twin***
