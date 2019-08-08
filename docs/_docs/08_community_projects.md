@@ -7,7 +7,11 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-08-05
+comments: 
+  provider: "disqus"
+  disqus: 
+    shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
+last_modified_at: 2019-08-07
 ---
 
 
@@ -94,4 +98,24 @@ You can learn more about what Scott is working on <a href="https://github.com/ss
 </tr>
 </table></html>
 
+<div id="disqus_thread"></div>
+<script>
 
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project#;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = community_project_01; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-azure-github-io-vision-ai-devkit-pages.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
