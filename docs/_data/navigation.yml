@@ -27,10 +27,6 @@ docs:
         url: /docs/setup/
       - title: "Support and community"
         url: /docs/support
-      - title: "Vision AI model"
-        url: /docs/model
-      - title: "Supported frameworks and runtimes"
-        url: /docs/frameworks
 
   - title: Tutorials
     children:
@@ -49,6 +45,13 @@ docs:
             url: /docs/azurenotebook/
       - title: "Use camera to take pictures"
         url: /docs/train/
+
+  - title: Vision AI
+    children:      
+      - title: "Vision AI model"
+        url: /docs/model
+      - title: "Supported frameworks and runtimes"
+        url: /docs/frameworks
 
   - title: How to - Deploy
     children:
@@ -90,7 +93,7 @@ docs:
       - title: "Display output"
         url: /docs/Display_issues/
       - title: "Wi-Fi"
-        url: /docs/Wi-Fi_issues/
+        url: /docs/wifi_issues/
       - title: "Firmware update"
         url: /docs/Recover_device/
 

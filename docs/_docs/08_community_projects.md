@@ -1,5 +1,6 @@
 ---
-title: "Community Project: Vision AI DevKit provisioning with Azure IoT Central"
+
+title: "Community Project: Vision AI Dev provisioning with Azure IoT Central"
 permalink: /docs/community_project
 excerpt: "Vision AI Dev provisioning with Azure IoT Central"
 variable:
@@ -14,7 +15,6 @@ comments:
 last_modified_at: 2019-08-07
 ---
 
-
 <html><table>
 <tr><td>
 <b> Summary </b> </td></tr>
@@ -23,7 +23,6 @@ last_modified_at: 2019-08-07
     
 This project demonstrates the successful implementation of a Vision AI DevKit device provisioning itself with Azure IoT Central services to enable the live reporting of telemetry, state, events, and settings with the ability to manually control the ML model. This project can be considered a proof of concept of IoT Edge device's integration with IoT Central before IoT Central officially supports IoT Edge devices.
 
-</td>
 <td width="50%"> <img src="images/community_iotcentral.PNG" alt="i"> </td>
 </tr>
 </table></html>
@@ -43,6 +42,7 @@ This project has potential for BLANK industries; for example, the use of IoT Cen
 
 
 <html><table>
+
  <tr>
     <td> <b> Software and Services used</b> </td>
     <td> <b> Hardware </b> </td> 
@@ -62,6 +62,7 @@ This project has potential for BLANK industries; for example, the use of IoT Cen
  </tr>
  </table>
 </html>
+
 
 <html><table>
 <tr><td>
@@ -119,3 +120,5 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
+
+
