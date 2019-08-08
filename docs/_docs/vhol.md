@@ -17,7 +17,7 @@ last_modified_at: 2019-04-29
 ### Hardware setup
 Make sure that your AI vision dev kit is plugged to power via USB and connected to an external screen via HDMI.
 
-### Get an Azure subscription
+### Get an Azure account
 Use this account to login to Azure, see and deploy Azure resources:
 - user: lab.user00@msiotlabs.com where 00 is the number on your AI vision dev kit (between 01 and 26)
 - password: *Provided by the lab at your station* 
