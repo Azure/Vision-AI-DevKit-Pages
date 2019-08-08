@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting Wi-Fi Issues"
-permalink: /docs/Wi-Fi_issues/
+permalink: /docs/wifi_issues/
 excerpt: "Resolving Wi-Fi issues"
 variable:
   - platform: windows
