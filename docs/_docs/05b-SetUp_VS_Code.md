@@ -12,7 +12,9 @@ last_modified_at: 2019-07-03
 
 ## What you will do
 
-* Configure a Visual Studio (VS) Code dev environment for Windows, Linux or MacOS
+* Install a Visual Studio (VS) Code dev environment for Windows, Linux or MacOS
+* Setup and Configure Visual Studio (VS) Code for container deployment
+* Clone Vision AI Dev Kit GitHub repository using VS Code sample
 
 ## What you will need
 
@@ -20,6 +22,7 @@ last_modified_at: 2019-07-03
 * Python 3.7 by Anaconda
 * Azure Machine Learning, Azure IoT Hub Toolkit and Azure Iot Edge extensions for VS Code
 * Azure account with configured Azure IoT Hub
+* Azure user account with configured Azure IoT Hub
 
 ## Windows users
 
@@ -147,3 +150,14 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
       * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery){:target="_blank"}
 
 3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py){:target="_blank"} and required packages.
+
+### Clone GitHub
+
+1.	Open command palette ("View" -> "Command palette")
+   - Select "Azure IoT Edge Show Sample Gallery"
+   - Click Vision AI Developer Kit -> Open Sample
+   - Select local folder to use to store the sample solution
+
+ ![Open sample]({{ '/assets/images/VSC_Deploy_Open_Sample.png' | relative_url }})
+
+ ![GitHub view in VS Code]({{ '/assets/images/VSC_Deploy_GitHub_view.png' | relative_url }})
