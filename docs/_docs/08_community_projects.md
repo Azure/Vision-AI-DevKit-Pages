@@ -1,66 +1,97 @@
 ---
-title: "Vision AI dev Kit"
+title: "Community Project: Vision AI DevKit provisioning with Azure IoT Central"
 permalink: /docs/community_project
-excerpt: "Vision AI dev Kit"
+excerpt: "Vision AI Dev provisioning with Azure IoT Central"
 variable:
   - platform: windows
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-08-02
+last_modified_at: 2019-08-05
 ---
 
-## Start your machine learning journey with Vision AI DevKit
 
-Vision AI Dev Kit provides a quick start to intelligent edge, machine learning and Azure services. you can start your machine learnind journey with this Dev Kit or use it to proof your concept in enterprise use before deciding to go to production.
+<html><table>
+<tr><td>
+<b> Summary </b> </td></tr>
+<tr>
+    <td width="50%">
+    
+This project demonstrates the successful implementation of a Vision AI DevKit device provisioning itself with Azure IoT Central services to enable the live reporting of telemetry, state, events, and settings with the ability to manually control the ML model. This project can be considered a proof of concept of IoT Edge device's integration with IoT Central before IoT Central officially supports IoT Edge devices.
 
-You can use <a href="http://Customvision.ai">Customvision.ai</a>, a web portal with easy to use UI, to train your AI model and export it in the format that can be directly deployed to Vision AI Dev Kit. This enables very fast iterations in terms of being able to test out your AI model in real life.
+</td>
+<td width="50%"> <img src="images/community_iotcentral.PNG" alt="i"> </td>
+</tr>
+</table></html>
+
+<html><table>
+<tr><td>
+<b> Implementation </b> </td></tr>
+
+<tr><td>
+This project is implemented as a NodeJS micro service and React Web client. The web client allows the user to interact directly with the device to control it as well as experiment with Custom Vision AI models.
+
+This project has potential for BLANK industries; for example, the use of IoT Central with the Vision AI DevKit camera can be used to BLANK to ensure BLANK.
+</td></tr>
+
+ </table>
+</html>
+
 
 <html><table>
  <tr>
-    <td>Sold by</td>
-    <td>Arrow</td> 
-    <td rowspan="12"><img src="images/DEVKIT_vaidk.png" alt="i"></td>Vision AI Dev Kit</tr>
+    <td> <b> Software and Services used</b> </td>
+    <td> <b> Hardware </b> </td> 
+    <td rowspan="24"></td> </tr>
  <tr>
-    <td>Manufacturer</td> 
-    <td>Altek</td>
+    <td> <ul type="disc" >
+            <li>Azure IoT Central</li>
+            <li>Visual Studio Code</li>
+            <li>NodeJS 10x (with NPM)</li>
+            <li>Android Debug Bridge (ADB) tools</li>
+         </ul> 
+   </td> 
+    <td> <ul type="disc">
+            <li>Vision AI DevKit camera</li>
+         </ul>
+   </td>
  </tr>
- <tr>
-    <td>SoC</td>
-    <td><a href="https://www.qualcomm.com/products/qcs603">Qualcomm QCS603</a></td> 
- </tr>
- <tr>
-    <td>Operating System</td>
-    <td>Yocto Linux</td> 
- </tr>
- <tr>
-    <td>Category</td>
-    <td>Intelligent Edge Camera</td> 
- </tr>
- <tr>
-    <td>Product spec</td>
-    <td><a href="https://store.altek.com.tw/qualcomm/product/ai-camera-altek-azure-iot-starter-kit#TECH-NODE">coming soon</a></td> 
- </tr>
- <tr>
-    <td>HW Acceleration</td>
-    <td>GPU (not optimized), DSP optimized for vision AI inferencing</td> 
- </tr>
- <tr>
-    <td>Web page</td>
-    <td><a href="http://www.visionaidevkit.com">www.visionaidevkit.com</a></td> 
- </tr>
- <tr>
-    <td rowspan="2">Assets and tutorials</td>
-    <td><a href="https://azure.github.io/Vision-AI-DevKit-Pages/docs/Tutorial-HOL_Using_the_VisionSample/">Tutorials</a></td> 
- </tr>
- <tr>
-    <td><a href="https://github.com/Microsoft/vision-ai-developer-kit">Assets (GitHub)</a></td> 
- </tr>
- <tr>
-    <td>Community</td>
-    <td><a href="https://techcommunity.microsoft.com/t5/IoT-Devices/bd-p/HardwareEngineering">IoT Device Techcommunity</a></td> 
- </tr>
-  <tr>
-    <td>Certification</td>
-    <td>Azure IoT, <a href="https://catalog.azureiotsolutions.com/details?title=Vision-AI-DevKit-Camera">Link to device catalog</a></td> 
- </tr>
+ </table>
+</html>
+
+<html><table>
+<tr><td>
+<b> Repository </b> </td></tr>
+
+<tr><td>
+Find more information and relevant code here: <a href="https://github.com/sseiber/peabody-local-service/blob/master/README.md">Github</a>.
+</td></tr>
+ </table>
+</html>
+
+<html><table>
+<tr><td>
+<b> Future Improvements and Project Suggestions </b> </td></tr>
+
+<tr><td>
+  <add thoughts and ideas in terms of how "community" could develop these assets further to add functionality/application to project>
+</td></tr>
+ </table>
+</html>
+
+<html><table>
+<tr><td>
+<b> About the Creator </b> </td></tr>
+<tr>
+    <td width="50%">
+    
+Scott Seiber is ... <add a short bio about your experience and interests, why you are working on this project>
+
+You can learn more about what Scott is working on <a href="https://github.com/sseiber">here</a>.
+
+</td>
+<td width="50%"> <img src="images/community_iotcentral.PNG" alt="i"> </td>
+</tr>
+</table></html>
+
+
