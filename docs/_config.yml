@@ -117,3 +117,8 @@ analytics:
   google:
     tracking_id: "UA-137900817-1"
     anonymize_ip: false # default
+
+comments: 
+  provider: "disqus"
+  disqus: 
+    shortname: https-azure-github-io-vision-ai-devkit-pages
