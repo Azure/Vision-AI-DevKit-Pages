@@ -1,7 +1,7 @@
 ---
-title: "Using Azure Stream Analytics (ASA) to create alerts"
+title: "Use Azure Stream Analytics (ASA) to count an object of interest"
 permalink: /docs/Tutorial-HOL_Using_ASA_for_alerts/
-excerpt: "How to use ASA and the Vision AI DevKit to create alerts."
+excerpt: "Use Azure Stream Analytics (ASA) to count an object of interest"
 variable:
   - platform: windows
     name: Windows
@@ -19,13 +19,13 @@ Azure Stream Analytics provides a richly structured query syntax for data analys
 
 To do that, we will build and deploy an ASA module at the edge.
 
-*Note:* this tutorial is incomplete in a way that it doesn't trigger any events yet. 
+*Note:* this tutorial is incomplete in a way that it doesn't trigger any events yet. There are multipe options how to continue after this tutorial depending on the end-2-end use case. The results of Stream Analytics can be for example directer to SQL,  storage or used to trigger alerts.
 
 ## What you will do
 
-* Create an Azure Stream Analytics job to process data from the Vision AI DevKit camera
+* Create an Azure Stream Analytics job in Azure
 * Connect the Azure Stream Analytics job with other IoT Edge modules
-* Deploy the Azure Stream Analytics job to your Vision AI DevKit camera from the Azure portal
+* Deploy the Azure Stream Analytics job to your Vision AI DevKit camera from the Azure portal to process data before transferring it to IoT Hub
 
   ![Diagram - Tutorial architecture, stage and deploy ASA job]({{ '/assets/images/asa-architecture.png' | relative_url }})
 
@@ -37,7 +37,7 @@ To do that, we will build and deploy an ASA module at the edge.
 
 ## Create an Azure Stream Analytics (ASA) job
 
-In this section, you create an Azure Stream Analytics job to take data from your IoT hub, query the sent telemetry data from your device, and then forward the results to an Azure Blob storage container.
+In this section, you create an Azure Stream Analytics job to take data from your IoT hub, query then sent telemetry data from your device, and then forward the results to an Azure Blob storage container.
 
 ### Create a storage account
 
@@ -105,17 +105,11 @@ Using the three elements of input, output, and query, this section creates a job
 1. Replace the default text with the following query. The SQL code sends an alert if a person is detected for the first time in a 15-second window.
 
     ```sql
-   -- PERSON DETECTION: Define threshold for detection
-   WITH step1 AS(
-   SELECT label,confidence,count(*) as countPerson
+   SELECT label, count(*) as countPerson
+   INTO alert
    FROM personDetection
-   GROUP BY TUMBLINGWINDOW(second,30),label,confidence
-   HAVING label='person' and confidence>50
-   )
-   -- Send alert only if it's the first time in 15s
-   SELECT countPerson INTO alert FROM step1
-   WHERE countPerson>0
-   AND  ISFIRST(second, 15) OVER (WHEN countPerson>0)=1
+   GROUP BY TUMBLINGWINDOW(second,30),label
+   HAVING label='[add here your object of interest]'
    ```
    
 This query will create an alert everytime VisionSample recognizes a person during the period of 30 seconds. The alert will include a count of the times it identified a person during that time.
@@ -176,6 +170,8 @@ For this tutorial, you deploy one module, which is your Stream Analytics job. Th
 }
     ```
 
+   routeTwo is only needed in case you want to send the standard device messages to IoT Hub in addition to the count.
+
    The routes that you declare here define the flow of data through the IoT Edge device. The telemetry data from personDetection is sent to the IoT Hub and to the **personDetection** input that was configured in the Stream Analytics job. The **alert** output messages are sent to IoT Hub and to the personDection module to trigger the reset command.
 
 1. Select **Next**.
@@ -206,4 +202,16 @@ Now you can go to your IoT Edge device to check out the interaction between the 
    ```
 
 1. An additional option for checking the interaction between modules is to use [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/tag/2019-1-4){:target="_blank"}. It's currently only available for Windows. You'll need your IoT Edge device connection string to be able to poll your device.
+
+## What next?
+
+[Here](https://docs.microsoft.com/en-us/azure/event-grid/publish-iot-hub-events-to-logic-apps){:target="_blank"} is a tutorial for setting up an email trigger. 
+
+*Note!* Unlike instructed you must use Device Telemetry as an event type when creating an event subscription to IoT Hub.
+
+![ASA Device Telemetry]({{ '/assets/images/asa_device_telemetry.png' | relative_url }})
+
+In this example the Stream Analytics module does all the filtering of the messages. In practice this means that an email is triggered for every event that stream analytics communicates to IoT Hub.
+
+There are some restrictions with the availability of using Device Telemetry as a trigger. Please check the [supported regions](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-event-grid#regional-availability){:target="_blank"}.
 
