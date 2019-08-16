@@ -34,7 +34,9 @@ docs:
         url: /docs/Tutorial-HOL_Using_the_VisionSample/
       - title: "Deploy a vision AI model with Visual Studio Code"
         url: /docs/Deploy_model_VS_Code/
-      - title: "Create object detection alerts using Azure Stream Analytics (ASA)"
+      - title: "Use camera to take pictures"
+        url: /docs/train/
+      - title: "Use Azure Stream Analytics (ASA) to count object of interests"
         url: /docs/Tutorial-HOL_Using_ASA_for_alerts/
       - title: "Train a model using Azure Machine Learning and Jupyter notebooks"
         url: /docs/jupyter/
@@ -43,8 +45,7 @@ docs:
             url: /docs/notebookvm/
           - title: "Azure Notebooks"
             url: /docs/azurenotebook/
-      - title: "Use camera to take pictures"
-        url: /docs/train/
+
 
   - title: Vision AI
     url: /docs/visionai
