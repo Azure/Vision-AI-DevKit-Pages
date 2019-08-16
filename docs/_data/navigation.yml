@@ -46,9 +46,8 @@ docs:
           - title: "Azure Notebooks"
             url: /docs/azurenotebook/
 
-
   - title: Vision AI
-    url: /docs/visionai
+    url: /docs/visionai/
     children:      
       - title: "Vision AI model"
         url: /docs/model
@@ -59,8 +58,8 @@ docs:
     children:
       - title: Container module using Azure IoT Hub
         url: /docs/Deploy_Model_IoT_Hub/
-#      - title: Container module using Visual Studio (VS) Code
-#        url: /docs/Deploy_model_VS_Code/
+#     - title: Container module using Visual Studio (VS) Code
+#       url: /docs/Deploy_model_VS_Code/
       - title: Model using Module Twin
         url: /docs/Deploy_Model_using_Module_Twin/
 

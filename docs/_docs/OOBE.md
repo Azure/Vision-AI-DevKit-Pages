@@ -43,13 +43,13 @@ Tapping **Next** starts the process of creating the necessary Azure resources, t
 
     ![Result screen presenting your unique device code for connection to Azure IoT]({{ '/assets/images/Device_String.png' | relative_url }})
 
-    Note: If you already have an Azure IoT Edge device connection string associated with the Vision AI Dev Kit, click the `Already have a connection string?' link and enter that connection string.
+    Note: If you already have an Azure IoT Edge device connection string associated with the Vision AI Dev Kit, click the `Already have a connection string?' link and enter that connection string. However, in order to get the full first use experience, the existing connection string must have been used with Vision AI Dev Kit device arlier. A different IoT Edge connection string will not load the default vision sample module to the device.
 
 2. Tap **Next** and insert the device code you received in the previous screen.
 
     ![Dialog box for inserting the unique device code into]({{ '/assets/images/Enter_Code.png' | relative_url }})
 
-3. You should reach the following screen when your code is accepted. (Press 'OK' to close the pop-up messsage, if seen.)
+3. You should reach the following screen when your code is accepted. (Press 'OK' to close the pop-up message, if seen.)
 
     ![Screen confirming connection to Azure, then allowing selection of your Azure account]({{ '/assets/images/Connected_to_Azure.png' | relative_url }})
 
