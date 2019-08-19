@@ -1,6 +1,6 @@
 ---
 
-title: "Community Project: Vision AI Dev provisioning with Azure IoT Central"
+title: "Community Project | Vision AI Dev provisioning with Azure IoT Central"
 permalink: /docs/testing_page
 excerpt: "Vision AI Dev provisioning with Azure IoT Central"
 variable:
@@ -45,7 +45,7 @@ This project has potential for BLANK industries; for example, the use of IoT Cen
  <tr>
     <td> <b> Software and Services used</b> </td>
     <td> <b> Hardware </b> </td> 
-    <td rowspan="24"></td> </tr>
+    <td width="50%"></td> </tr>
  <tr>
     <td> <ul type="disc" >
             <li>Azure IoT Central</li>
