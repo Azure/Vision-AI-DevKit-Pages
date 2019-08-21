@@ -26,7 +26,7 @@ Your Azure username and password are taped to the device. Please use them in all
 
 - At this point the camera should be flashing red lights indicating that it is running its own Wi-Fi access point.
 
-- The label at the bottom of the device will have the default Wi-Fi access point and password. If there is no label, see [Troubleshooting Wi-Fi Issues]({{ '/docs/Wi-Fi_issues/' | relative_url }}).
+- The label at the bottom of the device will have the default Wi-Fi access point and password.
 
 - From your PC, connect to a Wi-Fi network named MSIOT_xxxxxx (xxxxxx is the last 6 characters of the device's Wi-Fi MAC address, e.g. MSIOT_BD097D).
 
@@ -115,6 +115,8 @@ After running through the initial setup, the camera should have 4 modules (conta
   - Domain - [General(compact)] **NOTE: Ensure you do not select the `General` option**
   - Export Capabilites - Vision AI Dev Kit
 
+![New project]({{ '/assets/images/custom_vision_new.jpg' | relative_url }})
+
 ### Upload and tag your training data
 
 - Download the training images here - [TrainingData.zip]({{ '/Needed/TrainingData.zip' | relative_url }}).
@@ -167,3 +169,6 @@ There are two ways to train your model - image classification and object detecti
 *Image classification:* Analyzes the whole frame as a picture and doesn't draw bounding boxes. Can only identify one object per frame. Easy to train.
 
 *Object detection:* Can identify multiple objects per image and draws bounding boxes around them. Takes a little bit more time to train as the training requires identifying the object per uploaded image. If you choose to use the object detection model with hard hat data, remember to include both the wearer's head and hard hat as the object when applicable (not only the hat).
+
+Want to also try object detection model? Use this update this URL to the module identity twin: https://jussimlworkspa9385743868.blob.core.windows.net/hardhatobjectdetection/hardhat_object_detection2.VAIDK.zip
+
