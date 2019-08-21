@@ -54,6 +54,7 @@ Find more information and relevant code <a href="https://github.com/sseiber/peab
 <br>Users are encouraged to innovate and continue to improve the functionality of current projects. 
 </td></tr>
 <tr><td>
+<br>
 <b> Future Improvements and Project Suggestions </b> </td></tr>
 <tr><td>
   Feel free to fork the project and contribute back any improvements or suggestions. Contributors and maintainers are encouraged.
