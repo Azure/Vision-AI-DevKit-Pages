@@ -26,8 +26,10 @@ This project demonstrates the implementation of a Custom Vision ML model to the 
 <tr><td>
 In addition to the standard Custom Vision ML model, Azure services are used for a number of functions in this project. Azure Stream Analytics is the main program in use, which detects information captured by the DevKit in real time. Blob storage is utilized for long term storage of detected objects, Azure SQL database is used to process the collected data, and Azure App Services generates the website to view the information (shown below).  <br>
 </td></tr></table></html>
-<img src="images/workplace_detectionscreen.PNG" alt="i"> 
+<html>
+<img src="images/workplace_detectionscreen.PNG" alt="i"> <br>
 <img src="images/workplace_graphs.PNG" alt="i">
+</html>
 <html><table>
  <tr>
     <td width = "50%"> <b> Software and Services used</b> </td>
