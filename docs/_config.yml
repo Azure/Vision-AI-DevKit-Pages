@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-remote_theme             : "mmistakes/minimal-mistakes@4.15.2"
+remote_theme             : "mmistakes/minimal-mistakes@4.16.5"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -17,7 +17,7 @@ url                      : https://azure.github.io
 baseurl                  : "/Vision-AI-DevKit-Pages"
 repository               : "Azure/Vision-AI-DevKit-Pages"
 words_per_minute         : 200
-logo                     : "/favicon.ico"
+logo                     : "favicon.ico"
 footer_scripts           : ["/assets/js/main.min.js", "/assets/js/scripts.js", "https://c.s-microsoft.com/mscc/statics/mscc-0.4.0.min.js", "/assets/js/cookies.js"]
 
 # Conversion
