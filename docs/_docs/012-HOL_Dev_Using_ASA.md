@@ -1,13 +1,13 @@
 ---
-title: "Hands on Lab - Using Azure Stream Analytics (ASA) to create alerts - DRAFT"
+title: "Use Azure Stream Analytics (ASA) to count an object of interest"
 permalink: /docs/Tutorial-HOL_Using_ASA_for_alerts/
-excerpt: "How to use ASA and the Vision AI DevKit to create alerts."
+excerpt: "Use Azure Stream Analytics (ASA) to count an object of interest"
 variable:
   - platform: windows
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-04-22
+last_modified_at: 2019-08-02
 ---
 ## Overview
 
@@ -19,25 +19,25 @@ Azure Stream Analytics provides a richly structured query syntax for data analys
 
 To do that, we will build and deploy an ASA module at the edge.
 
-*Note:* this tutorial is incomplete in a way that it doesn't trigger any events yet. 
+*Note:* this tutorial is incomplete in a way that it doesn't trigger any events yet. There are multipe options how to continue after this tutorial depending on the end-2-end use case. The results of Stream Analytics can be for example directer to SQL,  storage or used to trigger alerts.
 
 ## What you will do
 
-* Create an Azure Stream Analytics job to process data from the Vision AI DevKit camera
+* Create an Azure Stream Analytics job in Azure
 * Connect the Azure Stream Analytics job with other IoT Edge modules
-* Deploy the Azure Stream Analytics job to your Vision AI DevKit camera from the Azure portal
+* Deploy the Azure Stream Analytics job to your Vision AI DevKit camera from the Azure portal to process data before transferring it to IoT Hub
 
   ![Diagram - Tutorial architecture, stage and deploy ASA job]({{ '/assets/images/asa-architecture.png' | relative_url }})
 
 ## What you will need
 
-* A valid Azure subscription ([Create an account for free.](https://azure.microsoft.com/free/))
+* A valid Azure account ([Create an account for free.](https://azure.microsoft.com/free/))
 * Vision AI DevKit camera configured with the VisionSample model
 * Configured Azure IoT Hub
 
 ## Create an Azure Stream Analytics (ASA) job
 
-In this section, you create an Azure Stream Analytics job to take data from your IoT hub, query the sent telemetry data from your device, and then forward the results to an Azure Blob storage container.
+In this section, you create an Azure Stream Analytics job to take data from your IoT hub, query then sent telemetry data from your device, and then forward the results to an Azure Blob storage container.
 
 ### Create a storage account
 
@@ -105,17 +105,11 @@ Using the three elements of input, output, and query, this section creates a job
 1. Replace the default text with the following query. The SQL code sends an alert if a person is detected for the first time in a 15-second window.
 
     ```sql
-   -- PERSON DETECTION: Define threshold for detection
-   WITH step1 AS(
-   SELECT label,confidence,count(*) as countPerson
+   SELECT label, count(*) as countPerson
+   INTO alert
    FROM personDetection
-   GROUP BY TUMBLINGWINDOW(second,30),label,confidence
-   HAVING label='person' and confidence>50
-   )
-   -- Send alert only if it's the first time in 15s
-   SELECT countPerson INTO alert FROM step1
-   WHERE countPerson>0
-   AND  ISFIRST(second, 15) OVER (WHEN countPerson>0)=1
+   GROUP BY TUMBLINGWINDOW(second,30),label
+   HAVING label='[add here your object of interest]'
    ```
    
 This query will create an alert everytime VisionSample recognizes a person during the period of 30 seconds. The alert will include a count of the times it identified a person during that time.
@@ -176,6 +170,8 @@ For this tutorial, you deploy one module, which is your Stream Analytics job. Th
 }
     ```
 
+   routeTwo is only needed in case you want to send the standard device messages to IoT Hub in addition to the count.
+
    The routes that you declare here define the flow of data through the IoT Edge device. The telemetry data from personDetection is sent to the IoT Hub and to the **personDetection** input that was configured in the Stream Analytics job. The **alert** output messages are sent to IoT Hub and to the personDection module to trigger the reset command.
 
 1. Select **Next**.
@@ -186,9 +182,9 @@ For this tutorial, you deploy one module, which is your Stream Analytics job. Th
 
     You should see the new Stream Analytics module running, along with the IoT Edge agent module and the IoT Edge hub.
 
- ## View data
+## View data
 
-Now you can go to your IoT Edge device to check out the interaction between the Azure Stream Analytics module and AIVisionDevKitGetStartedModule module. You can run following commands either using platform tools (in Windows type *adb shell* first) or having logged in to the device using ssh.
+Now you can go to your IoT Edge device to check out the interaction between the Azure Stream Analytics module and AIVisionDevKitGetStartedModule module. You can run the following commands either using platform tools (in Windows type *adb shell* first) or having logged in to the device using ssh.
 
 1. Check that all the modules are running in Docker:
 
@@ -205,80 +201,17 @@ Now you can go to your IoT Edge device to check out the interaction between the 
    iotedge logs -f {moduleName}  
    ```
 
-1. An additional option for checking the interaction between modules is to use [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/tag/2019-1-4){:target="_blank"}. It's currently only available for Windows. You'll need you IoT Edge device connection string to be able to poll your device.
+1. An additional option for checking the interaction between modules is to use [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/tag/2019-1-4){:target="_blank"}. It's currently only available for Windows. You'll need your IoT Edge device connection string to be able to poll your device.
 
-## Clean up resources
+## What next?
 
-You can keep the resources and configurations that you created and reuse them. You can also keep using the same IoT Edge device as a test device.
+[Here](https://docs.microsoft.com/en-us/azure/event-grid/publish-iot-hub-events-to-logic-apps){:target="_blank"} is a tutorial for setting up an email trigger. 
 
-Otherwise, you can delete the local configurations and the Azure resources that you created in this article to avoid charges.
+*Note!* Unlike instructed you must use Device Telemetry as an event type when creating an event subscription to IoT Hub.
 
-### Delete Azure resources
+![ASA Device Telemetry]({{ '/assets/images/asa_device_telemetry.png' | relative_url }})
 
-Deleting Azure resources and resource groups is irreversible. Make sure that you don't accidentally delete the wrong resource group or resources. If you created the IoT hub inside an existing resource group that has resources that you want to keep, delete only the IoT hub resource itself, instead of deleting the resource group.
+In this example the Stream Analytics module does all the filtering of the messages. In practice this means that an email is triggered for every event that stream analytics communicates to IoT Hub.
 
-To delete the resources:
-
-1. Sign in to the [Azure portal](https://portal.azure.com) and select **Resource groups**.
-
-2. Select the name of the resource group that contains your IoT Edge test resources.
-
-3. Review the list of resources contained in your resource group. If you want to delete all of them, you can select **Delete resource group**. If you want to delete only some of them, you can click into each resource to delete them individually.
-
-### Delete local resources
-
-If you want to remove the IoT Edge runtime and related resources from your device, use the appropriate commands for your device operating system.
-
-#### Windows
-
-Uninstall the IoT Edge runtime.
-
-   ```powershell
-   . {Invoke-WebRequest -useb aka.ms/iotedge-win} | Invoke-Expression; `
-   Uninstall-SecurityDaemon
-   ```
-
-When the IoT Edge runtime is removed, the containers that it created are stopped, but still exist on your device. View all containers.
-
-   ```powershell
-   docker ps -a
-   ```
-
-Delete the runtime containers that were created on your device.
-
-   ```powershell
-   docker rm -f edgeHub
-   docker rm -f edgeAgent
-   ```
-
-Delete any additional containers that were listed in the `docker ps` output by referring to the container names.
-
-#### Linux
-
-Remove the IoT Edge runtime.
-
-   ```bash
-   sudo apt-get remove --purge iotedge
-   ```
-
-When the IoT Edge runtime is removed, the containers that it created are stopped, but still exist on your device. View all containers.
-
-   ```bash
-   sudo docker ps -a
-   ```
-
-Delete the runtime containers that were created on your device.
-
-   ```bash
-   docker rm -f edgeHub
-   docker rm -f edgeAgent
-   ```
-
-Delete any additional containers that were listed in the `docker ps` output by referring to the container names.
-
-Remove the container runtime.
-
-   ```bash
-   sudo apt-get remove --purge moby
-   ```
+There are some restrictions with the availability of using Device Telemetry as a trigger. Please check the [supported regions](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-event-grid#regional-availability){:target="_blank"}.
 

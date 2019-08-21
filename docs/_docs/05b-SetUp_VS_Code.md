@@ -7,34 +7,36 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-07-03
+last_modified_at: 2019-08-06
 ---
 
 ## What you will do
 
-* Configure a Visual Studio (VS) Code dev environment for Windows, Linux or MacOS
+* Install a Visual Studio Code (VS Code) dev environment for Windows, Linux or MacOS
+* Setup and Configure VS Code for container deployment
+* Clone Vision AI Dev Kit GitHub repository using VS Code sample
 
 ## What you will need
 
 * VS Code
 * Python 3.7 by Anaconda
-* Azure Machine Learning, Azure IoT Hub Toolkit and Azure Iot Edge extensions for VS Code
-* Azure subscription with configured Azure IoT Hub
+* Vision AI DevKit extension for VS Code
+* Azure account with configured Azure IoT Hub
+* Azure user account with configured Azure IoT Hub
 
 ## Windows users
 
-### Setup and Configure Visual Studio (VS) Code for container deployment
+### Setup and Configure VS Code for container deployment
 
 1. If not already available, install VS Code [(Download)](https://code.visualstudio.com/){:target="_blank"} and Python 3.7 by Anaconda (using default options). [(Download)](https://www.anaconda.com/download){:target="_blank"}
 
 2. Once installed, open the **Anaconda Prompt** from *Start Menu\Programs\Anaconda3 (64-bit)*
 
-3. Open VS Code. Click the Extensions icon in the Activity Bar (left side) and install the following extensions:
-    * **Azure Machine Learning** (this will automatically add **Azure Account** and **Microsoft Python** extensions)
-    * **Azure IoT Hub Toolkit**
-    * **Azure IoT Edge**
-    * **Docker**
-      * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery){:target="_blank"}
+3. Open VS Code. Click the Extensions icon in the Activity Bar (left side) and install Vision AI Dev Kit extension. It bundles together several other needed extensions:
+    ![VS Code extensions]({{ '/assets/images/VSC_Deploy_extension.png' | relative_url }})
+
+   * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery){:target="_blank"}
+
 4. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py){:target="_blank"} and required packages.
 
     * Note: When installing the Azure Machine Learning SDK or related Python packages, there are some Python packages which depend on specific versions of other Python packages. If these (dependency) Python packages versions are too high, the installation will fail. To work around this issue, there is a *requirements.txt* in GitHub under [VisionSample\MachineLearning\scripts](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/samples/research/VisionSample/MachineLearning/scripts){:target="_blank"} folder that can be used to specify correct versions. Please copy the file in the VisionAIDevKit root folder (ex. c:\visionaidevkit\requirements.txt) which has stricter versions defined. Below is the content of the file if you prefer creating it locally.
@@ -135,15 +137,22 @@ For Linux these have been tested for Ubuntu or Ubuntu VM version 18.04.
        sudo pip install --upgrade pip
        ```
 
-### Setup and Configure Visual Studio (VS) Code for container deployment
+### Setup and Configure VS Code for container deployment
 
 1. Install VS Code [(Download Here)](https://code.visualstudio.com/){:target="_blank"}
 
-2. Open VS Code. Click the Extensions icon in the Activity Bar (left side) and install the following extensions:
-    * **Azure Machine Learning** (this will automatically add **Azure Account** and **Microsoft Python** extensions)
-    * **Azure IoT Hub Toolkit**
-    * **Azure IoT Edge**
-    * **Docker extension**
+2. Open VS Code. Click the Extensions icon in the Activity Bar (left side) search and install the [Vision AI DevKit](https://marketplace.visualstudio.com/items?itemName=VisionAIDevKit.vision-ai-devkit){:target="_blank"} extension:
       * For more information on installing extensions in VS Code, see [Managing Extensions in Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery){:target="_blank"}
 
 3. Install the **Azure ML SDK** [(Instructions)](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/install?view=azure-ml-py){:target="_blank"} and required packages.
+
+### Clone GitHub
+
+1.	Open command palette ("View" -> "Command palette")
+   - Select "Azure IoT Edge Show Sample Gallery"
+   - Click Vision AI Developer Kit -> Open Sample
+   - Select local folder to use to store the sample solution
+
+ ![Open sample]({{ '/assets/images/VSC_Deploy_Open_Sample.png' | relative_url }})
+
+ ![GitHub view in VS Code]({{ '/assets/images/VSC_Deploy_GitHub_view.png' | relative_url }})

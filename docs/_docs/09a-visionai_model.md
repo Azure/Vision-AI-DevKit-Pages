@@ -18,6 +18,10 @@ Vision AI models which run on the Vision AI DevKit consists of three files:
 * .TXT file - containing a list of the objects recognized by the model
 * .json file - containing the VAM engine configuration
 
+the model is stored in camera in /data/misc/camera folder
+
+In addition .dlc file the camera can run an AI model in .tflite (Tensorflow lite) format.
+
 ## Contents of the .json VAM engine configuration file
 
 You can check the VAM configuration file for the default model using platform tools (ADB):

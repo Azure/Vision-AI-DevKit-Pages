@@ -27,10 +27,6 @@ docs:
         url: /docs/setup/
       - title: "Support and community"
         url: /docs/support
-      - title: "Vision AI model"
-        url: /docs/model
-      - title: "Supported frameworks and runtimes"
-        url: /docs/frameworks
 
   - title: Tutorials
     children:
@@ -38,7 +34,9 @@ docs:
         url: /docs/Tutorial-HOL_Using_the_VisionSample/
       - title: "Deploy a vision AI model with Visual Studio Code"
         url: /docs/Deploy_model_VS_Code/
-      - title: "Create object detection alerts using Azure Stream Analytics (ASA)"
+      - title: "Use camera to take pictures"
+        url: /docs/train/
+      - title: "Use Azure Stream Analytics (ASA) to count object of interests"
         url: /docs/Tutorial-HOL_Using_ASA_for_alerts/
       - title: "Train a model using Azure Machine Learning and Jupyter notebooks"
         url: /docs/jupyter/
@@ -47,15 +45,21 @@ docs:
             url: /docs/notebookvm/
           - title: "Azure Notebooks"
             url: /docs/azurenotebook/
-      - title: "Use camera to take pictures"
-        url: /docs/train/
+
+  - title: Vision AI
+    url: /docs/visionai/
+    children:      
+      - title: "Vision AI model"
+        url: /docs/model
+      - title: "Supported frameworks and runtimes"
+        url: /docs/frameworks
 
   - title: How to - Deploy
     children:
       - title: Container module using Azure IoT Hub
         url: /docs/Deploy_Model_IoT_Hub/
-#      - title: Container module using Visual Studio (VS) Code
-#        url: /docs/Deploy_model_VS_Code/
+#     - title: Container module using Visual Studio (VS) Code
+#       url: /docs/Deploy_model_VS_Code/
       - title: Model using Module Twin
         url: /docs/Deploy_Model_using_Module_Twin/
 
@@ -90,7 +94,7 @@ docs:
       - title: "Display output"
         url: /docs/Display_issues/
       - title: "Wi-Fi"
-        url: /docs/Wi-Fi_issues/
+        url: /docs/wifi_issues/
       - title: "Firmware update"
         url: /docs/Recover_device/
 
@@ -102,5 +106,7 @@ docs:
         url: /docs/Docker_status/
       - title: "Improve inferencing accuracy"
         url: /docs/Inferencing_accuracy/
-      - title: "View RTSP video stream"
+      - title: "View RTSP video stream in a media player"
         url: /docs/RTSP_stream/
+      - title: "Clean up your Azure resources"
+        url: /docs/clean_up/

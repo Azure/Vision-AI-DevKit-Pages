@@ -1,17 +1,15 @@
 ---
 title: "Troubleshooting Wi-Fi Issues"
-permalink: /docs/Wi-Fi_issues/
+permalink: /docs/wifi_issues/
 excerpt: "Resolving Wi-Fi issues"
 variable:
   - platform: windows
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-04-17
+last_modified_at: 2019-08-03
 ---
-## What you will need
-
-* ADB command line utility. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
+* ADB command line Utility ([Instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 
 ## Unable to connect to a Wi-Fi network
 

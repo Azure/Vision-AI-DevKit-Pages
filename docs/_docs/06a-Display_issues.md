@@ -7,11 +7,11 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-04-17
+last_modified_at: 2019-08-03
 ---
 ## What you will need
 
-* ADB command line utility. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
+* ADB command line utility ([Instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 
 ## Display issues
 

@@ -1,5 +1,5 @@
 ---
-title: "Deploy a vision AI model with Visual Studio Code"
+title: "Deploy a Vision AI Model with Visual Studio Code"
 permalink: /docs/Deploy_model_VS_Code orig/
 excerpt: "Using Visual Studio Code deployment to deploy models to the Vision AI DevKit hardware."
 variable:
@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-04-11
+last_modified_at: 2019-08-02
 ---
 
 ## What you will do
@@ -20,8 +20,8 @@ last_modified_at: 2019-04-11
 * Visual Studio (VS) Code with required extentions [(Instructions)]({{ '/docs/SetUp_VS_Code/' | relative_url}}){:target="_blank"}
 * Vision Dev Kit sample model - [GitHub repository](https://github.com/Microsoft/vision-ai-developer-kit/tree/master/sample-solutions/VisionSample){:target="_blank"}.
 * Azure IoT Hub and Azure IoT Edge device configured for your Vision AI DevKit hardware [(Instructions)]({{ '/docs/Setup_Azure_resources/' | relative_url}}){:target="_blank"}
-* Active Wi-Fi access point with Internet connectivity.
-* ADB command line utility. ([instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
+* Active Wi-Fi access point with Internet connectivity
+* ADB command line utility ([Instructions]({{ '/docs/platform_tools/#adb' | relative_url }}){:target="_blank"})
 * (optional) HDMI cable and monitor to view video from the Visual AI DevKit.
 
 ## Deploy the sample model container image to the Vision AI DevKit
