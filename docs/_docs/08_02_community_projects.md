@@ -11,7 +11,7 @@ comments:
   provider: "disqus"
   disqus: 
     shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
-last_modified_at: 2019-08-20
+last_modified_at: 2019-08-21
 ---
 <br>
 <html>
@@ -20,18 +20,30 @@ last_modified_at: 2019-08-20
 This project demonstrates the implementation of a Custom Vision ML model to the Vision AI DevKit to identify the presence of workplace safety equipment such as hardhats, vests, and safety glasses. As each object is detected, the information is stored and an alarm is triggered when a person that is not wearing the specified eqipment is detected in the frame.  <br> </td></tr>
 </table></html>
 
+<img src="images/WorkplaceSafetyarch.JPG" alt="i">
+
 <html><table>
 <tr><td>
 <b> Implementation </b> </td></tr>
 <tr><td>
-In addition to the standard Custom Vision ML model, Azure services are used for a number of functions in this project. Azure Stream Analytics is the main program in use, which detects information captured by the DevKit in real time. Blob storage is utilized for long term storage of detected objects, Azure SQL database is used to process the collected data, and Azure App Services generates the website to view the information (shown below).  <br>
-</td></tr></table></html>
-<html>
-<img src="images/workplace_detectionscreen.PNG" alt="i"> <br>
-<img src="images/workplace_graphs.PNG" alt="i">
-</html>
+<b>IoT Hub</b> identifies the detected object data from the device and sends data to the cloud to further process using downstream services. <br>
+<b>Stream Analytics</b> reads the data from the incoming event hub in IoT hub and parses the JSON and stores information into Azure SQL and Blob Storage. The incoming data set is deflated from JSON format to a structured format for further analysis. <br>
+<b>Azure SQL</b> database stores detected object data (including time of detection) for generation of interpretive charts displayed on the website and Power BI reporting. The data is only kept for a 6 months to yearlong time frame. <br>
+<b>Blob Storage</b> in Azure stores the same data for long term storage. Data older than one year or more is kept for auditing records and compliance. <br>
+<b>Web App Dashboard</b> uses Azure SQL data to display the information on the webpage.
+</td></tr>
+</table></html>
+
+<html> <table>
+<tr>
+<td width="50%"><img src="images/workplace_detectionscreen.PNG" alt="i"></td>
+<td width="50%"> <img src="images/workplace_graphs.PNG" alt="i"> </td>
+</tr>
+</table></html>
+
+
 <html><table>
- <tr>
+<tr>
     <td width = "50%"> <b> Software and Services used</b> </td>
     <td width = "50%"> <b> Hardware </b> </td> 
     <td rowspan="24"></td> </tr>
@@ -47,30 +59,31 @@ In addition to the standard Custom Vision ML model, Azure services are used for 
             <li>Vision AI DevKit camera</li>
          </ul>
    </td>
-</tr>   
-</table></html>
+</tr> 
+</table></html>  
+
 <html><table>
 <tr><td><b> Repository </b></td></tr>
 <tr><td>
-Download the photos used to train the Custom Vision workplace module <a href="https://bbiotstore.blob.core.windows.net/others/WorkplaceSafetyPics.zip">here</a>. <br>
-Alternatively, downlod the Custom Vision model zip file <a href="https://bbiotstore.blob.core.windows.net/others/Model.zip">here</a>. <br>
-Find more information and relevant code <a href="https://github.com/sseiber/peabody-local-service/blob/master/README.md">here</a>. <br>
+Find all relevant information, including code, pictures used for model training, and the Custom Vision model file for full implementation of this product <a href="https://github.com/balakreshnan/WorkplaceSafety">here</a>. <br>
 Users are always encouraged to innovate and continue to improve the functionality of current projects. 
 </td></tr>
 <tr><td>
 <b> Future Improvements and Project Suggestions </b> </td></tr>
 <tr><td>
- EXPAND ON POTENTIAL PROJECTS THAT CAN USE THIS CODE OR WAYS USERS CAN CONTRIBUTE TO FUNCTIONALITY
+This project has many different opportunities for improvement by other developers. The Custom Vision AI model could be further trained with additional images to identify equipment more accurately in a variety of scenarios or a system could be implemented to view images on the cloud before pushing specific pictures to train the Custom Vision model. Other opportunities could include: adding object tracking capabilities, enabling alerts to businesses or systems upon a safety violation, or adjusting the model or processing based on different industrial use cases.  
+ <br>
   Feel free to fork the project and contribute back any improvements or suggestions. Contributors and maintainers are encouraged.
 </td></tr>
 </table></html>
+
 <html><table>
-<tr><td width="70%"><b> About the Creator </b> </td></tr>
-<!-- <td rowspan="2" width="30%"> <img src="images/scott.PNG" alt="i"> </td></tr> -->
-<td>
-INSERT SHORT BIO HERE
+<tr><td width="30%"><b> About the Creator </b> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="images/balapfp.JPG" alt="i"> </td></tr>
+<td width = "70%">
+I help customers by providing thought leadership in their Digital Transformation using Cloud, AI, ML, IoT, Block Chain.
 <br>
-You can learn more about what Scott is working on <a href="https://github.com/sseiber">LINK TO GITHUB WILL GO HERE</a>.
+You can learn more about what Bala is working on <a href="https://github.com/balakreshnan">here</a>.
 </td>
 </table></html>
 

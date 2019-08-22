@@ -29,6 +29,7 @@ docs:
         url: /docs/support
 
   - title: Tutorials
+    url: /docs/Tutorial-HOL_Using_the_VisionSample/
     children:
       - title: "Create and deploy a vision AI model"
         url: /docs/Tutorial-HOL_Using_the_VisionSample/
@@ -55,6 +56,7 @@ docs:
         url: /docs/frameworks
 
   - title: How to - Deploy
+    url: /docs/Deploy_Model_IoT_Hub/
     children:
       - title: Container module using Azure IoT Hub
         url: /docs/Deploy_Model_IoT_Hub/
@@ -64,6 +66,7 @@ docs:
         url: /docs/Deploy_Model_using_Module_Twin/
 
   - title: Manage your device
+    url: /docs/Run_OOBE/
     children:
       - title: "Configure the DevKit"
         url: /docs/Run_OOBE/
@@ -79,6 +82,7 @@ docs:
         url: /docs/Hardware_connections/
 
   - title: Tools
+    url: /docs/platform_tools/
     children:
       - title: "Platform tools"
         url: /docs/platform_tools/
@@ -88,6 +92,7 @@ docs:
         url: /docs/Setup_Azure_resources/
 
   - title: Troubleshooting
+    url: /docs/Guide_to_device_LEDs/
     children:
       - title: "Device LEDs"
         url: /docs/Guide_to_device_LEDs/
@@ -99,6 +104,7 @@ docs:
         url: /docs/Recover_device/
 
   - title: Tips
+    url: /docs/Review_logs/
     children:
       - title: "Review logs"
         url: /docs/Review_logs/
