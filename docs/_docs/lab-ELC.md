@@ -46,7 +46,7 @@ Your Azure username and password are taped to the device. Please use them in all
 
 ![Vision AI Developer Kit Wi-Fi Settings screen]({{ '/assets/images/Wi-Fi_settings.png' | relative_url }})
 
-- Select the [add lab network name] Wi-Fi network your camera will connect to from the drop down box, then enter the Wi-Fi passphrase. You will see a confirmation screen when the camera successfully connects to your selected Wi-Fi network.
+- Select the *iothack* Wi-Fi network your camera will connect to from the drop down box, then enter the Wi-Fi passphrase *iothack1*. You will see a confirmation screen when the camera successfully connects to your selected Wi-Fi network.
 
 4. Tapping **Next** will take you to the **connecting** and **connected** screens.
 
