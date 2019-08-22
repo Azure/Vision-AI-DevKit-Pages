@@ -9,7 +9,7 @@ variable:
     name: macOS
 last_modified_at: 2019-08-02
 ---
-Welcome to Vision AI Dev Kit hands on lab!
+Welcome to Vision AI Dev Kit hands on lab!!
 
 ## What you will do
 
