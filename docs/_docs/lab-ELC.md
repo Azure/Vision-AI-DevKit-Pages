@@ -70,6 +70,8 @@ Tapping **Next** starts the process of connecting to Azure resources. We have al
 
     ![Screen confirming connection to Azure, then allowing selection of your Azure account]({{ '/assets/images/Connected_to_Azure.png' | relative_url }})
 
+4. Log in to Azure using the credentials taped in your camera. Note that there is an underscore between user and number like user_1@ELCLabs.onmicrosoft.com
+
 - **Note!** you may have to use the `Switch directory` in order to get a subscription visible.
 - Use the `Select your IoT Hub` link to choose an existing IoT Hub.
 
