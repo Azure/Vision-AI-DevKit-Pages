@@ -65,7 +65,7 @@ This project demonstrates the implementation of a Custom Vision ML model to the 
 <html><table>
 <tr><td><b> Repository </b></td></tr>
 <tr><td>
-Find all relevant information, including code, pictures used for model training, and the Custom Vision model file for full implementation of this product <a href="https://github.com/balakreshnan/WorkplaceSafety">here</a>. <br>
+Find all relevant information, including code, pictures used for model training, and the Custom Vision model file for full implementation of this product <a href="https://github.com/balakreshnan/WorkplaceSafety" target="_blank">here</a>. <br>
 Users are always encouraged to innovate and continue to improve the functionality of current projects. 
 </td></tr>
 <tr><td>
@@ -83,7 +83,7 @@ This project has many different opportunities for improvement by other developer
 <td width = "70%">
 I help customers by providing thought leadership in their Digital Transformation using Cloud, AI, ML, IoT, Block Chain.
 <br>
-You can learn more about what Bala is working on <a href="https://github.com/balakreshnan">here</a>.
+You can learn more about what Bala is working on <a href="https://github.com/balakreshnan" target="_blank">here</a>.
 </td>
 </table></html>
 
