@@ -50,7 +50,7 @@ This project is an excellent way to showcase the power of the intelligent edge c
 <html><table>
 <tr><td><b> Repository </b></td></tr>
 <tr><td>
-Find more information and relevant code <a href="https://github.com/sseiber/peabody-local-service/blob/master/README.md">here</a>.
+Find more information and relevant code <a href="https://github.com/sseiber/peabody-local-service/blob/master/README.md" target="_blank">here</a>. [https://azure.microsoft.com/free](https://aka.ms/azureaccount/){:target="_blank"}
 <br>Users are encouraged to innovate and continue to improve the functionality of current projects. 
 </td></tr>
 <tr><td>
