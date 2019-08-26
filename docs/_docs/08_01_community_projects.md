@@ -18,20 +18,20 @@ last_modified_at: 2019-08-19
 <table><tr><td><b>Summary</b></td></tr>
 <tr><td width="50%">
 This project introduces a Vision AI module with a web client that allows the user to interact directly with the device to control it as well as experiment with Custom Vision AI models. It also demonstrates an implementation of a Vision AI DevKit device provisioning itself with Azure IoT Central services to enable the live reporting of telemetry, state, events, and settings with the ability to manually control the ML model. 
-<br> While it is a fully working sample with detailed instructions in the README it is also meant to be a resource to help you build your own custom implementation. <br> </td>
+<br> While it is a fully working sample with detailed instructions in the README, it is also meant to be a resource to help you build your own custom implementation. <br> </td>
 <td width="50%"> <img src="images/community_iotcentral.PNG" alt="i"> </td></tr>
 </table></html>
 <html><table>
 <tr><td>
 <b> Implementation </b> </td></tr>
 <tr><td>
-This project is implemented as a NodeJS micro service and React Web client. While the IoT Central support for module deployments is still in the works the project uses IoT Hub for module deployment. The module then connects to IoT Central to interact directly with the device. <br>
-This project is an excellent way to showcase the power of intelligent edge camera with telemetry and other functions built in.
+This project is implemented as a NodeJS micro service and React Web client. While the IoT Central support for module deployments is still in the works, the project uses IoT Hub for module deployment. The module then connects to IoT Central to interact directly with the device. <br>
+This project is an excellent way to showcase the power of the intelligent edge camera with telemetry and other built-in functions.
 </td></tr></table></html>
 <html><table>
  <tr>
-    <td> <b> Software and Services used</b> </td>
-    <td> <b> Hardware </b> </td> 
+    <td width = "50%"> <b> Software and Services used</b> </td>
+    <td width = "50%"> <b> Hardware </b> </td> 
     <td rowspan="24"></td> </tr>
  <tr>
     <td> <ul type="disc" >
@@ -64,7 +64,7 @@ Find more information and relevant code <a href="https://github.com/sseiber/peab
 <tr><td width="70%"><b> About the Creator </b> </td>
 <td rowspan="2" width="30%"> <img src="images/scott.PNG" alt="i"> </td></tr>
 <tr><td>
-Scott Seiber is a long-time Microsoft software engineer who is focused on the cross-section of hardware and software. He is currently working in the Azure IoT organization enabling partners with their digital transformations.
+Scott Seiber is a long-time Microsoft software engineer who is focused on the cross-section of hardware and software. He is currently working in the Azure IoT organization, enabling partners with their digital transformations.
 <br>
 You can learn more about what Scott is working on <a href="https://github.com/sseiber">here</a>.
 </td></tr>
