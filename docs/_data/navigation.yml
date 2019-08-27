@@ -51,7 +51,7 @@ docs:
     url: /docs/community_projects/
     children:
       - title: "Vision AI Dev provisioning with Azure IoT Central"
-        url: /docs/community_project01/
+        url: /docs/community_project01
       - title: "Workplace Safety"
         url: /docs/community_project02
 
