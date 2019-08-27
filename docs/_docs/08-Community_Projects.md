@@ -18,6 +18,7 @@ View our current selection *here*
 ## How can I contribute to the community?
 
 Any user of any expertise level can contribute to the Vision AI DevKit community. Users can view any project of their interest and access the code repositories via downloading or cloning, and are encouraged to use these projects as platforms for further innovation or as a component of their own project. Any completed projects can be submitted to be showcased and help the next community member!
+Users are also encouraged to leave comments and feedback for projects to encourage improvement and innovation for new ideas for applications. 
 
 
 ## Where can I submit my own community project?
