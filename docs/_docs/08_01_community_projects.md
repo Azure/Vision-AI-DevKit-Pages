@@ -1,6 +1,6 @@
 ---
 title: "Community Project: Vision AI Dev provisioning with Azure IoT Central"
-permalink: /docs/community_project01
+permalink: /docs/community_project01/
 excerpt: "Vision AI Dev provisioning with Azure IoT Central"
 variable:
   - platform: windows
@@ -50,7 +50,7 @@ This project is an excellent way to showcase the power of the intelligent edge c
 <html><table>
 <tr><td><b> Repository </b></td></tr>
 <tr><td>
-Find more information and relevant code <a href="https://github.com/sseiber/peabody-local-service/blob/master/README.md" target="_blank">here</a>. [https://azure.microsoft.com/free](https://aka.ms/azureaccount/){:target="_blank"}
+Find more information and relevant code <a href="https://github.com/sseiber/peabody-local-service/blob/master/README.md" target="_blank">here</a>.
 <br>Users are encouraged to innovate and continue to improve the functionality of current projects. 
 </td></tr>
 <tr><td>
@@ -62,7 +62,7 @@ Find more information and relevant code <a href="https://github.com/sseiber/peab
 </table></html>
 <html><table>
 <tr><td width="70%"><b> About the Creator </b> </td>
-<td rowspan="2" width="30%"> <img src="images/scott.PNG" alt="i"> </td></tr>
+<td rowspan="2" width="30%"> <img src="images/scott.PNG"> </td></tr>
 <tr><td>
 Scott Seiber is a long-time Microsoft software engineer who is focused on the cross-section of hardware and software. He is currently working in the Azure IoT organization, enabling partners with their digital transformations.
 <br>
@@ -70,7 +70,7 @@ You can learn more about what Scott is working on <a href="https://github.com/ss
 </td></tr>
 </table></html>
 
-<div id="disqus_thread"></div>
+<!-- <div id="disqus_thread"></div>
 <script>
 
 /**
@@ -90,6 +90,6 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
+                             -->
 
 
