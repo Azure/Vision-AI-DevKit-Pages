@@ -65,7 +65,7 @@ This project demonstrates the implementation of a Custom Vision ML model to the 
 <html><table>
 <tr><td><b> Repository </b></td></tr>
 <tr><td>
-Find all relevant information, including code, pictures used for model training, and the Custom Vision model file for full implementation of this product <a href="https://github.com/balakreshnan/WorkplaceSafety" target="_blank">here</a>. <br>
+Find all relevant information, including code, pictures used for model training, and the Custom Vision model file for full implementation of this product <a href="https://aka.ms/workplacesafety-kreshnan" target="_blank">here</a>. <br>
 Users are always encouraged to innovate and continue to improve the functionality of current projects. 
 </td></tr>
 <tr><td>
