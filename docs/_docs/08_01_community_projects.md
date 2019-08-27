@@ -50,7 +50,7 @@ This project is an excellent way to showcase the power of the intelligent edge c
 <html><table>
 <tr><td><b> Repository </b></td></tr>
 <tr><td>
-Find more information and relevant code <a href="https://github.com/sseiber/peabody-local-service/blob/master/README.md" target="_blank">here</a>.
+Find more information and relevant code <a href="https://github.com/sseiber/peabody-local-service/blob/master/README.md" target="_blank">here</a>. 
 <br>Users are encouraged to innovate and continue to improve the functionality of current projects. 
 </td></tr>
 <tr><td>
@@ -66,7 +66,7 @@ Find more information and relevant code <a href="https://github.com/sseiber/peab
 <tr><td>
 Scott Seiber is a long-time Microsoft software engineer who is focused on the cross-section of hardware and software. He is currently working in the Azure IoT organization, enabling partners with their digital transformations.
 <br>
-You can learn more about what Scott is working on <a href="https://github.com/sseiber">here</a>.
+You can learn more about what Scott is working on <a href="https://github.com/sseiber" target="_blank">here</a>.
 </td></tr>
 </table></html>
 
