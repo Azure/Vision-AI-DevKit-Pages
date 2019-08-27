@@ -9,8 +9,8 @@ variable:
     name: macOS
 comments: 
   provider: "disqus"
-  disqus: 
-    shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
+  # disqus: 
+  #   shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
 last_modified_at: 2019-08-21
 ---
 <br>
