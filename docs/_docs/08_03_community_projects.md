@@ -19,16 +19,16 @@ last_modified_at: 2019-09-4
 <tr><td>
 This project uniquely utilizes the Vision AI Developer Kit to aid in training a Neural Network based on features extracted from audio files. In this sample use case, the water level of a fountain can be determined by using audio classification through a machine learning model based on the sound produced by water splashing into a larger volume of different depths. This demonstrates both how audio can be used in some cases as a cheaper alternative to vision with 360° field coverage that is still possible using the DevKit and how to train a model using the Azure Machine Learning Service.  <br> </td></tr>
 </table></html>
-
+<!-- 
 <video width="640" height="480" controls>
   <source src="videos/vaidk-audio-github walkthrough.mp4" type="video/mp4">
 Your browser does not support this video tag.
 </video>
 
-<video width="640" height="480" controls>
+<!-- <video width="640" height="480" controls>
   <source src="videos/videoaisolutionwalkthrough.mp4" type="video/mp4">
 Your browser does not support this video tag.
-</video>
+</video> --> 
 
 <html><table>
 <tr><td>
