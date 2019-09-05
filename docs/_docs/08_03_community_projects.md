@@ -66,7 +66,7 @@ This project following a 5-step process to acquire, label, train, build and push
 <html><table>
 <tr><td><b> Repository </b></td></tr>
 <tr><td>
-Find all relevant information for full implementation of this product <a href="https://github.com/ksaye/vision-ai-developer-kit-audio" target="_blank">here</a>. <br>
+Find all relevant information for full implementation of this product <a href="https://aka.ms/waterlevel-saye" target="_blank">here</a>. <br>
 Users are always encouraged to innovate and continue to improve the functionality of current projects. 
 </td></tr>
 <tr><td>
