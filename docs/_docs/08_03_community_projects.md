@@ -21,12 +21,12 @@ This project uniquely utilizes the Vision AI Developer Kit to aid in training a 
 </table></html>
 
 <video width="640" height="480" controls>
-  <source src="vaidk-audio-github walkthrough.mp4" type="video/mp4">
+  <source src="videos/vaidk-audio-github walkthrough.mp4" type="video/mp4">
 Your browser does not support this video tag.
 </video>
 
 <video width="640" height="480" controls>
-  <source src="videoaisolutionwalkthrough.mp4" type="video/mp4">
+  <source src="videos/videoaisolutionwalkthrough.mp4" type="video/mp4">
 Your browser does not support this video tag.
 </video>
 
