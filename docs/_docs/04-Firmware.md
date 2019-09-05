@@ -64,9 +64,9 @@ The Vision AI Dev Kit hardware **must be at least 50% charged** before starting 
 
 1. Download the latest firmware released by Altek for the Vision AI DevKit - [Latest Firmware](https://store.altek.com.tw/qualcomm/downloads/Azure-IoT-Starter-Kit)
 
-2. Extract the contents to a directory on your computer. The zip file contains two .bat files, pdf instructions and the folder that contains the actual firmware files. You can alternatively follow the instruction int he pdf document if you want.
+2. Extract the contents to a directory on your computer. The zip file contains two .bat files for the firmware update in OS specific folders, pdf instructions and the folder that contains the actual firmware files. You can alternatively follow the instruction int he pdf document if you want.
 
-3. Copy the .bat files to the same folder where the firmward files are stored.
+3. Copy the .bat files (FastbootUpgrade_"version".bat and VisionAIDevKitInstallCheck.bat) from the OS specific to the same folder where the firmware files are stored.
 
 ### Update the firmware
 
