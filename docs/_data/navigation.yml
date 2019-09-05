@@ -66,8 +66,8 @@ docs:
   - title: How to - Deploy
     url: /docs/Deploy_Model_IoT_Hub/
     children:
-      - title: Container module using Azure IoT Hub
-        url: /docs/Deploy_Model_IoT_Hub/
+#      - title: Container module using Azure IoT Hub
+#        url: /docs/Deploy_Model_IoT_Hub/
 #     - title: Container module using Visual Studio (VS) Code
 #       url: /docs/Deploy_model_VS_Code/
       - title: Model using Module Twin
@@ -86,6 +86,8 @@ docs:
         url: /docs/Firmware/ 
       - title: "Rebooting"
         url: /docs/Reboot/
+      - title: "Reset the device"
+        url: /docs/reset/
       - title: "Hardware connections"
         url: /docs/Hardware_connections/
 
