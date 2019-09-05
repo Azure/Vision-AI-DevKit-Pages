@@ -1,5 +1,5 @@
 ---
-title: "Community Project: Enabling Audio for Fountain Water Level Detection"
+title: "Enabling Audio for Fountain Water Level Detection"
 permalink: /docs/community_project03
 excerpt: "Training ML model using audio files captured by VAI DevKit"
 variable:
@@ -7,8 +7,8 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-comments: 
-  provider: "disqus"
+# comments: 
+#   provider: "disqus"
   # disqus: 
   #   shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
 last_modified_at: 2019-09-4

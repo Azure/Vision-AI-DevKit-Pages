@@ -1,5 +1,5 @@
 ---
-title: "Community Project: Sign Language Gesture Recognition "
+title: "Sign Language Gesture Recognition "
 permalink: /docs/community_project04
 excerpt: "Recognizing sign language symbols representing the alphabet"
 variable:
@@ -7,8 +7,8 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-comments: 
-  provider: "disqus"
+# comments: 
+#   provider: "disqus"
   # disqus: 
   #   shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
 last_modified_at: 2019-09-4

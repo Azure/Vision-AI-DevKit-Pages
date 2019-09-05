@@ -1,5 +1,5 @@
 ---
-title: "Community Project: Workplace Safety Identification"
+title: "Workplace Safety Identification"
 permalink: /docs/community_project02
 excerpt: "Ensuring worplace safety using Custom Vision ML and Azure services"
 variable:
@@ -7,8 +7,8 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-comments: 
-  provider: "disqus"
+# comments: 
+#   provider: "disqus"
   # disqus: 
   #   shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
 last_modified_at: 2019-08-21
