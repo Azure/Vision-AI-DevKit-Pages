@@ -1,5 +1,5 @@
 ---
-title: "Community Project: Fountain Water Level Detection (Using Audio)"
+title: "Community Project: Enabling Audio for Fountain Water Level Detection"
 permalink: /docs/community_project03
 excerpt: "Training ML model using audio files captured by VAI DevKit"
 variable:
