@@ -1,7 +1,7 @@
 ---
 title: "Community Projects"
 permalink: /docs/community_projects/
-excerpt: "Repository of projects mde by users demonstrating the integration of the DevKit with Azure services."
+excerpt: "Repository of projects made by users demonstrating the integration of the DevKit with Azure services."
 variable:
   - platform: windows
     name: Windows
