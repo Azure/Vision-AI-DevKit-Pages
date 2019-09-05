@@ -46,6 +46,7 @@ efb99xxx        device
 ```  
 
 If your DevKit is not listed, try rebooting the camera hardware using one of these methods:
+
 * Click the reset button once, using the pin hole on the right side of the camera.
 * Press the power button on the back once.
 * Use the command line:
