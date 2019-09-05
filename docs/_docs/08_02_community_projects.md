@@ -81,7 +81,7 @@ This project has many different opportunities for improvement by other developer
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
 <tr><td rowspan="2" width="30%"> <img src="images/balapfp.jpg" alt="i"> </td></tr>
 <td width = "70%">
-I help customers by providing thought leadership in their Digital Transformation using Cloud, AI, ML, IoT, Block Chain.
+Blamurugan Blakreshnan help customers by providing thought leadership in their Digital Transformation using Cloud, AI, ML, IoT, Block Chain.
 <br>
 You can learn more about what Bala is working on <a href="https://github.com/balakreshnan" target="_blank">here</a>.
 </td>
