@@ -1,14 +1,14 @@
 ---
-title: "Community Project: Vision AI Dev provisioning with Azure IoT Central"
-permalink: /docs/community_project01
+title: "Vision AI Dev provisioning with Azure IoT Central"
+permalink: Con
 excerpt: "Vision AI Dev provisioning with Azure IoT Central"
 variable:
   - platform: windows
     name: Windows
   - platform: macos
     name: macOS
-comments: 
-  provider: "disqus"
+# comments: 
+#   provider: "disqus"
   # disqus: 
   #   shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
 last_modified_at: 2019-08-19
