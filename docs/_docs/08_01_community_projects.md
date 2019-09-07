@@ -1,6 +1,6 @@
 ---
 title: "Vision AI Dev provisioning with Azure IoT Central"
-permalink: Con
+permalink: /docs/community_project01
 excerpt: "Vision AI Dev provisioning with Azure IoT Central"
 variable:
   - platform: windows
