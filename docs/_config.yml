@@ -5,7 +5,13 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-remote_theme             : "mmistakes/minimal-mistakes@4.16.6"
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+theme                  : "minimal-mistakes-jekyll"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -18,6 +24,7 @@ baseurl                  : "/Vision-AI-DevKit-Pages"
 repository               : "Azure/Vision-AI-DevKit-Pages"
 words_per_minute         : 200
 logo                     : "favicon.ico"
+head_scripts             : []
 footer_scripts           : ["/assets/js/main.min.js", "/assets/js/scripts.js", "https://c.s-microsoft.com/mscc/statics/mscc-0.4.0.min.js", "/assets/js/cookies.js"]
 
 # Conversion
@@ -47,6 +54,9 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -71,12 +81,15 @@ defaults:
       sidebar:
         nav: "docs"
         include_tree: true
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: true
+        
 # Outputting
 permalink: /:categories/:title/
 timezone: America/Los_Angeles
