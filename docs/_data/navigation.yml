@@ -48,8 +48,10 @@ docs:
             url: /docs/azurenotebook/
 
   - title: Community Projects
-    url: /docs/community_projects/
+    url: /docs/projects/
     children:
+      - title: "Community Projects Home"
+        url: /docs/community_projects
       - title: "Vision AI DevKit provisioning with Azure IoT Central"
         url: /docs/community_project01
       - title: "Workplace Safety Identification"

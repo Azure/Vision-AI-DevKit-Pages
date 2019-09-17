@@ -7,10 +7,10 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-# comments: 
-#   provider: "disqus"
-  # disqus: 
-  #   shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
+comments: 
+  provider: "disqus"
+  disqus: 
+    shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
 last_modified_at: 2019-09-11
 ---
 <br>
@@ -82,14 +82,15 @@ Using the above API documentation extending the features of this project should 
 
 <html><table>
 <tr><td><b> About the Creator </b> </td></tr>
-<tr>
+<tr><td>
 David Grob recently completed an Electrical Engineering Bachelor’s Specializing in Computer Engineering and is currently enrolled in an Electrical and Computer Engineering Master’s program at Georgia Tech. He has completed undergrad research at Seattle University spanning Computer Vision, data analytics automation, Machine Learning, and co-authored two well-received Conference Papers presented at IEEE International Conference on Data Mining (ICDM) and International Conference on Signal Processing Systems (ICPS)—November 2018.
 <br>
 You can find his publications for <a href="https://doi.org/10.1109/ICDMW.2018.00134" target="_blank"> ICDM </a> and <a href="https://doi.org/10.1117/12.2521856" target="_blank"> ICPS </a> here.
-</tr>
+</td></tr>
 </table></html>
 
-<!-- <div id="disqus_thread"></div>
+
+<div id="disqus_thread"></div>
 <script>
 
 /**
@@ -109,6 +110,6 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                             -->
+
 
 
