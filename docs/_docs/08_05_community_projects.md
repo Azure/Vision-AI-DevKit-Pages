@@ -81,8 +81,9 @@ Using the above API documentation extending the features of this project should 
 </table></html>
 
 <html><table>
-<tr><td><b> About the Creator </b> </td></tr>
-<tr><td>
+<tr><td width="30%"><b> About the Creator </b> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="images/grob.jpg" alt="i"> </td></tr>
+<tr><td width = "70%">
 David Grob recently completed an Electrical Engineering Bachelor’s Specializing in Computer Engineering and is currently enrolled in an Electrical and Computer Engineering Master’s program at Georgia Tech. He has completed undergrad research at Seattle University spanning Computer Vision, data analytics automation, Machine Learning, and co-authored two well-received Conference Papers presented at IEEE International Conference on Data Mining (ICDM) and International Conference on Signal Processing Systems (ICPS)—November 2018.
 <br>
 You can find his publications for <a href="https://doi.org/10.1109/ICDMW.2018.00134" target="_blank"> ICDM </a> and <a href="https://doi.org/10.1117/12.2521856" target="_blank"> ICPS </a> here.
