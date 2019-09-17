@@ -1,8 +1,7 @@
 ---
 title: "Sign Language Gesture Recognition"
 permalink: /docs/projects/signlanguage/
-redirect_to:
-  - https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project04
+redirect_to: https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project04
 excerpt: "Recognizing sign language symbols representing the alphabet using Custom Vision model."
 header:
   overlay_image: /assets/images/node-graphic.png

@@ -1,8 +1,7 @@
 ---
 title: "Workplace Safety Identification"
 permalink: /docs/projects/workplacesafety
-redirect_to:
-  - https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project02
+redirect_to: https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project02
 excerpt: "Ensuring worplace safety using Custom Vision ML and Azure services."
 header:
   overlay_image: /assets/images/node-graphic.png
