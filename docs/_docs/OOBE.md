@@ -10,7 +10,7 @@
 
 #### Notes
 
-- The label at the bottom of the device will have the default Wi-Fi access point password. If there is no label, see [Troubleshooting Wi-Fi Issues]({{ '/docs/Wi-Fi_issues/' | relative_url }}).
+- The label at the bottom of the device will have the default Wi-Fi access point password. If there is no label, see [Troubleshooting Wi-Fi Issues]({{ '/docs/wifi_issues/' | relative_url }}).
 - If you have connected your device to a display via the HDMI port, the display will show a gray pattern. You will not see any text or images on your display until the IoT Edge runtime has been deployed to the device.
 
 ### Configure the camera for your Wi-Fi network
