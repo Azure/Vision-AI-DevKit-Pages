@@ -1,6 +1,6 @@
 ---
-title: "Community Project Submission"
-permalink: /docs/Project_Submission/
+title: "How Can I Become Involved in the Community?"
+permalink: /docs/involvement/
 excerpt: "Repository of projects mde by users demonstrating the integration of the DevKit with Azure services."
 variable:
   - platform: windows
@@ -10,11 +10,22 @@ variable:
 last_modified_at: 2019-08-26
 ---
 
-## Thank you for your interest in submitting a community project!
+## How can I contribute to the community?
 
-The Vision AI DevKit community relies on users like you to innovate and collaborate to show how the DevKit can be applied to a wide variety of use cases. <br> <br>
-If you have a community project that you would like to submit, please fill out *this* form. Please note that your project will be subject to review before posting. 
+Any user of any expertise level can contribute to the Vision AI DevKit community. Users can view any project of their interest and access the code repositories via downloading or cloning, and are encouraged to use these projects as platforms for further innovation or as a component of their own project. Any completed projects can be submitted to be showcased and help the next community member!
+Users are also encouraged to leave comments and feedback for projects to encourage improvement and innovation for new ideas for applications. 
 
+
+## Where can I submit my own community project?
+
+While we are working in order to create a better solution for submitting your own project please create a [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/issues) issue with following information.
+<br><br>
+You will be required to submit the following: 
+  - Link to a repository with all relevant code
+  - A short blurb describing the overall goal of the project
+  - A short blurb describing the higher level implementation and logic
+  - Any screenshots and videos demonstrating functionality 
+  - A short bio about yourself to share with the community 
 
 
 
