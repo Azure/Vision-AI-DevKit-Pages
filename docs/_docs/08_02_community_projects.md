@@ -7,10 +7,10 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-# comments: 
-#   provider: "disqus"
-  # disqus: 
-  #   shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
+comments: 
+  provider: "disqus"
+  disqus: 
+    shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
 last_modified_at: 2019-08-21
 ---
 <br>
@@ -87,7 +87,7 @@ You can learn more about what Bala is working on <a href="https://github.com/bal
 </td>
 </table></html>
 
-<!-- <div id="disqus_thread"></div>
+<div id="disqus_thread"></div>
 <script>
 
 /**
@@ -107,6 +107,6 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                             -->
+                            
 
 

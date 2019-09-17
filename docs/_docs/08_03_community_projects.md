@@ -7,10 +7,10 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-# comments: 
-#   provider: "disqus"
-  # disqus: 
-  #   shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
+comments: 
+  provider: "disqus"
+  disqus: 
+    shortname: https-azure-github-io-vision-ai-devkit-pages-docs-community-pr.disqus.com
 last_modified_at: 2019-09-4
 ---
 <br>
@@ -95,7 +95,7 @@ You can also learn more about what Kevin is working on <a href="https://github.c
 </td>
 </table></html>
 
-<!-- <div id="disqus_thread"></div>
+<div id="disqus_thread"></div>
 <script>
 
 /**
@@ -115,6 +115,6 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                             -->
+                            
 
 
