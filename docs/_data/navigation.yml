@@ -48,18 +48,22 @@ docs:
             url: /docs/azurenotebook/
 
   - title: Community Projects
-    url: /docs/community_projects/
+    url: /docs/projects/
     children:
-      - title: "Project Catalog"
-        url: /docs/projects/
-      # - title: "Vision AI DevKit provisioning with Azure IoT Central"
-      #   url: /docs/community_project01
-      # - title: "Workplace Safety Identification"
-      #   url: /docs/community_project02
-      # - title: "Enabling Audio for Water Level Detection"
-      #   url: /docs/community_project03
-      # - title: "Sign Language Gesture Recognition"
-      #   url: /docs/community_project04
+      - title: "What is a Community Project?"
+        url: /docs/community_projects/
+      - title: "How can I get Involved?"
+        url: /docs/involvement
+      - title: "Vision AI DevKit provisioning with Azure IoT Central"
+        url: /docs/community_project01
+      - title: "Workplace Safety Identification"
+        url: /docs/community_project02
+      - title: "Enabling Audio for Water Level Detection"
+        url: /docs/community_project03
+      - title: "Sign Language Gesture Recognition"
+        url: /docs/community_project04
+      - title: "DevKit Integration with Azure Face API Services"
+        url: /docs/community_project05
 
   - title: Vision AI
     url: /docs/visionai/
