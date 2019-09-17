@@ -1,6 +1,6 @@
 ---
 title: "Workplace Safety Identification"
-permalink: /docs/community_project02
+permalink: /docs/community_project02/
 excerpt: "Ensuring worplace safety using Custom Vision ML and Azure services"
 variable:
   - platform: windows

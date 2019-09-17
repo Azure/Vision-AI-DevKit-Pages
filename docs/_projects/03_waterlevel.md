@@ -1,6 +1,6 @@
 ---
 title: "Enabling Audio for Water Detection"
-permalink: /docs/projects/waterlevel
+permalink: /docs/projects/waterlevel/
 redirect_to: https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project03
 excerpt: "Training ML model using audio files captured by the Vision AI DevKit."
 header:
