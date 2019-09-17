@@ -53,17 +53,17 @@ docs:
       - title: "What is a Community Project?"
         url: /docs/community_projects/
       - title: "How can I get Involved?"
-        url: /docs/involvement
+        url: /docs/involvement/
       - title: "Vision AI DevKit provisioning with Azure IoT Central"
-        url: /docs/community_project01
+        url: /docs/community_project01/
       - title: "Workplace Safety Identification"
-        url: /docs/community_project02
+        url: /docs/community_project02/
       - title: "Enabling Audio for Water Level Detection"
-        url: /docs/community_project03
+        url: /docs/community_project03/
       - title: "Sign Language Gesture Recognition"
-        url: /docs/community_project04
+        url: /docs/community_project04/
       - title: "DevKit Integration with Azure Face API Services"
-        url: /docs/community_project05
+        url: /docs/community_project05/
 
   - title: Vision AI
     url: /docs/visionai/

@@ -1,6 +1,6 @@
 ---
 title: "Vision AI Dev Kit utilizing Azure Cognitive Services Face API for Face detection "
-permalink: /docs/community_project05
+permalink: /docs/community_project05/
 excerpt: "Face API integration"
 variable:
   - platform: windows

@@ -1,6 +1,6 @@
 ---
 title: "Sign Language Gesture Recognition "
-permalink: /docs/community_project04
+permalink: /docs/community_project04/
 excerpt: "Recognizing sign language symbols representing the alphabet"
 variable:
   - platform: windows
