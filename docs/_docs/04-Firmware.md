@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-07-03
+last_modified_at: 2019-09-05
 ---
 
 ## What you will do
@@ -46,6 +46,7 @@ efb99xxx        device
 ```  
 
 If your DevKit is not listed, try rebooting the camera hardware using one of these methods:
+
 * Click the reset button once, using the pin hole on the right side of the camera.
 * Press the power button on the back once.
 * Use the command line:
@@ -64,7 +65,7 @@ The Vision AI Dev Kit hardware **must be at least 50% charged** before starting 
 
 1. Download the latest firmware released by Altek for the Vision AI DevKit - [Latest Firmware](https://store.altek.com.tw/qualcomm/downloads/Azure-IoT-Starter-Kit)
 
-2. Extract the contents to a directory on your computer. The zip file contains two .bat files for the firmware update in OS specific folders, pdf instructions and the folder that contains the actual firmware files. You can alternatively follow the instruction int he pdf document if you want.
+2. Extract the contents to a directory on your computer. The zip file contains two .bat files for the firmware update in OS specific folders, pdf instructions and the folder that contains the actual firmware files. You can alternatively follow the instruction in the pdf document if you want.
 
 3. Copy the .bat files (FastbootUpgrade_"version".bat and VisionAIDevKitInstallCheck.bat) from the OS specific to the same folder where the firmware files are stored.
 
