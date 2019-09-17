@@ -1,5 +1,5 @@
 ---
-title: "Vision AI Dev provisioning with Azure IoT Central"
+title: "Vision AI DevKit provisioning with Azure IoT Central"
 permalink: Con
 excerpt: "Vision AI Dev provisioning with Azure IoT Central"
 variable:
