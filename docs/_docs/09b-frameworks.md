@@ -1,7 +1,7 @@
 ---
-title: "Supported frameworks and runtimes"
+title: "Supported neural networks and runtimes"
 permalink: /docs/frameworks/
-excerpt: "Supported frameworks and runtimes"
+excerpt: "Supported neural networks and runtimes"
 variable:
   - platform: windows
     name: Windows
@@ -10,7 +10,7 @@ variable:
 last_modified_at: 2019-07-30
 ---
 
-## Supported Neural Network frameworks and formats
+## Supported Neural Networks and formats
 
 Here is a list of neural networks and runtimes that run on the devices DSP that provides adequate performance for real time inferencing.
 
