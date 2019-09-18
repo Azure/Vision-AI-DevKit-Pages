@@ -37,7 +37,7 @@ Your browser does not support this video tag.
 This project following a 5-step process to acquire, label, train, build and push to the Vision AI Devkit, as shown below.
 </td></tr>
 <tr>
-<td><img src="images/audiosteps.png/" alt="i"></td>
+<td><img src="{{'assets/images/audiosteps.png' | relative_url}}"></td>
 </tr>
 </table></html>
 
@@ -86,7 +86,7 @@ This sample demonstrates one very linear way to train a model in a very controll
 
 <html><table>
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
-<tr><td rowspan="2" width="30%"> <img src="images/saye.png/" alt="i"> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="{{'assets/images/saye.png' | relative_url}}"> </td></tr>
 <td width = "70%">
 Kevin Saye is an IoT Architect and a student of AI.  From soldering resistors to writing code for MCUs to scaling out with MPP solutions, he is squarely focused on that thing he was meant to do in life, IoT.  He regularly publishes ‘how to’ articles, based on customer, partner and personal experiences and challenges – with the goal to share and enable peers in the community. <br>
 He can be followed at: <a href="https://kevinsaye.wordpress.com/" target="_blank"> https://kevinsaye.wordpress.com/ </a>. <br>
@@ -104,7 +104,7 @@ You can also learn more about what Kevin is working on <a href="https://github.c
 /*
 var disqus_config = function () {
 this.page.url = https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project03#;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = community_project_01; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = community_project_03; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
 (function() { // DON'T EDIT BELOW THIS LINE
