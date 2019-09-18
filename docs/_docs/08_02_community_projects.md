@@ -20,7 +20,7 @@ last_modified_at: 2019-08-21
 This project demonstrates the implementation of a Custom Vision ML model to the Vision AI DevKit to identify the presence of workplace safety equipment such as hardhats, vests, and safety glasses. As each object is detected, the information is stored and an alarm is triggered when a person that is not wearing the specified eqipment is detected in the frame.  <br> </td></tr>
 </table></html>
 
-<img src="images/WorkplaceSafetyarch.jp/g" alt="i">
+<img src="{{'assets/images/WorkplaceSafetyArch.jpg' | relative_url}}">
 
 <html><table>
 <tr><td>
@@ -36,8 +36,8 @@ This project demonstrates the implementation of a Custom Vision ML model to the 
 
 <html> <table>
 <tr>
-<td width="50%"><img src="images/workplace_detectionscreen.png/" alt="i"></td>
-<td width="50%"> <img src="images/workplace_graphs.png/" alt="i"> </td>
+<td width="50%"><img src="{{'assets/images/workplace_detectionscreen.png' | relative_url}}"></td>
+<td width="50%"> <img src="{{'assets/images/workplace_graphs.png' | relative_url}}"> </td>
 </tr>
 </table></html>
 
@@ -79,7 +79,7 @@ This project has many different opportunities for improvement by other developer
 
 <html><table>
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
-<tr><td rowspan="2" width="30%"> <img src="images/balapfp.jpg/" alt="i"> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="{{'assets/images/balapfp.jpg' | relative_url}}"> </td></tr>
 <td width = "70%">
 Balamurugan Balakreshnan help customers by providing thought leadership in their Digital Transformation using Cloud, AI, ML, IoT, Block Chain.
 <br>
@@ -96,7 +96,7 @@ You can learn more about what Bala is working on <a href="https://github.com/bal
 /*
 var disqus_config = function () {
 this.page.url = https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project02#;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = community_project_01; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = community_project_02; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
 (function() { // DON'T EDIT BELOW THIS LINE

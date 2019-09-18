@@ -40,7 +40,7 @@ http://CameraIP:1080/media/Azure_Face_Api_Result.jpg.
 
 <html> <table>
 <tr>
-<td ><img src="images/faceapi.png/" alt="i"></td>
+<td ><img src="{{'assets/images/faceapi.png' | relative_url}}"></td>
 </tr>
 </table></html>
 
@@ -82,7 +82,7 @@ Using the above API documentation extending the features of this project should 
 
 <html><table>
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
-<tr><td rowspan="2" width="30%"> <img src="images/grob.jpg/" alt="i"> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="{{'assets/images/grob.jpg' | relative_url}}"> </td></tr>
 <tr><td width = "70%">
 David Grob recently completed an Electrical Engineering Bachelor’s Specializing in Computer Engineering and is currently enrolled in an Electrical and Computer Engineering Master’s program at Georgia Tech. He has completed undergrad research at Seattle University spanning Computer Vision, data analytics automation, Machine Learning, and co-authored two well-received Conference Papers presented at IEEE International Conference on Data Mining (ICDM) and International Conference on Signal Processing Systems (ICPS)—November 2018.
 <br>
@@ -100,7 +100,7 @@ You can find his publications for <a href="https://doi.org/10.1109/ICDMW.2018.00
 /*
 var disqus_config = function () {
 this.page.url = https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project02#;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = community_project_01; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = community_project_05; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
 (function() { // DON'T EDIT BELOW THIS LINE

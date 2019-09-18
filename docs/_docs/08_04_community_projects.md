@@ -30,8 +30,8 @@ The project uses the Custom Vision service to create and export the model and in
 
 <html> <table>
 <tr>
-<td width="50%"><img src="images/signlanguagetraining.png/" alt="i"></td>
-<td width="50%"> <img src="images/signlanguagerecognition.jpg/" alt="i"> </td>
+<td width="50%"><img src="{{'assets/images/signlanguagetraining.png' | relative_url}}"></td>
+<td width="50%"> <img src="{{'assets/images/signlanguagerecognition.jpg' | relative_url}}"> </td>
 </tr>
 </table></html>
 
@@ -73,7 +73,7 @@ One potential additional function could be to enable audio output using the buil
 
 <html><table>
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
-<tr><td rowspan="2" width="30%"> <img src="images/jomit.jpg/" alt="i"> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="{{'assets/images/jomit.JPG' | relative_url}}"></td></tr>
 <td width = "70%">
 Jomit Vaghela is a Technology Strategist, Architect and Developer working on fulfilling the promises of Digital Transformation using Machine Learning, IoT, Blockchain and Cloud.
 <br>
@@ -89,7 +89,7 @@ You can learn more about what Jomit is working on <a href="https://github.com/jo
 /*
 var disqus_config = function () {
 this.page.url = https://azure.github.io/Vision-AI-DevKit-Pages/docs/community_project02#;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = community_project_01; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = community_project_04; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
 (function() { // DON'T EDIT BELOW THIS LINE
