@@ -20,7 +20,7 @@ last_modified_at: 2019-08-21
 This project demonstrates the implementation of a Custom Vision ML model to the Vision AI DevKit to identify the presence of workplace safety equipment such as hardhats, vests, and safety glasses. As each object is detected, the information is stored and an alarm is triggered when a person that is not wearing the specified eqipment is detected in the frame.  <br> </td></tr>
 </table></html>
 
-<img src="{{'assets/images/WorkplaceSafetyArch.jpg' | relative_url}}">
+<img src="{{'assets/images/WorkplaceSafetyarch.jpg' | relative_url}}">
 
 <html><table>
 <tr><td>
