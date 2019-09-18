@@ -19,7 +19,7 @@ last_modified_at: 2019-08-19
 <tr><td width="50%">
 This project introduces a Vision AI module with a web client that allows the user to interact directly with the device to control it as well as experiment with Custom Vision AI models. It also demonstrates an implementation of a Vision AI DevKit device provisioning itself with Azure IoT Central services to enable the live reporting of telemetry, state, events, and settings with the ability to manually control the ML model. 
 <br> While it is a fully working sample with detailed instructions in the README, it is also meant to be a resource to help you build your own custom implementation. <br> </td>
-<td width="50%"> <img src="images/community_iotcentral.PNG" alt="i"> </td></tr>
+<td width="50%"> <img src="images/community_iotcentral.PNG/" alt="i"> </td></tr>
 </table></html>
 <html><table>
 <tr><td>
@@ -62,7 +62,7 @@ Find more information and relevant code <a href="https://aka.ms/iotcentral-seibe
 </table></html>
 <html><table>
 <tr><td width="70%"><b> About the Creator </b> </td>
-<td rowspan="2" width="30%"><img src="images/scott.PNG"></td></tr>
+<td rowspan="2" width="30%"><img src="images/scott.PNG/"></td></tr>
 <tr><td>
 Scott Seiber is a long-time Microsoft software engineer who is focused on the cross-section of hardware and software. He is currently working in the Azure IoT organization, enabling partners with their digital transformations.
 <br>

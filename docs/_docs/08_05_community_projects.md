@@ -40,7 +40,7 @@ http://CameraIP:1080/media/Azure_Face_Api_Result.jpg.
 
 <html> <table>
 <tr>
-<td ><img src="images/faceapi.png" alt="i"></td>
+<td ><img src="images/faceapi.png/" alt="i"></td>
 </tr>
 </table></html>
 
@@ -82,7 +82,7 @@ Using the above API documentation extending the features of this project should 
 
 <html><table>
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
-<tr><td rowspan="2" width="30%"> <img src="images/grob.jpg" alt="i"> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="images/grob.jpg/" alt="i"> </td></tr>
 <tr><td width = "70%">
 David Grob recently completed an Electrical Engineering Bachelor’s Specializing in Computer Engineering and is currently enrolled in an Electrical and Computer Engineering Master’s program at Georgia Tech. He has completed undergrad research at Seattle University spanning Computer Vision, data analytics automation, Machine Learning, and co-authored two well-received Conference Papers presented at IEEE International Conference on Data Mining (ICDM) and International Conference on Signal Processing Systems (ICPS)—November 2018.
 <br>
