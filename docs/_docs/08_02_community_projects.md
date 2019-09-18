@@ -20,7 +20,7 @@ last_modified_at: 2019-08-21
 This project demonstrates the implementation of a Custom Vision ML model to the Vision AI DevKit to identify the presence of workplace safety equipment such as hardhats, vests, and safety glasses. As each object is detected, the information is stored and an alarm is triggered when a person that is not wearing the specified eqipment is detected in the frame.  <br> </td></tr>
 </table></html>
 
-<img src="images/WorkplaceSafetyarch.jpg" alt="i">
+<img src="images/WorkplaceSafetyarch.jp/g" alt="i">
 
 <html><table>
 <tr><td>
@@ -36,8 +36,8 @@ This project demonstrates the implementation of a Custom Vision ML model to the 
 
 <html> <table>
 <tr>
-<td width="50%"><img src="images/workplace_detectionscreen.png" alt="i"></td>
-<td width="50%"> <img src="images/workplace_graphs.png" alt="i"> </td>
+<td width="50%"><img src="images/workplace_detectionscreen.png/" alt="i"></td>
+<td width="50%"> <img src="images/workplace_graphs.png/" alt="i"> </td>
 </tr>
 </table></html>
 
@@ -79,7 +79,7 @@ This project has many different opportunities for improvement by other developer
 
 <html><table>
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
-<tr><td rowspan="2" width="30%"> <img src="images/balapfp.jpg" alt="i"> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="images/balapfp.jpg/" alt="i"> </td></tr>
 <td width = "70%">
 Balamurugan Balakreshnan help customers by providing thought leadership in their Digital Transformation using Cloud, AI, ML, IoT, Block Chain.
 <br>

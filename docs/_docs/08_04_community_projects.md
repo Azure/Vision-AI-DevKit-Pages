@@ -30,8 +30,8 @@ The project uses the Custom Vision service to create and export the model and in
 
 <html> <table>
 <tr>
-<td width="50%"><img src="images/signlanguagetraining.png" alt="i"></td>
-<td width="50%"> <img src="images/signlanguagerecognition.jpg" alt="i"> </td>
+<td width="50%"><img src="images/signlanguagetraining.png/" alt="i"></td>
+<td width="50%"> <img src="images/signlanguagerecognition.jpg/" alt="i"> </td>
 </tr>
 </table></html>
 
@@ -73,7 +73,7 @@ One potential additional function could be to enable audio output using the buil
 
 <html><table>
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
-<tr><td rowspan="2" width="30%"> <img src="images/jomit.jpg" alt="i"> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="images/jomit.jpg/" alt="i"> </td></tr>
 <td width = "70%">
 Jomit Vaghela is a Technology Strategist, Architect and Developer working on fulfilling the promises of Digital Transformation using Machine Learning, IoT, Blockchain and Cloud.
 <br>

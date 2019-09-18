@@ -37,7 +37,7 @@ Your browser does not support this video tag.
 This project following a 5-step process to acquire, label, train, build and push to the Vision AI Devkit, as shown below.
 </td></tr>
 <tr>
-<td><img src="images/audiosteps.png" alt="i"></td>
+<td><img src="images/audiosteps.png/" alt="i"></td>
 </tr>
 </table></html>
 
@@ -66,7 +66,7 @@ This project following a 5-step process to acquire, label, train, build and push
 <html><table>
 <tr><td><b> Repository </b></td></tr>
 <tr><td>
-Find all relevant information for full implementation of this product <a href="https://aka.ms/waterlevel-saye" target="_blank">here</a>. <br>
+Find all relevant information for full implementation of this product <a href="https://aka.ms/waterlevel-saye/" target="_blank">here</a>. <br>
 Users are always encouraged to innovate and continue to improve the functionality of current projects. 
 </td></tr>
 <tr><td>
@@ -86,7 +86,7 @@ This sample demonstrates one very linear way to train a model in a very controll
 
 <html><table>
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
-<tr><td rowspan="2" width="30%"> <img src="images/saye.png" alt="i"> </td></tr>
+<tr><td rowspan="2" width="30%"> <img src="images/saye.png/" alt="i"> </td></tr>
 <td width = "70%">
 Kevin Saye is an IoT Architect and a student of AI.  From soldering resistors to writing code for MCUs to scaling out with MPP solutions, he is squarely focused on that thing he was meant to do in life, IoT.  He regularly publishes ‘how to’ articles, based on customer, partner and personal experiences and challenges – with the goal to share and enable peers in the community. <br>
 He can be followed at: <a href="https://kevinsaye.wordpress.com/" target="_blank"> https://kevinsaye.wordpress.com/ </a>. <br>
