@@ -73,7 +73,7 @@ One potential additional function could be to enable audio output using the buil
 
 <html><table>
 <tr><td width="30%"><b> About the Creator </b> </td></tr>
-<tr><td rowspan="2" width="30%"> <img src="{{'assets/images/jomit.JPG' | relative_url}}"></td></tr>
+<tr><td rowspan="2" width="30%"> <img src="{{'assets/images/jomit.jpg' | relative_url}}"></td></tr>
 <td width = "70%">
 Jomit Vaghela is a Technology Strategist, Architect and Developer working on fulfilling the promises of Digital Transformation using Machine Learning, IoT, Blockchain and Cloud.
 <br>
