@@ -60,14 +60,16 @@ Find more information and relevant code <a href="https://aka.ms/iotcentral-seibe
 <tr><td>
 <b> Future Improvements and Project Suggestions </b> </td></tr>
 <tr><td>Feel free to fork the project and contribute back any improvements or suggestions. Contributors and maintainers are encouraged. </td></tr>
-
-<tr><td width="70%"><b> About the Creator </b> </td>
+</table></html>
+<html><table><html><table>
+<tr><td width="70%"><b> About the Creator </b> </td> </tr>
 <td rowspan="2" width="30%"> <img src="{{'assets/images/scott.PNG' | relative_url}}"></td>
 <tr><td>
 Scott Seiber is a long-time Microsoft software engineer who is focused on the cross-section of hardware and software. He is currently working in the Azure IoT organization, enabling partners with their digital transformations.
 <br>
 You can learn more about what Scott is working on <a href="https://github.com/sseiber" target="_blank">here</a>.
 </td></tr>
+</table></html>
 
 <div id="disqus_thread"></div>
 <script>
@@ -88,4 +90,5 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>             
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
