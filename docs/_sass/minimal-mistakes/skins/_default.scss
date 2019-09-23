@@ -20,16 +20,17 @@ $footer-background-color: #393939 !default;
     }
 }
 
+// color changed to white by juniem to meet accessibility requirements
 
 .page__footer {
     margin-top: 0em !important; //override 
-    color: #737373 !important; // override
+    color: white !important; // override
     p, strong {
-        color: #737373 !important; // override
+        color: white !important; // override
     }
 
     a {
-        color: #a6a6a6 !important; // override
+        color: white !important; // override
     }
 }
 
