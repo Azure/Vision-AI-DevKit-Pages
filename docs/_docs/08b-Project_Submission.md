@@ -18,10 +18,8 @@ Users are also encouraged to leave comments and feedback for projects to encoura
 
 ## Where can I submit my own community project?
 
-While we are working in order to create a better solution for submitting your own project please create a [GitHub](https://github.com/Microsoft/vision-ai-developer-kit/issues) issue with following information.
-<br><br>
-You will be required to submit the following: 
-  - Link to a repository with all relevant code
+We are continuously looking for new community projects. If you want us to publish yours please [contact us](mailto:aiedge@microsoft.com) and provide following information.
+  - Link to you repository with all relevant code
   - A short blurb describing the overall goal of the project
   - A short blurb describing the higher level implementation and logic
   - Any screenshots and videos demonstrating functionality 
