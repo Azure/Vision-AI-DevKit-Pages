@@ -20,16 +20,45 @@ VAIDK_More:
       # Build fast
       * New to Vision ML? Start building a vision model by uploading and tagging pictures, letting [Azure Custom Vision Service](https://azure.github.io/Vision-AI-DevKit-Pages/docs/Tutorial-HOL_Using_the_VisionSample/){:target="_blank"} do the heavy lifting.
       * Experienced with vision ML? Use [Jupyter notebooks](https://azure.github.io/Vision-AI-DevKit-Pages/docs/jupyter/){:target="_blank"} and [Visual Studio Code](https://azure.github.io/Vision-AI-DevKit-Pages/docs/SetUp_VS_Code/) to create and train custom vision models using Azure Machine Learning (AML). AML services enable you to prepare data and train models. You can then convert the trained model to the custom DLC format and package it into an IoT Edge module to deploy to the Vision AI Dev Kit.
-            
-  - title: "Deploy fast"
-    excerpt: |
+      
+      # Deploy Fast
       [Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/) can push your containerized vision ML models and other modules to the Vision AI DevKit with ease, whether the camera is on your desk or in another country.   
 
       # Join the Community
       Get help and help others with vision ML projects by joining our [Tech Community](https://aka.ms/VAIDK-IoTTechCommunity){:target="_blank"} and [Gitter](https://aka.ms/VAIDKGitter-Landing/){:target="_blank"}.
       # Build the intelligent edge
       As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit does inferences and runs containerized Azure services locally in the device. Moving these workloads to the edge of the network means vision ML inferencing work requires less cloud interaction while also enabling quick reaction to local events, allowing operation during extended offline periods.
-     
+
+
+  - title: "What's new?"
+    excerpt: |
+      
+      <html><table><tr><td>
+      <a href="https://aka.ms/aiatedge">
+      <img src='assets/images/WN_aiatedge.PNG' alt='AI@Edge community' style='max-width: 320px'></a>
+      </td><td><font size="4"><b>
+      Visit the AI@Edge portal!</b></font>
+      <br> <font size="3">
+      Microsoft is launching an AI@Edge community. Find hardware, ML and cloud resources you need to create solutions using intelligence at the edge
+      </font>
+      </td></tr>
+      <tr><td>
+      <a href="/Vision-AI-DevKit-Pages/docs/community_project05/">
+      <img src='assets/images/WN_faceapi.PNG' alt='Face API' style='max-width: 320px'></a>
+      </td><td><font size="4"><b>
+      Use Microsoft's Face API with Vision AI Developer Kit</b></font>
+      <br> <font size="3">
+      Familiarize yourself with Microsoft's cognitive services by running Face API in the camera to recognize facial characteristics
+      </font></td></tr>
+      <tr><td>
+      <a href="/Vision-AI-DevKit-Pages/docs/community_project03/">
+      <img src='assets/images/WN_audio.PNG' alt='Audio' style='max-width: 320px'></a>
+      </td><td><font size="4"><b>
+      Train audio ML model for Vision AI Developer Kit</b></font>
+      <br><font size="3">
+      Vision AI Developer Kit comes also with microphones! Record with Vision AI Dev Kit, then train your AI model using the recordings and deploy it to the camera.
+      </font></td></tr></table></html>
+
 advantages:
   - video_path: https://easstandardhosting123.blob.core.windows.net/asset-0a1504fe-8b97-4e8f-a312-2a5eef36c891/Vision_AI_101418.mp4?sv=2015-07-08&sr=c&si=1da79a8d-775c-4a56-af1a-173c36a1823b&sig=W7ACJX%2F0FrlqxYg7TlPfjojO3Ajf%2FiHy7eW4%2FfgK%2BAk%3D&st=2018-10-25T01%3A49%3A06Z&se=2118-10-25T01%3A49%3A06Z
     video_poster: /assets/images/Video_poster.png
@@ -47,11 +76,34 @@ tech_specs:
 
   - title: "<img src='assets/images/Peabody_spec_image2.png' alt='Vision AI DevKit specs'>"
 
+whatsnew:
+  content:
+  - title: AI@Edge
+whatsnew_links:
+  content:
+    - image_path: assets/images/WN_aiatedge.PNG
+      alt: "Join the AI@Edge community"
+      title: "Join the AI@Edge community"
+      excerpt: Find the resources you need to create solutions using intelligence at the edge
+      url: "https://aka.ms/aiatedge"
+    - image_path: /assets/images/WN_faceapi.PNG
+      alt: "Use Microsoft's Face API"
+      title: "Use Microsoft's Face API"
+      excerpt: "Check out community project using Microsoft's face API to recognize facial characteristics"
+      url: "/docs/projects/community_project05/"
+    - image_path: /assets/images/WN_audio.PNG
+      alt: "Enable audio for Vision AI Dev Kit"
+      title: "Enable audio for Vision AI Dev Kit"
+      excerpt: "See community project for enabling audio for Vision AI Developer Kit"
+      url: "/docs/projects/community_project03/"
+
 ---
 
 <div class="feature__outer_wrapper">
 {% include feature_row id="VAIDK_More" type="dual" %}
 </div>
+
+<!-- {% include feature_row_1 id="whatsnew_links" %} -->
 
 <div class="feature__outer_wrapper">
 {% include feature_row id="advantages" type="dual" %}

@@ -1,7 +1,7 @@
 ---
-title: "Enabling Audio for Fountain Water Level Detection"
+title: "Enable audio and train an audio ML model"
 permalink: /docs/community_project03/
-excerpt: "Training ML model using audio files captured by VAI DevKit"
+excerpt: "Enable audio and train an audio ML model"
 variable:
   - platform: windows
     name: Windows
