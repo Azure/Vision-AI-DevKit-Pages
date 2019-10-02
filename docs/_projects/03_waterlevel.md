@@ -6,7 +6,7 @@ excerpt: "Train ML model using audio files captured by the Vision AI DevKit."
 header:
   overlay_image: /assets/images/node-graphic.png
   overlay_full: true
-  teaser: /assets/images/WN_audio.png
+  teaser: /assets/images/WN_audio.PNG
 difficulty: MEDIUM
 last_modified_at: 2019-09-27
 ---
