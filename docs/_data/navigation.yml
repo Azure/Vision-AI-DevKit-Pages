@@ -64,6 +64,8 @@ docs:
         url: /docs/community_project04/
       - title: "DevKit Integration with Azure Face API Services"
         url: /docs/community_project05/
+      - title: "Intelligent Alarm"
+        url: /docs/community_project06/
 
   - title: Vision AI
     url: /docs/visionai/

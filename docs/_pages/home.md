@@ -43,6 +43,14 @@ VAIDK_More:
       </font>
       </td></tr>
       <tr><td>
+      <a href="/Vision-AI-DevKit-Pages/docs/community_project06/">
+      <img src='assets/images/intelligent_alarm.jpg' alt='Intelligent Alarm' style='max-height: 180px' style='max-width: 320px'></a>
+      </td><td><font size="4"><b>
+      Implement intelligent alarm</b></font>
+      <br> <font size="3">
+      See who is visiting your home by implementating an intelligent alarm using Vision Ai Developer Kit
+      </font></td></tr>
+      <tr><td>
       <a href="/Vision-AI-DevKit-Pages/docs/community_project05/">
       <img src='assets/images/WN_faceapi.PNG' alt='Face API' style='max-width: 320px'></a>
       </td><td><font size="4"><b>
