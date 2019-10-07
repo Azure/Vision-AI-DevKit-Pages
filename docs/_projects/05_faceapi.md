@@ -6,7 +6,7 @@ excerpt: "Use the Vision AI DevKit to capture images from the live stream and st
 header:
   overlay_image: /assets/images/node-graphic.png
   overlay_full: true
-  teaser: /assets/images/faceapi.png
+  teaser: /assets/images/WN_faceapi.PNG
 difficulty: EASY
 last_modified_at: 2019-09-17
 ---
