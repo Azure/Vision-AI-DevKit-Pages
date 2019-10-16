@@ -76,6 +76,7 @@ Users are always encouraged to innovate and continue to improve the functionalit
 <b> Future Improvements and Project Suggestions </b> </td></tr>
 <tr><td>
 Solution was built as pet project and so there certainly are several areas for improvements:<br>
+<li>Replace Cosmos with <a href="https://azure.microsoft.com/en-us/services/sql-database/" target="_blank">Azure SQL Database</a></li>
 <li>Improvement for logic determining when the image will be captured and sent for further processing. Ideally, solution should limit number of pictures per entrant and per entry that are being sent up to the cloud, while it should be uploading pictures with visible faces. There haven’t been done much work in this area yet.</li>
 <li>Solution is missing console for Face API person group training</li>
 <li>Solution is not supporting multi tenancy at this point, neither multi user usage</li>
