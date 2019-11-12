@@ -10,7 +10,8 @@ header:
   actions:
     - label: "Order <i class='fas fa-chevron-right'></i>"
       url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
- #   - label: "Coming Soon"
+    - label: "Help us improve - take a Vision AI survey!"
+      url: "https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzgFhy4pKddImQwUh-d_NZZUMTAzNFJTUDY0M1g4QjROSDFCWlQ4TlJVMS4u" 
 excerpt: >
   Jumpstart your Azure vision machine learning journey
 VAIDK_More:
@@ -32,8 +33,16 @@ VAIDK_More:
 
   - title: "What's new?"
     excerpt: |
-      
       <html><table><tr><td>
+      <a href="https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzgFhy4pKddImQwUh-d_NZZUMTAzNFJTUDY0M1g4QjROSDFCWlQ4TlJVMS4">
+      <img src='assets/images/survey.PNG' alt='Survey' style='max-width: 320px'></a>
+      </td><td><font size="4"><b>
+      Take a survey!</b></font>
+      <br> <font size="3">
+      We want to understand your most important Vision AI use cases in order to prioritize development of the components and services you need to implement your vision.
+      </font>
+      </td></tr>
+      <tr><td>
       <a href="https://aka.ms/aiatedge">
       <img src='assets/images/WN_aiatedge.PNG' alt='AI@Edge community' style='max-width: 320px'></a>
       </td><td><font size="4"><b>
@@ -57,15 +66,8 @@ VAIDK_More:
       Use Microsoft's Face API with Vision AI Developer Kit</b></font>
       <br> <font size="3">
       Familiarize yourself with Microsoft's cognitive services by running Face API in the camera to recognize facial characteristics
-      </font></td></tr>
-      <tr><td>
-      <a href="/Vision-AI-DevKit-Pages/docs/community_project03/">
-      <img src='assets/images/WN_audio.PNG' alt='Audio' style='max-width: 320px'></a>
-      </td><td><font size="4"><b>
-      Train audio ML model for Vision AI Developer Kit</b></font>
-      <br><font size="3">
-      Vision AI Developer Kit comes also with microphones! Record with Vision AI Dev Kit, then train your AI model using the recordings and deploy it to the camera.
       </font></td></tr></table></html>
+
 
 advantages:
   - video_path: https://easstandardhosting123.blob.core.windows.net/asset-0a1504fe-8b97-4e8f-a312-2a5eef36c891/Vision_AI_101418.mp4?sv=2015-07-08&sr=c&si=1da79a8d-775c-4a56-af1a-173c36a1823b&sig=W7ACJX%2F0FrlqxYg7TlPfjojO3Ajf%2FiHy7eW4%2FfgK%2BAk%3D&st=2018-10-25T01%3A49%3A06Z&se=2118-10-25T01%3A49%3A06Z
@@ -122,3 +124,12 @@ whatsnew_links:
 <div class="feature__outer_wrapper">
 {% include feature_row id="tech_specs" type="dual" %}
 </div>
+
+<!--       # <tr><td>
+      # <a href="/Vision-AI-DevKit-Pages/docs/community_project03/">
+      # <img src='assets/images/WN_audio.PNG' alt='Audio' style='max-width: 320px'></a>
+      # </td><td><font size="4"><b>
+      # Train audio ML model for Vision AI Developer Kit</b></font>
+      # <br><font size="3">
+      # Vision AI Developer Kit comes also with microphones! Record with Vision AI Dev Kit, then train your AI model using the recordings and deploy it to the camera.
+      # </font></td></tr></table></html> -->
