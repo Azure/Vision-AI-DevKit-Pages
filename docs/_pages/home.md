@@ -8,10 +8,8 @@ header:
   image: /assets/images/camera-render-transparent-small.png
   alt: "Picture of the Vision AI DevKit camera hardware"
   actions:
-    - label: "Order <i class='fas fa-chevron-right'></i>"
+    - label: "Order - temporarily out of stock<i class='fas fa-chevron-right'></i>"
       url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
-    - label: "Help us improve - take a Vision AI survey!"
-      url: "https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzgFhy4pKddImQwUh-d_NZZUMTAzNFJTUDY0M1g4QjROSDFCWlQ4TlJVMS4u" 
 excerpt: >
   Jumpstart your Azure vision machine learning journey
 VAIDK_More:
@@ -34,12 +32,11 @@ VAIDK_More:
   - title: "What's new?"
     excerpt: |
       <html><table><tr><td>
-      <a href="https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzgFhy4pKddImQwUh-d_NZZUMTAzNFJTUDY0M1g4QjROSDFCWlQ4TlJVMS4">
-      <img src='assets/images/survey.PNG' alt='Survey' style='max-width: 320px'></a>
+      <iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Unboxing-the-Vision-AI-DevKit/player" width="320px"  allowFullScreen frameBorder="0" title="Unboxing the Vision AI DevKit - Microsoft Channel 9 Video"></iframe>
       </td><td><font size="4"><b>
-      Take a survey!</b></font>
+      Unboxing!</b></font>
       <br> <font size="3">
-      We want to understand your most important Vision AI use cases in order to prioritize development of the components and services you need to implement your vision.
+      Check you how easy it is to take the Vision Ai Developer Kit into use and connect it to Azure services! Watch on <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Unboxing-the-Vision-AI-DevKit">Channel 9</a>
       </font>
       </td></tr>
       <tr><td>

@@ -19,7 +19,7 @@ Azure Stream Analytics provides a richly structured query syntax for data analys
 
 To do that, we will build and deploy an ASA module at the edge.
 
-*Note:* this tutorial is incomplete in a way that it doesn't trigger any events yet. There are multipe options how to continue after this tutorial depending on the end-2-end use case. The results of Stream Analytics can be for example directer to SQL,  storage or used to trigger alerts.
+*Note:* this tutorial is incomplete in a way that it doesn't trigger any events yet. There are multipe options how to continue after this tutorial depending on the end-2-end use case. The results of Stream Analytics can be for example directed to SQL,  storage or used to trigger alerts.
 
 ## What you will do
 
