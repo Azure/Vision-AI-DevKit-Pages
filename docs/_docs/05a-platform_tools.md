@@ -96,3 +96,12 @@ Add the directory you extracted the platform tools into to your computer's path 
    ```cmd
    exit
    ```
+## ADB commands with two devices connected
+
+* In case you have two devices connected to your laptop you can define which one to controls with *adb -s [deviceID] shell*
+
+For example:
+
+   ```cmd
+   adb -s f2ff309 shell docker ps
+   ```
