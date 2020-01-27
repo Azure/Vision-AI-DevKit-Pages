@@ -103,5 +103,5 @@ Add the directory you extracted the platform tools into to your computer's path 
 For example:
 
    ```cmd
-   adb -s f2ff309 shell docker ps
+   adb -s f2ff30x9 shell docker ps
    ```
