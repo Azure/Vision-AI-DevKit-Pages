@@ -36,7 +36,7 @@ VAIDK_More:
       </td><td><font size="4"><b>
       Unboxing!</b></font>
       <br> <font size="3">
-      Check you how easy it is to take the Vision Ai Developer Kit into use and connect it to Azure services! Watch on <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Unboxing-the-Vision-AI-DevKit">Channel 9</a>
+      See how easy it is to set up the Vision AI Developer Kit and connect it to Azure services! Watch on <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Unboxing-the-Vision-AI-DevKit">Channel 9</a>
       </font>
       </td></tr>
       <tr><td>
