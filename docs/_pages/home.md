@@ -8,7 +8,7 @@ header:
   image: /assets/images/camera-render-transparent-small.png
   alt: "Picture of the Vision AI DevKit camera hardware"
   actions:
-    - label: "Order - temporarily out of stock<i class='fas fa-chevron-right'></i>"
+    - label: "Order - temporarily out of stock <i class='fas fa-chevron-right'></i>"
       url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
 excerpt: >
   Jumpstart your Azure vision machine learning journey
@@ -29,9 +29,17 @@ VAIDK_More:
       As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit does inferences and runs containerized Azure services locally in the device. Moving these workloads to the edge of the network means vision ML inferencing work requires less cloud interaction while also enabling quick reaction to local events, allowing operation during extended offline periods.
 
 
-  - title: "What's new?"
+  - title: "What's New?"
     excerpt: |
       <html><table><tr><td>
+      <iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Use-Audio-on-the-Vision-AI-DevKit/player" width="320px"  allowFullScreen frameBorder="0" title="Use Audio on the Vision AI DevKit - Microsoft Channel 9 Video"></iframe>
+      </td><td><font size="4"><b>
+      Using Audio</b></font>
+      <br> <font size="3">
+      Learn how to use audio from the Vision AI DevKit as input data for IoT solutions. Watch on <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Use-Audio-on-the-Vision-AI-DevKit">Channel 9</a>
+      </font>
+      </td></tr>
+      <tr><td>
       <iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Unboxing-the-Vision-AI-DevKit/player" width="320px"  allowFullScreen frameBorder="0" title="Unboxing the Vision AI DevKit - Microsoft Channel 9 Video"></iframe>
       </td><td><font size="4"><b>
       Unboxing!</b></font>
