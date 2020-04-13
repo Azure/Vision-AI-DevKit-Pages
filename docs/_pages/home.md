@@ -32,6 +32,14 @@ VAIDK_More:
   - title: "What's New?"
     excerpt: |
       <html><table><tr><td>
+      <iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deploying-Models-with-Vision-AI-DevKit/player" width="320px"  allowFullScreen frameBorder="0" title="Use Audio on the Vision AI DevKit - Microsoft Channel 9 Video"></iframe>
+      </td><td><font size="4"><b>
+      Deploying Models</b></font>
+      <br> <font size="3">
+      Mahesh is back to show us how you can train and deploy new AI models on the device in a matter of minutes. Watch on <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deploying-Models-with-Vision-AI-DevKit">Channel 9</a>
+      </font>
+      </td></tr>
+      <html><table><tr><td>
       <iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Use-Audio-on-the-Vision-AI-DevKit/player" width="320px"  allowFullScreen frameBorder="0" title="Use Audio on the Vision AI DevKit - Microsoft Channel 9 Video"></iframe>
       </td><td><font size="4"><b>
       Using Audio</b></font>
