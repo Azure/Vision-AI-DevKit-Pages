@@ -31,6 +31,17 @@ VAIDK_More:
 
   - title: "What's New?"
     excerpt: |
+      <html><table>
+      <tr><td>
+      <a href="docs/community_project02/">
+      <img src='assets/images/safety.png' alt='Workplace Safety Model' style='max-width: 320px'></a>
+      </td><td><font size="4"><b>
+      Partnering with Purdue</b></font>
+      <br> <font size="3">
+      MS partners with Purdue University to publish a project on the Workplace Safety (PPE) model using the Vision AI Dev Kit and Custom Vision. Read the published article <a href="https://www.sciencedirect.com/science/article/pii/S2351978920310556">here</a>
+      </font>
+      </td></tr>
+      
       <html><table><tr><td>
       <iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deploying-Models-with-Vision-AI-DevKit/player" width="320px"  allowFullScreen frameBorder="0" title="Use Audio on the Vision AI DevKit - Microsoft Channel 9 Video"></iframe>
       </td><td><font size="4"><b>
@@ -64,22 +75,7 @@ VAIDK_More:
       Microsoft is launching an AI@Edge community. Find hardware, ML and cloud resources you need to create solutions using intelligence at the edge
       </font>
       </td></tr>
-      <tr><td>
-      <a href="/Vision-AI-DevKit-Pages/docs/community_project06/">
-      <img src='assets/images/intelligent_alarm.jpg' alt='Intelligent Alarm' style='max-height: 180px' style='max-width: 320px'></a>
-      </td><td><font size="4"><b>
-      Implement intelligent alarm</b></font>
-      <br> <font size="3">
-      See who is visiting your home by implementating an intelligent alarm using Vision Ai Developer Kit
-      </font></td></tr>
-      <tr><td>
-      <a href="/Vision-AI-DevKit-Pages/docs/community_project05/">
-      <img src='assets/images/WN_faceapi.PNG' alt='Face API' style='max-width: 320px'></a>
-      </td><td><font size="4"><b>
-      Use Microsoft's Face API with Vision AI Developer Kit</b></font>
-      <br> <font size="3">
-      Familiarize yourself with Microsoft's cognitive services by running Face API in the camera to recognize facial characteristics
-      </font></td></tr></table></html>
+      </table></html>
 
 
 advantages:
