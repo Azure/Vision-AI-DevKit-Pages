@@ -41,7 +41,6 @@ VAIDK_More:
       MS partners with Purdue University to publish a project on the Workplace Safety (PPE) model using the Vision AI Dev Kit and Custom Vision. Read the published article <a href="https://www.sciencedirect.com/science/article/pii/S2351978920310556">here</a>
       </font>
       </td></tr>
-      
       <html><table><tr><td>
       <iframe src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deploying-Models-with-Vision-AI-DevKit/player" width="320px"  allowFullScreen frameBorder="0" title="Use Audio on the Vision AI DevKit - Microsoft Channel 9 Video"></iframe>
       </td><td><font size="4"><b>
