@@ -30,7 +30,7 @@ VAIDK_More:
 
       # Get Support
 
-      Get quick answers to your questions by asking them [here](https://aka.ms/VAIDKGetHelp-Landing/)
+      Get quick answers to your questions by asking them [here](https://aka.ms/VAIDKGetHelp-Landing/).
 
       If you purchased your camera from Arrow, you are also entitled to one hour of complimentary support from eInfochips. This support includes:
       * Quick start guidance for connectivity to Azure IoT Hub
@@ -41,6 +41,7 @@ VAIDK_More:
       * Guidance for upgrade and install latest firmware build for VAIDK, followed by reboot procedure
       * Factory default settings and reboot procedures.
 
+      To request support from eInfoChips, go [here](https://www.einfochips.com/partnerships-and-alliances/digital-partnerships/microsoft/microsoft-ai-vision-kit/).
 
 
   - title: "What's New?"
