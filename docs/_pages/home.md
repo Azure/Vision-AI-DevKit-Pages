@@ -28,6 +28,20 @@ VAIDK_More:
       # Build the intelligent edge
       As an [Intelligent Edge device](https://azure.microsoft.com/en-us/overview/future-of-cloud/){:target="_blank"}, the Vision AI DevKit does inferences and runs containerized Azure services locally in the device. Moving these workloads to the edge of the network means vision ML inferencing work requires less cloud interaction while also enabling quick reaction to local events, allowing operation during extended offline periods.
 
+      # Get Support
+
+      Get quick answers to your questions by asking them [here](https://aka.ms/VAIDKGetHelp-Landing/)
+
+      If you purchased your camera from Arrow, you are also entitled to one hour of complimentary support from eInfochips. This support includes:
+      * Quick start guidance for connectivity to Azure IoT Hub
+      * Guidance to create and deploy a custom vision AI model using custom vision services 
+      * Guidance for setting up Visual Studio Code environment for Vision ML kit
+      * Setup for Azure account (if not available)
+      * Guidance to change personal connectivity on VAIDK i.e. Wi-Fi access / passphrase changes
+      * Guidance for upgrade and install latest firmware build for VAIDK, followed by reboot procedure
+      * Factory default settings and reboot procedures.
+
+
 
   - title: "What's New?"
     excerpt: |
