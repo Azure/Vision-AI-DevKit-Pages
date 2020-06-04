@@ -8,7 +8,7 @@ header:
   image: /assets/images/camera-render-transparent-small.png
   alt: "Picture of the Vision AI DevKit camera hardware"
   actions:
-    - label: "Order <i class='fas fa-chevron-right'></i>"
+    - label: "Back in Stock! - Order Now <i class='fas fa-chevron-right'></i>"
       url: "https://www.arrow.com/en/products/eic-ms-vision-500/einfochips-limited"
 excerpt: >
   Jumpstart your Azure vision machine learning journey
