@@ -81,7 +81,7 @@ VAIDK_More:
       </font>
       </td></tr>
       <tr><td>
-      <a href="https://aka.ms/aiatedge">
+      <a href="https://microsoft.github.io/ai-at-edge/">
       <img src='assets/images/WN_aiatedge.PNG' alt='AI@Edge community' style='max-width: 320px'></a>
       </td><td><font size="4"><b>
       Visit the AI@Edge portal!</b></font>
