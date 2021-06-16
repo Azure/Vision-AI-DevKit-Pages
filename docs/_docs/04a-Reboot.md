@@ -7,7 +7,7 @@ variable:
     name: Windows
   - platform: macos
     name: macOS
-last_modified_at: 2019-04-17
+last_modified_at: 2019-08-28
 ---
 ## What you may need
 
@@ -17,9 +17,11 @@ last_modified_at: 2019-04-17
 
 * Click the reset button once, using the pin hole on the right side of the camera.
 * Press the power button on the back once.
-* Long press the power button more than 12 seconds, to force a power down of the hardware. Then hold the power button for more than 12 seconds again to power up the hardware.
 * Command line:
 
   ```cmd
   adb reboot
   ```
+## To factory reset the camera
+
+* Long press the power button more than 12 seconds, which will force the camera to reset. Then press the power button once or plug the camera in to power to turn the camera on.
